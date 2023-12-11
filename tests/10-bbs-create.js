@@ -10,23 +10,23 @@ import {
   checkDataIntegrityProofFormat
 } from 'data-integrity-test-suite-assertion';
 import {documentLoader} from './documentLoader.js';
-import {endpoints} from 'vc-test-suite-implementations';
+import {endpoints} from 'vc-api-test-suite-implementations';
 import {validVc as vc} from './mock-data.js';
 
-const tag = 'ecdsa-rdfc-2019';
+const tag = 'bbs-2023';
 const {match} = endpoints.filterByTag({
   tags: [tag],
   property: 'issuers'
 });
 const should = chai.should();
 
-describe('ecdsa-rdfc-2019 (create)', function() {
+describe('bbs-2023 (create)', function() {
   checkDataIntegrityProofFormat({
     implemented: match,
     isEcdsaTests: true,
-    testDescription: 'Data Integrity (ecdsa-rdfc-2019 issuers)'
+    testDescription: 'Data Integrity (bbs-2023 issuers)'
   });
-  describe('ecdsa-rdfc-2019 (issuers)', function() {
+  describe('bbs-2023 (issuers)', function() {
     this.matrix = true;
     this.report = true;
     this.implemented = [];
@@ -59,16 +59,24 @@ describe('ecdsa-rdfc-2019 (create)', function() {
                 verificationMethodDocuments.push(verificationMethodDocument);
               }
             });
-            it('The field "cryptosuite" MUST be "ecdsa-rdfc-2019" or ' +
-              '"ecdsa-jcs-2019".', function() {
+            it('The field "cryptosuite" MUST be "bbs-2023".', function() {
               this.test.cell = {
                 columnId: `${name}: ${keyType}`, rowId: this.test.title
               };
-              const cryptosuite = ['ecdsa-rdfc-2019', 'ecdsa-jcs-2019'];
               proofs.some(
-                proof => cryptosuite.includes(proof?.cryptosuite)
+                proof => proof.cryptosuite === 'bbs-2023'
               ).should.equal(true, 'Expected at least one proof to have ' +
-                '"cryptosuite" property "ecdsa-rdfc-2019" or "ecdsa-jcs-2019".'
+                '"cryptosuite" property "bbs-2023".'
+              );
+            });
+            it('The field "proofValue" MUST start with "u".', function() {
+              this.test.cell = {
+                columnId: `${name}: ${keyType}`, rowId: this.test.title
+              };
+              proofs.some(
+                proof => proof.proofValue.startsWith('u')
+              ).should.equal(true, 'Expected at least one proof to have ' +
+                '"proofValue" property that starts with "u".'
               );
             });
             it('The "proof" MUST verify when using a conformant verifier.',

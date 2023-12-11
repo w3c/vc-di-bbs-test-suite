@@ -1,14 +1,14 @@
 /*!
  * Copyright (c) 2023 Digital Bazaar, Inc. All rights reserved.
  */
-import {createInitialVc} from './helpers.js';
-import {endpoints} from 'vc-test-suite-implementations';
+import {createDisclosedVc, createInitialVc} from './helpers.js';
+import {endpoints} from 'vc-api-test-suite-implementations';
 import {validVc as vc} from './mock-data.js';
 import {verificationSuccess} from './assertions.js';
 
-const tag = 'ecdsa-rdfc-2019';
+const tag = 'bbs-2023';
 
-// only use implementations with `ecdsa-rdfc-2019` issuers.
+// only use implementations with `bbs-2023` issuers.
 const {
   match: issuerMatches
 } = endpoints.filterByTag({tags: [tag], property: 'issuers'});
@@ -16,7 +16,7 @@ const {
   match: verifierMatches
 } = endpoints.filterByTag({tags: [tag], property: 'verifiers'});
 
-describe('ecdsa-rdfc-2019 (interop)', function() {
+describe('bbs-2023 (interop)', function() {
   // this will tell the report
   // to make an interop matrix with this suite
   this.matrix = true;
@@ -70,9 +70,21 @@ describe('ecdsa-rdfc-2019 (interop)', function() {
         // we skip that case
         continue;
       }
-      let issuedVc;
+      let disclosedCredential;
       before(async function() {
-        issuedVc = await createInitialVc({issuer: issuerEndpoint, vc});
+        const issuedVc = await createInitialVc({issuer: issuerEndpoint, vc});
+        const {match: matchingVcHolders} = endpoints.filterByTag({
+          tags: ['vcHolder'],
+          property: 'vcHolders'
+        });
+        // Use DB vc holder to create disclosed credentials
+        const vcHolders = matchingVcHolders.get('Digital Bazaar').endpoints;
+        const vcHolder = vcHolders[0];
+        ({disclosedCredential} = await createDisclosedVc({
+          selectivePointers: ['/credentialSubject/id'],
+          signedCredential: issuedVc,
+          vcHolder
+        }));
       });
       it(`"${verifierDisplayName}" should verify "${issuerDisplayName}"`,
         async function() {
@@ -81,7 +93,7 @@ describe('ecdsa-rdfc-2019 (interop)', function() {
             columnId: verifierDisplayName
           };
           await verificationSuccess({
-            credential: issuedVc, verifier: verifierEndpoint
+            credential: disclosedCredential, verifier: verifierEndpoint
           });
         });
     }
