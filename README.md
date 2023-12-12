@@ -69,12 +69,12 @@ A simplified manifest would look like this:
 
 The example above represents an unauthenticated endpoint. You may add ZCAP or
 OAuth2 authentication to your endpoints. You can find an example in the
-[vc-api-test-suite-implementations README](https://github.com/w3c-ccg/vc-api-test-suite-implementations#adding-a-new-implementation).
+[vc-test-suite-implementations README](https://github.com/w3c-ccg/vc-test-suite-implementations#adding-a-new-implementation).
 
 To run the tests, some implementations may require client secrets that can be
 passed as environment variables to the test script. To see which implementations
 require client secrets, please check the implementation manifest within the
-[vc-api-test-suite-implementations](https://github.com/w3c-ccg/vc-api-test-suite-implementations/tree/main/implementations) library.
+[vc-test-suite-implementations](https://github.com/w3c-ccg/vc-test-suite-implementations/tree/main/implementations) library.
 
 ### Docker Integration (TODO)
 

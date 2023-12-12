@@ -8,7 +8,7 @@ import {verificationFail, verificationSuccess} from './assertions.js';
 import {
   checkDataIntegrityProofVerifyErrors
 } from 'data-integrity-test-suite-assertion';
-import {endpoints} from 'vc-api-test-suite-implementations';
+import {endpoints} from 'vc-test-suite-implementations';
 import {klona} from 'klona';
 
 const tag = 'bbs-2023';

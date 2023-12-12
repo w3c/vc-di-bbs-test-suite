@@ -2,7 +2,7 @@
  * Copyright (c) 2023 Digital Bazaar, Inc. All rights reserved.
  */
 import {createDisclosedVc, createInitialVc} from './helpers.js';
-import {endpoints} from 'vc-api-test-suite-implementations';
+import {endpoints} from 'vc-test-suite-implementations';
 import {validVc as vc} from './mock-data.js';
 import {verificationSuccess} from './assertions.js';
 

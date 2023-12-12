@@ -10,7 +10,7 @@ import {
   checkDataIntegrityProofFormat
 } from 'data-integrity-test-suite-assertion';
 import {documentLoader} from './documentLoader.js';
-import {endpoints} from 'vc-api-test-suite-implementations';
+import {endpoints} from 'vc-test-suite-implementations';
 import {validVc as vc} from './mock-data.js';
 
 const tag = 'bbs-2023';
