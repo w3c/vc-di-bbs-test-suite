@@ -55,14 +55,12 @@ A simplified manifest would look like this:
   "issuers": [{
     "id": "",
     "endpoint": "https://mycompany.example/credentials/issue",
-    "method": "POST",
     "supportedEcdsaKeyTypes": ["P-256"]
     "tags": ["bbs-2023"]
   }],
   "verifiers": [{
     "id": "",
     "endpoint": "https://mycompany.example/credentials/verify",
-    "method": "POST",
     "supportedEcdsaKeyTypes": ["P-256", "P-384"]
     "tags": ["bbs-2023"]
   }]
