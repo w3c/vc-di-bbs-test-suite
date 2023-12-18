@@ -40,11 +40,7 @@ to your implementation manifest.
 - A credential issuer endpoint (`/credentials/issue`) in the `issuers` property.
 - A credential verifier endpoint (`/credentials/verify`) in the `verifiers` property.
 
-All endpoints will require a cryptosuite tag of `bbs-2023`. Alongside this
-cryptosuite tag, you must also specify the `supportedEcdsaKeyTypes` property,
-parallel to `tags` listing the ECDSA key types issuable or verifiable by your
-implementation. Currently, the test suite supports `P-256` and `P-384` ECDSA
-key types.
+All endpoints will require a cryptosuite tag of `bbs-2023`.
 
 A simplified manifest would look like this:
 
@@ -55,13 +51,11 @@ A simplified manifest would look like this:
   "issuers": [{
     "id": "",
     "endpoint": "https://mycompany.example/credentials/issue",
-    "supportedEcdsaKeyTypes": ["P-256"]
     "tags": ["bbs-2023"]
   }],
   "verifiers": [{
     "id": "",
     "endpoint": "https://mycompany.example/credentials/verify",
-    "supportedEcdsaKeyTypes": ["P-256", "P-384"]
     "tags": ["bbs-2023"]
   }]
 }
