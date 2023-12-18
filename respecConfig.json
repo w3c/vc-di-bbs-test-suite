@@ -1,9 +1,9 @@
 {
   "specStatus": "unofficial",
-  "shortName": "vc-di-ecdsa-test-suite",
+  "shortName": "vc-di-bbs-test-suite",
   "subtitle": "Interoperability test suite for ECDSA Data Integrity cryptosuites.",
-  "github": "https://github.com/w3c-ccg/vc-di-ecdsa-test-suite",
-  "edDraftURI": "https://w3c-ccg.github.io/vc-di-ecdsa-test-suite",
+  "github": "https://github.com/w3c-ccg/vc-di-bbs-test-suite",
+  "edDraftURI": "https://w3c-ccg.github.io/vc-di-bbs-test-suite",
   "doJsonLd": true,
   "includePermalinks": false,
   "editors": [{
