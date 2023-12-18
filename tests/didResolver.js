@@ -2,22 +2,8 @@
  * Copyright 2023 Digital Bazaar, Inc. All Rights Reserved
  */
 import * as didMethodKey from '@digitalbazaar/did-method-key';
-import * as EcdsaMultikey from '@digitalbazaar/ecdsa-multikey';
-import {
-  multibaseMultikeyHeaderP256, multibaseMultikeyHeaderP384
-} from './helpers.js';
 
 const didKeyDriver = didMethodKey.driver();
-
-didKeyDriver.use({
-  multibaseMultikeyHeader: multibaseMultikeyHeaderP256,
-  fromMultibase: EcdsaMultikey.from
-});
-
-didKeyDriver.use({
-  multibaseMultikeyHeader: multibaseMultikeyHeaderP384,
-  fromMultibase: EcdsaMultikey.from
-});
 
 export async function didResolver({url}) {
   if(url.startsWith('did:')) {

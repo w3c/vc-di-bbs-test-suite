@@ -35,22 +35,3 @@ export const createDisclosedVc = async ({
   });
   return {disclosedCredential: data};
 };
-
-export const SUPPORTED_BASE58_ECDSA_MULTIKEY_HEADERS = new Map([
-  ['P-256', 'zDna'],
-  ['P-384', 'z82L']
-]);
-
-export const multibaseMultikeyHeaderP256 =
-  SUPPORTED_BASE58_ECDSA_MULTIKEY_HEADERS.get('P-256');
-
-export const multibaseMultikeyHeaderP384 =
-  SUPPORTED_BASE58_ECDSA_MULTIKEY_HEADERS.get('P-384');
-
-export function checkKeyType(keyType) {
-  const supportedKeyTypes = ['P-256', 'P-384'];
-  if(supportedKeyTypes.includes(keyType)) {
-    return keyType;
-  }
-  throw new Error(`Unsupported ECDSA key type: ${keyType}.`);
-}
