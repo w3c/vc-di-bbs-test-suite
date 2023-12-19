@@ -36,7 +36,7 @@ describe('bbs-2023 (create)', function() {
           v => v.tags.has(tag));
         let issuedVc;
         let proofs;
-        // const verificationMethodDocuments = [];
+        const verificationMethodDocuments = [];
         before(async function() {
           issuedVc = await createInitialVc({issuer, vc});
           proofs = Array.isArray(issuedVc?.proof) ? issuedVc.proof :
