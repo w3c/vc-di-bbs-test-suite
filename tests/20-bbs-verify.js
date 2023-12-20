@@ -57,6 +57,11 @@ describe('bbs-2023 (verify)', function() {
         const disclosedCredentialsWithFullArray = [];
         const disclosedCredentialsWithLessThanFullSubArray = [];
         const disclosedCredentialsWithoutFirstArrayElement = [];
+        beforeEach(function() {
+          this.currentTest.cell = {
+            columnId: name, rowId: this.currentTest.title
+          };
+        });
         before(async function() {
           for(const issuer of issuers) {
             const signedVc = await createInitialVc({issuer, vc});
@@ -164,45 +169,30 @@ describe('bbs-2023 (verify)', function() {
         });
         it('MUST verify a valid VC with a bbs-2023 proof.',
           async function() {
-            this.test.cell = {
-              columnId: name, rowId: this.test.title
-            };
             for(const credential of disclosedCredentials) {
               await verificationSuccess({credential, verifier});
             }
           });
         it('MUST verify a valid VC with nested disclosed properties.',
           async function() {
-            this.test.cell = {
-              columnId: name, rowId: this.test.title
-            };
             for(const credential of nestedDisclosedCredentials) {
               await verificationSuccess({credential, verifier});
             }
           });
         it('MUST verify a valid VC with disclosed properties and bnodes.',
           async function() {
-            this.test.cell = {
-              columnId: name, rowId: this.test.title
-            };
             for(const credential of disclosedDlCredentialNoIds) {
               await verificationSuccess({credential, verifier});
             }
           });
         it('MUST verify with full array revealed properties',
           async function() {
-            this.test.cell = {
-              columnId: name, rowId: this.test.title
-            };
             for(const credential of disclosedCredentialsWithFullArray) {
               await verificationSuccess({credential, verifier});
             }
           });
         it('MUST verify with fewer array revealed properties',
           async function() {
-            this.test.cell = {
-              columnId: name, rowId: this.test.title
-            };
             for(
               const credential of disclosedCredentialsWithLessThanFullSubArray
             ) {
@@ -211,9 +201,6 @@ describe('bbs-2023 (verify)', function() {
           });
         it('MUST verify w/o first element revealed properties',
           async function() {
-            this.test.cell = {
-              columnId: name, rowId: this.test.title
-            };
             for(
               const credential of disclosedCredentialsWithoutFirstArrayElement
             ) {
@@ -222,9 +209,6 @@ describe('bbs-2023 (verify)', function() {
           });
         it('If the "proofValue" string does not start with "u", an ' +
           'error MUST be raised.', async function() {
-          this.test.cell = {
-            columnId: name, rowId: this.test.title
-          };
           for(const credential of disclosedCredentials) {
             const signedCredentialCopy = klona(credential);
             // intentionally modify proofValue to not start with 'u'
@@ -236,9 +220,6 @@ describe('bbs-2023 (verify)', function() {
         });
         it('If the "cryptosuite" field is not the string "bbs-2023", ' +
           'an error MUST be raised.', async function() {
-          this.test.cell = {
-            columnId: name, rowId: this.test.title
-          };
           for(const credential of disclosedCredentials) {
             const signedCredentialCopy = klona(credential);
             signedCredentialCopy.proof.cryptosuite = 'invalid-cryptosuite';
@@ -248,9 +229,6 @@ describe('bbs-2023 (verify)', function() {
           }
         });
         it('MUST fail to verify a base proof.', async function() {
-          this.test.cell = {
-            columnId: name, rowId: this.test.title
-          };
           for(const credential of signedCredentials) {
             const signedCredentialCopy = klona(credential);
             await verificationFail({
@@ -260,9 +238,6 @@ describe('bbs-2023 (verify)', function() {
         });
         it('MUST fail to verify a modified disclosed credential.',
           async function() {
-            this.test.cell = {
-              columnId: name, rowId: this.test.title
-            };
             for(const credential of disclosedCredentials) {
               const signedCredentialCopy = klona(credential);
               // intentionally modify `credentialSubject` ID
