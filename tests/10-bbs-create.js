@@ -37,6 +37,11 @@ describe('bbs-2023 (create)', function() {
         let issuedVc;
         let proofs;
         const verificationMethodDocuments = [];
+        beforeEach(function() {
+          this.currentTest.cell = {
+            columnId: name, rowId: this.currentTest.title
+          };
+        });
         before(async function() {
           issuedVc = await createInitialVc({issuer, vc});
           proofs = Array.isArray(issuedVc?.proof) ? issuedVc.proof :
@@ -52,9 +57,6 @@ describe('bbs-2023 (create)', function() {
           // }
         });
         it('The field "cryptosuite" MUST be "bbs-2023".', function() {
-          this.test.cell = {
-            columnId: name, rowId: this.test.title
-          };
           proofs.some(
             proof => proof.cryptosuite === 'bbs-2023'
           ).should.equal(true, 'Expected at least one proof to have ' +
@@ -64,15 +66,9 @@ describe('bbs-2023 (create)', function() {
         it.skip('The value of the "proofValue" property MUST be a BBS ' +
           'signature or BBS proof produced according to `CFRG-BBS-SIGNATURE`.',
         function() {
-          this.test.cell = {
-            columnId: name, rowId: this.test.title
-          };
         });
         it('The "proof" MUST verify when using a conformant verifier.',
           async function() {
-            this.test.cell = {
-              columnId: name, rowId: this.test.title
-            };
             should.exist(verifier, 'Expected implementation to have a VC ' +
             'HTTP API compatible verifier.');
             verificationSuccess({credential: issuedVc, verifier});
@@ -80,9 +76,6 @@ describe('bbs-2023 (create)', function() {
         it.skip('The "proof.proofPurpose" field MUST match the verification ' +
           'relationship expressed by the verification method controller.',
         async function() {
-          this.test.cell = {
-            columnId: name, rowId: this.test.title
-          };
           verificationMethodDocuments.should.not.eql([], 'Expected ' +
             'at least one "verificationMethodDocument".');
           verificationMethodDocuments.some(
@@ -110,9 +103,6 @@ describe('bbs-2023 (create)', function() {
         it.skip('Dereferencing "verificationMethod" MUST result in an object ' +
           'containing a type property with "Multikey" value.',
         async function() {
-          this.test.cell = {
-            columnId: name, rowId: this.test.title
-          };
           verificationMethodDocuments.should.not.eql([], 'Expected ' +
             'at least one "verificationMethodDocument".');
           verificationMethodDocuments.some(
@@ -125,9 +115,6 @@ describe('bbs-2023 (create)', function() {
         it.skip('The publicKeyMultibase property MUST be a Multibase-encoded ' +
           'Multikey expression of BLS12-381 public key in the G2 group.',
         async function() {
-          this.test.cell = {
-            columnId: name, rowId: this.test.title
-          };
         });
       });
     }
