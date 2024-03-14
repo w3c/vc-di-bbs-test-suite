@@ -23,13 +23,13 @@ Provides interoperability tests for verifiable credential processors
 
 ## Install
 
-```js
+```sh
 npm i
 ```
 
 ## Usage
 
-```
+```sh
 npm test
 ```
 
@@ -48,7 +48,7 @@ All endpoints will require a cryptosuite tag of `bbs-2023`.
 
 A simplified manifest would look like this:
 
-```js
+```json
 {
   "name": "My Company",
   "implementation": "My implementation",
