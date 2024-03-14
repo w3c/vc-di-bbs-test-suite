@@ -86,4 +86,4 @@ Pull Requests are welcome!
 
 ## License
 
-See [the LICENSE.md file](LICENSE.md)
+See [the LICENSE file](LICENSE)
