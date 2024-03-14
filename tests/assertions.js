@@ -1,6 +1,9 @@
-/*!
- * Copyright 2023 Digital Bazaar, Inc. All Rights Reserved
+/*
+ * Copyright 2023 - 2024 Digital Bazaar, Inc.
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
  */
+
 import chai from 'chai';
 
 const should = chai.should();

@@ -1,3 +1,9 @@
+<!--
+Copyright 2024 Digital Bazaar, Inc.
+
+SPDX-License-Identifier: BSD-3-Clause
+-->
+
 # w3c/vc-di-bbs-test-suite  ChangeLog
 
 ## 1.1.0 - 2023-12-14

@@ -1,6 +1,9 @@
-/*!
- * Copyright 2023 Digital Bazaar, Inc. All Rights Reserved
+/*
+ * Copyright 2023 - 2024 Digital Bazaar, Inc.
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
  */
+
 export const validVc = {
   '@context': [
     'https://www.w3.org/2018/credentials/v1',
