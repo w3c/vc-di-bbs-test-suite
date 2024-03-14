@@ -1,16 +1,20 @@
+<!--
+Copyright 2024 Digital Bazaar, Inc.
+
+SPDX-License-Identifier: BSD-3-Clause
+-->
+
 # [BBS](https://www.w3.org/TR/vc-di-bbs/) Cryptosuite test suite
 
 ## Table of Contents
 
-- [BBS Cryptosuite test suite](#bbs-cryptosuite-test-suite)
-  - [Table of Contents](#table-of-contents)
-  - [Background](#background)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Implementation](#implementation)
-    - [Docker Integration (TODO)](#docker-integration-todo)
-  - [Contribute](#contribute)
-  - [License](#license)
+- [Background](#background)
+- [Install](#install)
+- [Usage](#usage)
+- [Implementation](#implementation)
+  - [Docker Integration (TODO)](#docker-integration-todo)
+- [Contribute](#contribute)
+- [License](#license)
 
 ## Background
 Provides interoperability tests for verifiable credential processors
