@@ -50,14 +50,14 @@ describe('bbs-2023 (create)', function() {
           proofs = Array.isArray(issuedVc?.proof) ? issuedVc.proof :
             [issuedVc?.proof];
           // FIXME: Update documentLoader to support BLS12-381 cryptographic key
-          // const verificationMethods = proofs.map(
-          //   proof => proof.verificationMethod);
-          // for(const verificationMethod of verificationMethods) {
-          //   const verificationMethodDocument = await documentLoader({
-          //     url: verificationMethod
-          //   });
-          //   verificationMethodDocuments.push(verificationMethodDocument);
-          // }
+          const verificationMethods = proofs.map(
+            proof => proof.verificationMethod);
+          for(const verificationMethod of verificationMethods) {
+            const verificationMethodDocument = await documentLoader({
+              url: verificationMethod
+            });
+            verificationMethodDocuments.push(verificationMethodDocument);
+          }
         });
         it('The field "cryptosuite" MUST be "bbs-2023".', function() {
           proofs.some(
