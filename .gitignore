@@ -21,4 +21,5 @@ reports/**
 !.gitkeep
 credentials/*.json
 .vscode
-.localImplementationsConfig.cjs
+localConfig.cjs
+tests/input/**
