@@ -102,7 +102,7 @@ describe('bbs-2023 (create)', function() {
             'to match the verification method controller.'
           );
         });
-        it.skip('Dereferencing "verificationMethod" MUST result in an object ' +
+        it('Dereferencing "verificationMethod" MUST result in an object ' +
           'containing a type property with "Multikey" value.',
         async function() {
           verificationMethodDocuments.should.not.eql([], 'Expected ' +
@@ -121,7 +121,25 @@ describe('bbs-2023 (create)', function() {
         'encoded using base58-btc (z) as the prefix. Any other encodings ' +
         'MUST NOT be allowed.',
         async function() {
-
+          verificationMethodDocuments.should.not.eql([], 'Expected ' +
+            'at least one "verificationMethodDocument".');
+          const proof = proofs.find(p => p.cryptosuite === 'bbs-2023');
+          should.exist(
+            proof,
+            'Expected at least one proof with cryptosuite "bbs-2023"'
+          );
+          const vm = verificationMethodDocuments.find(
+            vm => vm.id === proof.verificationMethod);
+          should.exist(
+            vm,
+            `Expected at least one verificationMethod with id ` +
+            `"${proof.verificationMethod}"`
+          );
+          should.exist(
+            vm.publicKeyMultibase,
+            'Expected verificationMethod to have property "publicKeyMultibase"'
+          );
+          vm.publicKeyMultibase.startsWith('z').should.be.true;
         });
       });
     }
