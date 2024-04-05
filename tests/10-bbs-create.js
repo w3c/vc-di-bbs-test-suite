@@ -35,7 +35,7 @@ describe('bbs-2023 (create)', function() {
     for(const [name, {endpoints, implementation}] of match) {
       describe(name, function() {
         const [issuer] = endpoints;
-        const verifier = implementation.verifiers.filter(
+        const verifier = implementation.verifiers.find(
           v => v.tags.has(tag));
         let issuedVc;
         let proofs;
