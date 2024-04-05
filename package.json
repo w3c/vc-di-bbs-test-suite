@@ -38,6 +38,7 @@
   },
   "homepage": "https://github.com/w3c-ccg/vc-di-bbs-test-suite#readme",
   "dependencies": {
+    "@digitalbazaar/bls12-381-multikey": "^1.2.0",
     "@digitalbazaar/did-method-key": "^5.1.0",
     "@digitalbazaar/http-client": "^4.0.0",
     "@digitalbazaar/mocha-w3c-interop-reporter": "^1.6.0",
