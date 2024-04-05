@@ -74,7 +74,7 @@ describe('bbs-2023 (create)', function() {
           async function() {
             should.exist(verifier, 'Expected implementation to have a VC ' +
             'HTTP API compatible verifier.');
-            verificationSuccess({credential: issuedVc, verifier});
+            await verificationSuccess({credential: issuedVc, verifier});
           });
         it.skip('The "proof.proofPurpose" field MUST match the verification ' +
           'relationship expressed by the verification method controller.',
