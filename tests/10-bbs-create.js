@@ -115,9 +115,14 @@ describe('bbs-2023 (create)', function() {
             '"type" property value "Multikey".'
           );
         });
-        it.skip('The publicKeyMultibase property MUST be a Multibase-encoded ' +
-          'Multikey expression of BLS12-381 public key in the G2 group.',
+        it('The publicKeyMultibase property represents a Multibase-encoded ' +
+        'Multikey expression of a BLS12-381 public key in the G2 group. The ' +
+        'encoding of this field is the two-byte prefix 0xeb01 followed by ' +
+        'the 96-byte compressed public key data. The 98-byte value is then ' +
+        'encoded using base58-btc (z) as the prefix. Any other encodings ' +
+        'MUST NOT be allowed.',
         async function() {
+
         });
       });
     }
