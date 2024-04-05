@@ -49,7 +49,6 @@ describe('bbs-2023 (create)', function() {
           issuedVc = await createInitialVc({issuer, vc});
           proofs = Array.isArray(issuedVc?.proof) ? issuedVc.proof :
             [issuedVc?.proof];
-          // FIXME: Update documentLoader to support BLS12-381 cryptographic key
           const verificationMethods = proofs.map(
             proof => proof.verificationMethod);
           for(const verificationMethod of verificationMethods) {
