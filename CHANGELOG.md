@@ -11,6 +11,9 @@ SPDX-License-Identifier: BSD-3-Clause
 ### Added
 - postinstall the `vc-di-bbs` spec testVectors are cloned into `tests/input`.
 
+### Changed
+- **BREAKING:** `vc-test-suite-implementations` now uses the w3c repo and not the w3c-ccg repo.
+
 ## 1.1.0 - 2023-12-14
 
 ### Changed
