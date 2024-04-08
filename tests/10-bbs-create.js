@@ -139,7 +139,10 @@ describe('bbs-2023 (create)', function() {
             vm.publicKeyMultibase,
             'Expected verificationMethod to have property "publicKeyMultibase"'
           );
-          vm.publicKeyMultibase.startsWith('z').should.be.true;
+          vm.publicKeyMultibase[0]?.should.equal(
+            'z',
+            'Expected "publicKeyMultibase" to start with "z"'
+          );
         });
       });
     }
