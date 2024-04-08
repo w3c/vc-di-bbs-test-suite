@@ -64,10 +64,12 @@ export const shouldBeMultibaseEncoded = async ({
     'string',
     `Expected "${propertyName}" to be a string.`
   );
+  // first value should match multibase prefix
   value[0]?.should.equal(
     prefixes.multibase,
     `Expected "${propertyName}" to start with "${prefixes.multibase}"`
   );
+  // z is the bs58 multibase prefix
   if(prefixes.multibase === 'z') {
     shouldBeBs58(value.slice(1)).should.equal(
       true,
@@ -80,8 +82,8 @@ export const shouldBeMultibaseEncoded = async ({
   );
   const startingBytes = await getMulticodecPrefix(prefixes.multicodec);
   // compare the first two bytes to the expected multicodex prefix
-  Array.from(bytes.subarray(0, 2)).should.eql(
-    startingBytes,
+  bytes.subarray(0, 2).should.eql(
+    new Uint8Array(startingBytes),
     `Expected "${propertyName}" to have multicodec prefix ` +
-    `"${prefixes.multicodec}"`);
+    `"0x${prefixes.multicodec.toString(16)}"`);
 };
