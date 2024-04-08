@@ -4,11 +4,11 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
+import {createInitialVc, getBs58Bytes, getMulticodecPrefix} from './helpers.js';
 import chai from 'chai';
 import {
   checkDataIntegrityProofFormat
 } from 'data-integrity-test-suite-assertion';
-import {createInitialVc} from './helpers.js';
 import {documentLoader} from './documentLoader.js';
 import {endpoints} from 'vc-test-suite-implementations';
 import {validVc as vc} from './mock-data.js';
@@ -143,6 +143,16 @@ describe('bbs-2023 (create)', function() {
             'z',
             'Expected "publicKeyMultibase" to start with "z"'
           );
+          const publicKeyBytes = await getBs58Bytes(vm.publicKeyMultibase);
+          publicKeyBytes.length.should.equal(
+            98,
+            'Expected publicKeyBytes length to be 98'
+          );
+          const startingBytes = await getMulticodecPrefix(0xeb);
+          Array.from(publicKeyBytes.subarray(0, 2)).should.eql(
+            startingBytes,
+            'Expected publicKeyBytes to have 2 byte prefix "0xeb" for ' +
+            'bls12_381-g2-pub');
         });
       });
     }

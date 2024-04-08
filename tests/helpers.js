@@ -4,8 +4,15 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
+import * as bs58 from 'base58-universal';
 import {klona} from 'klona';
 import {v4 as uuidv4} from 'uuid';
+import varint from 'varint';
+
+// remove first element and decode
+export const getBs58Bytes = async s => bs58.decode(s.slice(1));
+
+export const getMulticodecPrefix = async prefix => varint.encode(prefix);
 
 // Javascript's default ISO timestamp contains milliseconds.
 // This lops off the MS part of the UTC RFC3339 TimeStamp and replaces
