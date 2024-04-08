@@ -141,7 +141,11 @@ describe('bbs-2023 (create)', function() {
           );
           await shouldBeMultibaseEncoded({
             value: vm.publicKeyMultibase,
-            prefixes: {multibase: 'z', multicodec: 0xeb},
+            prefixes: {
+              multibase: 'z',
+              multicodec: new Uint8Array([0xeb, 0x01])
+            },
+            decoder: getBs58Bytes,
             propertyName: 'publicKeyMultibase',
             expectedLength: 98
           });
