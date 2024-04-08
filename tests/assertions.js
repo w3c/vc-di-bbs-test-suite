@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-import {getBs58Bytes, getMulticodecPrefix} from './helpers.js';
 import chai from 'chai';
+import {getBs58Bytes} from './helpers.js';
 
 const should = chai.should();
 
@@ -80,10 +80,9 @@ export const shouldBeMultibaseEncoded = async ({
     expectedLength,
     `Expected "${propertyName}" length to be ${expectedLength}`
   );
-  const startingBytes = await getMulticodecPrefix(prefixes.multicodec);
   // compare the first two bytes to the expected multicodex prefix
   bytes.subarray(0, 2).should.eql(
-    new Uint8Array(startingBytes),
+    prefixes.multicodec,
     `Expected "${propertyName}" to have multicodec prefix ` +
     `"0x${prefixes.multicodec.toString(16)}"`);
 };
