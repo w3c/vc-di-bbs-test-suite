@@ -4,7 +4,8 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-import {createInitialVc, getBs58Bytes, getMulticodecPrefix} from './helpers.js';
+import {createInitialVc, getBs58Bytes} from './helpers.js';
+import {shouldBeMultibaseEncoded, verificationSuccess} from './assertions.js';
 import chai from 'chai';
 import {
   checkDataIntegrityProofFormat
@@ -12,7 +13,6 @@ import {
 import {documentLoader} from './documentLoader.js';
 import {endpoints} from 'vc-test-suite-implementations';
 import {validVc as vc} from './mock-data.js';
-import {verificationSuccess} from './assertions.js';
 
 const tag = 'bbs-2023';
 const {match} = endpoints.filterByTag({
@@ -139,20 +139,12 @@ describe('bbs-2023 (create)', function() {
             vm.publicKeyMultibase,
             'Expected verificationMethod to have property "publicKeyMultibase"'
           );
-          vm.publicKeyMultibase[0]?.should.equal(
-            'z',
-            'Expected "publicKeyMultibase" to start with "z"'
-          );
-          const publicKeyBytes = await getBs58Bytes(vm.publicKeyMultibase);
-          publicKeyBytes.length.should.equal(
-            98,
-            'Expected publicKeyBytes length to be 98'
-          );
-          const startingBytes = await getMulticodecPrefix(0xeb);
-          Array.from(publicKeyBytes.subarray(0, 2)).should.eql(
-            startingBytes,
-            'Expected publicKeyBytes to have 2 byte prefix "0xeb" for ' +
-            'bls12_381-g2-pub');
+          await shouldBeMultibaseEncoded({
+            value: vm.publicKeyMultibase,
+            prefixes: {multibase: 'z', multicodec: 0xeb},
+            propertyName: 'publicKeyMultibase',
+            expectedLength: 98
+          });
         });
       });
     }

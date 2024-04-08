@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
+import {getBs58Bytes, getMulticodecPrefix} from './helpers.js';
 import chai from 'chai';
 
 const should = chai.should();
@@ -47,4 +48,40 @@ export const verificationSuccess = async ({credential, verifier}) => {
     200,
     'Expected HTTP Status code 200.'
   );
+};
+
+export const shouldBeMultibaseEncoded = async ({
+  expectedLength,
+  prefixes = {
+    multicodec: '',
+    multibase: 'z'
+  },
+  decoder = getBs58Bytes,
+  value,
+  propertyName
+}) => {
+  value.should.be.a(
+    'string',
+    `Expected "${propertyName}" to be a string.`
+  );
+  value[0]?.should.equal(
+    prefixes.multibase,
+    `Expected "${propertyName}" to start with "${prefixes.multibase}"`
+  );
+  if(prefixes.multibase === 'z') {
+    shouldBeBs58(value.slice(1)).should.equal(
+      true,
+      `Expected "${propertyName}" to be bs58 encoded.`);
+  }
+  const bytes = await decoder(value);
+  bytes.length.should.equal(
+    expectedLength,
+    `Expected "${propertyName}" length to be ${expectedLength}`
+  );
+  const startingBytes = await getMulticodecPrefix(prefixes.multicodec);
+  // compare the first two bytes to the expected multicodex prefix
+  Array.from(bytes.subarray(0, 2)).should.eql(
+    startingBytes,
+    `Expected "${propertyName}" to have multicodec prefix ` +
+    `"${prefixes.multicodec}"`);
 };
