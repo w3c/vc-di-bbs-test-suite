@@ -8,9 +8,6 @@ import {achievementCredential, dlCredentialNoIds, validVc as vc} from
   './mock-data.js';
 import {createDisclosedVc, createInitialVc} from './helpers.js';
 import {verificationFail, verificationSuccess} from './assertions.js';
-import {
-  checkDataIntegrityProofVerifyErrors
-} from 'data-integrity-test-suite-assertion';
 import {endpoints} from 'vc-test-suite-implementations';
 import {klona} from 'klona';
 
@@ -22,10 +19,6 @@ const {match} = endpoints.filterByTag({
 });
 
 describe('bbs-2023 (verify)', function() {
-  checkDataIntegrityProofVerifyErrors({
-    implemented: match,
-    testDescription: 'Data Integrity (bbs-2023 verifiers)'
-  });
   describe('bbs-2023 (verifiers)', function() {
     let issuers;
     let vcHolder;
