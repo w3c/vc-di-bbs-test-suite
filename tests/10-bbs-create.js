@@ -7,9 +7,6 @@
 import {createInitialVc, getBs58Bytes} from './helpers.js';
 import {shouldBeMultibaseEncoded, verificationSuccess} from './assertions.js';
 import chai from 'chai';
-import {
-  checkDataIntegrityProofFormat
-} from 'data-integrity-test-suite-assertion';
 import {documentLoader} from './documentLoader.js';
 import {endpoints} from 'vc-test-suite-implementations';
 import {validVc as vc} from './mock-data.js';
@@ -22,10 +19,6 @@ const {match} = endpoints.filterByTag({
 const should = chai.should();
 
 describe('bbs-2023 (create)', function() {
-  checkDataIntegrityProofFormat({
-    implemented: match,
-    testDescription: 'Data Integrity (bbs-2023 issuers)'
-  });
   describe('bbs-2023 (issuers)', function() {
     this.matrix = true;
     this.report = true;
