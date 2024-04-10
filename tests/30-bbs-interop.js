@@ -3,23 +3,24 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-
 import {createDisclosedVc, createInitialVc} from './helpers.js';
 import {endpoints} from 'vc-test-suite-implementations';
+import {getSuiteConfig} from './test-config.js';
 import {validVc as vc} from './mock-data.js';
 import {verificationSuccess} from './assertions.js';
 
 const tag = 'bbs-2023';
+const {tags, disableInterop} = getSuiteConfig(tag);
 
 // only use implementations with `bbs-2023` issuers.
 const {
   match: issuerMatches
-} = endpoints.filterByTag({tags: [tag], property: 'issuers'});
+} = endpoints.filterByTag({tags: [...tags], property: 'issuers'});
 const {
   match: verifierMatches
-} = endpoints.filterByTag({tags: [tag], property: 'verifiers'});
+} = endpoints.filterByTag({tags: [...tags], property: 'verifiers'});
 
-describe('bbs-2023 (interop)', function() {
+(disableInterop ? describe.skip : describe)('bbs-2023 (interop)', function() {
   // this will tell the report
   // to make an interop matrix with this suite
   this.matrix = true;
