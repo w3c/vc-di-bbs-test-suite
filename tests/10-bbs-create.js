@@ -9,11 +9,13 @@ import {shouldBeMultibaseEncoded, verificationSuccess} from './assertions.js';
 import chai from 'chai';
 import {documentLoader} from './documentLoader.js';
 import {endpoints} from 'vc-test-suite-implementations';
+import {getSuiteConfig} from './test-config.js';
 import {validVc as vc} from './mock-data.js';
 
 const tag = 'bbs-2023';
+const {tags} = getSuiteConfig(tag);
 const {match} = endpoints.filterByTag({
-  tags: [tag],
+  tags: [...tags],
   property: 'issuers'
 });
 const should = chai.should();
