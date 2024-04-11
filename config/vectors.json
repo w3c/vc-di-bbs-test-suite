@@ -1,0 +1,9 @@
+{
+  "suites": {
+    "bbs-2023": {
+      "create": {},
+      "verify": {},
+      "interop": {}
+    }
+  }
+}
