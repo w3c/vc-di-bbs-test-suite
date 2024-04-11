@@ -3,6 +3,7 @@
   "suites": {
     "bbs-2023": {
       "tags": ["bbs-2023"],
+      "issuerName": "Grotto Networking",
       "vcHolder": {
         "holderName": "Grotto Networking",
         "tags": ["vcHolder", "bbs-2023"]

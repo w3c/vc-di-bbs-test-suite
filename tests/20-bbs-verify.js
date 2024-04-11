@@ -9,12 +9,18 @@ import {achievementCredential, dlCredentialNoIds, validVc as vc} from
 import {createDisclosedVc, createInitialVc} from './helpers.js';
 import {verificationFail, verificationSuccess} from './assertions.js';
 import {endpoints} from 'vc-test-suite-implementations';
+import {getSuiteConfig} from './test-config.js';
 import {klona} from 'klona';
 
 const tag = 'bbs-2023';
+const {
+  tags,
+  issuerName,
+  vcHolder: holderSettings
+} = getSuiteConfig(tag);
 // only use implementations with `bbs-2023` verifiers.
 const {match} = endpoints.filterByTag({
-  tags: [tag],
+  tags: [...tags],
   property: 'verifiers'
 });
 
@@ -32,9 +38,10 @@ describe('bbs-2023 (verify)', function() {
         property: 'vcHolders'
       });
       // Use DB issuer to issue a verifiable credential for the verifier tests
-      issuers = matchingIssuers.get('Digital Bazaar').endpoints;
-      const vcHolders = matchingVcHolders.get('Digital Bazaar').endpoints;
-      vcHolder = vcHolders[0];
+      issuers = matchingIssuers.get(issuerName)?.endpoints;
+      const vcHolders = matchingVcHolders.get(
+        holderSettings.holderName).endpoints;
+      vcHolder = vcHolders.find(holder => holder.tags.has(tag));
     });
     // this will tell the report
     // to make an interop matrix with this suite
