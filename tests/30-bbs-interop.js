@@ -10,7 +10,11 @@ import {validVc as vc} from './mock-data.js';
 import {verificationSuccess} from './assertions.js';
 
 const tag = 'bbs-2023';
-const {tags, disableInterop} = getSuiteConfig(tag);
+const {
+  disableInterop,
+  tags,
+  vcHolder: holderSettings
+} = getSuiteConfig(tag);
 
 // only use implementations with `bbs-2023` issuers.
 const {
@@ -34,11 +38,12 @@ const {
       const [issuer] = issuerEndpoints;
       const issuedVc = await createInitialVc({issuer, vc});
       const {match: matchingVcHolders} = endpoints.filterByTag({
-        tags: ['vcHolder'],
+        tags: [...holderSettings.tags],
         property: 'vcHolders'
       });
       // Use DB vc holder to create disclosed credentials
-      const vcHolders = matchingVcHolders.get('Digital Bazaar').endpoints;
+      const vcHolders = matchingVcHolders.get(
+        holderSettings.holderName).endpoints;
       const vcHolder = vcHolders[0];
       ({disclosedCredential} = await createDisclosedVc({
         selectivePointers: ['/credentialSubject/id'],
