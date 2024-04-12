@@ -12,6 +12,7 @@ import {verificationSuccess} from './assertions.js';
 const tag = 'bbs-2023';
 const {
   disableInterop,
+  credentials,
   tags,
   vcHolder: holderSettings
 } = getSuiteConfig(tag);
@@ -36,7 +37,11 @@ const {
     let disclosedCredential;
     before(async function() {
       const [issuer] = issuerEndpoints;
-      const issuedVc = await createInitialVc({issuer, vc});
+      const issuedVc = await createInitialVc({
+        issuer,
+        vc: credentials.interop['2.0'].credential,
+        mandatoryPointers: credentials.interop['2.0'].mandatoryPointers
+      });
       const {match: matchingVcHolders} = endpoints.filterByTag({
         tags: [...holderSettings.tags],
         property: 'vcHolders'
@@ -44,7 +49,7 @@ const {
       // Use DB vc holder to create disclosed credentials
       const vcHolders = matchingVcHolders.get(
         holderSettings.holderName).endpoints;
-      const vcHolder = vcHolders[0];
+      const vcHolder = vcHolders.find(endpoint => endpoint.tags.has(tag));
       ({disclosedCredential} = await createDisclosedVc({
         selectivePointers: ['/credentialSubject/id'],
         signedCredential: issuedVc,
