@@ -10,10 +10,9 @@ import chai from 'chai';
 import {documentLoader} from './documentLoader.js';
 import {endpoints} from 'vc-test-suite-implementations';
 import {getSuiteConfig} from './test-config.js';
-import {validVc as vc} from './mock-data.js';
 
 const tag = 'bbs-2023';
-const {tags} = getSuiteConfig(tag);
+const {tags, credentials} = getSuiteConfig(tag);
 const {match} = endpoints.filterByTag({
   tags: [...tags],
   property: 'issuers'
@@ -41,7 +40,11 @@ describe('bbs-2023 (create)', function() {
           };
         });
         before(async function() {
-          issuedVc = await createInitialVc({issuer, vc});
+          issuedVc = await createInitialVc({
+            issuer,
+            vc: credentials.create['2.0'].credential,
+            mandatoryPointer: credentials.create['2.0'].mandatoryPointers
+          });
           proofs = Array.isArray(issuedVc?.proof) ? issuedVc.proof :
             [issuedVc?.proof];
           const verificationMethods = proofs.map(
