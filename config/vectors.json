@@ -35,14 +35,14 @@
           },
           "subjectHasArrays": {
             "1.1": {
-              "credential": "./fixtures/achievement/1.1/credential.json",
-              "mandatoryPointers": "./fixtures/achievement/1.1/mandatoryPointers.json",
-              "selectivePointers": "./fixtures/achievement/1.1/selectivePointers.json"
+              "credential": "./fixtures/sail/1.1/credential.json",
+              "mandatoryPointers": "./fixtures/sail/1.1/mandatoryPointers.json",
+              "selectivePointers": "./fixtures/sail/1.1/selectivePointers.json"
             },
             "2.0": {
-              "credential": "./fixtures/achievement/2.0/credential.json",
-              "mandatoryPointers": "./fixtures/achievement/2.0/mandatoryPointers.json",
-              "selectivePointers": "./fixtures/achievement/2.0/selectivePointers.json"
+              "credential": "./fixtures/sail/2.0/credential.json",
+              "mandatoryPointers": "./fixtures/sail/2.0/mandatoryPointers.json",
+              "selectivePointers": "./fixtures/sail/2.0/selectivePointers.json"
             }
           }
         },
