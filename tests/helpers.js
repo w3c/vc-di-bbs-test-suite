@@ -35,7 +35,7 @@ export const createInitialVc = async ({issuer, vc, mandatoryPointers}) => {
 export const createDisclosedVc = async ({
   selectivePointers = [], signedCredential, vcHolder
 }) => {
-  const {data} = await vcHolder.post({
+  const {result, data, error} = await vcHolder.post({
     json: {
       options: {
         selectivePointers
@@ -43,5 +43,11 @@ export const createDisclosedVc = async ({
       verifiableCredential: signedCredential
     }
   });
+  if(!result || !result.ok) {
+    console.warn(
+      `Failed to derive VC ${(result || error)?.requestUrl}`,
+      error,
+      JSON.stringify({data, signedCredential}, null, 2));
+  }
   return {disclosedCredential: data};
 };

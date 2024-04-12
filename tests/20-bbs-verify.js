@@ -4,16 +4,16 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-import {achievementCredential, dlCredentialNoIds, validVc as vc} from
-  './mock-data.js';
 import {createDisclosedVc, createInitialVc} from './helpers.js';
 import {verificationFail, verificationSuccess} from './assertions.js';
+import {dlCredentialNoIds} from './mock-data.js';
 import {endpoints} from 'vc-test-suite-implementations';
 import {getSuiteConfig} from './test-config.js';
 import {klona} from 'klona';
 
 const tag = 'bbs-2023';
 const {
+  credentials,
   tags,
   issuerName,
   vcHolder: holderSettings
@@ -30,11 +30,11 @@ describe('bbs-2023 (verify)', function() {
     let vcHolder;
     before(async function() {
       const {match: matchingIssuers} = endpoints.filterByTag({
-        tags: [tag],
+        tags: [...tags],
         property: 'issuers'
       });
       const {match: matchingVcHolders} = endpoints.filterByTag({
-        tags: ['vcHolder'],
+        tags: [...holderSettings.tags],
         property: 'vcHolders'
       });
       // Use DB issuer to issue a verifiable credential for the verifier tests
@@ -66,8 +66,13 @@ describe('bbs-2023 (verify)', function() {
           };
         });
         before(async function() {
+          const {subjectNestedObjects, subjectHasArrays} = credentials.verify;
           for(const issuer of issuers) {
-            const signedVc = await createInitialVc({issuer, vc});
+            const signedVc = await createInitialVc({
+              issuer,
+              vc: subjectNestedObjects['2.0'].credential,
+              mandatoryPointers: subjectNestedObjects['2.0'].mandatoryPointers
+            });
             signedCredentials.push(signedVc);
             const {disclosedCredential} = await createDisclosedVc({
               selectivePointers: ['/credentialSubject/id'],
@@ -102,7 +107,9 @@ describe('bbs-2023 (verify)', function() {
             disclosedDlCredentialNoIds.push(disclosedDlCredentialNoId);
 
             const signedAchievementCredential = await createInitialVc({
-              issuer, vc: achievementCredential
+              issuer,
+              vc: subjectHasArrays['2.0'].credential,
+              mandatoryPointers: subjectHasArrays['2.0'].mandatoryPointers
             });
 
             // select full arrays
