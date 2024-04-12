@@ -6,7 +6,6 @@
 
 import {createDisclosedVc, createInitialVc} from './helpers.js';
 import {verificationFail, verificationSuccess} from './assertions.js';
-import {dlCredentialNoIds} from './mock-data.js';
 import {endpoints} from 'vc-test-suite-implementations';
 import {getSuiteConfig} from './test-config.js';
 import {klona} from 'klona';
@@ -91,8 +90,13 @@ describe('bbs-2023 (verify)', function() {
               vcHolder
             });
             nestedDisclosedCredentials.push(nestedDisclosedCredential);
+            const dlCredentialNoIds = klona(
+              subjectNestedObjects['2.0'].credential);
+            delete dlCredentialNoIds.id;
             const signedDlCredentialNoIds = await createInitialVc({
-              issuer, vc: dlCredentialNoIds
+              issuer,
+              vc: dlCredentialNoIds,
+              mandatoryPointers: subjectNestedObjects['2.0'].mandatoryPointers
             });
             const {
               disclosedCredential: disclosedDlCredentialNoId

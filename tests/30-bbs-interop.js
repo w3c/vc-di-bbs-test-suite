@@ -6,7 +6,6 @@
 import {createDisclosedVc, createInitialVc} from './helpers.js';
 import {endpoints} from 'vc-test-suite-implementations';
 import {getSuiteConfig} from './test-config.js';
-import {validVc as vc} from './mock-data.js';
 import {verificationSuccess} from './assertions.js';
 
 const tag = 'bbs-2023';
