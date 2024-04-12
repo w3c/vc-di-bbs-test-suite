@@ -1,11 +1,7 @@
 {
   "suites": {
     "bbs-2023": {
-      "keyAlgorithms": [
-        "BBS-BLS12-381-SHAKE-256",
-        "BBS-BLS12-381-SHA-256"
-      ],
-      "keyCurves": ["Bls12381G2"],
+      "keyTypes": [["Bls12381G2", "BBS-BLS12-381-SHA-256"]],
       "vcTypes": ["1.1", "2.0"],
       "credentials": {
         "create": {
