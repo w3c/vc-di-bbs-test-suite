@@ -19,13 +19,15 @@ export const ISOTimeStamp = ({date = new Date()} = {}) => {
   return date.toISOString().replace(/\.\d+Z$/, 'Z');
 };
 
-export const createInitialVc = async ({issuer, vc}) => {
-  const {settings: {id: issuerId, options}} = issuer;
+export const createInitialVc = async ({issuer, vc, mandatoryPointers}) => {
+  const {settings: {id: issuerId, options = {}}} = issuer;
+  const testOptions = klona(options);
   const credential = klona(vc);
   credential.id = `urn:uuid:${uuidv4()}`;
   credential.issuer = issuerId;
   credential.issuanceDate = ISOTimeStamp();
-  const body = {credential, options};
+  testOptions.mandatoryPointers = mandatoryPointers;
+  const body = {credential, options: testOptions};
   const {data} = await issuer.post({json: body});
   return data;
 };
