@@ -1,9 +1,64 @@
 {
   "suites": {
     "bbs-2023": {
-      "create": {},
-      "verify": {},
-      "interop": {}
-    }
+      "keyAlgorithms": [
+        "BBS-BLS12-381-SHAKE-256",
+        "BBS-BLS12-381-SHA-256"
+      ],
+      "keyCurves": ["Bls12381G2"],
+      "vcTypes": ["1.1", "2.0"],
+      "credentials": {
+        "create": {
+          "1.1": {
+            "credential": "./fixtures/license/1.1/credential.json",
+            "mandatoryPointers": "./fixtures/license/1.1/mandatoryPointers.json",
+            "selectivePointers": "./fixtures/license/1.1/selectivePointers.json"
+          },
+          "2.0": {
+            "credential": "./fixtures/license/2.0/credential.json",
+            "mandatoryPointers": "./fixtures/license/2.0/mandatoryPointers.json",
+            "selectivePointers": "./fixtures/license/2.0/selectivePointers.json"
+          }
+        },
+        "verify": {
+          "subjectNestedObjects": {
+            "1.1": {
+              "credential": "./fixtures/license/1.1/credential.json",
+              "mandatoryPointers": "./fixtures/license/1.1/mandatoryPointers.json",
+              "selectivePointers": "./fixtures/license/1.1/selectivePointers.json"
+            },
+            "2.0": {
+              "credential": "./fixtures/license/2.0/credential.json",
+              "mandatoryPointers": "./fixtures/license/2.0/mandatoryPointers.json",
+              "selectivePointers": "./fixtures/license/2.0/selectivePointers.json"
+            }
+          },
+          "subjectHasArrays": {
+            "1.1": {
+              "credential": "./fixtures/achievement/1.1/credential.json",
+              "mandatoryPointers": "./fixtures/achievement/1.1/mandatoryPointers.json",
+              "selectivePointers": "./fixtures/achievement/1.1/selectivePointers.json"
+            },
+            "2.0": {
+              "credential": "./fixtures/achievement/2.0/credential.json",
+              "mandatoryPointers": "./fixtures/achievement/2.0/mandatoryPointers.json",
+              "selectivePointers": "./fixtures/achievement/2.0/selectivePointers.json"
+            }
+          }
+        },
+        "interop": {
+          "1.1": {
+            "credential": "./fixtures/license/1.1/credential.json",
+            "mandatoryPointers": "./fixtures/license/1.1/mandatoryPointers.json",
+            "selectivePointers": "./fixtures/license/1.1/selectivePointers.json"
+          },
+          "2.0": {
+            "credential": "./fixtures/license/2.0/credential.json",
+            "mandatoryPointers": "./fixtures/license/2.0/mandatoryPointers.json",
+            "selectivePointers": "./fixtures/license/2.0/selectivePointers.json"
+          }
+        }
+      }
+    } 
   }
 }
