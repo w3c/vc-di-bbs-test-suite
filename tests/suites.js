@@ -78,6 +78,18 @@ export function createSuite({
           'signature or BBS proof produced according to ' +
           '[CFRG-BBS-SIGNATURE] that is serialized and encoded according to ' +
           'procedures in section 3. Algorithms.', function() {
+          const bbsProofs = proofs.filter(
+            proof => proof.cryptosuite === 'bbs-2023');
+          bbsProofs.length.should.be.gte(
+            1,
+            'Expected at least one "bbs-2023" proof'
+          );
+          for(const proof of bbsProofs) {
+            should.exist(
+              proof.proofValue,
+              'Expected "proof.proofValue" to exist.'
+            );
+          }
         });
         it('The "proof" MUST verify when using a conformant verifier.',
           async function() {
