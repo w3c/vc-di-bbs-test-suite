@@ -86,3 +86,13 @@ export const shouldBeMultibaseEncoded = async ({
     `Expected "${propertyName}" to have multicodec prefix ` +
     `"0x${prefixes.multicodec.toString(16)}"`);
 };
+
+export const shouldBeProof = ({proof}) => {
+  should.exist(proof, 'Expected proof to exist.');
+  proof.should.be.an('object', 'Expected proof to be an object.');
+
+};
+
+export const shouldBeBBSProofValue = ({proofValue}) => {
+  const type = typeof proofValue;
+};
