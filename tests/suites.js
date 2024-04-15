@@ -69,6 +69,11 @@ export function createSuite({
             '"cryptosuite" property "bbs-2023".'
           );
         });
+        /*
+        * Checked on 04-15-2024.
+        * {@link https://w3c.github.io/vc-di-bbs/#dataintegrityproof}
+        * Link to relevant section above.
+        */
         it('The value of the proofValue property of the proof MUST be a BBS ' +
           'signature or BBS proof produced according to ' +
           '[CFRG-BBS-SIGNATURE] that is serialized and encoded according to ' +
