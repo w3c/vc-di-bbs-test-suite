@@ -69,9 +69,10 @@ export function createSuite({
             '"cryptosuite" property "bbs-2023".'
           );
         });
-        it.skip('The value of the "proofValue" property MUST be a BBS ' +
-          'signature or BBS proof produced according to `CFRG-BBS-SIGNATURE`.',
-        function() {
+        it('The value of the proofValue property of the proof MUST be a BBS ' +
+          'signature or BBS proof produced according to ' +
+          '[CFRG-BBS-SIGNATURE] that is serialized and encoded according to ' +
+          'procedures in section 3. Algorithms.', function() {
         });
         it('The "proof" MUST verify when using a conformant verifier.',
           async function() {
