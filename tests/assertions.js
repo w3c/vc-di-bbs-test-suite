@@ -5,17 +5,12 @@
  */
 import {getBs58Bytes, getBs64Bytes} from './helpers.js';
 import {
-  shouldBeBase64NoPadUrl
+  shouldBeBase64NoPadUrl,
+  shouldBeBs58,
 } from 'data-integrity-test-suite-assertion';
 import chai from 'chai';
 
 const should = chai.should();
-
-// RegExp with bs58 characters in it
-const bs58 =
-  /^[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]+$/;
-// assert something is entirely bs58 encoded
-export const shouldBeBs58 = s => bs58.test(s);
 
 export const verificationFail = async ({credential, verifier}) => {
   const body = {
