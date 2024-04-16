@@ -6,6 +6,7 @@
 import {createInitialVc, getBs58Bytes, supportsVc} from './helpers.js';
 import {
   shouldBeMultibaseEncoded,
+  shouldBeProofValue,
   verificationFail,
   verificationSuccess
 } from './assertions.js';
@@ -85,10 +86,7 @@ export function createSuite({
             'Expected at least one "bbs-2023" proof'
           );
           for(const proof of bbsProofs) {
-            should.exist(
-              proof.proofValue,
-              'Expected "proof.proofValue" to exist.'
-            );
+            shouldBeProofValue(proof.proofValue);
           }
         });
         it('The "proof" MUST verify when using a conformant verifier.',
