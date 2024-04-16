@@ -49,6 +49,7 @@
     "@digitalbazaar/vc": "digitalbazaar/vc#update-vc-2.0",
     "@digitalcredentials/did-context": "^1.0.0",
     "base58-universal": "^2.0.0",
+    "base64url-universal": "^2.0.0",
     "chai": "^4.3.7",
     "credentials-context": "^2.0.0",
     "data-integrity-test-suite-assertion": "github:w3c-ccg/data-integrity-test-suite-assertion",
