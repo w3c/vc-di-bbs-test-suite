@@ -4,6 +4,9 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import {getBs58Bytes, getBs64Bytes} from './helpers.js';
+import {
+  shouldBeBase64NoPadUrl
+} from 'data-integrity-test-suite-assertion';
 import chai from 'chai';
 
 const should = chai.should();
@@ -49,6 +52,24 @@ export const verificationSuccess = async ({credential, verifier}) => {
   );
 };
 
+export const checkEncoding = ({value, propertyName}) => {
+  const [head] = value;
+  if(head === 'z') {
+    return shouldBeBs58(value.slice(1)).should.equal(
+      true,
+      `Expected "${propertyName}" to be bs58 encoded.`
+    );
+  }
+  if(head === 'u') {
+    return shouldBeBase64NoPadUrl(value.slice(1)).should.equal(
+      true,
+      `Expected "${propertyName}" to be bs64 url no pad encoded.`
+    );
+  }
+  throw new Error(`Expected ${propertyName} to start with a multibase ` +
+  `prefix. Received ${head}`);
+};
+
 export const shouldBeMultibaseEncoded = async ({
   expectedLength,
   prefixes = {
@@ -68,12 +89,7 @@ export const shouldBeMultibaseEncoded = async ({
     prefixes.multibase,
     `Expected "${propertyName}" to start with "${prefixes.multibase}"`
   );
-  // z is the bs58 multibase prefix
-  if(prefixes.multibase === 'z') {
-    shouldBeBs58(value.slice(1)).should.equal(
-      true,
-      `Expected "${propertyName}" to be bs58 encoded.`);
-  }
+  checkEncoding({value, propertyName});
   const bytes = await decoder(value);
   if(typeof expectedLength === 'number') {
     bytes.length.should.equal(
@@ -99,5 +115,4 @@ export const shouldBeProofValue = async proofValue => {
     value: proofValue,
     propertyName: 'proofValue'
   });
-
 };
