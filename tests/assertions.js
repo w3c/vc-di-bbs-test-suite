@@ -3,9 +3,8 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-
+import {getBs58Bytes, getBs64Bytes} from './helpers.js';
 import chai from 'chai';
-import {getBs58Bytes} from './helpers.js';
 
 const should = chai.should();
 
@@ -76,18 +75,29 @@ export const shouldBeMultibaseEncoded = async ({
       `Expected "${propertyName}" to be bs58 encoded.`);
   }
   const bytes = await decoder(value);
-  bytes.length.should.equal(
-    expectedLength,
-    `Expected "${propertyName}" length to be ${expectedLength}`
-  );
+  if(typeof expectedLength === 'number') {
+    bytes.length.should.equal(
+      expectedLength,
+      `Expected "${propertyName}" length to be ${expectedLength}`
+    );
+  }
   // compare the first two bytes to the expected multicodex prefix
-  bytes.subarray(0, 2).should.eql(
+  bytes.subarray(0, prefixes.multicodec.length).should.eql(
     prefixes.multicodec,
     `Expected "${propertyName}" to have multicodec prefix ` +
     `"0x${prefixes.multicodec.toString(16)}"`);
 };
 
-export const shouldBeProofValue = proofValue => {
+export const shouldBeProofValue = async proofValue => {
   should.exist(proofValue, 'Expected proofValue to exist.');
-  proofValue.should.be.a('string', 'Expected proofValue to be a string.');
+  await shouldBeMultibaseEncoded({
+    prefixes: {
+      multicodec: new Uint8Array([0xd9, 0x5d, 0x02]),
+      multibase: 'u'
+    },
+    decoder: getBs64Bytes,
+    value: proofValue,
+    propertyName: 'proofValue'
+  });
+
 };

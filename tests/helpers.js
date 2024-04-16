@@ -4,12 +4,14 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import * as bs58 from 'base58-universal';
+import * as bs64 from 'base64url-universal';
 import {createRequire} from 'node:module';
 import {klona} from 'klona';
 import {v4 as uuidv4} from 'uuid';
 
 // remove first element and decode
 export const getBs58Bytes = async s => bs58.decode(s.slice(1));
+export const getBs64Bytes = async s => bs64.decode(s.slice(1));
 export const require = createRequire(import.meta.url);
 
 // Javascript's default ISO timestamp contains milliseconds.

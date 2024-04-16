@@ -78,7 +78,7 @@ export function createSuite({
         it('The value of the proofValue property of the proof MUST be a BBS ' +
           'signature or BBS proof produced according to ' +
           '[CFRG-BBS-SIGNATURE] that is serialized and encoded according to ' +
-          'procedures in section 3. Algorithms.', function() {
+          'procedures in section 3. Algorithms.', async function() {
           const bbsProofs = proofs.filter(
             proof => proof.cryptosuite === 'bbs-2023');
           bbsProofs.length.should.be.gte(
@@ -86,7 +86,7 @@ export function createSuite({
             'Expected at least one "bbs-2023" proof'
           );
           for(const proof of bbsProofs) {
-            shouldBeProofValue(proof.proofValue);
+            await shouldBeProofValue(proof.proofValue);
           }
         });
         it('The "proof" MUST verify when using a conformant verifier.',
