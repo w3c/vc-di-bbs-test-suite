@@ -39,6 +39,7 @@ export function createSuite({
           v => v.tags.has(tag));
         let issuedVc;
         let proofs;
+        let bbsProofs;
         const verificationMethodDocuments = [];
         beforeEach(function() {
           this.currentTest.cell = {
@@ -54,6 +55,8 @@ export function createSuite({
           });
           proofs = Array.isArray(issuedVc?.proof) ? issuedVc.proof :
             [issuedVc?.proof];
+          bbsProofs = proofs.filter(
+            proof => proof.cryptosuite === 'bbs-2023');
           const verificationMethods = proofs.map(
             proof => proof.verificationMethod);
           for(const verificationMethod of verificationMethods) {
@@ -70,6 +73,20 @@ export function createSuite({
             '"cryptosuite" property "bbs-2023".'
           );
         });
+        it('The type property of the proof MUST be DataIntegrityProof.',
+          function() {
+            bbsProofs.length.should.be.gte(
+              1,
+              'Expected at least one "bbs-2023" proof'
+            );
+            for(const proof of bbsProofs) {
+              should.exist(proof.type, 'Expected "proof.type" to exist.');
+              proof.type.should.equal(
+                'DataIntegrityProof',
+                'Expected "proof.type" to equal "DataIntegrityProof.'
+              );
+            }
+          });
         /*
         * Checked on 04-15-2024.
         * {@link https://w3c.github.io/vc-di-bbs/#dataintegrityproof:~:text=The%20value%20of%20the%20proofValue%20property%20of%20the%20proof%20MUST%20be%20a%20BBS%20signature%20or%20BBS%20proof%20produced%20according%20to%20%5BCFRG%2DBBS%2DSIGNATURE%5D%20that%20is%20serialized%20and%20encoded%20according%20to%20procedures%20in%20section%203.%20Algorithms.}
@@ -79,8 +96,6 @@ export function createSuite({
           'signature or BBS proof produced according to ' +
           '[CFRG-BBS-SIGNATURE] that is serialized and encoded according to ' +
           'procedures in section 3. Algorithms.', async function() {
-          const bbsProofs = proofs.filter(
-            proof => proof.cryptosuite === 'bbs-2023');
           bbsProofs.length.should.be.gte(
             1,
             'Expected at least one "bbs-2023" proof'
