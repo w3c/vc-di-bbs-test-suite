@@ -33,9 +33,9 @@ export async function issueCredentials({
   const keys = await getMultikeys({keyTypes});
   for(const [keyType, {signer, issuer}] of keys) {
     const versionedVcs = new Map();
-    for(const [vcVersion, {document, mandatoryPointers}] of credentials) {
+    for(const [vcVersion, {credential, mandatoryPointers}] of credentials) {
       const _vc = await issueCredential({
-        credential: document,
+        credential,
         documentLoader,
         issuer,
         signer,
