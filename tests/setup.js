@@ -71,7 +71,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     subjectNestedObjects,
     vector => {
       // delete the vc id
-      delete vector.document.id;
+      delete vector.credential.id;
       // no idea why, but we reduce the pointers to?
       vector.selectivePointers = vector.selectivePointers.slice(1, 3);
       return vector;
