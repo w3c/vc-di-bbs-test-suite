@@ -54,13 +54,12 @@ const _createVectorConfig = suite => {
 };
 
 const _createSuiteConfig = suite => {
-  // clone to prevent mutations of the require cache
-  const suiteConfig = klona(_runner.suites[suite]);
+  const suiteConfig = _runner.suites[suite];
   if(!suiteConfig) {
     throw new Error(`Could not find config for suite ${suite}`);
   }
   // return a deep copy to prevent test data mutation
-  return suiteConfig;
+  return klona(suiteConfig);
 };
 
 export const getSuiteConfig = suite => {

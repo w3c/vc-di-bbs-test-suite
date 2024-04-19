@@ -1,7 +1,7 @@
 {
   "suites": {
     "bbs-2023": {
-      "keyTypes": [{"subgroup":"Bls12381G2", "cipherSuite": "BBS-BLS12-381-SHA-256"}],
+      "keyTypes": ["P-381"],
       "vcTypes": ["1.1", "2.0"],
       "credentials": {
         "create": {

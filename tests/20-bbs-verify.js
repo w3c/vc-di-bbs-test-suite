@@ -8,6 +8,7 @@ import {createDisclosedVc, createInitialVc} from './helpers.js';
 import {verificationFail, verificationSuccess} from './assertions.js';
 import {endpoints} from 'vc-test-suite-implementations';
 import {getSuiteConfig} from './test-config.js';
+import {verifySetup} from './setup.js';
 import {klona} from 'klona';
 
 const tag = 'bbs-2023';
@@ -15,7 +16,8 @@ const {
   credentials,
   tags,
   issuerName,
-  vcHolder: holderSettings
+  vcHolder: holderSettings,
+  vectors
 } = getSuiteConfig(tag);
 // only use implementations with `bbs-2023` verifiers.
 const {match} = endpoints.filterByTag({
@@ -28,6 +30,12 @@ describe('bbs-2023 (verify)', function() {
     let issuers;
     let vcHolder;
     before(async function() {
+      const testVectors = await verifySetup({
+        credentials,
+        keyTypes: vectors.keyTypes,
+        suite: tag
+      });
+console.log(testVectors);
       const {match: matchingIssuers} = endpoints.filterByTag({
         tags: [...tags],
         property: 'issuers'
@@ -36,7 +44,6 @@ describe('bbs-2023 (verify)', function() {
         tags: [...holderSettings.tags],
         property: 'vcHolders'
       });
-      // Use DB issuer to issue a verifiable credential for the verifier tests
       issuers = matchingIssuers.get(issuerName)?.endpoints;
       const vcHolders = matchingVcHolders.get(
         holderSettings.holderName).endpoints;
