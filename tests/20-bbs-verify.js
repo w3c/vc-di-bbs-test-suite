@@ -8,8 +8,8 @@ import {createDisclosedVc, createInitialVc} from './helpers.js';
 import {verificationFail, verificationSuccess} from './assertions.js';
 import {endpoints} from 'vc-test-suite-implementations';
 import {getSuiteConfig} from './test-config.js';
-import {verifySetup} from './setup.js';
 import {klona} from 'klona';
+import {verifySetup} from './setup.js';
 
 const tag = 'bbs-2023';
 const {
