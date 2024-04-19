@@ -91,9 +91,9 @@ export async function deriveCredentials({
   for(const [keyType, {signer, issuer}] of keys) {
     const versionedVcs = new Map();
     for(const [vcVersion, vector] of vectors) {
-      const {document, mandatoryPointers, selectivePointers} = vector;
+      const {credential, mandatoryPointers, selectivePointers} = vector;
       const verifiableCredential = await issueCredential({
-        credential: document,
+        credential,
         issuer,
         signer,
         suite,
