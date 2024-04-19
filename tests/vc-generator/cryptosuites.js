@@ -2,7 +2,7 @@
  * Copyright 2023 Digital Bazaar, Inc.
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import * as bbs2023Cryptosuite from '../lib/index.js';
+import * as bbs2023Cryptosuite from '@digitalbazaar/bbs-2023-cryptosuite';
 
 export const getSuite = ({suite, mandatoryPointers, selectivePointers}) => {
   switch(suite) {

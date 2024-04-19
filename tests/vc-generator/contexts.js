@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import credentialsCtx from 'credentials-context';
-import credentialsV2Ctx from 'credentials-v2-context';
+import * as credentialsV2Ctx from '@digitalbazaar/credentials-v2-context';
 import dataIntegrityCtx from '@digitalbazaar/data-integrity-context';
 import didCtx from '@digitalcredentials/did-context';
 import {klona} from 'klona';
