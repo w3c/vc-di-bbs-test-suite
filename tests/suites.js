@@ -22,6 +22,12 @@ export function verifySuite({
     this.implemented = [...match.keys()];
     for(const [name, {endpoints}] of match) {
       const [verifier] = endpoints;
+      const {
+        supports = {vc: ['2.0']}
+      } = verifier?.settings;
+      if(!supports.vc.includes(vcVersion)) {
+        continue;
+      }
       describe(name, function() {
         beforeEach(function() {
           this.currentTest.cell = {
