@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import {createInitialVc, getBs58Bytes} from './helpers.js';
+import {createInitialVc, getBs58Bytes, supportsVc} from './helpers.js';
 import {
   shouldBeMultibaseEncoded,
   verificationFail,
@@ -28,8 +28,12 @@ export function createSuite({
     this.rowLabel = 'Test Name';
     this.columnLabel = 'Implementation';
     for(const [name, {endpoints, implementation}] of match) {
+      const [issuer] = endpoints;
+      if(!supportsVc({vcVersion, endpoint: issuer})) {
+        continue;
+      }
       describe(name, function() {
-        const [issuer] = endpoints;
+
         const verifier = implementation.verifiers.find(
           v => v.tags.has(tag));
         let issuedVc;
@@ -171,11 +175,7 @@ export function verifySuite({
     this.implemented = [...match.keys()];
     for(const [name, {endpoints}] of match) {
       const [verifier] = endpoints;
-      const {
-        // assume issuer only supports VC 2.0 for bbs
-        supports = {vc: ['2.0']}
-      } = verifier?.settings;
-      if(!supports.vc.includes(vcVersion)) {
+      if(!supportsVc({vcVersion, endpoint: verifier})) {
         continue;
       }
       describe(name, function() {
