@@ -39,7 +39,8 @@ const {
       const issuedVc = await createInitialVc({
         issuer,
         vc: credentials.interop['2.0'].credential,
-        mandatoryPointers: credentials.interop['2.0'].mandatoryPointers
+        mandatoryPointers: credentials.interop['2.0'].mandatoryPointers,
+        addIssuanceDate: false
       });
       const {match: matchingVcHolders} = endpoints.filterByTag({
         tags: [...holderSettings.tags],
