@@ -23,6 +23,7 @@ export function verifySuite({
     for(const [name, {endpoints}] of match) {
       const [verifier] = endpoints;
       const {
+        // assume issuer only supports VC 2.0 for bbs
         supports = {vc: ['2.0']}
       } = verifier?.settings;
       if(!supports.vc.includes(vcVersion)) {
