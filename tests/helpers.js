@@ -19,6 +19,14 @@ export const ISOTimeStamp = ({date = new Date()} = {}) => {
   return date.toISOString().replace(/\.\d+Z$/, 'Z');
 };
 
+export const supportsVc = ({vcVersion, endpoint}) => {
+  const {
+    // assume support for VC 2.0 for bbs
+    supports = {vc: ['2.0']}
+  } = endpoint?.settings;
+  return supports.vc.includes(vcVersion);
+};
+
 export const createInitialVc = async ({
   issuer,
   vc,
