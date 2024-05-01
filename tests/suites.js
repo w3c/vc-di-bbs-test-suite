@@ -72,7 +72,7 @@ export function createSuite({
         });
         /*
         * Checked on 04-15-2024.
-        * {@link https://w3c.github.io/vc-di-bbs/#dataintegrityproof}
+        * @link https://w3c.github.io/vc-di-bbs/#dataintegrityproof:~:text=The%20value%20of%20the%20proofValue%20property%20of%20the%20proof%20MUST%20be%20a%20BBS%20signature%20or%20BBS%20proof%20produced%20according%20to%20%5BCFRG%2DBBS%2DSIGNATURE%5D%20that%20is%20serialized%20and%20encoded%20according%20to%20procedures%20in%20section%203.%20Algorithms.
         * Link to relevant section above.
         */
         it('The value of the proofValue property of the proof MUST be a BBS ' +
