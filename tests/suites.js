@@ -74,9 +74,8 @@ export function createSuite({
           );
         });
         /*
-         * Checked on April 17 2024.
+         * Checked on 04-17-2024.
          * {@link https://w3c.github.io/vc-di-bbs/#dataintegrityproof}
-         * Link to relevant section above.
          */
         it('The type property of the proof MUST be DataIntegrityProof.',
           function() {
