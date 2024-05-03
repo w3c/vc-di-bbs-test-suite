@@ -73,6 +73,11 @@ export function createSuite({
             '"cryptosuite" property "bbs-2023".'
           );
         });
+        /*
+         * Checked on April 17 2024.
+         * {@link https://w3c.github.io/vc-di-bbs/#dataintegrityproof}
+         * Link to relevant section above.
+         */
         it('The type property of the proof MUST be DataIntegrityProof.',
           function() {
             bbsProofs.length.should.be.gte(
