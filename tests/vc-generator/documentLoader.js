@@ -12,4 +12,5 @@ for(const [key, value] of contextMap) {
 }
 
 const documentLoader = jdl.build();
+
 export {documentLoader};

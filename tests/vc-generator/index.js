@@ -129,3 +129,15 @@ export async function deriveCredential({
     })
   });
 }
+
+export async function verifyCredential({
+  documentLoader = defaultLoader,
+  credential,
+  suite
+}) {
+  return vc.verifyCredential({
+    credential,
+    documentLoader,
+    suite
+  });
+}
