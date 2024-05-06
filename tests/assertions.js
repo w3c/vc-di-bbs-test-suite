@@ -4,11 +4,13 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import {getBs58Bytes, getBs64Bytes} from './helpers.js';
+import {deriveCredential, verifyCredential} from './vc-generator/index.js';
 import {
   shouldBeBase64NoPadUrl,
   shouldBeBs58,
 } from 'data-integrity-test-suite-assertion';
 import chai from 'chai';
+import {getMultikeys} from './vc-generator/key-gen.js';
 
 const should = chai.should();
 
@@ -110,4 +112,26 @@ export const shouldBeProofValue = async proofValue => {
     value: proofValue,
     propertyName: 'proofValue'
   });
+};
+
+export const shouldVerifyDerivedProof = async ({
+  verifiableCredential,
+  selectivePointers = ['/credentialSubject/id', '/issuer'],
+  keyTypes = ['P-381'],
+  suite = 'bbs-2023'
+}) => {
+  const keys = await getMultikeys({keyTypes});
+  for(const [keyType, {signer}] of keys) {
+    const derivedVc = await deriveCredential({
+      verifiableCredential,
+      selectivePointers,
+      suite,
+      signer
+    });
+    const verificationResult = await verifyCredential({
+      credential: derivedVc,
+      suite
+    });
+    console.log(JSON.stringify({verificationResult}, null, 2));
+  }
 };
