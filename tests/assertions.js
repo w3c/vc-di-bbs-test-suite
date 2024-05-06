@@ -3,8 +3,8 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import {getBs58Bytes, getBs64Bytes} from './helpers.js';
 import {deriveCredential, verifyCredential} from './vc-generator/index.js';
+import {getBs58Bytes, getBs64Bytes} from './helpers.js';
 import {
   shouldBeBase64NoPadUrl,
   shouldBeBs58,
@@ -128,10 +128,28 @@ export const shouldVerifyDerivedProof = async ({
       suite,
       signer
     });
+    should.exist(derivedVc, `Expected VC derived with keyType ${keyType} ` +
+      `to exist.`);
+    derivedVc.should.be.an('object', `Expected VC derived with keyType ` +
+      `${keyType} to be an object.`);
     const verificationResult = await verifyCredential({
       credential: derivedVc,
       suite
     });
-    console.log(JSON.stringify({verificationResult}, null, 2));
+    should.exist(verificationResult, 'Expected verificationResult to exist.');
+    verificationResult.should.be.an('object', 'Expected verificationResult ' +
+      'to be an object.');
+    should.not.exist(
+      verificationResult.error,
+      'Expected no verification error.'
+    );
+    should.exist(
+      verificationResult.verified,
+      'Expected "verificationResult.verified" to exist.'
+    );
+    verificationResult.verified.should.equal(
+      true,
+      'Expected "verificationResult.verified" to equal true.'
+    );
   }
 };
