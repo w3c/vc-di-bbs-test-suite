@@ -116,7 +116,7 @@ export const shouldBeProofValue = async proofValue => {
 
 export const shouldVerifyDerivedProof = async ({
   verifiableCredential,
-  selectivePointers = ['/credentialSubject/id', '/issuer'],
+  selectivePointers = ['/credentialSubject/id'],
   keyTypes = ['P-381'],
   suite = 'bbs-2023'
 }) => {

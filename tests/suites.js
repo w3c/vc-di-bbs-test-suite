@@ -48,7 +48,7 @@ export function createSuite({
           issuedVc = await createInitialVc({
             issuer,
             vc: credentials[vcVersion].credential,
-            mandatoryPointer: credentials[vcVersion].mandatoryPointers,
+            mandatoryPointers: credentials[vcVersion].mandatoryPointers,
             addIssuanceDate: (vcVersion === '1.1')
           });
           proofs = Array.isArray(issuedVc?.proof) ? issuedVc.proof :
