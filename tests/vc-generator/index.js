@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import * as vc from '@digitalbazaar/vc';
-import {DataIntegrityProof} from '@digitalbazaar/data-integrity';
 import {documentLoader as defaultLoader} from './documentLoader.js';
 import {getMultikeys} from './key-gen.js';
 import {getSuite} from './cryptosuites.js';
@@ -59,11 +58,10 @@ export async function issueCredential({
 }) {
   const _credential = klona(credential);
   _credential.issuer = issuer;
-  const cryptosuite = getSuite({suite, mandatoryPointers});
   return vc.issue({
     credential: _credential,
     documentLoader,
-    suite: new DataIntegrityProof({signer, cryptosuite})
+    suite: getSuite({signer, suite, mandatoryPointers})
   });
 }
 
@@ -123,10 +121,7 @@ export async function deriveCredential({
   return vc.derive({
     verifiableCredential,
     documentLoader,
-    suite: new DataIntegrityProof({
-      signer,
-      cryptosuite: getSuite({suite, selectivePointers})
-    })
+    suite: getSuite({signer, suite, selectivePointers})
   });
 }
 
@@ -138,6 +133,6 @@ export async function verifyCredential({
   return vc.verifyCredential({
     credential,
     documentLoader,
-    suite
+    suite: getSuite({suite, verify: true})
   });
 }
