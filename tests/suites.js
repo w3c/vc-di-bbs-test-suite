@@ -7,6 +7,7 @@ import {createInitialVc, getBs58Bytes, supportsVc} from './helpers.js';
 import {
   shouldBeMultibaseEncoded,
   shouldBeProofValue,
+  shouldVerifyDerivedProof,
   verificationFail,
   verificationSuccess
 } from './assertions.js';
@@ -20,7 +21,6 @@ export function createSuite({
   match = new Map(),
   vcVersion = '2.0',
   credentials = {},
-  tag
 }) {
   describe(`bbs-2023 (issuers) VC Version ${vcVersion}`, function() {
     this.matrix = true;
@@ -28,15 +28,13 @@ export function createSuite({
     this.implemented = [...match.keys()];
     this.rowLabel = 'Test Name';
     this.columnLabel = 'Implementation';
-    for(const [name, {endpoints, implementation}] of match) {
+    for(const [name, {endpoints}] of match) {
       const [issuer] = endpoints;
       if(!supportsVc({vcVersion, endpoint: issuer})) {
         continue;
       }
       describe(name, function() {
 
-        const verifier = implementation.verifiers.find(
-          v => v.tags.has(tag));
         let issuedVc;
         let proofs;
         let bbsProofs;
@@ -108,11 +106,9 @@ export function createSuite({
             await shouldBeProofValue(proof.proofValue);
           }
         });
-        it('The "proof" MUST verify when using a conformant verifier.',
+        it('The derived "proof" MUST verify when using a conformant verifier.',
           async function() {
-            should.exist(verifier, 'Expected implementation to have a VC ' +
-            'HTTP API compatible verifier.');
-            await verificationSuccess({credential: issuedVc, verifier});
+            await shouldVerifyDerivedProof({verifiableCredential: issuedVc});
           });
         it.skip('The "proof.proofPurpose" field MUST match the verification ' +
           'relationship expressed by the verification method controller.',

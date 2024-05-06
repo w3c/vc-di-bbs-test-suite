@@ -21,7 +21,6 @@ describe('bbs-2023 (create)', async function() {
         match,
         vcVersion,
         keyType,
-        tag,
         credentials: credentials.create
       });
     }
