@@ -14,7 +14,11 @@ import {getMultikeys} from './vc-generator/key-gen.js';
 
 const should = chai.should();
 
-export const verificationFail = async ({credential, verifier}) => {
+export const verificationFail = async ({
+  credential,
+  verifier,
+  reason = 'Expected no result from verifier.'
+}) => {
   const body = {
     verifiableCredential: credential,
     options: {
@@ -22,7 +26,7 @@ export const verificationFail = async ({credential, verifier}) => {
     }
   };
   const {result, error} = await verifier.post({json: body});
-  should.not.exist(result, 'Expected no result from verifier.');
+  should.not.exist(result, reason);
   should.exist(error, 'Expected verifier to error.');
   should.exist(error.status, 'Expected verifier to return an HTTP Status code');
   error.status.should.equal(
