@@ -7,7 +7,7 @@
 import {endpoints} from 'vc-test-suite-implementations';
 import {getSuiteConfig} from './test-config.js';
 import {verifySetup} from './setup.js';
-import {verifySuite} from './suites.js';
+import {verifySuite} from './suites/verify.js';
 
 const tag = 'bbs-2023';
 const {
