@@ -103,6 +103,41 @@ export function verifySuite({
               credential: signedCredentialCopy, verifier
             });
           });
+        it('The transformation options MUST contain a type identifier for ' +
+        'the cryptographic suite (type), a cryptosuite identifier ' +
+        '(cryptosuite), and a verification method (verificationMethod).',
+        async function() {
+          const baseReason = 'Should not verify a VC with no ';
+          const vectors = new Map([
+            ['type identifier', ['type']],
+            ['cryptosuite identifier', ['cryptosuite']],
+            ['verificationMethod', ['verificationMethod']],
+            ['type & no cryptosuite identifier', ['type', 'cryptosuite']],
+            [
+              'type identifier & no verificationMethod',
+              ['type', 'verificationMethod']
+            ],
+            [
+              'cryptosuite identifier & no verificationMethod',
+              ['cryptosuite', 'verificationMethod']
+            ],
+            [
+              'type & no cryptosuite identifier & no verificationMethod',
+              ['type', 'cryptosuite', 'verificationMethod']
+            ]
+          ]);
+          for(const [testReason, terms] of vectors) {
+            const credential = klona(getTestVector(disclosed?.base));
+            for(const prop of terms) {
+              credential.proof[prop] = '';
+            }
+            await verificationFail({
+              credential,
+              verifier,
+              reason: `${baseReason}${testReason}`
+            });
+          }
+        });
       });
     }
   });
