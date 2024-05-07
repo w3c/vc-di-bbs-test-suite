@@ -70,7 +70,7 @@ export function createSuite({
         });
         /*
          * Checked on 2024-04-17.
-         * {@link https://w3c.github.io/vc-di-bbs/#dataintegrityproof}
+         * {@link https://w3c.github.io/vc-di-bbs/#create-base-proof-bbs-2023:~:text=The%20type%20property%20of%20the%20proof%20MUST%20be%20DataIntegrityProof.}
          */
         it('The type property of the proof MUST be DataIntegrityProof.',
           function() {
