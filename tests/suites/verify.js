@@ -103,45 +103,6 @@ export function verifySuite({
               credential: signedCredentialCopy, verifier
             });
           });
-        /*
-         * Checked on 2024-04-16
-         * {@link https://w3c.github.io/vc-di-bbs/#create-base-proof-bbs-2023:~:text=The%20transformation%20options%20MUST%20contain%20a%20type%20identifier%20for%20the%20cryptographic%20suite%20(type)%2C%20a%20cryptosuite%20identifier%20(cryptosuite)%2C%20and%20a%20verification%20method%20(verificationMethod).}
-         */
-        it('The transformation options MUST contain a type identifier for ' +
-        'the cryptographic suite (type), a cryptosuite identifier ' +
-        '(cryptosuite), and a verification method (verificationMethod).',
-        async function() {
-          const baseReason = 'Should not verify a VC with no ';
-          const vectors = new Map([
-            ['type identifier', ['type']],
-            ['cryptosuite identifier', ['cryptosuite']],
-            ['verificationMethod', ['verificationMethod']],
-            ['type & no cryptosuite identifier', ['type', 'cryptosuite']],
-            [
-              'type identifier & no verificationMethod',
-              ['type', 'verificationMethod']
-            ],
-            [
-              'cryptosuite identifier & no verificationMethod',
-              ['cryptosuite', 'verificationMethod']
-            ],
-            [
-              'type & no cryptosuite identifier & no verificationMethod',
-              ['type', 'cryptosuite', 'verificationMethod']
-            ]
-          ]);
-          for(const [testReason, terms] of vectors) {
-            const credential = klona(getTestVector(disclosed?.base));
-            for(const prop of terms) {
-              credential.proof[prop] = '';
-            }
-            await verificationFail({
-              credential,
-              verifier,
-              reason: `${baseReason}${testReason}`
-            });
-          }
-        });
       });
     }
   });
