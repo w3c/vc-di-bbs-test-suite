@@ -182,6 +182,18 @@ export function createSuite({
             expectedLength: 98
           });
         });
+        /*
+         * Checked on 2024-04-16
+         * {@link https://w3c.github.io/vc-di-bbs/#create-base-proof-bbs-2023:~:text=The%20transformation%20options%20MUST%20contain%20a%20type%20identifier%20for%20the%20cryptographic%20suite%20(type)%2C%20a%20cryptosuite%20identifier%20(cryptosuite)%2C%20and%20a%20verification%20method%20(verificationMethod).}
+         *
+         * NOTE: this suite can not control the transformation options so it
+         * just checks the proof was created correctly.
+         */
+        it('The transformation options MUST contain a type identifier for ' +
+        'the cryptographic suite (type), a cryptosuite identifier ' +
+        '(cryptosuite), and a verification method (verificationMethod).',
+        async function() {
+        });
       });
     }
   });
