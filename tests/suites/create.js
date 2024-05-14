@@ -5,6 +5,7 @@
  */
 import {createInitialVc, getBs58Bytes, supportsVc} from '../helpers.js';
 import {
+  checkEncoding,
   shouldBeMultibaseEncoded,
   shouldBeProofValue,
   shouldVerifyDerivedProof
@@ -193,6 +194,38 @@ export function createSuite({
         'the cryptographic suite (type), a cryptosuite identifier ' +
         '(cryptosuite), and a verification method (verificationMethod).',
         async function() {
+          bbsProofs.length.should.be.gte(
+            1,
+            'Expected at least one "bbs-2023" proof'
+          );
+          for(const proof of bbsProofs) {
+            should.exist(proof.type, 'Expected "proof.type" to exist.');
+            proof.type.should.equal(
+              'DataIntegrityProof',
+              'Expected "proof.type" to equal "DataIntegrityProof.'
+            );
+            should.exist(
+              proof.cryptosuite,
+              'Expected "proof.cryptosuite" to exist.'
+            );
+            proof.cryptosuite.should.equal(
+              'bbs-2023',
+              'Expected "proof.cryptosuite" to equal "bbs-2023"'
+            );
+            should.exist(
+              proof.verificationMethod,
+              'Expected "proof.verificationMethod" to exist.'
+            );
+            proof.verificationMethod.should.be.a(
+              'string',
+              'Expected "proof.verificationMethod" to be a string.'
+            );
+            const [publicKey] = proof.verificationMethod.split('#');
+            checkEncoding({
+              value: publicKey.substr(8),
+              propertyName: 'proof.verificationMethod'
+            });
+          }
         });
       });
     }
