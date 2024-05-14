@@ -3,13 +3,13 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import {createInitialVc, getBs58Bytes, supportsVc} from '../helpers.js';
 import {
   checkEncoding,
   shouldBeMultibaseEncoded,
   shouldBeProofValue,
   shouldVerifyDerivedProof
 } from '../assertions.js';
+import {createInitialVc, getBs58Bytes, supportsVc} from '../helpers.js';
 import chai from 'chai';
 import {documentLoader} from '../documentLoader.js';
 
