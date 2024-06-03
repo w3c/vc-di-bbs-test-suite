@@ -5,6 +5,7 @@
 import * as Bls12381Multikey from '@digitalbazaar/bls12-381-multikey';
 import * as didKey from '@digitalbazaar/did-method-key';
 import {contextMap} from './contexts.js';
+/*
 import {JsonLdDocumentLoader} from 'jsonld-document-loader';
 
 const jdl = new JsonLdDocumentLoader();
@@ -13,8 +14,16 @@ const jdl = new JsonLdDocumentLoader();
 for(const [key, value] of contextMap) {
   jdl.addStatic(key, value);
 }
+*/
 
-const _documentLoader = jdl.build();
+const _documentLoader = url => {
+  const document = contextMap.get(url);
+  return {
+    contextUrl: null,
+    documentUrl: url,
+    document
+  };
+};
 
 const driver = didKey.driver();
 
@@ -29,7 +38,7 @@ for(const {header, fromMultibase} of keyTypes) {
   });
 }
 
-const documentLoader = async url => {
+export const documentLoader = async url => {
   if(url.startsWith('did:')) {
     const document = await driver.get({did: url});
     return {
@@ -40,5 +49,3 @@ const documentLoader = async url => {
   }
   return _documentLoader(url);
 };
-
-export {documentLoader};
