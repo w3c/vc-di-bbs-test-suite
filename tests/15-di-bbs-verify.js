@@ -26,6 +26,7 @@ for(const vcVersion of vectors.vcTypes) {
     implemented: match,
     testDescription: `Data Integrity (bbs-2023 verifiers) VC ${vcVersion}`,
     optionalTests: {
+      // do not run proof.created tests on bbs
       created: false,
       authentication: true
     },
