@@ -25,6 +25,10 @@ for(const vcVersion of vectors.vcTypes) {
   checkDataIntegrityProofVerifyErrors({
     implemented: match,
     testDescription: `Data Integrity (bbs-2023 verifiers) VC ${vcVersion}`,
+    optionalTests: {
+      created: false,
+      authentication: true
+    },
     testDataOptions: {
       suiteName: 'bbs-2023',
       key,
