@@ -9,23 +9,30 @@ import {
 } from 'data-integrity-test-suite-assertion';
 import {endpoints} from 'vc-test-suite-implementations';
 import {getMultiKey} from './vc-generator/key-gen.js';
+import {getSuiteConfig} from './test-config.js';
 
 const tag = 'bbs-2023';
+const {tags, credentials, vectors} = getSuiteConfig(tag);
 // only use implementations with `bbs-2023` verifiers.
 const {match} = endpoints.filterByTag({
-  tags: [tag],
+  tags: [...tags],
   property: 'verifiers'
 });
-const testDataOptions = {
-  suiteName: 'bbs-2023',
-  cryptosuite: bbs2023Cryptosuite,
-  mandatoryPointers: ['/issuer'],
-  selectivePointers: ['/credentialSubject'],
-  key: await getMultiKey({keyType: 'P-381'})
-};
+const key = await getMultiKey({keyType: 'P-381'});
+const {subjectNestedObjects} = credentials.verify;
 
-checkDataIntegrityProofVerifyErrors({
-  implemented: match,
-  testDescription: 'Data Integrity (bbs-2023 verifiers)',
-  testDataOptions
-});
+for(const vcVersion of vectors.vcTypes) {
+  checkDataIntegrityProofVerifyErrors({
+    implemented: match,
+    testDescription: `Data Integrity (bbs-2023 verifiers) VC ${vcVersion}`,
+    testDataOptions: {
+      suiteName: 'bbs-2023',
+      key,
+      cryptosuite: bbs2023Cryptosuite,
+      mandatoryPointers: subjectNestedObjects[vcVersion].mandatoryPointers,
+      selectivePointers: subjectNestedObjects[vcVersion].selectivePointers,
+      testVector: subjectNestedObjects[vcVersion].credential
+    }
+  });
+}
+
