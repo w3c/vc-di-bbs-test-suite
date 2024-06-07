@@ -29,6 +29,25 @@ export const supportsVc = ({vcVersion, endpoint}) => {
   return supports.vc.includes(vcVersion);
 };
 
+/**
+ * Filters Verifiers for the Data Integrity Verifier tests.
+ * Needs to have tags and vcVersion binded to it.
+ *
+ * @param {object} options - Options to use.
+ * @param {object} options.implementation - An impelementation.
+ *
+ * @returns {Array<object>} Filtered endpoints.
+ */
+export function filterVerifiers({implementation}) {
+  const endpoints = implementation.verifiers;
+  return endpoints.filter(endpoint => {
+    if(this.tags.every(tag => endpoint.tags.has(tag))) {
+      return supportsVc({vcVersion: this.vcVersion, endpoint});
+    }
+    return false;
+  });
+}
+
 export const createInitialVc = async ({
   issuer,
   vc,
