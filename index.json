@@ -22,16 +22,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:4d9a46b7-fcd6-4b1d-8ee6-4163470b1ffc",
+              "_testId": "urn:uuid:46c9abab-d477-4c77-a621-074ff669cc13",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "\"proof\" field MUST exist and MUST be either a single object or an unordered set of objects."
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -48,9 +48,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:b441b865-e157-4134-a22e-8f49b836e433",
+              "_testId": "urn:uuid:c31f1460-85cb-434d-ae0f-6336bee84811",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -74,9 +74,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:31000794-3ae6-491b-96a8-17a06a90274f",
+              "_testId": "urn:uuid:66f521cc-70eb-4884-953b-e532495368ce",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -100,16 +100,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:1cc44a24-0dcb-4e2d-bbf4-5e22d39cd512",
+              "_testId": "urn:uuid:60fe76b7-3966-47c3-b0cb-58bf0f3de92c",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "\"proof.type\" field MUST be \"DataIntegrityProof\" and the associated document MUST include expected contexts."
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -126,9 +126,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:32a1cb58-a673-43ef-887e-db29413f4a70",
+              "_testId": "urn:uuid:288c1265-cfe2-46d1-9480-7560d4a08a67",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -152,9 +152,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:d4f20bd6-db8a-43fb-bad6-1309318d0570",
+              "_testId": "urn:uuid:663d5881-c6b6-4385-8f95-27597cf0209d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -178,9 +178,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:4eda3b4d-613e-4409-8939-ea345ddb879e",
+              "_testId": "urn:uuid:2d8ecf7e-3814-4ddf-a6cb-4678d88ec7f9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -204,9 +204,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:a45260c4-d264-435c-a9b4-3c6402562f2c",
+              "_testId": "urn:uuid:7786382d-074a-4f7c-ad49-70427091da39",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -230,9 +230,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:dcdcc8a6-418f-494e-9a90-f1b7c2f0f766",
+              "_testId": "urn:uuid:e51c3038-d271-4245-b1ee-304d57e3c83a",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -256,16 +256,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:708fe512-e355-4fca-974b-f162d172fade",
+              "_testId": "urn:uuid:edbffe25-673b-40eb-a840-3eb6a5302ec8",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "\"proof.proofValue\" field MUST exist and be a string."
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             },
@@ -282,9 +282,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:3d2a7c90-e0e9-420a-b915-372526f64701",
+              "_testId": "urn:uuid:52488e5c-bde8-4f2a-9ceb-5e8757bfae41",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -308,9 +308,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:6715f8f0-f877-42e0-8dd0-61fd0d2344fa",
+              "_testId": "urn:uuid:587edc47-9299-4d48-85ed-090ae316bb32",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -334,9 +334,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:26a4ed69-5aeb-42a9-af3c-a794aa43e235",
+              "_testId": "urn:uuid:611e955e-10ac-4b29-b8d7-eaaacc46841e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -360,9 +360,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:c3f13d69-8fb2-447c-83f9-873ff8633e7c",
+              "_testId": "urn:uuid:c6ebe4e1-449e-435c-a5f2-4fa64cffb4db",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -386,9 +386,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:01e2e8f1-1229-47e9-8727-93d7d56e82f4",
+              "_testId": "urn:uuid:2c54b243-e13d-4a4d-83f3-b66fdc6174b9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -417,7 +417,7 @@
               "_currentRetry": 0,
               "pending": false,
               "type": "hook",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
               "originalTitle": "\"before all\" hook",
@@ -427,12 +427,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 9019,
+                "_idleStart": 8855,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 524,
+              "duration": 680,
               "_error": null
             }
           ],
@@ -444,9 +444,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "GXuXyKqU69mfK5Q5IbFN9",
+          "parent": "quSA3nA83LxbtNnOiFkBc",
           "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-          "_testId": "urn:uuid:068875a7-ce01-4379-bcea-01e1b1e3b84d"
+          "_testId": "urn:uuid:13bb30f8-b0c9-4b74-a2d4-14a9a1844199"
         }
       ],
       "root": false,
@@ -462,13 +462,13 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "ylwQWta0F_1VbtSfx4LrU",
+      "parent": "ZsCzF9Md-SOFFiypv0h3Q",
       "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
       "matrix": true,
       "report": true,
       "rowLabel": "Test Name",
       "columnLabel": "Issuer",
-      "_testId": "urn:uuid:f0bfce5f-7a9a-4b2a-bd31-2022025085cb",
+      "_testId": "urn:uuid:82da6f77-4407-4f85-b4e7-e8cffbe77b98",
       "columns": [
         "Grotto Networking"
       ],
@@ -489,16 +489,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:4d9a46b7-fcd6-4b1d-8ee6-4163470b1ffc",
+              "_testId": "urn:uuid:46c9abab-d477-4c77-a621-074ff669cc13",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "\"proof\" field MUST exist and MUST be either a single object or an unordered set of objects."
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             }
@@ -520,9 +520,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:b441b865-e157-4134-a22e-8f49b836e433",
+              "_testId": "urn:uuid:c31f1460-85cb-434d-ae0f-6336bee84811",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -551,9 +551,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:31000794-3ae6-491b-96a8-17a06a90274f",
+              "_testId": "urn:uuid:66f521cc-70eb-4884-953b-e532495368ce",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -582,16 +582,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:1cc44a24-0dcb-4e2d-bbf4-5e22d39cd512",
+              "_testId": "urn:uuid:60fe76b7-3966-47c3-b0cb-58bf0f3de92c",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "\"proof.type\" field MUST be \"DataIntegrityProof\" and the associated document MUST include expected contexts."
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             }
@@ -613,9 +613,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:32a1cb58-a673-43ef-887e-db29413f4a70",
+              "_testId": "urn:uuid:288c1265-cfe2-46d1-9480-7560d4a08a67",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -644,9 +644,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:d4f20bd6-db8a-43fb-bad6-1309318d0570",
+              "_testId": "urn:uuid:663d5881-c6b6-4385-8f95-27597cf0209d",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -675,9 +675,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:4eda3b4d-613e-4409-8939-ea345ddb879e",
+              "_testId": "urn:uuid:2d8ecf7e-3814-4ddf-a6cb-4678d88ec7f9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -706,9 +706,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:a45260c4-d264-435c-a9b4-3c6402562f2c",
+              "_testId": "urn:uuid:7786382d-074a-4f7c-ad49-70427091da39",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -737,9 +737,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:dcdcc8a6-418f-494e-9a90-f1b7c2f0f766",
+              "_testId": "urn:uuid:e51c3038-d271-4245-b1ee-304d57e3c83a",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -768,16 +768,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:708fe512-e355-4fca-974b-f162d172fade",
+              "_testId": "urn:uuid:edbffe25-673b-40eb-a840-3eb6a5302ec8",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "\"proof.proofValue\" field MUST exist and be a string."
               },
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast"
             }
@@ -799,9 +799,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:3d2a7c90-e0e9-420a-b915-372526f64701",
+              "_testId": "urn:uuid:52488e5c-bde8-4f2a-9ceb-5e8757bfae41",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -830,9 +830,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:6715f8f0-f877-42e0-8dd0-61fd0d2344fa",
+              "_testId": "urn:uuid:587edc47-9299-4d48-85ed-090ae316bb32",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -861,9 +861,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:26a4ed69-5aeb-42a9-af3c-a794aa43e235",
+              "_testId": "urn:uuid:611e955e-10ac-4b29-b8d7-eaaacc46841e",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -892,9 +892,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:c3f13d69-8fb2-447c-83f9-873ff8633e7c",
+              "_testId": "urn:uuid:c6ebe4e1-449e-435c-a5f2-4fa64cffb4db",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -923,9 +923,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/05-di-bbs-create.js",
-              "parent": "9xna_AFmc3aAaN1mwMw5G",
+              "parent": "n9dAhALJpHKe0qV-peOEk",
               "ctx": null,
-              "_testId": "urn:uuid:01e2e8f1-1229-47e9-8727-93d7d56e82f4",
+              "_testId": "urn:uuid:2c54b243-e13d-4a4d-83f3-b66fdc6174b9",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -957,7 +957,7 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "Fn4vrmhB_jXu2XU9ovMh2",
+      "parent": "MZuKC4KeRNmnnHkeyvgQe",
       "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
       "matrix": true,
       "report": true,
@@ -990,9 +990,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:c6bb1f35-6d9c-41ee-bddb-80ff2dc66cb6",
+              "_testId": "urn:uuid:360f4e3e-ba77-4ac8-830d-f00988a8ce9d",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The field \"cryptosuite\" MUST be \"bbs-2023\"."
@@ -1016,16 +1016,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:7a30fc6c-1326-45d1-b0ef-18ed938578f5",
+              "_testId": "urn:uuid:1d24e3ba-0081-4c5f-b112-76d8b5dbab18",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The type property of the proof MUST be DataIntegrityProof."
               },
               "_events": {},
               "_eventsCount": 1,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             },
@@ -1042,9 +1042,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:c42e55b2-c246-4b1a-921b-3332a02bc595",
+              "_testId": "urn:uuid:1b4e96a4-7a0c-4d8f-acbf-b91ebed02e45",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The value of the proofValue property of the proof MUST be a BBS signature or BBS proof produced according to [CFRG-BBS-SIGNATURE] that is serialized and encoded according to procedures in section 3. Algorithms."
@@ -1055,7 +1055,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 9863,
+                "_idleStart": 9903,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1077,9 +1077,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:60f29532-d71d-4e3f-9ef5-0d2890f3bb42",
+              "_testId": "urn:uuid:2aa0116e-e55a-4d54-b65f-747f8549a691",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The derived \"proof\" MUST verify when using a conformant verifier."
@@ -1090,12 +1090,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 9863,
+                "_idleStart": 9904,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 290,
+              "duration": 287,
               "state": "passed",
               "speed": "slow"
             },
@@ -1111,7 +1111,7 @@
               "_currentRetry": 0,
               "pending": true,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
               "state": "pending"
             },
@@ -1128,9 +1128,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:3b69904d-de06-4018-b98c-2b20505f1607",
+              "_testId": "urn:uuid:7ec242e9-a6ea-41ca-b257-a7ac001f414a",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "Dereferencing \"verificationMethod\" MUST result in an object containing a type property with \"Multikey\" value."
@@ -1141,7 +1141,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10154,
+                "_idleStart": 10192,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1163,9 +1163,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:af552c0c-b70a-43c0-aa96-927d3884c915",
+              "_testId": "urn:uuid:0a9c7aef-95dd-4ee2-a97a-f89ac3d99439",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The publicKeyMultibase property represents a Multibase-encoded Multikey expression of a BLS12-381 public key in the G2 group. The encoding of this field is the two-byte prefix 0xeb01 followed by the 96-byte compressed public key data. The 98-byte value is then encoded using base58-btc (z) as the prefix. Any other encodings MUST NOT be allowed."
@@ -1176,7 +1176,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10154,
+                "_idleStart": 10192,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1198,9 +1198,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:a984f57c-4e72-4f83-8f1b-3605fdbb33a9",
+              "_testId": "urn:uuid:bccdbcca-c0bd-43d8-9e3a-06270972964e",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The transformation options MUST contain a type identifier for the cryptographic suite (type), a cryptosuite identifier (cryptosuite), and a verification method (verificationMethod)."
@@ -1211,7 +1211,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10155,
+                "_idleStart": 10193,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1237,7 +1237,7 @@
               "_currentRetry": 0,
               "pending": false,
               "type": "hook",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
               "originalTitle": "\"before each\" hook",
@@ -1260,7 +1260,7 @@
               "_currentRetry": 0,
               "pending": false,
               "type": "hook",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
               "originalTitle": "\"before all\" hook",
@@ -1270,12 +1270,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 9552,
+                "_idleStart": 9546,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 310,
+              "duration": 356,
               "_error": null
             }
           ],
@@ -1287,9 +1287,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "8HUi5yBYjcXJpklM-HXdj",
+          "parent": "tgcot4A-J5lfU6u3xbS4R",
           "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-          "_testId": "urn:uuid:3b8c114d-c176-4a63-bf16-b17b65cea433"
+          "_testId": "urn:uuid:cb06fdcb-1418-4e6e-abce-290b432e3f24"
         }
       ],
       "root": false,
@@ -1305,13 +1305,13 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "ylwQWta0F_1VbtSfx4LrU",
+      "parent": "ZsCzF9Md-SOFFiypv0h3Q",
       "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
       "matrix": true,
       "report": true,
       "rowLabel": "Test Name",
       "columnLabel": "Implementation",
-      "_testId": "urn:uuid:99ae7197-f289-4a66-82f9-71f088ecee2e",
+      "_testId": "urn:uuid:b11c6b36-48b7-48c6-b4ba-ec457d22e091",
       "columns": [
         "Grotto Networking"
       ],
@@ -1332,9 +1332,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:c6bb1f35-6d9c-41ee-bddb-80ff2dc66cb6",
+              "_testId": "urn:uuid:360f4e3e-ba77-4ac8-830d-f00988a8ce9d",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The field \"cryptosuite\" MUST be \"bbs-2023\"."
@@ -1363,16 +1363,16 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:7a30fc6c-1326-45d1-b0ef-18ed938578f5",
+              "_testId": "urn:uuid:1d24e3ba-0081-4c5f-b112-76d8b5dbab18",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The type property of the proof MUST be DataIntegrityProof."
               },
               "_events": {},
               "_eventsCount": 1,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast"
             }
@@ -1394,9 +1394,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:c42e55b2-c246-4b1a-921b-3332a02bc595",
+              "_testId": "urn:uuid:1b4e96a4-7a0c-4d8f-acbf-b91ebed02e45",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The value of the proofValue property of the proof MUST be a BBS signature or BBS proof produced according to [CFRG-BBS-SIGNATURE] that is serialized and encoded according to procedures in section 3. Algorithms."
@@ -1407,7 +1407,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 9863,
+                "_idleStart": 9903,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1434,9 +1434,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:60f29532-d71d-4e3f-9ef5-0d2890f3bb42",
+              "_testId": "urn:uuid:2aa0116e-e55a-4d54-b65f-747f8549a691",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The derived \"proof\" MUST verify when using a conformant verifier."
@@ -1447,12 +1447,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 9863,
+                "_idleStart": 9904,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 290,
+              "duration": 287,
               "state": "passed",
               "speed": "slow"
             }
@@ -1474,9 +1474,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:3b69904d-de06-4018-b98c-2b20505f1607",
+              "_testId": "urn:uuid:7ec242e9-a6ea-41ca-b257-a7ac001f414a",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "Dereferencing \"verificationMethod\" MUST result in an object containing a type property with \"Multikey\" value."
@@ -1487,7 +1487,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10154,
+                "_idleStart": 10192,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1514,9 +1514,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:af552c0c-b70a-43c0-aa96-927d3884c915",
+              "_testId": "urn:uuid:0a9c7aef-95dd-4ee2-a97a-f89ac3d99439",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The publicKeyMultibase property represents a Multibase-encoded Multikey expression of a BLS12-381 public key in the G2 group. The encoding of this field is the two-byte prefix 0xeb01 followed by the 96-byte compressed public key data. The 98-byte value is then encoded using base58-btc (z) as the prefix. Any other encodings MUST NOT be allowed."
@@ -1527,7 +1527,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10154,
+                "_idleStart": 10192,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1554,9 +1554,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/10-bbs-create.js",
-              "parent": "UCrvxya8EANrkNx3tWNHm",
+              "parent": "jCpvN8fcA-6GFQvBELdB3",
               "ctx": null,
-              "_testId": "urn:uuid:a984f57c-4e72-4f83-8f1b-3605fdbb33a9",
+              "_testId": "urn:uuid:bccdbcca-c0bd-43d8-9e3a-06270972964e",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "The transformation options MUST contain a type identifier for the cryptographic suite (type), a cryptosuite identifier (cryptosuite), and a verification method (verificationMethod)."
@@ -1567,7 +1567,7 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10155,
+                "_idleStart": 10193,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
@@ -1602,7 +1602,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1618,7 +1618,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1634,7 +1634,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1650,7 +1650,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1666,7 +1666,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1682,7 +1682,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1698,7 +1698,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1714,7 +1714,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1730,7 +1730,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1746,7 +1746,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1762,7 +1762,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1778,7 +1778,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1794,7 +1794,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1810,7 +1810,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             },
             {
@@ -1826,7 +1826,7 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null
             }
           ],
@@ -1847,7 +1847,7 @@
               "_currentRetry": 0,
               "pending": false,
               "type": "hook",
-              "parent": "AttoIVh1fsIN8WtflHsh1",
+              "parent": "twQOz1r_JVmFOFgw1ISnM",
               "ctx": null,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
               "originalTitle": "\"before all\" hook",
@@ -1857,12 +1857,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10157,
+                "_idleStart": 10195,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 10,
+              "duration": 11,
               "_error": null,
               "state": "failed",
               "err": {
@@ -1892,9 +1892,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "83zVCRFRkiRoUMVlePsrN",
+          "parent": "WsWYbw1dgQ7nGTIYpVQ6x",
           "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
-          "_testId": "urn:uuid:1a7f8ff4-d451-4334-b1c7-75958698f78f"
+          "_testId": "urn:uuid:97af531c-c1a8-4cfc-adb3-d81437f5e623"
         }
       ],
       "root": false,
@@ -1910,13 +1910,13 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "ylwQWta0F_1VbtSfx4LrU",
+      "parent": "ZsCzF9Md-SOFFiypv0h3Q",
       "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/15-di-bbs-verify.js",
       "matrix": true,
       "report": true,
       "rowLabel": "Test Name",
       "columnLabel": "Verifier",
-      "_testId": "urn:uuid:5a4e87ea-66af-4ed1-b411-cc91f6fc9124",
+      "_testId": "urn:uuid:e2da5a97-39cc-4823-8c9f-ed4dda7779b2",
       "columns": [
         "Grotto Networking"
       ],
@@ -1939,7 +1939,7 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "OsrQ_buVgXHpxPHN0GyL4",
+      "parent": "KFxaKkVHEyJZMLpbezDyN",
       "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
       "matrix": true,
       "report": true,
@@ -1972,9 +1972,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:7972007c-056e-4b50-b1c7-1c8c6365122a",
+              "_testId": "urn:uuid:6bb18eaf-48c8-4dfb-9825-2b91f49b245e",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify a valid VC with a bbs-2023 proof."
@@ -1985,12 +1985,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10170,
+                "_idleStart": 10208,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 587,
+              "duration": 494,
               "state": "passed",
               "speed": "slow"
             },
@@ -2007,9 +2007,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:86ae4d56-2077-4759-8314-1b369f3c0646",
+              "_testId": "urn:uuid:dfe2c73e-a22f-4912-93a0-20e48363f426",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify a valid VC with nested disclosed properties."
@@ -2020,12 +2020,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10757,
+                "_idleStart": 10702,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 478,
+              "duration": 457,
               "state": "passed",
               "speed": "slow"
             },
@@ -2042,9 +2042,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:5d86a9a3-4354-4dc3-8ee3-b1293b4d8260",
+              "_testId": "urn:uuid:ef7e80ab-45a8-427f-98f4-9959ded939a0",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify a valid VC with disclosed properties and bnodes."
@@ -2055,12 +2055,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 11236,
+                "_idleStart": 11160,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 531,
+              "duration": 491,
               "state": "passed",
               "speed": "slow"
             },
@@ -2077,9 +2077,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:ad343714-f802-4d5c-8bf9-7e3dbb802d05",
+              "_testId": "urn:uuid:560f91be-044e-4976-b47f-0f53cef5aa17",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify with full array revealed properties"
@@ -2090,12 +2090,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 11768,
+                "_idleStart": 11652,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 82,
+              "duration": 99,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -2106,7 +2106,7 @@
                   "request": {},
                   "options": {
                     "headers": {},
-                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Earth101\",\"sails\":[{\"size\":5.5,\"sailName\":\"Osprey\",\"year\":2023},{\"size\":6.1,\"sailName\":\"Eagle-FR\",\"year\":2023},{\"size\":7,\"sailName\":\"Eagle-FR\",\"year\":2020},{\"size\":7.8,\"sailName\":\"Eagle-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"CompFoil170\",\"brand\":\"Tillo\",\"year\":2022},{\"boardName\":\"Tillo Custom\",\"brand\":\"Tillo\",\"year\":2019}]},{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023},{\"size\":6.8,\"sailName\":\"Vulture-FR\",\"year\":2020},{\"size\":7.7,\"sailName\":\"Vulture-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"Oak620\",\"brand\":\"Excite\",\"year\":2020},{\"boardName\":\"Excite Custom\",\"brand\":\"Excite\",\"year\":2018}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkBMKSg5lSOA5Xko2PVh0PD_WwNZkhcuSRFDs7RPGdm3eZBioR4N4nwhb2MsQueeCkeuYxukf9jvrvXqguuUR8VCPJbamzDIIr045bw6YQwjTMjxI2RiB_vZOxppA69nj4DxIMewS7Z8y6GzerAhv3tiy7fTdXO0xN6UacI7xdYYXu__tCHvEdpeeJJKZOCgBOhYVG47bAMigLZR_QaHzLEH-z9XCgEDUnQzcaW0NHhdy-HSoIdtfVF8m6tysu7unRdn_wnt3HMO9buxnxlJpvVRMEIGY0q9PWQacQqVFkHdGVU6EksEkjsh-VBFLjua5c1Bifckns7r_2RZ6j-E9jQ-2uu_Gq_577JR3Er2GLlxWkuSccrPpzl7NByZYDdU5DI6M8P5pVEGg00WO5pXtM8F02wAAQBCwICAwcEDgUMBgYHDQgFCQ8KAAsKDAENAw4JDwiDAAEDmDcAAQIDBAUGBwgJCgsMDg8QERITFBUWFxgYGBkYGhgbGBwYHRgeGB8YIBghGCIYIxgkGCUYJhgnGCgYKRgqGCsYLBgtGC4YLxgwGDEYMhgzGDQYNRg2GDdA\"}},\"options\":{\"checks\":[\"proof\"]}}",
+                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Earth101\",\"sails\":[{\"size\":5.5,\"sailName\":\"Osprey\",\"year\":2023},{\"size\":6.1,\"sailName\":\"Eagle-FR\",\"year\":2023},{\"size\":7,\"sailName\":\"Eagle-FR\",\"year\":2020},{\"size\":7.8,\"sailName\":\"Eagle-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"CompFoil170\",\"brand\":\"Tillo\",\"year\":2022},{\"boardName\":\"Tillo Custom\",\"brand\":\"Tillo\",\"year\":2019}]},{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023},{\"size\":6.8,\"sailName\":\"Vulture-FR\",\"year\":2020},{\"size\":7.7,\"sailName\":\"Vulture-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"Oak620\",\"brand\":\"Excite\",\"year\":2020},{\"boardName\":\"Excite Custom\",\"brand\":\"Excite\",\"year\":2018}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkBMK9kwpf4qxEwueJAO12wtbRbGt-BbnVBbX781G21KkP5jWzO6Q9BxB8mZVd90eKO7KLSih2lBYjXzEQtfAMW-p4U5uX7LwypY7I0LIpGwWstm_Pq7lG-oW9t7Zj68LlqfYfpDWG3mRthydJh_UbemNaXtgPeDTaB9-so6HAMprTmi0DigjNb69vs3WdovvqVjEnqFYjUQYsbq3ZdSOgqS_uhHe6qs90bUgg6QYpI1WqubmQbofa-7NaxyqiIU31E6qFyqJzw1d0UIzKtlqfof0YMZIQFfHeWBaruYVvxT4wI41WMhDUONH6iA9Fo_En-GiwZSewpoVdfxr9rfbUUBmSH8KQoOs4HDiviJwOaZzrVF3YgOeT17N4a2FCZcSF4nleuw67Z3XQbIy98oiXoFjOwAAYBCwIFAwkECgUIBgQHBwgMCQIKAQsADA8NDQ4ODwODAwQGmDcAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGBgZGBoYGxgcGB0YHhgfGCAYIRgiGCMYJBglGCYYJxgoGCkYKhgrGCwYLRguGDAYMRgyGDMYNBg1GDYYN0A\"}},\"options\":{\"checks\":[\"proof\"]}}",
                     "method": "POST",
                     "json": {
                       "verifiableCredential": {
@@ -2239,7 +2239,7 @@
                           "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
                           "cryptosuite": "bbs-2023",
                           "proofPurpose": "assertionMethod",
-                          "proofValue": "u2V0DhVkBMKSg5lSOA5Xko2PVh0PD_WwNZkhcuSRFDs7RPGdm3eZBioR4N4nwhb2MsQueeCkeuYxukf9jvrvXqguuUR8VCPJbamzDIIr045bw6YQwjTMjxI2RiB_vZOxppA69nj4DxIMewS7Z8y6GzerAhv3tiy7fTdXO0xN6UacI7xdYYXu__tCHvEdpeeJJKZOCgBOhYVG47bAMigLZR_QaHzLEH-z9XCgEDUnQzcaW0NHhdy-HSoIdtfVF8m6tysu7unRdn_wnt3HMO9buxnxlJpvVRMEIGY0q9PWQacQqVFkHdGVU6EksEkjsh-VBFLjua5c1Bifckns7r_2RZ6j-E9jQ-2uu_Gq_577JR3Er2GLlxWkuSccrPpzl7NByZYDdU5DI6M8P5pVEGg00WO5pXtM8F02wAAQBCwICAwcEDgUMBgYHDQgFCQ8KAAsKDAENAw4JDwiDAAEDmDcAAQIDBAUGBwgJCgsMDg8QERITFBUWFxgYGBkYGhgbGBwYHRgeGB8YIBghGCIYIxgkGCUYJhgnGCgYKRgqGCsYLBgtGC4YLxgwGDEYMhgzGDQYNRg2GDdA"
+                          "proofValue": "u2V0DhVkBMK9kwpf4qxEwueJAO12wtbRbGt-BbnVBbX781G21KkP5jWzO6Q9BxB8mZVd90eKO7KLSih2lBYjXzEQtfAMW-p4U5uX7LwypY7I0LIpGwWstm_Pq7lG-oW9t7Zj68LlqfYfpDWG3mRthydJh_UbemNaXtgPeDTaB9-so6HAMprTmi0DigjNb69vs3WdovvqVjEnqFYjUQYsbq3ZdSOgqS_uhHe6qs90bUgg6QYpI1WqubmQbofa-7NaxyqiIU31E6qFyqJzw1d0UIzKtlqfof0YMZIQFfHeWBaruYVvxT4wI41WMhDUONH6iA9Fo_En-GiwZSewpoVdfxr9rfbUUBmSH8KQoOs4HDiviJwOaZzrVF3YgOeT17N4a2FCZcSF4nleuw67Z3XQbIy98oiXoFjOwAAYBCwIFAwkECgUIBgQHBwgMCQIKAQsADA8NDQ4ODwODAwQGmDcAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGBgZGBoYGxgcGB0YHhgfGCAYIRgiGCMYJBglGCYYJxgoGCkYKhgrGCwYLRguGDAYMRgyGDMYNBg1GDYYN0A"
                         }
                       },
                       "options": {
@@ -2411,7 +2411,7 @@
                         "term": "name"
                       },
                       "api": "BBSverify",
-                      "reqNum": 1283
+                      "reqNum": 4
                     }
                   }
                 },
@@ -2432,9 +2432,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:77884ef0-4926-4926-a5a3-7f560cbec383",
+              "_testId": "urn:uuid:163b8fb3-056e-427f-88e1-0cd3594b0e72",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify with fewer array revealed properties"
@@ -2445,12 +2445,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 11852,
+                "_idleStart": 11754,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 80,
+              "duration": 82,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -2461,7 +2461,7 @@
                   "request": {},
                   "options": {
                     "headers": {},
-                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sails\":[{\"size\":6.1,\"sailName\":\"Eagle-FR\",\"year\":2023},{\"size\":7,\"sailName\":\"Eagle-FR\",\"year\":2020},{\"size\":7.8,\"sailName\":\"Eagle-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"CompFoil170\",\"brand\":\"Tillo\",\"year\":2022},{\"boardName\":\"Tillo Custom\",\"brand\":\"Tillo\",\"year\":2019}]},{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkD0LDqAvpHVBoOwXWVngr7URMu7Sx0azZKxBLNRveVOCDg65vsD2ueFp9VShX7NmyHdaczVJWdv3kPH18mSGgydtVTnWTMWXZBeq2dGxYBFwMI-KFY0KsdnBSx1mwT4lrlga-YqW72raNM2Qbq3BJx_rYEaUibshGd0P6LS5KeREtIg9NKgmHGM2TfxxGJ-a68mjArm2sVpkjbKQofgQjXOakU_eeJu-DiEjuMqhqfXv3MPYw-1R1mwWaDXhGwnhdIL3Jal6bUO7AVBZ3hsH4nrFJcnH-ve2FTzfx0lsN24UzNZjKnTJuXQs0dP97dV774xBgx5qlwYQh3xFZ6xwUmJl1gWX3iUJgkl3lRANA3bhdxZKQXN02zoryei_viWVpBKcL3g6J4CqmF7qIQNhrkf4wMigShlZ24tuL1Dz15lfy5JEsGeyvVHpsPmkpgJku1JTz_LeIaFF86g1kOAJGrb6uIWIk4ylXXBkGQMKbntatkZsaYk5yN55ORwH9sEbwbLMxdI4d_ub2bfAIbBYPoFktskogZyKOyE600wAeXcpp2EFxc5PEGtcAlkjQ8k37n7UkImvO4Fqpb5grB1omqiTNC5MnPHE_iJNrS7wSNoXbuXozZ6yMISPGtqLFXPR16kCfpFq2HwAW1hfJpcuynIwsLIWDLwNJ5b3Y4TQ7xho0ejFHT6Y-LlhH_eq8MllYUBALjEDooAMSaPLSAJRXNPO1wMdWvzYRhsRqlxTu2wE3BV7SxYw05PwZj2U-zoLGSVLccT7RyQ9lOY4DT53K2R2Qv2TergczZ7Ro7eLk5cLu4atIp_KpIZefZK6C6q_ORVEOviZgngRS5H0FJbDG1iiZPMc-3AyZxvciSMkYJT4FQKwO2Dzncyx6CGqjukhRwNmti6fd7sIno0YLhnab-hXwqm12SYbeCPAJWCV7BKZX-_RLBcbAXX67gOj2FJMfuCFCcWZuCA6Gv4il86B-7ofN60d6RK7L8G8lfZ5QgVhe9YK61jmhfUXcj5CozvH_INU-HE9Yho7hhJOWo0Y6hlZE9d_W-3xJl4xvLHNVFmG-AwuoAJd-Th3jaHMyChECyJW7uDukBPJMfoWeLN6TfeF9qHcg1Mx1gAv55YhcEeHCICI39oUB5GO6gs6NIDhNKSgIT37zzEbEcYMTxBF31vvE4smizSnGzckUA9xhopMEbSdSnHQ8gR0SMT1PNXf1PyQ5QgMhxFzN1sCrXMAHPqAtYGdn2ntgku67KAO53c2xYODWG1yR5kJ_Dj_T8idN2FV-ZPYDCFKli8z94LNpcqjmrAAIBCAILAwcEBAUNBgwHBQgKCQMKDoMXGBgYGpgiBgcICQoLDA0ODxAREhMUGBgYGRgaGBsYHBgdGB8YIBghGCUYJhgnGCkYKhgrGC0YMBgxGDJA\"}},\"options\":{\"checks\":[\"proof\"]}}",
+                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sails\":[{\"size\":6.1,\"sailName\":\"Eagle-FR\",\"year\":2023},{\"size\":7,\"sailName\":\"Eagle-FR\",\"year\":2020},{\"size\":7.8,\"sailName\":\"Eagle-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"CompFoil170\",\"brand\":\"Tillo\",\"year\":2022},{\"boardName\":\"Tillo Custom\",\"brand\":\"Tillo\",\"year\":2019}]},{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkD0IVy3gfwpAEPC5cYybnDEsDZzpBd9O8EzhIjzMOIGLK6tl52mj5uuGFtHRbersNZerGbK1hNLbPMSoFL6AzylFwhhlwWiGjpFkTNSJG8Ggi-zd4nG9l_XHSCLP7y1yQhW6WSGtLHjNoR5XKnxQPf9CT6GeJzZeK2R3rd94T8N6169CYd62G8x70BPjFnE0E84SG5nxbvHbN69PG3wjIQ6WeG13j9zY9Jx0cJ29ZAA51KIwlQd0P0iL84LyXAeTOSxgHfbBKzGFxmHYGqmOkqS045Oaw1ihICZ-kcCicx53qB87ntTGIhFfyTa29Q2zz-HSO5W-1PJCPoA16TFx4Yj8rT1V7pau42cL6ucTT2IGLBZsBKiEITfBUybbouP8B66SW1BnjgX1OZ1wow-rFxAQsPTDubz09FeLT25o_cGbwivBuMCjB7KVlFy-nQs_19SnOTa-U1Wt5lkIK_zNdHnx2pFDSLN_QxLcbzwNXbr8DxPBe5yZKFdBOB8tY0ruA-mmh31lAQEsveqTxZqeYbzLowswqaFg-bfowg40umoyOJaIWwvpDbL3OojDNkvKDcWxyAS8qhwct8KvTlpxnuE1BCKQzDyueySUrJwCX2BTtYRWA1rxCd6m45CUocQbwI1icmV_l7y6O9eE4FqyFsF8gplTZEmSDLMfFJWKtAzwl62WlMhZvYReISzW-ZDMTJcBGqJa4Nie0EL2VWaa4qqFakmLQJ7Cad8wZ86OkI4UpUYQ6kQNLkyuXWbFRoEsJkZ4UV8NXf2r_GJ7PQ7Vr7hNdudp9ge3RHoIzR8dybFwN08RWwEj9bnIL6a-rhS_ht_WPyPLSsPzDO3hKldS9R9FojB4SC82HsAigqMRnOYbK5JrJVYySONsW-MhwSJ7gB3o3NZBnlSyopPZUw_Lu6vzZVqavAONTcZtWJjnZa-9O3_SSY_rynq5QdYK6YFN8Vt1yxUCodzN7zyRCVoBCQvegGFOubCDbpFgDOoS_H3P9tRFGAi2c8I3VWvAcuTbEdYhFq_8r_vZCfvSzkco1DSchH6pqOA-cyNz-lPhxbQZpVNqYsshz_WyRqbp_js01iCy3PPMbx1lMuh5iBDY-02xJBJBoExxbwO0OZ7P53ebGxTPPH7ql6qUIJs7et8oCAm_qQCzeZ8-pGcaI-83UpwjQ_CMHixUU64Nxg-Y-sj_RqA84ciNA6JvbLPhqpqdZ-iybEVMPWRHlcuczbRwJeWv9A279BKp-B22EBBZNaNDMtGjkUWqaSq4Id5Vd90CZWKNsa6k-J9fr7v-D9uv_jpj-rAAcBBQIMAwYEDgUIBgoHAggECQEKC4MODxGYIgMEBQYHCAkKCwwNDhMUGBgYHBgdGB4YHxgiGCMYJhgnGCgYKRgrGCwYLRgvGDAYMRgyGDMYNEA\"}},\"options\":{\"checks\":[\"proof\"]}}",
                     "method": "POST",
                     "json": {
                       "verifiableCredential": {
@@ -2566,7 +2566,7 @@
                           "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
                           "cryptosuite": "bbs-2023",
                           "proofPurpose": "assertionMethod",
-                          "proofValue": "u2V0DhVkD0LDqAvpHVBoOwXWVngr7URMu7Sx0azZKxBLNRveVOCDg65vsD2ueFp9VShX7NmyHdaczVJWdv3kPH18mSGgydtVTnWTMWXZBeq2dGxYBFwMI-KFY0KsdnBSx1mwT4lrlga-YqW72raNM2Qbq3BJx_rYEaUibshGd0P6LS5KeREtIg9NKgmHGM2TfxxGJ-a68mjArm2sVpkjbKQofgQjXOakU_eeJu-DiEjuMqhqfXv3MPYw-1R1mwWaDXhGwnhdIL3Jal6bUO7AVBZ3hsH4nrFJcnH-ve2FTzfx0lsN24UzNZjKnTJuXQs0dP97dV774xBgx5qlwYQh3xFZ6xwUmJl1gWX3iUJgkl3lRANA3bhdxZKQXN02zoryei_viWVpBKcL3g6J4CqmF7qIQNhrkf4wMigShlZ24tuL1Dz15lfy5JEsGeyvVHpsPmkpgJku1JTz_LeIaFF86g1kOAJGrb6uIWIk4ylXXBkGQMKbntatkZsaYk5yN55ORwH9sEbwbLMxdI4d_ub2bfAIbBYPoFktskogZyKOyE600wAeXcpp2EFxc5PEGtcAlkjQ8k37n7UkImvO4Fqpb5grB1omqiTNC5MnPHE_iJNrS7wSNoXbuXozZ6yMISPGtqLFXPR16kCfpFq2HwAW1hfJpcuynIwsLIWDLwNJ5b3Y4TQ7xho0ejFHT6Y-LlhH_eq8MllYUBALjEDooAMSaPLSAJRXNPO1wMdWvzYRhsRqlxTu2wE3BV7SxYw05PwZj2U-zoLGSVLccT7RyQ9lOY4DT53K2R2Qv2TergczZ7Ro7eLk5cLu4atIp_KpIZefZK6C6q_ORVEOviZgngRS5H0FJbDG1iiZPMc-3AyZxvciSMkYJT4FQKwO2Dzncyx6CGqjukhRwNmti6fd7sIno0YLhnab-hXwqm12SYbeCPAJWCV7BKZX-_RLBcbAXX67gOj2FJMfuCFCcWZuCA6Gv4il86B-7ofN60d6RK7L8G8lfZ5QgVhe9YK61jmhfUXcj5CozvH_INU-HE9Yho7hhJOWo0Y6hlZE9d_W-3xJl4xvLHNVFmG-AwuoAJd-Th3jaHMyChECyJW7uDukBPJMfoWeLN6TfeF9qHcg1Mx1gAv55YhcEeHCICI39oUB5GO6gs6NIDhNKSgIT37zzEbEcYMTxBF31vvE4smizSnGzckUA9xhopMEbSdSnHQ8gR0SMT1PNXf1PyQ5QgMhxFzN1sCrXMAHPqAtYGdn2ntgku67KAO53c2xYODWG1yR5kJ_Dj_T8idN2FV-ZPYDCFKli8z94LNpcqjmrAAIBCAILAwcEBAUNBgwHBQgKCQMKDoMXGBgYGpgiBgcICQoLDA0ODxAREhMUGBgYGRgaGBsYHBgdGB8YIBghGCUYJhgnGCkYKhgrGC0YMBgxGDJA"
+                          "proofValue": "u2V0DhVkD0IVy3gfwpAEPC5cYybnDEsDZzpBd9O8EzhIjzMOIGLK6tl52mj5uuGFtHRbersNZerGbK1hNLbPMSoFL6AzylFwhhlwWiGjpFkTNSJG8Ggi-zd4nG9l_XHSCLP7y1yQhW6WSGtLHjNoR5XKnxQPf9CT6GeJzZeK2R3rd94T8N6169CYd62G8x70BPjFnE0E84SG5nxbvHbN69PG3wjIQ6WeG13j9zY9Jx0cJ29ZAA51KIwlQd0P0iL84LyXAeTOSxgHfbBKzGFxmHYGqmOkqS045Oaw1ihICZ-kcCicx53qB87ntTGIhFfyTa29Q2zz-HSO5W-1PJCPoA16TFx4Yj8rT1V7pau42cL6ucTT2IGLBZsBKiEITfBUybbouP8B66SW1BnjgX1OZ1wow-rFxAQsPTDubz09FeLT25o_cGbwivBuMCjB7KVlFy-nQs_19SnOTa-U1Wt5lkIK_zNdHnx2pFDSLN_QxLcbzwNXbr8DxPBe5yZKFdBOB8tY0ruA-mmh31lAQEsveqTxZqeYbzLowswqaFg-bfowg40umoyOJaIWwvpDbL3OojDNkvKDcWxyAS8qhwct8KvTlpxnuE1BCKQzDyueySUrJwCX2BTtYRWA1rxCd6m45CUocQbwI1icmV_l7y6O9eE4FqyFsF8gplTZEmSDLMfFJWKtAzwl62WlMhZvYReISzW-ZDMTJcBGqJa4Nie0EL2VWaa4qqFakmLQJ7Cad8wZ86OkI4UpUYQ6kQNLkyuXWbFRoEsJkZ4UV8NXf2r_GJ7PQ7Vr7hNdudp9ge3RHoIzR8dybFwN08RWwEj9bnIL6a-rhS_ht_WPyPLSsPzDO3hKldS9R9FojB4SC82HsAigqMRnOYbK5JrJVYySONsW-MhwSJ7gB3o3NZBnlSyopPZUw_Lu6vzZVqavAONTcZtWJjnZa-9O3_SSY_rynq5QdYK6YFN8Vt1yxUCodzN7zyRCVoBCQvegGFOubCDbpFgDOoS_H3P9tRFGAi2c8I3VWvAcuTbEdYhFq_8r_vZCfvSzkco1DSchH6pqOA-cyNz-lPhxbQZpVNqYsshz_WyRqbp_js01iCy3PPMbx1lMuh5iBDY-02xJBJBoExxbwO0OZ7P53ebGxTPPH7ql6qUIJs7et8oCAm_qQCzeZ8-pGcaI-83UpwjQ_CMHixUU64Nxg-Y-sj_RqA84ciNA6JvbLPhqpqdZ-iybEVMPWRHlcuczbRwJeWv9A279BKp-B22EBBZNaNDMtGjkUWqaSq4Id5Vd90CZWKNsa6k-J9fr7v-D9uv_jpj-rAAcBBQIMAwYEDgUIBgoHAggECQEKC4MODxGYIgMEBQYHCAkKCwwNDhMUGBgYHBgdGB4YHxgiGCMYJhgnGCgYKRgrGCwYLRgvGDAYMRgyGDMYNEA"
                         }
                       },
                       "options": {
@@ -2738,7 +2738,7 @@
                         "term": "name"
                       },
                       "api": "BBSverify",
-                      "reqNum": 1284
+                      "reqNum": 5
                     }
                   }
                 },
@@ -2759,9 +2759,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:430ddfcd-60c0-40d8-8a10-f4b41f63b5e7",
+              "_testId": "urn:uuid:9652293f-7b3f-4e8b-b398-295b346fbc65",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify w/o first element revealed properties"
@@ -2772,12 +2772,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 11933,
+                "_idleStart": 11836,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 79,
+              "duration": 88,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -2788,7 +2788,7 @@
                   "request": {},
                   "options": {
                     "headers": {},
-                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023},{\"size\":6.8,\"sailName\":\"Vulture-FR\",\"year\":2020},{\"size\":7.7,\"sailName\":\"Vulture-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"Oak620\",\"brand\":\"Excite\",\"year\":2020},{\"boardName\":\"Excite Custom\",\"brand\":\"Excite\",\"year\":2018}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkEkI0bM676YRoECAzV0YY8J_noK0DQ1jCd4_Rraywjn1x6HFDIW9XxvYVpdiL_-MMqd7fE7PC2jIJi8mM8ryVycPmJifaPETQLUCPfszDLuRYg73vvFbDbBtiOQQ9npRGH-LkStVFhYepW93ZJ280YSqTkgUXOeQsGec8WTWerBin_MskihsJUeiAeqC0uwxpZoVt4jZAL-AQX_BO6ZTTw_brdpO47yJjloFZDa1svn1RHMtTgfQBi5AskQbFmya71Nxlbbu5__5Ecugns-yR_91ItCoLgPOb5yiWQkwilRa0QHNsoCpe6pgoJi00mV7vGRyammPME8SmM1CKy_RZhpI2oNfMpUe50G1rT3nrC7Wg_WAP-tMbBbNbuaPY5VUfsNkXbvgWGlhgyOAWPhsLt8b1i5ffIh8CvY3tOR-RqvrbnGJmbtmrTcTfGrnN9jhm0bTC0C_-mGcNjUsbY0iMwut5VfHmljmFefh4O36oj4JtAVXXZABjzQwtbdUJE5Sa6ibB4vn5dlyuqBwZlKdnesLUT11L8wWmJtmKogIBSMm0iwDN8XL7jTXrgcambjWRATjnZoHAWm7dGqC8lZVdNP9XF1Pi0qACK5Pa5hAyAEUebawbJ47dQeDVCIbt7tW5atC7azwju58UvUVDC3OKRu5Ze8AxdDZR_ExVwK6btrBtmxuEV8MfFsSo4wuYU1jlzjDIPt1MLf1rbcfqbUnwoYzTnLqr_yiri1774rxk9GhaYY_46dUJFO7e5QcN9MJHhmwyWIOYBeOEv-hP6qwkQR6YK6ap3Qdx1RMHEWwKd00-QN4uIUejS7vFlL97f5J3ChHEKPjFfbedRd8YlMPeRbn5gsUTSxx4GBFAXCd9ELefTcA18PyWUyepMzWzsMXrnFQWH7OYkWXMiAhz5nsAOlpAlGJlhmrIbtkan9yhE3SLnM3IQ_c6qSj8ZUrpXvPTn-FxpkD6YmVu57-RvV68ANve9AfU1NnxqQzIgs3LX6G4sZ7PBkac4h33txkDkvP_utMckT8E1kqOzbbw_OTXvm6MyBUy1MAFZewLpZgcQ8FSgTsghhSSaXu3I-3fjMwLMIWh4JjqahGh5wVRkrixJE9Zps0yQNAYk5cfLzqJmCFO6cV0aPaxWatG79UTMcE-ZVxT482UWlYkJLlgwcYaKqsFBhvu_RzKBOflJLbmlvFqQ8k-bSpTiBVVD8uS5H-qEH0pdwshoHPZzj8OcHyRSPpyAOX9PZ3XjgCx1PzV8HAO4a9IXq1j3uPKMfo975VZdkC-qBfmUHPnPKtaB8IpwVkAiSJ1TXlhQtO04T1QrkFX6iWTT0N_iVdEEYGs3MlG4_wkfjjQjcYEn9TRaW3IsXNdExB2L8_mP7rBacJFqYRlDKTX6Go3LKm8-7mhJ2ynGLd5EBONlLcGRqlVF87DmDy8QROAnIQk0_dj2cX19h3YVwx6gL2w59mhnr7b-CHD-rQ6ujAovOpESnfBM5TeTPEnRXAoDA73kCFf2NhIaMW1GBkKGtFcS5ax6KGHpPNRT5laOqin52AaWZVHYQ-mtuYupAAkBDAIDAw0ECwUHBgEHAAgCgxgYGBkYG5gcAAECAwQFCgwNDg8QERITFBUWGB0YHhgfGCAYIRgiGDEYNRg2GDdA\"}},\"options\":{\"checks\":[\"proof\"]}}",
+                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023},{\"size\":6.8,\"sailName\":\"Vulture-FR\",\"year\":2020},{\"size\":7.7,\"sailName\":\"Vulture-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"Oak620\",\"brand\":\"Excite\",\"year\":2020},{\"boardName\":\"Excite Custom\",\"brand\":\"Excite\",\"year\":2018}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkEkKk5Y6Jk71VA9uh4OLemslqlHc6au1nnxMhn3cVcauDTb30r19b6Bzw86tvxmPXZsJGgHltulZLFZACVbkPOGeomi9RAw29XCiLqPEOhIZCtRSzol3YgPyjrI8LGGQeGPqPrAaLfHZlujSD9IzWwxYYuIL4evcGvOFqeQWvXzEiiDSFQWsoPyt7i6gKB4nrL9WuZPY9pstEXnmdxf251RqN6sZFjbbkpA6AffcsVzvfLD2A6fUH6LosVScObXsl1weC-_wnp3gy62KEpwDKX1LVMrVCkOFaDUaysYJPfUooiME6tAnrxvAAvGAKgyQU3LBO_xbFlLIhkfps89abY0ig5P33mAm8ZSb7mLntlaejyG8z6c71ZH3ZBoCNjzDa_YPrdv96lyl2SLPs8vY7SMo5AMlzOHJ5bp3PWpre7zRnlKP6_Ahpcayw9xWkbNUTZ10HuATLYs8ZmA1swjVN9XqJjMYT9HkNBOOSDsQZB1XJlcTevmnQ7Sy5FMLmx0jG7EARyTmfKKYQUg6lPK925pQUJr7LQHb4NBU1yH0dZRQZDR0NOGJZ2NeVY1OhWfU0WiloyuTciH5uUPLZBTfqCvZjCQqjKX6hl8OxuOIKzafH5P4VREdA7DOp9CdX4xJ8jPnpOIMzgcRMWrQ-KQei4qDBWbQAkbm-TSrSdtSf_97avMVJfpifbXyCdyic6ntAXE2geEaHhqECCDO2eGYz6IlQxfwyJdxxjYCqX7osSAIXXCnjikK4RFo6SouzgAOo5HBmEAx4DLNPD4WSN8lOZ4T5nqdX6QqQ0Avj71WdCHzc8g8nEWddAtPSKozhbuav7RSAbbKio7SFSUPz6VVyJjJcdK5R7pvIgyCAWhvTCrPvsR_GlPuk5LvU_9Ho8rkefq4TB2DFwcd44U05Bo9vML6c4-RjzAUAz_HwdBiOEg4qRu7piDUo2p0eXJoOsCjKtkRWibqY3j5MKVJKwC3QLvC6hUfRO24ttpQqQ5gWhCzGIMwYKDaZXhN6VPCMsrSpxyEkE_dK-A1ey_29_Kl_rA1pUAsrzGpCy5zcloKp6r75iDdwzkiZVbhwqRTkLv8K7mlyEzmyOCS0hFrTCSVhdgxtUsFeZECsTm7N2-6XU7KQFTkbaq2uuN_3_4y_s7EZzNBRFJcX7aH0kLHep1hiU-uIyebxTRyy3tUzsA3BMsSAnZPfPozlFZKjV5EARoliVpTrPaibRay-DlgwYvx_pOiFseK_85QrCnn1490AIkDohCwD9aPtLM5seqzf1bAaqfQmamooqdC5eNfi2vrMh3TIV9B39QbYWkJN24Sopo9UpSaVDPTJyJh5AsS5G8t_kXjRgtiEfVfjOmBK0KS3JHbyJHgVmhWe6XzJV4O1odIWqSMjuXx40JB0J2nidB9Sh8bG2ccSRdGTdAWtVjHAzHaxKtHPVnTspqyhsySC0tsdWvNZJK4JL1Vmd25KHh3Oj-RKcx6LAqGCWWZlOjx3h4Q_Xk8c63D8R5k0HQlaFTNH9MULdvfVCTobdcrjlO-JLSXOeIEV_g0hp-bP29PWYviupAAQBDwIMAwAEDQUOBgsHBQgBgw0OEJgcAAECAwQFCQoLDA0OEBITFBUWFxgYGBkYGhghGCIYIxgkGCUYJkA\"}},\"options\":{\"checks\":[\"proof\"]}}",
                     "method": "POST",
                     "json": {
                       "verifiableCredential": {
@@ -2883,7 +2883,7 @@
                           "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
                           "cryptosuite": "bbs-2023",
                           "proofPurpose": "assertionMethod",
-                          "proofValue": "u2V0DhVkEkI0bM676YRoECAzV0YY8J_noK0DQ1jCd4_Rraywjn1x6HFDIW9XxvYVpdiL_-MMqd7fE7PC2jIJi8mM8ryVycPmJifaPETQLUCPfszDLuRYg73vvFbDbBtiOQQ9npRGH-LkStVFhYepW93ZJ280YSqTkgUXOeQsGec8WTWerBin_MskihsJUeiAeqC0uwxpZoVt4jZAL-AQX_BO6ZTTw_brdpO47yJjloFZDa1svn1RHMtTgfQBi5AskQbFmya71Nxlbbu5__5Ecugns-yR_91ItCoLgPOb5yiWQkwilRa0QHNsoCpe6pgoJi00mV7vGRyammPME8SmM1CKy_RZhpI2oNfMpUe50G1rT3nrC7Wg_WAP-tMbBbNbuaPY5VUfsNkXbvgWGlhgyOAWPhsLt8b1i5ffIh8CvY3tOR-RqvrbnGJmbtmrTcTfGrnN9jhm0bTC0C_-mGcNjUsbY0iMwut5VfHmljmFefh4O36oj4JtAVXXZABjzQwtbdUJE5Sa6ibB4vn5dlyuqBwZlKdnesLUT11L8wWmJtmKogIBSMm0iwDN8XL7jTXrgcambjWRATjnZoHAWm7dGqC8lZVdNP9XF1Pi0qACK5Pa5hAyAEUebawbJ47dQeDVCIbt7tW5atC7azwju58UvUVDC3OKRu5Ze8AxdDZR_ExVwK6btrBtmxuEV8MfFsSo4wuYU1jlzjDIPt1MLf1rbcfqbUnwoYzTnLqr_yiri1774rxk9GhaYY_46dUJFO7e5QcN9MJHhmwyWIOYBeOEv-hP6qwkQR6YK6ap3Qdx1RMHEWwKd00-QN4uIUejS7vFlL97f5J3ChHEKPjFfbedRd8YlMPeRbn5gsUTSxx4GBFAXCd9ELefTcA18PyWUyepMzWzsMXrnFQWH7OYkWXMiAhz5nsAOlpAlGJlhmrIbtkan9yhE3SLnM3IQ_c6qSj8ZUrpXvPTn-FxpkD6YmVu57-RvV68ANve9AfU1NnxqQzIgs3LX6G4sZ7PBkac4h33txkDkvP_utMckT8E1kqOzbbw_OTXvm6MyBUy1MAFZewLpZgcQ8FSgTsghhSSaXu3I-3fjMwLMIWh4JjqahGh5wVRkrixJE9Zps0yQNAYk5cfLzqJmCFO6cV0aPaxWatG79UTMcE-ZVxT482UWlYkJLlgwcYaKqsFBhvu_RzKBOflJLbmlvFqQ8k-bSpTiBVVD8uS5H-qEH0pdwshoHPZzj8OcHyRSPpyAOX9PZ3XjgCx1PzV8HAO4a9IXq1j3uPKMfo975VZdkC-qBfmUHPnPKtaB8IpwVkAiSJ1TXlhQtO04T1QrkFX6iWTT0N_iVdEEYGs3MlG4_wkfjjQjcYEn9TRaW3IsXNdExB2L8_mP7rBacJFqYRlDKTX6Go3LKm8-7mhJ2ynGLd5EBONlLcGRqlVF87DmDy8QROAnIQk0_dj2cX19h3YVwx6gL2w59mhnr7b-CHD-rQ6ujAovOpESnfBM5TeTPEnRXAoDA73kCFf2NhIaMW1GBkKGtFcS5ax6KGHpPNRT5laOqin52AaWZVHYQ-mtuYupAAkBDAIDAw0ECwUHBgEHAAgCgxgYGBkYG5gcAAECAwQFCgwNDg8QERITFBUWGB0YHhgfGCAYIRgiGDEYNRg2GDdA"
+                          "proofValue": "u2V0DhVkEkKk5Y6Jk71VA9uh4OLemslqlHc6au1nnxMhn3cVcauDTb30r19b6Bzw86tvxmPXZsJGgHltulZLFZACVbkPOGeomi9RAw29XCiLqPEOhIZCtRSzol3YgPyjrI8LGGQeGPqPrAaLfHZlujSD9IzWwxYYuIL4evcGvOFqeQWvXzEiiDSFQWsoPyt7i6gKB4nrL9WuZPY9pstEXnmdxf251RqN6sZFjbbkpA6AffcsVzvfLD2A6fUH6LosVScObXsl1weC-_wnp3gy62KEpwDKX1LVMrVCkOFaDUaysYJPfUooiME6tAnrxvAAvGAKgyQU3LBO_xbFlLIhkfps89abY0ig5P33mAm8ZSb7mLntlaejyG8z6c71ZH3ZBoCNjzDa_YPrdv96lyl2SLPs8vY7SMo5AMlzOHJ5bp3PWpre7zRnlKP6_Ahpcayw9xWkbNUTZ10HuATLYs8ZmA1swjVN9XqJjMYT9HkNBOOSDsQZB1XJlcTevmnQ7Sy5FMLmx0jG7EARyTmfKKYQUg6lPK925pQUJr7LQHb4NBU1yH0dZRQZDR0NOGJZ2NeVY1OhWfU0WiloyuTciH5uUPLZBTfqCvZjCQqjKX6hl8OxuOIKzafH5P4VREdA7DOp9CdX4xJ8jPnpOIMzgcRMWrQ-KQei4qDBWbQAkbm-TSrSdtSf_97avMVJfpifbXyCdyic6ntAXE2geEaHhqECCDO2eGYz6IlQxfwyJdxxjYCqX7osSAIXXCnjikK4RFo6SouzgAOo5HBmEAx4DLNPD4WSN8lOZ4T5nqdX6QqQ0Avj71WdCHzc8g8nEWddAtPSKozhbuav7RSAbbKio7SFSUPz6VVyJjJcdK5R7pvIgyCAWhvTCrPvsR_GlPuk5LvU_9Ho8rkefq4TB2DFwcd44U05Bo9vML6c4-RjzAUAz_HwdBiOEg4qRu7piDUo2p0eXJoOsCjKtkRWibqY3j5MKVJKwC3QLvC6hUfRO24ttpQqQ5gWhCzGIMwYKDaZXhN6VPCMsrSpxyEkE_dK-A1ey_29_Kl_rA1pUAsrzGpCy5zcloKp6r75iDdwzkiZVbhwqRTkLv8K7mlyEzmyOCS0hFrTCSVhdgxtUsFeZECsTm7N2-6XU7KQFTkbaq2uuN_3_4y_s7EZzNBRFJcX7aH0kLHep1hiU-uIyebxTRyy3tUzsA3BMsSAnZPfPozlFZKjV5EARoliVpTrPaibRay-DlgwYvx_pOiFseK_85QrCnn1490AIkDohCwD9aPtLM5seqzf1bAaqfQmamooqdC5eNfi2vrMh3TIV9B39QbYWkJN24Sopo9UpSaVDPTJyJh5AsS5G8t_kXjRgtiEfVfjOmBK0KS3JHbyJHgVmhWe6XzJV4O1odIWqSMjuXx40JB0J2nidB9Sh8bG2ccSRdGTdAWtVjHAzHaxKtHPVnTspqyhsySC0tsdWvNZJK4JL1Vmd25KHh3Oj-RKcx6LAqGCWWZlOjx3h4Q_Xk8c63D8R5k0HQlaFTNH9MULdvfVCTobdcrjlO-JLSXOeIEV_g0hp-bP29PWYviupAAQBDwIMAwAEDQUOBgsHBQgBgw0OEJgcAAECAwQFCQoLDA0OEBITFBUWFxgYGBkYGhghGCIYIxgkGCUYJkA"
                         }
                       },
                       "options": {
@@ -3055,7 +3055,7 @@
                         "term": "name"
                       },
                       "api": "BBSverify",
-                      "reqNum": 1285
+                      "reqNum": 6
                     }
                   }
                 },
@@ -3076,9 +3076,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:c09ad66b-51f9-4f68-ac6e-de5d7df47c89",
+              "_testId": "urn:uuid:be9a14dd-df63-4163-9a92-abd24180fa77",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "If the \"proofValue\" string does not start with \"u\", an error MUST be raised."
@@ -3089,12 +3089,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 12013,
+                "_idleStart": 11926,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 74,
+              "duration": 71,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3119,9 +3119,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:11527c42-a399-45ab-a059-9de0cf2cafb7",
+              "_testId": "urn:uuid:96945182-34cc-4ac3-9a95-ca6e4c35635e",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "If the \"cryptosuite\" field is not the string \"bbs-2023\", an error MUST be raised."
@@ -3132,12 +3132,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 12088,
+                "_idleStart": 11999,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 74,
+              "duration": 70,
               "state": "passed",
               "speed": "medium"
             },
@@ -3154,9 +3154,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:a8c171e2-75f4-474f-80b2-3f91aa06260c",
+              "_testId": "urn:uuid:b55a761e-93c3-4222-b1f2-372ea632ca0c",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST fail to verify a base proof."
@@ -3167,14 +3167,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 12162,
+                "_idleStart": 12069,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 85,
+              "duration": 72,
               "state": "passed",
-              "speed": "slow"
+              "speed": "medium"
             },
             {
               "type": "test",
@@ -3189,9 +3189,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:9546f58c-d591-404f-9118-158eb2edd139",
+              "_testId": "urn:uuid:2fd77aae-7259-463a-8fa4-f89d117fbd89",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST fail to verify a modified disclosed credential."
@@ -3202,12 +3202,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 12248,
+                "_idleStart": 12141,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 414,
+              "duration": 347,
               "state": "passed",
               "speed": "slow"
             }
@@ -3228,13 +3228,13 @@
               "_currentRetry": 0,
               "pending": false,
               "type": "hook",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
               "originalTitle": "\"before each\" hook",
               "_events": {},
               "_eventsCount": 1,
-              "duration": 0,
+              "duration": 1,
               "_error": null
             }
           ],
@@ -3247,9 +3247,9 @@
           "_onlyTests": [],
           "_onlySuites": [],
           "delayed": false,
-          "parent": "vfNQ_inz0PmOukx-Ub-1Y",
+          "parent": "0zEcYAC7XIOcKgwU17m98",
           "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-          "_testId": "urn:uuid:1064533c-44ba-45da-8c8a-6acd42262d8a"
+          "_testId": "urn:uuid:7d9bee55-cb9e-448a-9c5f-126afab4f1c7"
         }
       ],
       "root": false,
@@ -3265,13 +3265,13 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "ylwQWta0F_1VbtSfx4LrU",
+      "parent": "ZsCzF9Md-SOFFiypv0h3Q",
       "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
       "matrix": true,
       "report": true,
       "rowLabel": "Test Name",
       "columnLabel": "Verifier",
-      "_testId": "urn:uuid:28c704f6-6bf9-469e-8e44-8772c1474116",
+      "_testId": "urn:uuid:6fd2ed74-1535-4ff4-b1f7-73d5dbb956ef",
       "columns": [
         "Grotto Networking"
       ],
@@ -3292,9 +3292,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:7972007c-056e-4b50-b1c7-1c8c6365122a",
+              "_testId": "urn:uuid:6bb18eaf-48c8-4dfb-9825-2b91f49b245e",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify a valid VC with a bbs-2023 proof."
@@ -3305,12 +3305,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10170,
+                "_idleStart": 10208,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 587,
+              "duration": 494,
               "state": "passed",
               "speed": "slow"
             }
@@ -3332,9 +3332,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:86ae4d56-2077-4759-8314-1b369f3c0646",
+              "_testId": "urn:uuid:dfe2c73e-a22f-4912-93a0-20e48363f426",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify a valid VC with nested disclosed properties."
@@ -3345,12 +3345,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 10757,
+                "_idleStart": 10702,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 478,
+              "duration": 457,
               "state": "passed",
               "speed": "slow"
             }
@@ -3372,9 +3372,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:5d86a9a3-4354-4dc3-8ee3-b1293b4d8260",
+              "_testId": "urn:uuid:ef7e80ab-45a8-427f-98f4-9959ded939a0",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify a valid VC with disclosed properties and bnodes."
@@ -3385,12 +3385,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 11236,
+                "_idleStart": 11160,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 531,
+              "duration": 491,
               "state": "passed",
               "speed": "slow"
             }
@@ -3412,9 +3412,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:ad343714-f802-4d5c-8bf9-7e3dbb802d05",
+              "_testId": "urn:uuid:560f91be-044e-4976-b47f-0f53cef5aa17",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify with full array revealed properties"
@@ -3425,12 +3425,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 11768,
+                "_idleStart": 11652,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 82,
+              "duration": 99,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3441,7 +3441,7 @@
                   "request": {},
                   "options": {
                     "headers": {},
-                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Earth101\",\"sails\":[{\"size\":5.5,\"sailName\":\"Osprey\",\"year\":2023},{\"size\":6.1,\"sailName\":\"Eagle-FR\",\"year\":2023},{\"size\":7,\"sailName\":\"Eagle-FR\",\"year\":2020},{\"size\":7.8,\"sailName\":\"Eagle-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"CompFoil170\",\"brand\":\"Tillo\",\"year\":2022},{\"boardName\":\"Tillo Custom\",\"brand\":\"Tillo\",\"year\":2019}]},{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023},{\"size\":6.8,\"sailName\":\"Vulture-FR\",\"year\":2020},{\"size\":7.7,\"sailName\":\"Vulture-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"Oak620\",\"brand\":\"Excite\",\"year\":2020},{\"boardName\":\"Excite Custom\",\"brand\":\"Excite\",\"year\":2018}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkBMKSg5lSOA5Xko2PVh0PD_WwNZkhcuSRFDs7RPGdm3eZBioR4N4nwhb2MsQueeCkeuYxukf9jvrvXqguuUR8VCPJbamzDIIr045bw6YQwjTMjxI2RiB_vZOxppA69nj4DxIMewS7Z8y6GzerAhv3tiy7fTdXO0xN6UacI7xdYYXu__tCHvEdpeeJJKZOCgBOhYVG47bAMigLZR_QaHzLEH-z9XCgEDUnQzcaW0NHhdy-HSoIdtfVF8m6tysu7unRdn_wnt3HMO9buxnxlJpvVRMEIGY0q9PWQacQqVFkHdGVU6EksEkjsh-VBFLjua5c1Bifckns7r_2RZ6j-E9jQ-2uu_Gq_577JR3Er2GLlxWkuSccrPpzl7NByZYDdU5DI6M8P5pVEGg00WO5pXtM8F02wAAQBCwICAwcEDgUMBgYHDQgFCQ8KAAsKDAENAw4JDwiDAAEDmDcAAQIDBAUGBwgJCgsMDg8QERITFBUWFxgYGBkYGhgbGBwYHRgeGB8YIBghGCIYIxgkGCUYJhgnGCgYKRgqGCsYLBgtGC4YLxgwGDEYMhgzGDQYNRg2GDdA\"}},\"options\":{\"checks\":[\"proof\"]}}",
+                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Earth101\",\"sails\":[{\"size\":5.5,\"sailName\":\"Osprey\",\"year\":2023},{\"size\":6.1,\"sailName\":\"Eagle-FR\",\"year\":2023},{\"size\":7,\"sailName\":\"Eagle-FR\",\"year\":2020},{\"size\":7.8,\"sailName\":\"Eagle-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"CompFoil170\",\"brand\":\"Tillo\",\"year\":2022},{\"boardName\":\"Tillo Custom\",\"brand\":\"Tillo\",\"year\":2019}]},{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023},{\"size\":6.8,\"sailName\":\"Vulture-FR\",\"year\":2020},{\"size\":7.7,\"sailName\":\"Vulture-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"Oak620\",\"brand\":\"Excite\",\"year\":2020},{\"boardName\":\"Excite Custom\",\"brand\":\"Excite\",\"year\":2018}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkBMK9kwpf4qxEwueJAO12wtbRbGt-BbnVBbX781G21KkP5jWzO6Q9BxB8mZVd90eKO7KLSih2lBYjXzEQtfAMW-p4U5uX7LwypY7I0LIpGwWstm_Pq7lG-oW9t7Zj68LlqfYfpDWG3mRthydJh_UbemNaXtgPeDTaB9-so6HAMprTmi0DigjNb69vs3WdovvqVjEnqFYjUQYsbq3ZdSOgqS_uhHe6qs90bUgg6QYpI1WqubmQbofa-7NaxyqiIU31E6qFyqJzw1d0UIzKtlqfof0YMZIQFfHeWBaruYVvxT4wI41WMhDUONH6iA9Fo_En-GiwZSewpoVdfxr9rfbUUBmSH8KQoOs4HDiviJwOaZzrVF3YgOeT17N4a2FCZcSF4nleuw67Z3XQbIy98oiXoFjOwAAYBCwIFAwkECgUIBgQHBwgMCQIKAQsADA8NDQ4ODwODAwQGmDcAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGBgZGBoYGxgcGB0YHhgfGCAYIRgiGCMYJBglGCYYJxgoGCkYKhgrGCwYLRguGDAYMRgyGDMYNBg1GDYYN0A\"}},\"options\":{\"checks\":[\"proof\"]}}",
                     "method": "POST",
                     "json": {
                       "verifiableCredential": {
@@ -3574,7 +3574,7 @@
                           "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
                           "cryptosuite": "bbs-2023",
                           "proofPurpose": "assertionMethod",
-                          "proofValue": "u2V0DhVkBMKSg5lSOA5Xko2PVh0PD_WwNZkhcuSRFDs7RPGdm3eZBioR4N4nwhb2MsQueeCkeuYxukf9jvrvXqguuUR8VCPJbamzDIIr045bw6YQwjTMjxI2RiB_vZOxppA69nj4DxIMewS7Z8y6GzerAhv3tiy7fTdXO0xN6UacI7xdYYXu__tCHvEdpeeJJKZOCgBOhYVG47bAMigLZR_QaHzLEH-z9XCgEDUnQzcaW0NHhdy-HSoIdtfVF8m6tysu7unRdn_wnt3HMO9buxnxlJpvVRMEIGY0q9PWQacQqVFkHdGVU6EksEkjsh-VBFLjua5c1Bifckns7r_2RZ6j-E9jQ-2uu_Gq_577JR3Er2GLlxWkuSccrPpzl7NByZYDdU5DI6M8P5pVEGg00WO5pXtM8F02wAAQBCwICAwcEDgUMBgYHDQgFCQ8KAAsKDAENAw4JDwiDAAEDmDcAAQIDBAUGBwgJCgsMDg8QERITFBUWFxgYGBkYGhgbGBwYHRgeGB8YIBghGCIYIxgkGCUYJhgnGCgYKRgqGCsYLBgtGC4YLxgwGDEYMhgzGDQYNRg2GDdA"
+                          "proofValue": "u2V0DhVkBMK9kwpf4qxEwueJAO12wtbRbGt-BbnVBbX781G21KkP5jWzO6Q9BxB8mZVd90eKO7KLSih2lBYjXzEQtfAMW-p4U5uX7LwypY7I0LIpGwWstm_Pq7lG-oW9t7Zj68LlqfYfpDWG3mRthydJh_UbemNaXtgPeDTaB9-so6HAMprTmi0DigjNb69vs3WdovvqVjEnqFYjUQYsbq3ZdSOgqS_uhHe6qs90bUgg6QYpI1WqubmQbofa-7NaxyqiIU31E6qFyqJzw1d0UIzKtlqfof0YMZIQFfHeWBaruYVvxT4wI41WMhDUONH6iA9Fo_En-GiwZSewpoVdfxr9rfbUUBmSH8KQoOs4HDiviJwOaZzrVF3YgOeT17N4a2FCZcSF4nleuw67Z3XQbIy98oiXoFjOwAAYBCwIFAwkECgUIBgQHBwgMCQIKAQsADA8NDQ4ODwODAwQGmDcAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGBgZGBoYGxgcGB0YHhgfGCAYIRgiGCMYJBglGCYYJxgoGCkYKhgrGCwYLRguGDAYMRgyGDMYNBg1GDYYN0A"
                         }
                       },
                       "options": {
@@ -3746,7 +3746,7 @@
                         "term": "name"
                       },
                       "api": "BBSverify",
-                      "reqNum": 1283
+                      "reqNum": 4
                     }
                   }
                 },
@@ -3772,9 +3772,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:77884ef0-4926-4926-a5a3-7f560cbec383",
+              "_testId": "urn:uuid:163b8fb3-056e-427f-88e1-0cd3594b0e72",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify with fewer array revealed properties"
@@ -3785,12 +3785,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 11852,
+                "_idleStart": 11754,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 80,
+              "duration": 82,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -3801,7 +3801,7 @@
                   "request": {},
                   "options": {
                     "headers": {},
-                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sails\":[{\"size\":6.1,\"sailName\":\"Eagle-FR\",\"year\":2023},{\"size\":7,\"sailName\":\"Eagle-FR\",\"year\":2020},{\"size\":7.8,\"sailName\":\"Eagle-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"CompFoil170\",\"brand\":\"Tillo\",\"year\":2022},{\"boardName\":\"Tillo Custom\",\"brand\":\"Tillo\",\"year\":2019}]},{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkD0LDqAvpHVBoOwXWVngr7URMu7Sx0azZKxBLNRveVOCDg65vsD2ueFp9VShX7NmyHdaczVJWdv3kPH18mSGgydtVTnWTMWXZBeq2dGxYBFwMI-KFY0KsdnBSx1mwT4lrlga-YqW72raNM2Qbq3BJx_rYEaUibshGd0P6LS5KeREtIg9NKgmHGM2TfxxGJ-a68mjArm2sVpkjbKQofgQjXOakU_eeJu-DiEjuMqhqfXv3MPYw-1R1mwWaDXhGwnhdIL3Jal6bUO7AVBZ3hsH4nrFJcnH-ve2FTzfx0lsN24UzNZjKnTJuXQs0dP97dV774xBgx5qlwYQh3xFZ6xwUmJl1gWX3iUJgkl3lRANA3bhdxZKQXN02zoryei_viWVpBKcL3g6J4CqmF7qIQNhrkf4wMigShlZ24tuL1Dz15lfy5JEsGeyvVHpsPmkpgJku1JTz_LeIaFF86g1kOAJGrb6uIWIk4ylXXBkGQMKbntatkZsaYk5yN55ORwH9sEbwbLMxdI4d_ub2bfAIbBYPoFktskogZyKOyE600wAeXcpp2EFxc5PEGtcAlkjQ8k37n7UkImvO4Fqpb5grB1omqiTNC5MnPHE_iJNrS7wSNoXbuXozZ6yMISPGtqLFXPR16kCfpFq2HwAW1hfJpcuynIwsLIWDLwNJ5b3Y4TQ7xho0ejFHT6Y-LlhH_eq8MllYUBALjEDooAMSaPLSAJRXNPO1wMdWvzYRhsRqlxTu2wE3BV7SxYw05PwZj2U-zoLGSVLccT7RyQ9lOY4DT53K2R2Qv2TergczZ7Ro7eLk5cLu4atIp_KpIZefZK6C6q_ORVEOviZgngRS5H0FJbDG1iiZPMc-3AyZxvciSMkYJT4FQKwO2Dzncyx6CGqjukhRwNmti6fd7sIno0YLhnab-hXwqm12SYbeCPAJWCV7BKZX-_RLBcbAXX67gOj2FJMfuCFCcWZuCA6Gv4il86B-7ofN60d6RK7L8G8lfZ5QgVhe9YK61jmhfUXcj5CozvH_INU-HE9Yho7hhJOWo0Y6hlZE9d_W-3xJl4xvLHNVFmG-AwuoAJd-Th3jaHMyChECyJW7uDukBPJMfoWeLN6TfeF9qHcg1Mx1gAv55YhcEeHCICI39oUB5GO6gs6NIDhNKSgIT37zzEbEcYMTxBF31vvE4smizSnGzckUA9xhopMEbSdSnHQ8gR0SMT1PNXf1PyQ5QgMhxFzN1sCrXMAHPqAtYGdn2ntgku67KAO53c2xYODWG1yR5kJ_Dj_T8idN2FV-ZPYDCFKli8z94LNpcqjmrAAIBCAILAwcEBAUNBgwHBQgKCQMKDoMXGBgYGpgiBgcICQoLDA0ODxAREhMUGBgYGRgaGBsYHBgdGB8YIBghGCUYJhgnGCkYKhgrGC0YMBgxGDJA\"}},\"options\":{\"checks\":[\"proof\"]}}",
+                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sails\":[{\"size\":6.1,\"sailName\":\"Eagle-FR\",\"year\":2023},{\"size\":7,\"sailName\":\"Eagle-FR\",\"year\":2020},{\"size\":7.8,\"sailName\":\"Eagle-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"CompFoil170\",\"brand\":\"Tillo\",\"year\":2022},{\"boardName\":\"Tillo Custom\",\"brand\":\"Tillo\",\"year\":2019}]},{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkD0IVy3gfwpAEPC5cYybnDEsDZzpBd9O8EzhIjzMOIGLK6tl52mj5uuGFtHRbersNZerGbK1hNLbPMSoFL6AzylFwhhlwWiGjpFkTNSJG8Ggi-zd4nG9l_XHSCLP7y1yQhW6WSGtLHjNoR5XKnxQPf9CT6GeJzZeK2R3rd94T8N6169CYd62G8x70BPjFnE0E84SG5nxbvHbN69PG3wjIQ6WeG13j9zY9Jx0cJ29ZAA51KIwlQd0P0iL84LyXAeTOSxgHfbBKzGFxmHYGqmOkqS045Oaw1ihICZ-kcCicx53qB87ntTGIhFfyTa29Q2zz-HSO5W-1PJCPoA16TFx4Yj8rT1V7pau42cL6ucTT2IGLBZsBKiEITfBUybbouP8B66SW1BnjgX1OZ1wow-rFxAQsPTDubz09FeLT25o_cGbwivBuMCjB7KVlFy-nQs_19SnOTa-U1Wt5lkIK_zNdHnx2pFDSLN_QxLcbzwNXbr8DxPBe5yZKFdBOB8tY0ruA-mmh31lAQEsveqTxZqeYbzLowswqaFg-bfowg40umoyOJaIWwvpDbL3OojDNkvKDcWxyAS8qhwct8KvTlpxnuE1BCKQzDyueySUrJwCX2BTtYRWA1rxCd6m45CUocQbwI1icmV_l7y6O9eE4FqyFsF8gplTZEmSDLMfFJWKtAzwl62WlMhZvYReISzW-ZDMTJcBGqJa4Nie0EL2VWaa4qqFakmLQJ7Cad8wZ86OkI4UpUYQ6kQNLkyuXWbFRoEsJkZ4UV8NXf2r_GJ7PQ7Vr7hNdudp9ge3RHoIzR8dybFwN08RWwEj9bnIL6a-rhS_ht_WPyPLSsPzDO3hKldS9R9FojB4SC82HsAigqMRnOYbK5JrJVYySONsW-MhwSJ7gB3o3NZBnlSyopPZUw_Lu6vzZVqavAONTcZtWJjnZa-9O3_SSY_rynq5QdYK6YFN8Vt1yxUCodzN7zyRCVoBCQvegGFOubCDbpFgDOoS_H3P9tRFGAi2c8I3VWvAcuTbEdYhFq_8r_vZCfvSzkco1DSchH6pqOA-cyNz-lPhxbQZpVNqYsshz_WyRqbp_js01iCy3PPMbx1lMuh5iBDY-02xJBJBoExxbwO0OZ7P53ebGxTPPH7ql6qUIJs7et8oCAm_qQCzeZ8-pGcaI-83UpwjQ_CMHixUU64Nxg-Y-sj_RqA84ciNA6JvbLPhqpqdZ-iybEVMPWRHlcuczbRwJeWv9A279BKp-B22EBBZNaNDMtGjkUWqaSq4Id5Vd90CZWKNsa6k-J9fr7v-D9uv_jpj-rAAcBBQIMAwYEDgUIBgoHAggECQEKC4MODxGYIgMEBQYHCAkKCwwNDhMUGBgYHBgdGB4YHxgiGCMYJhgnGCgYKRgrGCwYLRgvGDAYMRgyGDMYNEA\"}},\"options\":{\"checks\":[\"proof\"]}}",
                     "method": "POST",
                     "json": {
                       "verifiableCredential": {
@@ -3906,7 +3906,7 @@
                           "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
                           "cryptosuite": "bbs-2023",
                           "proofPurpose": "assertionMethod",
-                          "proofValue": "u2V0DhVkD0LDqAvpHVBoOwXWVngr7URMu7Sx0azZKxBLNRveVOCDg65vsD2ueFp9VShX7NmyHdaczVJWdv3kPH18mSGgydtVTnWTMWXZBeq2dGxYBFwMI-KFY0KsdnBSx1mwT4lrlga-YqW72raNM2Qbq3BJx_rYEaUibshGd0P6LS5KeREtIg9NKgmHGM2TfxxGJ-a68mjArm2sVpkjbKQofgQjXOakU_eeJu-DiEjuMqhqfXv3MPYw-1R1mwWaDXhGwnhdIL3Jal6bUO7AVBZ3hsH4nrFJcnH-ve2FTzfx0lsN24UzNZjKnTJuXQs0dP97dV774xBgx5qlwYQh3xFZ6xwUmJl1gWX3iUJgkl3lRANA3bhdxZKQXN02zoryei_viWVpBKcL3g6J4CqmF7qIQNhrkf4wMigShlZ24tuL1Dz15lfy5JEsGeyvVHpsPmkpgJku1JTz_LeIaFF86g1kOAJGrb6uIWIk4ylXXBkGQMKbntatkZsaYk5yN55ORwH9sEbwbLMxdI4d_ub2bfAIbBYPoFktskogZyKOyE600wAeXcpp2EFxc5PEGtcAlkjQ8k37n7UkImvO4Fqpb5grB1omqiTNC5MnPHE_iJNrS7wSNoXbuXozZ6yMISPGtqLFXPR16kCfpFq2HwAW1hfJpcuynIwsLIWDLwNJ5b3Y4TQ7xho0ejFHT6Y-LlhH_eq8MllYUBALjEDooAMSaPLSAJRXNPO1wMdWvzYRhsRqlxTu2wE3BV7SxYw05PwZj2U-zoLGSVLccT7RyQ9lOY4DT53K2R2Qv2TergczZ7Ro7eLk5cLu4atIp_KpIZefZK6C6q_ORVEOviZgngRS5H0FJbDG1iiZPMc-3AyZxvciSMkYJT4FQKwO2Dzncyx6CGqjukhRwNmti6fd7sIno0YLhnab-hXwqm12SYbeCPAJWCV7BKZX-_RLBcbAXX67gOj2FJMfuCFCcWZuCA6Gv4il86B-7ofN60d6RK7L8G8lfZ5QgVhe9YK61jmhfUXcj5CozvH_INU-HE9Yho7hhJOWo0Y6hlZE9d_W-3xJl4xvLHNVFmG-AwuoAJd-Th3jaHMyChECyJW7uDukBPJMfoWeLN6TfeF9qHcg1Mx1gAv55YhcEeHCICI39oUB5GO6gs6NIDhNKSgIT37zzEbEcYMTxBF31vvE4smizSnGzckUA9xhopMEbSdSnHQ8gR0SMT1PNXf1PyQ5QgMhxFzN1sCrXMAHPqAtYGdn2ntgku67KAO53c2xYODWG1yR5kJ_Dj_T8idN2FV-ZPYDCFKli8z94LNpcqjmrAAIBCAILAwcEBAUNBgwHBQgKCQMKDoMXGBgYGpgiBgcICQoLDA0ODxAREhMUGBgYGRgaGBsYHBgdGB8YIBghGCUYJhgnGCkYKhgrGC0YMBgxGDJA"
+                          "proofValue": "u2V0DhVkD0IVy3gfwpAEPC5cYybnDEsDZzpBd9O8EzhIjzMOIGLK6tl52mj5uuGFtHRbersNZerGbK1hNLbPMSoFL6AzylFwhhlwWiGjpFkTNSJG8Ggi-zd4nG9l_XHSCLP7y1yQhW6WSGtLHjNoR5XKnxQPf9CT6GeJzZeK2R3rd94T8N6169CYd62G8x70BPjFnE0E84SG5nxbvHbN69PG3wjIQ6WeG13j9zY9Jx0cJ29ZAA51KIwlQd0P0iL84LyXAeTOSxgHfbBKzGFxmHYGqmOkqS045Oaw1ihICZ-kcCicx53qB87ntTGIhFfyTa29Q2zz-HSO5W-1PJCPoA16TFx4Yj8rT1V7pau42cL6ucTT2IGLBZsBKiEITfBUybbouP8B66SW1BnjgX1OZ1wow-rFxAQsPTDubz09FeLT25o_cGbwivBuMCjB7KVlFy-nQs_19SnOTa-U1Wt5lkIK_zNdHnx2pFDSLN_QxLcbzwNXbr8DxPBe5yZKFdBOB8tY0ruA-mmh31lAQEsveqTxZqeYbzLowswqaFg-bfowg40umoyOJaIWwvpDbL3OojDNkvKDcWxyAS8qhwct8KvTlpxnuE1BCKQzDyueySUrJwCX2BTtYRWA1rxCd6m45CUocQbwI1icmV_l7y6O9eE4FqyFsF8gplTZEmSDLMfFJWKtAzwl62WlMhZvYReISzW-ZDMTJcBGqJa4Nie0EL2VWaa4qqFakmLQJ7Cad8wZ86OkI4UpUYQ6kQNLkyuXWbFRoEsJkZ4UV8NXf2r_GJ7PQ7Vr7hNdudp9ge3RHoIzR8dybFwN08RWwEj9bnIL6a-rhS_ht_WPyPLSsPzDO3hKldS9R9FojB4SC82HsAigqMRnOYbK5JrJVYySONsW-MhwSJ7gB3o3NZBnlSyopPZUw_Lu6vzZVqavAONTcZtWJjnZa-9O3_SSY_rynq5QdYK6YFN8Vt1yxUCodzN7zyRCVoBCQvegGFOubCDbpFgDOoS_H3P9tRFGAi2c8I3VWvAcuTbEdYhFq_8r_vZCfvSzkco1DSchH6pqOA-cyNz-lPhxbQZpVNqYsshz_WyRqbp_js01iCy3PPMbx1lMuh5iBDY-02xJBJBoExxbwO0OZ7P53ebGxTPPH7ql6qUIJs7et8oCAm_qQCzeZ8-pGcaI-83UpwjQ_CMHixUU64Nxg-Y-sj_RqA84ciNA6JvbLPhqpqdZ-iybEVMPWRHlcuczbRwJeWv9A279BKp-B22EBBZNaNDMtGjkUWqaSq4Id5Vd90CZWKNsa6k-J9fr7v-D9uv_jpj-rAAcBBQIMAwYEDgUIBgoHAggECQEKC4MODxGYIgMEBQYHCAkKCwwNDhMUGBgYHBgdGB4YHxgiGCMYJhgnGCgYKRgrGCwYLRgvGDAYMRgyGDMYNEA"
                         }
                       },
                       "options": {
@@ -4078,7 +4078,7 @@
                         "term": "name"
                       },
                       "api": "BBSverify",
-                      "reqNum": 1284
+                      "reqNum": 5
                     }
                   }
                 },
@@ -4104,9 +4104,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:430ddfcd-60c0-40d8-8a10-f4b41f63b5e7",
+              "_testId": "urn:uuid:9652293f-7b3f-4e8b-b398-295b346fbc65",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST verify w/o first element revealed properties"
@@ -4117,12 +4117,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 11933,
+                "_idleStart": 11836,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 79,
+              "duration": 88,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -4133,7 +4133,7 @@
                   "request": {},
                   "options": {
                     "headers": {},
-                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023},{\"size\":6.8,\"sailName\":\"Vulture-FR\",\"year\":2020},{\"size\":7.7,\"sailName\":\"Vulture-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"Oak620\",\"brand\":\"Excite\",\"year\":2020},{\"boardName\":\"Excite Custom\",\"brand\":\"Excite\",\"year\":2018}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkEkI0bM676YRoECAzV0YY8J_noK0DQ1jCd4_Rraywjn1x6HFDIW9XxvYVpdiL_-MMqd7fE7PC2jIJi8mM8ryVycPmJifaPETQLUCPfszDLuRYg73vvFbDbBtiOQQ9npRGH-LkStVFhYepW93ZJ280YSqTkgUXOeQsGec8WTWerBin_MskihsJUeiAeqC0uwxpZoVt4jZAL-AQX_BO6ZTTw_brdpO47yJjloFZDa1svn1RHMtTgfQBi5AskQbFmya71Nxlbbu5__5Ecugns-yR_91ItCoLgPOb5yiWQkwilRa0QHNsoCpe6pgoJi00mV7vGRyammPME8SmM1CKy_RZhpI2oNfMpUe50G1rT3nrC7Wg_WAP-tMbBbNbuaPY5VUfsNkXbvgWGlhgyOAWPhsLt8b1i5ffIh8CvY3tOR-RqvrbnGJmbtmrTcTfGrnN9jhm0bTC0C_-mGcNjUsbY0iMwut5VfHmljmFefh4O36oj4JtAVXXZABjzQwtbdUJE5Sa6ibB4vn5dlyuqBwZlKdnesLUT11L8wWmJtmKogIBSMm0iwDN8XL7jTXrgcambjWRATjnZoHAWm7dGqC8lZVdNP9XF1Pi0qACK5Pa5hAyAEUebawbJ47dQeDVCIbt7tW5atC7azwju58UvUVDC3OKRu5Ze8AxdDZR_ExVwK6btrBtmxuEV8MfFsSo4wuYU1jlzjDIPt1MLf1rbcfqbUnwoYzTnLqr_yiri1774rxk9GhaYY_46dUJFO7e5QcN9MJHhmwyWIOYBeOEv-hP6qwkQR6YK6ap3Qdx1RMHEWwKd00-QN4uIUejS7vFlL97f5J3ChHEKPjFfbedRd8YlMPeRbn5gsUTSxx4GBFAXCd9ELefTcA18PyWUyepMzWzsMXrnFQWH7OYkWXMiAhz5nsAOlpAlGJlhmrIbtkan9yhE3SLnM3IQ_c6qSj8ZUrpXvPTn-FxpkD6YmVu57-RvV68ANve9AfU1NnxqQzIgs3LX6G4sZ7PBkac4h33txkDkvP_utMckT8E1kqOzbbw_OTXvm6MyBUy1MAFZewLpZgcQ8FSgTsghhSSaXu3I-3fjMwLMIWh4JjqahGh5wVRkrixJE9Zps0yQNAYk5cfLzqJmCFO6cV0aPaxWatG79UTMcE-ZVxT482UWlYkJLlgwcYaKqsFBhvu_RzKBOflJLbmlvFqQ8k-bSpTiBVVD8uS5H-qEH0pdwshoHPZzj8OcHyRSPpyAOX9PZ3XjgCx1PzV8HAO4a9IXq1j3uPKMfo975VZdkC-qBfmUHPnPKtaB8IpwVkAiSJ1TXlhQtO04T1QrkFX6iWTT0N_iVdEEYGs3MlG4_wkfjjQjcYEn9TRaW3IsXNdExB2L8_mP7rBacJFqYRlDKTX6Go3LKm8-7mhJ2ynGLd5EBONlLcGRqlVF87DmDy8QROAnIQk0_dj2cX19h3YVwx6gL2w59mhnr7b-CHD-rQ6ujAovOpESnfBM5TeTPEnRXAoDA73kCFf2NhIaMW1GBkKGtFcS5ax6KGHpPNRT5laOqin52AaWZVHYQ-mtuYupAAkBDAIDAw0ECwUHBgEHAAgCgxgYGBkYG5gcAAECAwQFCgwNDg8QERITFBUWGB0YHhgfGCAYIRgiGDEYNRg2GDdA\"}},\"options\":{\"checks\":[\"proof\"]}}",
+                    "body": "{\"verifiableCredential\":{\"@context\":[\"https://www.w3.org/ns/credentials/v2\",{\"@protected\":true,\"name\":\"https://schema.org/name\",\"ExampleAchievementCredential\":\"urn:example:ExampleAchievementCredential\",\"WindsailingAchievement\":{\"@id\":\"urn:example:WindsailingAchievement\",\"@context\":{\"@protected\":true,\"id\":\"@id\",\"type\":\"@type\",\"sailNumber\":\"urn:example:sailNumber\",\"sails\":{\"@id\":\"urn:example:sails\",\"@context\":{\"@protected\":true,\"sailName\":\"urn:example:sailName\",\"size\":\"urn:example:size\",\"year\":\"urn:example:year\"}},\"boards\":{\"@id\":\"urn:example:boards\",\"@context\":{\"@protected\":true,\"boardName\":\"urn:example:boardName\",\"brand\":\"urn:example:brand\",\"year\":\"urn:example:year\"}}}},\"achievements\":{\"@id\":\"urn:example:achievements\",\"@type\":\"@id\"}}],\"type\":[\"VerifiableCredential\",\"ExampleAchievementCredential\"],\"issuer\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"credentialSubject\":{\"achievements\":[{\"type\":\"WindsailingAchievement\",\"sailNumber\":\"Mars101\",\"sails\":[{\"size\":5.9,\"sailName\":\"Chicken\",\"year\":2022},{\"size\":4.9,\"sailName\":\"Vulture-FR\",\"year\":2023},{\"size\":6.8,\"sailName\":\"Vulture-FR\",\"year\":2020},{\"size\":7.7,\"sailName\":\"Vulture-FR\",\"year\":2023}],\"boards\":[{\"boardName\":\"Oak620\",\"brand\":\"Excite\",\"year\":2020},{\"boardName\":\"Excite Custom\",\"brand\":\"Excite\",\"year\":2018}]}]},\"proof\":{\"type\":\"DataIntegrityProof\",\"verificationMethod\":\"did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv\",\"cryptosuite\":\"bbs-2023\",\"proofPurpose\":\"assertionMethod\",\"proofValue\":\"u2V0DhVkEkKk5Y6Jk71VA9uh4OLemslqlHc6au1nnxMhn3cVcauDTb30r19b6Bzw86tvxmPXZsJGgHltulZLFZACVbkPOGeomi9RAw29XCiLqPEOhIZCtRSzol3YgPyjrI8LGGQeGPqPrAaLfHZlujSD9IzWwxYYuIL4evcGvOFqeQWvXzEiiDSFQWsoPyt7i6gKB4nrL9WuZPY9pstEXnmdxf251RqN6sZFjbbkpA6AffcsVzvfLD2A6fUH6LosVScObXsl1weC-_wnp3gy62KEpwDKX1LVMrVCkOFaDUaysYJPfUooiME6tAnrxvAAvGAKgyQU3LBO_xbFlLIhkfps89abY0ig5P33mAm8ZSb7mLntlaejyG8z6c71ZH3ZBoCNjzDa_YPrdv96lyl2SLPs8vY7SMo5AMlzOHJ5bp3PWpre7zRnlKP6_Ahpcayw9xWkbNUTZ10HuATLYs8ZmA1swjVN9XqJjMYT9HkNBOOSDsQZB1XJlcTevmnQ7Sy5FMLmx0jG7EARyTmfKKYQUg6lPK925pQUJr7LQHb4NBU1yH0dZRQZDR0NOGJZ2NeVY1OhWfU0WiloyuTciH5uUPLZBTfqCvZjCQqjKX6hl8OxuOIKzafH5P4VREdA7DOp9CdX4xJ8jPnpOIMzgcRMWrQ-KQei4qDBWbQAkbm-TSrSdtSf_97avMVJfpifbXyCdyic6ntAXE2geEaHhqECCDO2eGYz6IlQxfwyJdxxjYCqX7osSAIXXCnjikK4RFo6SouzgAOo5HBmEAx4DLNPD4WSN8lOZ4T5nqdX6QqQ0Avj71WdCHzc8g8nEWddAtPSKozhbuav7RSAbbKio7SFSUPz6VVyJjJcdK5R7pvIgyCAWhvTCrPvsR_GlPuk5LvU_9Ho8rkefq4TB2DFwcd44U05Bo9vML6c4-RjzAUAz_HwdBiOEg4qRu7piDUo2p0eXJoOsCjKtkRWibqY3j5MKVJKwC3QLvC6hUfRO24ttpQqQ5gWhCzGIMwYKDaZXhN6VPCMsrSpxyEkE_dK-A1ey_29_Kl_rA1pUAsrzGpCy5zcloKp6r75iDdwzkiZVbhwqRTkLv8K7mlyEzmyOCS0hFrTCSVhdgxtUsFeZECsTm7N2-6XU7KQFTkbaq2uuN_3_4y_s7EZzNBRFJcX7aH0kLHep1hiU-uIyebxTRyy3tUzsA3BMsSAnZPfPozlFZKjV5EARoliVpTrPaibRay-DlgwYvx_pOiFseK_85QrCnn1490AIkDohCwD9aPtLM5seqzf1bAaqfQmamooqdC5eNfi2vrMh3TIV9B39QbYWkJN24Sopo9UpSaVDPTJyJh5AsS5G8t_kXjRgtiEfVfjOmBK0KS3JHbyJHgVmhWe6XzJV4O1odIWqSMjuXx40JB0J2nidB9Sh8bG2ccSRdGTdAWtVjHAzHaxKtHPVnTspqyhsySC0tsdWvNZJK4JL1Vmd25KHh3Oj-RKcx6LAqGCWWZlOjx3h4Q_Xk8c63D8R5k0HQlaFTNH9MULdvfVCTobdcrjlO-JLSXOeIEV_g0hp-bP29PWYviupAAQBDwIMAwAEDQUOBgsHBQgBgw0OEJgcAAECAwQFCQoLDA0OEBITFBUWFxgYGBkYGhghGCIYIxgkGCUYJkA\"}},\"options\":{\"checks\":[\"proof\"]}}",
                     "method": "POST",
                     "json": {
                       "verifiableCredential": {
@@ -4228,7 +4228,7 @@
                           "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
                           "cryptosuite": "bbs-2023",
                           "proofPurpose": "assertionMethod",
-                          "proofValue": "u2V0DhVkEkI0bM676YRoECAzV0YY8J_noK0DQ1jCd4_Rraywjn1x6HFDIW9XxvYVpdiL_-MMqd7fE7PC2jIJi8mM8ryVycPmJifaPETQLUCPfszDLuRYg73vvFbDbBtiOQQ9npRGH-LkStVFhYepW93ZJ280YSqTkgUXOeQsGec8WTWerBin_MskihsJUeiAeqC0uwxpZoVt4jZAL-AQX_BO6ZTTw_brdpO47yJjloFZDa1svn1RHMtTgfQBi5AskQbFmya71Nxlbbu5__5Ecugns-yR_91ItCoLgPOb5yiWQkwilRa0QHNsoCpe6pgoJi00mV7vGRyammPME8SmM1CKy_RZhpI2oNfMpUe50G1rT3nrC7Wg_WAP-tMbBbNbuaPY5VUfsNkXbvgWGlhgyOAWPhsLt8b1i5ffIh8CvY3tOR-RqvrbnGJmbtmrTcTfGrnN9jhm0bTC0C_-mGcNjUsbY0iMwut5VfHmljmFefh4O36oj4JtAVXXZABjzQwtbdUJE5Sa6ibB4vn5dlyuqBwZlKdnesLUT11L8wWmJtmKogIBSMm0iwDN8XL7jTXrgcambjWRATjnZoHAWm7dGqC8lZVdNP9XF1Pi0qACK5Pa5hAyAEUebawbJ47dQeDVCIbt7tW5atC7azwju58UvUVDC3OKRu5Ze8AxdDZR_ExVwK6btrBtmxuEV8MfFsSo4wuYU1jlzjDIPt1MLf1rbcfqbUnwoYzTnLqr_yiri1774rxk9GhaYY_46dUJFO7e5QcN9MJHhmwyWIOYBeOEv-hP6qwkQR6YK6ap3Qdx1RMHEWwKd00-QN4uIUejS7vFlL97f5J3ChHEKPjFfbedRd8YlMPeRbn5gsUTSxx4GBFAXCd9ELefTcA18PyWUyepMzWzsMXrnFQWH7OYkWXMiAhz5nsAOlpAlGJlhmrIbtkan9yhE3SLnM3IQ_c6qSj8ZUrpXvPTn-FxpkD6YmVu57-RvV68ANve9AfU1NnxqQzIgs3LX6G4sZ7PBkac4h33txkDkvP_utMckT8E1kqOzbbw_OTXvm6MyBUy1MAFZewLpZgcQ8FSgTsghhSSaXu3I-3fjMwLMIWh4JjqahGh5wVRkrixJE9Zps0yQNAYk5cfLzqJmCFO6cV0aPaxWatG79UTMcE-ZVxT482UWlYkJLlgwcYaKqsFBhvu_RzKBOflJLbmlvFqQ8k-bSpTiBVVD8uS5H-qEH0pdwshoHPZzj8OcHyRSPpyAOX9PZ3XjgCx1PzV8HAO4a9IXq1j3uPKMfo975VZdkC-qBfmUHPnPKtaB8IpwVkAiSJ1TXlhQtO04T1QrkFX6iWTT0N_iVdEEYGs3MlG4_wkfjjQjcYEn9TRaW3IsXNdExB2L8_mP7rBacJFqYRlDKTX6Go3LKm8-7mhJ2ynGLd5EBONlLcGRqlVF87DmDy8QROAnIQk0_dj2cX19h3YVwx6gL2w59mhnr7b-CHD-rQ6ujAovOpESnfBM5TeTPEnRXAoDA73kCFf2NhIaMW1GBkKGtFcS5ax6KGHpPNRT5laOqin52AaWZVHYQ-mtuYupAAkBDAIDAw0ECwUHBgEHAAgCgxgYGBkYG5gcAAECAwQFCgwNDg8QERITFBUWGB0YHhgfGCAYIRgiGDEYNRg2GDdA"
+                          "proofValue": "u2V0DhVkEkKk5Y6Jk71VA9uh4OLemslqlHc6au1nnxMhn3cVcauDTb30r19b6Bzw86tvxmPXZsJGgHltulZLFZACVbkPOGeomi9RAw29XCiLqPEOhIZCtRSzol3YgPyjrI8LGGQeGPqPrAaLfHZlujSD9IzWwxYYuIL4evcGvOFqeQWvXzEiiDSFQWsoPyt7i6gKB4nrL9WuZPY9pstEXnmdxf251RqN6sZFjbbkpA6AffcsVzvfLD2A6fUH6LosVScObXsl1weC-_wnp3gy62KEpwDKX1LVMrVCkOFaDUaysYJPfUooiME6tAnrxvAAvGAKgyQU3LBO_xbFlLIhkfps89abY0ig5P33mAm8ZSb7mLntlaejyG8z6c71ZH3ZBoCNjzDa_YPrdv96lyl2SLPs8vY7SMo5AMlzOHJ5bp3PWpre7zRnlKP6_Ahpcayw9xWkbNUTZ10HuATLYs8ZmA1swjVN9XqJjMYT9HkNBOOSDsQZB1XJlcTevmnQ7Sy5FMLmx0jG7EARyTmfKKYQUg6lPK925pQUJr7LQHb4NBU1yH0dZRQZDR0NOGJZ2NeVY1OhWfU0WiloyuTciH5uUPLZBTfqCvZjCQqjKX6hl8OxuOIKzafH5P4VREdA7DOp9CdX4xJ8jPnpOIMzgcRMWrQ-KQei4qDBWbQAkbm-TSrSdtSf_97avMVJfpifbXyCdyic6ntAXE2geEaHhqECCDO2eGYz6IlQxfwyJdxxjYCqX7osSAIXXCnjikK4RFo6SouzgAOo5HBmEAx4DLNPD4WSN8lOZ4T5nqdX6QqQ0Avj71WdCHzc8g8nEWddAtPSKozhbuav7RSAbbKio7SFSUPz6VVyJjJcdK5R7pvIgyCAWhvTCrPvsR_GlPuk5LvU_9Ho8rkefq4TB2DFwcd44U05Bo9vML6c4-RjzAUAz_HwdBiOEg4qRu7piDUo2p0eXJoOsCjKtkRWibqY3j5MKVJKwC3QLvC6hUfRO24ttpQqQ5gWhCzGIMwYKDaZXhN6VPCMsrSpxyEkE_dK-A1ey_29_Kl_rA1pUAsrzGpCy5zcloKp6r75iDdwzkiZVbhwqRTkLv8K7mlyEzmyOCS0hFrTCSVhdgxtUsFeZECsTm7N2-6XU7KQFTkbaq2uuN_3_4y_s7EZzNBRFJcX7aH0kLHep1hiU-uIyebxTRyy3tUzsA3BMsSAnZPfPozlFZKjV5EARoliVpTrPaibRay-DlgwYvx_pOiFseK_85QrCnn1490AIkDohCwD9aPtLM5seqzf1bAaqfQmamooqdC5eNfi2vrMh3TIV9B39QbYWkJN24Sopo9UpSaVDPTJyJh5AsS5G8t_kXjRgtiEfVfjOmBK0KS3JHbyJHgVmhWe6XzJV4O1odIWqSMjuXx40JB0J2nidB9Sh8bG2ccSRdGTdAWtVjHAzHaxKtHPVnTspqyhsySC0tsdWvNZJK4JL1Vmd25KHh3Oj-RKcx6LAqGCWWZlOjx3h4Q_Xk8c63D8R5k0HQlaFTNH9MULdvfVCTobdcrjlO-JLSXOeIEV_g0hp-bP29PWYviupAAQBDwIMAwAEDQUOBgsHBQgBgw0OEJgcAAECAwQFCQoLDA0OEBITFBUWFxgYGBkYGhghGCIYIxgkGCUYJkA"
                         }
                       },
                       "options": {
@@ -4400,7 +4400,7 @@
                         "term": "name"
                       },
                       "api": "BBSverify",
-                      "reqNum": 1285
+                      "reqNum": 6
                     }
                   }
                 },
@@ -4426,9 +4426,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:c09ad66b-51f9-4f68-ac6e-de5d7df47c89",
+              "_testId": "urn:uuid:be9a14dd-df63-4163-9a92-abd24180fa77",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "If the \"proofValue\" string does not start with \"u\", an error MUST be raised."
@@ -4439,12 +4439,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 12013,
+                "_idleStart": 11926,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 74,
+              "duration": 71,
               "state": "failed",
               "err": {
                 "name": "AssertionError",
@@ -4474,9 +4474,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:11527c42-a399-45ab-a059-9de0cf2cafb7",
+              "_testId": "urn:uuid:96945182-34cc-4ac3-9a95-ca6e4c35635e",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "If the \"cryptosuite\" field is not the string \"bbs-2023\", an error MUST be raised."
@@ -4487,12 +4487,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 12088,
+                "_idleStart": 11999,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 74,
+              "duration": 70,
               "state": "passed",
               "speed": "medium"
             }
@@ -4514,9 +4514,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:a8c171e2-75f4-474f-80b2-3f91aa06260c",
+              "_testId": "urn:uuid:b55a761e-93c3-4222-b1f2-372ea632ca0c",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST fail to verify a base proof."
@@ -4527,14 +4527,14 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 12162,
+                "_idleStart": 12069,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 85,
+              "duration": 72,
               "state": "passed",
-              "speed": "slow"
+              "speed": "medium"
             }
           ]
         },
@@ -4554,9 +4554,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/20-bbs-verify.js",
-              "parent": "7QmRGRmOxS9JilLJSodCH",
+              "parent": "8L1zvyY_J53j3hhgZzu4_",
               "ctx": null,
-              "_testId": "urn:uuid:9546f58c-d591-404f-9118-158eb2edd139",
+              "_testId": "urn:uuid:2fd77aae-7259-463a-8fa4-f89d117fbd89",
               "cell": {
                 "columnId": "Grotto Networking",
                 "rowId": "MUST fail to verify a modified disclosed credential."
@@ -4567,12 +4567,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 12248,
+                "_idleStart": 12141,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 414,
+              "duration": 347,
               "state": "passed",
               "speed": "slow"
             }
@@ -4601,7 +4601,7 @@
           "_currentRetry": 0,
           "pending": false,
           "type": "hook",
-          "parent": "WHHt9p5CX7rLvkgHe2qwx",
+          "parent": "P1-WhsSHCuavfWUyaGuUn",
           "ctx": null,
           "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/30-bbs-interop.js",
           "originalTitle": "\"before all\" hook",
@@ -4611,12 +4611,12 @@
             "_idleTimeout": -1,
             "_idlePrev": null,
             "_idleNext": null,
-            "_idleStart": 12663,
+            "_idleStart": 12489,
             "_onTimeout": null,
             "_repeat": null,
             "_destroyed": true
           },
-          "duration": 899,
+          "duration": 907,
           "_error": null
         }
       ],
@@ -4628,13 +4628,13 @@
       "_onlyTests": [],
       "_onlySuites": [],
       "delayed": false,
-      "parent": "ylwQWta0F_1VbtSfx4LrU",
+      "parent": "ZsCzF9Md-SOFFiypv0h3Q",
       "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/30-bbs-interop.js",
       "matrix": true,
       "report": true,
       "rowLabel": "Issuer",
       "columnLabel": "Verifier",
-      "_testId": "urn:uuid:db79df44-ffb7-434a-b731-6b7a6a5bfd1a",
+      "_testId": "urn:uuid:c6e0df00-4018-44b9-be5f-b79fe7c80782",
       "columns": [
         "Grotto Networking"
       ],
@@ -4655,9 +4655,9 @@
               "_currentRetry": 0,
               "pending": false,
               "file": "/home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/30-bbs-interop.js",
-              "parent": "WHHt9p5CX7rLvkgHe2qwx",
+              "parent": "P1-WhsSHCuavfWUyaGuUn",
               "ctx": null,
-              "_testId": "urn:uuid:6d144927-1c2e-4956-be02-fb7d066231a1",
+              "_testId": "urn:uuid:09b0be81-3190-408b-a70c-479e16aa6294",
               "_events": {},
               "_eventsCount": 1,
               "cell": {
@@ -4668,12 +4668,12 @@
                 "_idleTimeout": -1,
                 "_idlePrev": null,
                 "_idleNext": null,
-                "_idleStart": 13562,
+                "_idleStart": 13397,
                 "_onTimeout": null,
                 "_repeat": null,
                 "_destroyed": true
               },
-              "duration": 426,
+              "duration": 478,
               "state": "passed",
               "speed": "slow"
             }
