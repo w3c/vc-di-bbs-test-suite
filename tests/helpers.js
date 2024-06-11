@@ -31,7 +31,7 @@ export const supportsVc = ({vcVersion, endpoint}) => {
 
 /**
  * Filters Verifiers for the Data Integrity Verifier tests.
- * Needs to have tags and vcVersion binded to it.
+ * Needs to have tags and vcVersion bound to it.
  *
  * @param {object} options - Options to use.
  * @param {object} options.implementation - An implementation.
