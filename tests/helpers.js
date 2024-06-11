@@ -34,7 +34,7 @@ export const supportsVc = ({vcVersion, endpoint}) => {
  * Needs to have tags and vcVersion binded to it.
  *
  * @param {object} options - Options to use.
- * @param {object} options.implementation - An impelementation.
+ * @param {object} options.implementation - An implementation.
  *
  * @returns {Array<object>} Filtered endpoints.
  */
