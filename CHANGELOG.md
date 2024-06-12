@@ -22,6 +22,9 @@ SPDX-License-Identifier: BSD-3-Clause
 - Test Suites use configurable test vectors defined in `config/vectors`.
 - Test Suites use tags defined in `config/runner.json`
 
+### Fixed
+- Do not await Mocha's `describe` function as it returns a `Suite`.
+
 ## 1.1.0 - 2023-12-14
 
 ### Changed
