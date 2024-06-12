@@ -6,7 +6,6 @@
 import * as bs58 from 'base58-universal';
 import * as bs64 from 'base64url-universal';
 import {createRequire} from 'node:module';
-import {klona} from 'klona';
 import {v4 as uuidv4} from 'uuid';
 
 // remove first element and decode
@@ -57,8 +56,8 @@ export const createInitialVc = async ({
   addIssuanceDate = true
 }) => {
   const {settings: {id: issuerId, options = {}}} = issuer;
-  const testOptions = klona(options);
-  const credential = klona(vc);
+  const testOptions = structuredClone(options);
+  const credential = structuredClone(vc);
   credential.id = `urn:uuid:${uuidv4()}`;
   credential.issuer = issuerId;
   if(addIssuanceDate) {
