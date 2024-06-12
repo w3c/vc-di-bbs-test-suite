@@ -15,12 +15,24 @@ import {documentLoader} from '../documentLoader.js';
 
 const should = chai.should();
 
+/**
+ * Runs a Mocha Suite on issuer endpoints using the params.
+ *
+ * @param {object} options - Options to use.
+ * @param {Map<string, object>} options.match - Implementations matching a
+ *   filter.
+ * @param {string} [options.vcVersion = '2.0'] - A vcVersion.
+ * @param {object} [options.credentials = {}] - An object with credentials
+ *   for the test.
+ *
+ * @returns {object} - Returns a mocha Suite.
+ */
 export function createSuite({
   match = new Map(),
   vcVersion = '2.0',
   credentials = {},
 }) {
-  describe(`bbs-2023 (issuers) VC Version ${vcVersion}`, function() {
+  return describe(`bbs-2023 (issuers) VC Version ${vcVersion}`, function() {
     this.matrix = true;
     this.report = true;
     this.implemented = [...match.keys()];
