@@ -1,12 +1,11 @@
 /*!
- * Copyright 2023 Digital Bazaar, Inc.
+ * Copyright 2023-2024 Digital Bazaar, Inc.
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import * as vc from '@digitalbazaar/vc';
 import {documentLoader as defaultLoader} from './documentLoader.js';
 import {getMultikeys} from './key-gen.js';
 import {getSuite} from './cryptosuites.js';
-import {klona} from 'klona';
 
 /**
  * Issues test data locally and then returns a Map
@@ -56,7 +55,7 @@ export async function issueCredential({
   suite,
   mandatoryPointers = []
 }) {
-  const _credential = klona(credential);
+  const _credential = structuredClone(credential);
   _credential.issuer = issuer;
   return vc.issue({
     credential: _credential,

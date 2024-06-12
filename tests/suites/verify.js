@@ -7,7 +7,6 @@ import {
   verificationFail,
   verificationSuccess
 } from '../assertions.js';
-import {klona} from 'klona';
 import {supportsVc} from '../helpers.js';
 
 export function verifySuite({
@@ -70,7 +69,7 @@ export function verifySuite({
         it('If the "proofValue" string does not start with "u", an ' +
           'error MUST be raised.', async function() {
           const credential = getTestVector(disclosed?.base);
-          const signedCredentialCopy = klona(credential);
+          const signedCredentialCopy = structuredClone(credential);
           // intentionally modify proofValue to not start with 'u'
           signedCredentialCopy.proof.proofValue = 'a';
           await verificationFail({
@@ -80,7 +79,7 @@ export function verifySuite({
         it('If the "cryptosuite" field is not the string "bbs-2023", ' +
           'an error MUST be raised.', async function() {
           const credential = getTestVector(disclosed?.base);
-          const signedCredentialCopy = klona(credential);
+          const signedCredentialCopy = structuredClone(credential);
           signedCredentialCopy.proof.cryptosuite = 'invalid-cryptosuite';
           await verificationFail({
             credential: signedCredentialCopy, verifier
@@ -88,7 +87,7 @@ export function verifySuite({
         });
         it('MUST fail to verify a base proof.', async function() {
           const credential = getTestVector(signed);
-          const signedCredentialCopy = klona(credential);
+          const signedCredentialCopy = structuredClone(credential);
           await verificationFail({
             credential: signedCredentialCopy, verifier
           });
@@ -96,7 +95,7 @@ export function verifySuite({
         it('MUST fail to verify a modified disclosed credential.',
           async function() {
             const credential = getTestVector(disclosed?.base);
-            const signedCredentialCopy = klona(credential);
+            const signedCredentialCopy = structuredClone(credential);
             // intentionally modify `credentialSubject` ID
             signedCredentialCopy.credentialSubject.id = 'urn:invalid';
             await verificationFail({

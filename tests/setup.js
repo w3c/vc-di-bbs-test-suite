@@ -6,7 +6,6 @@ import {
   deriveCredentials,
   issueCredentials
 } from './vc-generator/index.js';
-import {klona} from 'klona';
 
 export async function verifySetup({credentials, keyTypes, suite}) {
   const testVectors = {
@@ -40,7 +39,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
   // transforms the vectors
   const transformVectors = (obj, func) => Object.entries(obj).map(input => {
     const [vcVersion, vector] = input;
-    return [vcVersion, func(klona(vector))];
+    return [vcVersion, func(structuredClone(vector))];
   });
   const disclosedBaseVectors = transformVectors(
     subjectNestedObjects,
@@ -84,7 +83,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
   });
   // select full arrays
   testVectors.disclosed.array.full = await deriveCredentials({
-    vectors: Object.entries(klona(subjectHasArrays)),
+    vectors: Object.entries(structuredClone(subjectHasArrays)),
     suite,
     keyTypes
   });
