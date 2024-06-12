@@ -28,7 +28,7 @@ const testVectors = await verifySetup({
 describe('bbs-2023 (verify)', async function() {
   for(const vcVersion of vectors.vcTypes) {
     for(const keyType of vectors.keyTypes) {
-      await verifySuite({
+      verifySuite({
         match,
         vcVersion,
         keyType,

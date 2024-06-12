@@ -17,7 +17,7 @@ const {match} = endpoints.filterByTag({
 describe('bbs-2023 (create)', async function() {
   for(const vcVersion of vectors.vcTypes) {
     for(const keyType of vectors.keyTypes) {
-      await createSuite({
+      createSuite({
         match,
         vcVersion,
         keyType,

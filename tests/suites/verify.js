@@ -10,13 +10,26 @@ import {
 import {klona} from 'klona';
 import {supportsVc} from '../helpers.js';
 
+/**
+ * Runs a Mocha Suite on verifier endpoints using the params.
+ *
+ * @param {object} options - Options to use.
+ * @param {Map<string, object>} options.match - Implementations matching a
+ *   filter.
+ * @param {string} [options.vcVersion = '2.0'] - A vcVersion.
+ * @param {string} [options.keyType = 'P-381'] - A keyType.
+ * @param {object} [options.credentials = {}] - An object with credentials
+ *   for the test.
+ *
+ * @returns {object} - Returns a mocha Suite.
+ */
 export function verifySuite({
   match = new Map(),
   vcVersion = '2.0',
   keyType = 'P-381',
   credentials = {}
 }) {
-  describe(`bbs-2023 (verifiers) VC ${vcVersion}`, function() {
+  return describe(`bbs-2023 (verifiers) VC ${vcVersion}`, function() {
     // this will tell the report
     // to make an interop matrix with this suite
     this.matrix = true;
