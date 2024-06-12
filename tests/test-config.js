@@ -2,7 +2,6 @@
  * Copyright 2023-2024 Digital Bazaar, Inc.
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import {klona} from 'klona';
 import {require} from './helpers.js';
 
 const _runner = require('../config/runner.json');
@@ -31,7 +30,7 @@ const openVectorFiles = vectorFiles => {
     const value = vectorFiles[property];
     // assume strings are paths to be opened
     if(typeof value === 'string') {
-      vectorFiles[property] = klona(require(value));
+      vectorFiles[property] = structuredClone(require(value));
       continue;
     }
     // assume everything else recurs
@@ -42,7 +41,7 @@ const openVectorFiles = vectorFiles => {
 
 const _createVectorConfig = suite => {
   // prevent mutation to require cache
-  const vectorConfig = klona(_vectors.suites[suite]);
+  const vectorConfig = structuredClone(_vectors.suites[suite]);
   // open test data in credentials section
   if(vectorConfig.credentials) {
     const {credentials} = vectorConfig;
@@ -59,14 +58,14 @@ const _createSuiteConfig = suite => {
     throw new Error(`Could not find config for suite ${suite}`);
   }
   // return a deep copy to prevent test data mutation
-  return klona(suiteConfig);
+  return structuredClone(suiteConfig);
 };
 
 export const getSuiteConfig = suite => {
   // if cached config use it
   if(_cache.get(suite)) {
     // return a deep copy to prevent test data mutation
-    return klona(_cache.get(suite));
+    return structuredClone(_cache.get(suite));
   }
   // create an initial config
   const suiteConfig = _createSuiteConfig(suite);
