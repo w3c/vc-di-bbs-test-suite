@@ -30,7 +30,10 @@ export async function verifySetup({credentials, keyTypes, suite}) {
         missingElements: new Map()
       },
       invalid: {
-        proofTypeAndCryptosuite: new Map()
+        // invalid "proof.type" and "proof.cryptosuite"
+        proofTypeAndCryptosuite: new Map(),
+        // invalid "proof.cryptosuite"
+        cryptosuite: new Map()
       }
     }
   };

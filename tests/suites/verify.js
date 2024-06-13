@@ -96,6 +96,7 @@ export function verifySuite({
         it('If proofConfig.type is not set to DataIntegrityProof and/or ' +
         'proofConfig.cryptosuite is not set to bbs-2023, an ' +
         'INVALID_PROOF_CONFIGURATION error MUST be raised.', async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#base-proof-transformation-bbs-2023:~:text=If%20proofConfig.type%20is%20not%20set%20to%20DataIntegrityProof%20and/or%20proofConfig.cryptosuite%20is%20not%20set%20to%20bbs%2D2023%2C%20an%20INVALID_PROOF_CONFIGURATION%20error%20MUST%20be%20raised.';
           const credential = cloneTestVector(
             disclosed?.invalid?.proofTypeAndCryptosuite);
           await verificationFail({credential, verifier});
