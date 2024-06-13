@@ -6,6 +6,7 @@ import * as Bls12381Multikey from '@digitalbazaar/bls12-381-multikey';
 import * as didKey from '@digitalbazaar/did-method-key';
 import {contextMap} from './contexts.js';
 /*
+ * FIXME reenable documentLoader on release of jsonld 9
 import {JsonLdDocumentLoader} from 'jsonld-document-loader';
 
 const jdl = new JsonLdDocumentLoader();
