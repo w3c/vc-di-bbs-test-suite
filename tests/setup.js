@@ -4,8 +4,11 @@
  */
 import {
   deriveCredentials,
+  getMultikeys,
+  getSuite,
   issueCredentials
 } from './vc-generator/index.js';
+import {generators, issueCloned} from 'data-integrity-test-suite-assertion';
 
 export async function verifySetup({credentials, keyTypes, suite}) {
   const testVectors = {
@@ -25,6 +28,9 @@ export async function verifySetup({credentials, keyTypes, suite}) {
         lessThanFull: new Map(),
         //disclosedCredentialsWithoutFirstArrayElement
         missingElements: new Map()
+      },
+      invalid: {
+        proofTypeAndCryptosuite: new Map()
       }
     }
   };
@@ -113,5 +119,27 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suite,
     keyTypes
   });
+  const {mandatory, shared} = generators;
+  const {invalidProofType} = mandatory;
+  const {invalidCryptosuite} = shared;
+  const keys = await getMultikeys({keyTypes});
+  const {proofTypeAndCryptosuite} = testVectors.disclosed.invalid;
+  for(const [keyType, {signer, issuer}] of keys) {
+    proofTypeAndCryptosuite.set(keyType, new Map());
+    for(const [vcVersion, vector] of Object.entries(subjectNestedObjects)) {
+      const {credential, mandatoryPointers, selectivePointers} = vector;
+      const _credential = structuredClone(credential);
+      _credential.issuer = issuer;
+      const baseSuite = getSuite({suite, signer, mandatoryPointers});
+      const selectiveSuite = getSuite({suite, signer, selectivePointers});
+      const testData = invalidCryptosuite(invalidProofType({
+        suite: baseSuite,
+        selectiveSuite,
+        credential: _credential
+      }));
+      const vc = await issueCloned(testData);
+      proofTypeAndCryptosuite.get(keyType).set(vcVersion, vc);
+    }
+  }
   return testVectors;
 }
