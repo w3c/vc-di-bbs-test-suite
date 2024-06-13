@@ -122,27 +122,48 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suite,
     keyTypes
   });
+  const deriveInvalidVectors = async ({
+    keys,
+    vectors,
+    map = new Map(),
+    generators = []
+  }) => {
+    for(const [keyType, {signer, issuer}] of keys) {
+      map.set(keyType, new Map());
+      for(const [vcVersion, vector] of Object.entries(vectors)) {
+        const {credential, mandatoryPointers, selectivePointers} = vector;
+        const _credential = structuredClone(credential);
+        _credential.issuer = issuer;
+        // the first params passed to the first generator
+        const initParams = {
+          suite: getSuite({suite, signer, mandatoryPointers}),
+          selectiveSuite: getSuite({suite, signer, selectivePointers}),
+          credential: _credential
+        };
+        // call each generator on itself to produce accumulated invalid suites
+        // and vectors
+        const testData = generators.reduce((accumulator, current) =>
+          current(accumulator), initParams);
+        const vc = await issueCloned(testData);
+        map.get(keyType).set(vcVersion, vc);
+      }
+    }
+    return map;
+  };
   const {mandatory, shared} = generators;
   const {invalidProofType} = mandatory;
   const {invalidCryptosuite} = shared;
   const keys = await getMultikeys({keyTypes});
-  const {proofTypeAndCryptosuite} = testVectors.disclosed.invalid;
-  for(const [keyType, {signer, issuer}] of keys) {
-    proofTypeAndCryptosuite.set(keyType, new Map());
-    for(const [vcVersion, vector] of Object.entries(subjectNestedObjects)) {
-      const {credential, mandatoryPointers, selectivePointers} = vector;
-      const _credential = structuredClone(credential);
-      _credential.issuer = issuer;
-      const baseSuite = getSuite({suite, signer, mandatoryPointers});
-      const selectiveSuite = getSuite({suite, signer, selectivePointers});
-      const testData = invalidCryptosuite(invalidProofType({
-        suite: baseSuite,
-        selectiveSuite,
-        credential: _credential
-      }));
-      const vc = await issueCloned(testData);
-      proofTypeAndCryptosuite.get(keyType).set(vcVersion, vc);
-    }
-  }
+  testVectors.disclosed.invalid.proofTypeAndCryptosuite =
+    await deriveInvalidVectors({
+      keys,
+      vectors: subjectNestedObjects,
+      generators: [invalidProofType, invalidCryptosuite]
+    });
+  testVectors.disclosed.invalid.cryptosuite = await deriveInvalidVectors({
+    keys,
+    vectors: subjectNestedObjects,
+    generators: [invalidCryptosuite]
+  });
   return testVectors;
 }
