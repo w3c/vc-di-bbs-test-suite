@@ -135,3 +135,5 @@ export async function verifyCredential({
     suite: getSuite({suite, verify: true})
   });
 }
+
+export {getSuite, getMultikeys};
