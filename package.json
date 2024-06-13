@@ -53,7 +53,7 @@
     "base64url-universal": "^2.0.0",
     "chai": "^4.3.7",
     "credentials-context": "^2.0.0",
-    "data-integrity-test-suite-assertion": "github:w3c-ccg/data-integrity-test-suite-assertion#add-suite-verifier-tests",
+    "data-integrity-test-suite-assertion": "github:w3c-ccg/data-integrity-test-suite-assertion",
     "jsonld-document-loader": "^2.0.0",
     "mocha": "^10.2.0",
     "uuid": "^9.0.0",
