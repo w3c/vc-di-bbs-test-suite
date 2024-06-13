@@ -48,72 +48,68 @@ export function verifySuite({
           };
         });
         const {disclosed, signed} = credentials;
-        const getTestVector = map => map?.get(keyType)?.get(vcVersion);
+        const cloneTestVector = map => structuredClone(
+          map?.get(keyType)?.get(vcVersion));
         it('MUST verify a valid VC with a bbs-2023 proof.',
           async function() {
-            const credential = getTestVector(disclosed?.base);
+            const credential = cloneTestVector(disclosed?.base);
             await verificationSuccess({credential, verifier});
           });
         it('MUST verify a valid VC with nested disclosed properties.',
           async function() {
-            const credential = getTestVector(disclosed?.nested);
+            const credential = cloneTestVector(disclosed?.nested);
             await verificationSuccess({credential, verifier});
           });
         it('MUST verify a valid VC with disclosed properties and bnodes.',
           async function() {
-            const credential = getTestVector(disclosed?.noIds);
+            const credential = cloneTestVector(disclosed?.noIds);
             await verificationSuccess({credential, verifier});
           });
         it('MUST verify with full array revealed properties',
           async function() {
-            const credential = getTestVector(disclosed?.array?.full);
+            const credential = cloneTestVector(disclosed?.array?.full);
             await verificationSuccess({credential, verifier});
           });
         it('MUST verify with fewer array revealed properties',
           async function() {
-            const credential = getTestVector(disclosed?.array?.lessThanFull);
+            const credential = cloneTestVector(disclosed?.array?.lessThanFull);
             await verificationSuccess({credential, verifier});
           });
         it('MUST verify w/o first element revealed properties',
           async function() {
-            const credential = getTestVector(disclosed?.array?.missingElements);
+            const credential = cloneTestVector(
+              disclosed?.array?.missingElements);
             await verificationSuccess({credential, verifier});
           });
         it('If the "proofValue" string does not start with "u", an ' +
           'error MUST be raised.', async function() {
-          const credential = getTestVector(disclosed?.base);
-          const signedCredentialCopy = structuredClone(credential);
+          const credential = cloneTestVector(disclosed?.base);
           // intentionally modify proofValue to not start with 'u'
-          signedCredentialCopy.proof.proofValue = 'a';
-          await verificationFail({
-            credential: signedCredentialCopy, verifier
-          });
+          credential.proof.proofValue = 'a';
+          await verificationFail({credential, verifier});
         });
         it('If the "cryptosuite" field is not the string "bbs-2023", ' +
           'an error MUST be raised.', async function() {
-          const credential = getTestVector(disclosed?.base);
-          const signedCredentialCopy = structuredClone(credential);
-          signedCredentialCopy.proof.cryptosuite = 'invalid-cryptosuite';
-          await verificationFail({
-            credential: signedCredentialCopy, verifier
-          });
+          const credential = cloneTestVector(disclosed?.invalid?.cryptosuite);
+          await verificationFail({credential, verifier});
+        });
+        it('If proofConfig.type is not set to DataIntegrityProof and/or ' +
+        'proofConfig.cryptosuite is not set to bbs-2023, an ' +
+        'INVALID_PROOF_CONFIGURATION error MUST be raised.', async function() {
+          const credential = cloneTestVector(
+            disclosed?.invalid?.proofTypeAndCryptosuite);
+          await verificationFail({credential, verifier});
         });
         it('MUST fail to verify a base proof.', async function() {
-          const credential = getTestVector(signed);
-          const signedCredentialCopy = structuredClone(credential);
-          await verificationFail({
-            credential: signedCredentialCopy, verifier
-          });
+          const credential = cloneTestVector(signed);
+          await verificationFail({credential, verifier});
         });
         it('MUST fail to verify a modified disclosed credential.',
           async function() {
-            const credential = getTestVector(disclosed?.base);
-            const signedCredentialCopy = structuredClone(credential);
+            const credential = cloneTestVector(disclosed?.base);
             // intentionally modify `credentialSubject` ID
-            signedCredentialCopy.credentialSubject.id = 'urn:invalid';
-            await verificationFail({
-              credential: signedCredentialCopy, verifier
-            });
+            credential.credentialSubject.id = 'urn:invalid';
+            await verificationFail({credential, verifier});
           });
       });
     }
