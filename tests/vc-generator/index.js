@@ -146,7 +146,7 @@ export async function deriveInvalidVectors({
 }) {
   for(const [keyType, {signer, issuer}] of keys) {
     map.set(keyType, new Map());
-    for(const [vcVersion, vector] of Object.entries(vectors)) {
+    for(const [vcVersion, vector] of vectors) {
       const {credential, mandatoryPointers, selectivePointers} = vector;
       const _credential = structuredClone(credential);
       _credential.issuer = issuer;
