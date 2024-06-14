@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import {
-  deriveCredentials,
   deriveInvalidVectors,
   getMultikeys,
   issueCredentials
@@ -38,17 +37,20 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     }
   };
   const {subjectNestedObjects, subjectHasArrays} = credentials.verify;
+  const keys = await getMultikeys({keyTypes});
+  // takes an object with keys versions values vector and
+  // transforms the vectors
+  const transformVectors = (obj, func = id => id) => Object.entries(obj).map(
+    input => {
+      const [vcVersion, vector] = input;
+      return [vcVersion, func(structuredClone(vector))];
+    });
+
   // create initial signed VCs
   testVectors.signed = await issueCredentials({
     credentials: Object.entries(subjectNestedObjects),
     suite,
     keyTypes
-  });
-  // takes an object with keys versions values vector and
-  // transforms the vectors
-  const transformVectors = (obj, func) => Object.entries(obj).map(input => {
-    const [vcVersion, vector] = input;
-    return [vcVersion, func(structuredClone(vector))];
   });
   const disclosedBaseVectors = transformVectors(
     subjectNestedObjects,
@@ -57,10 +59,10 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       return vector;
     });
   // use initial VCs for a basic selective disclosure test
-  testVectors.disclosed.base = await deriveCredentials({
+  testVectors.disclosed.base = await deriveInvalidVectors({
     vectors: disclosedBaseVectors,
-    suite,
-    keyTypes
+    suiteName: suite,
+    keys
   });
   const disclosedNestedVectors = transformVectors(
     subjectNestedObjects,
@@ -70,10 +72,10 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     }
   );
   // create initial nestedDisclosedCredential from signedVc
-  testVectors.disclosed.nested = await deriveCredentials({
+  testVectors.disclosed.nested = await deriveInvalidVectors({
     vectors: disclosedNestedVectors,
-    suite,
-    keyTypes
+    suiteName: suite,
+    keys
   });
   const disclosedNoIdVectors = transformVectors(
     subjectNestedObjects,
@@ -85,16 +87,16 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       return vector;
     }
   );
-  testVectors.disclosed.noIds = await deriveCredentials({
+  testVectors.disclosed.noIds = await deriveInvalidVectors({
     vectors: disclosedNoIdVectors,
-    keyTypes,
-    suite
+    keys,
+    suiteName: suite
   });
   // select full arrays
-  testVectors.disclosed.array.full = await deriveCredentials({
-    vectors: Object.entries(structuredClone(subjectHasArrays)),
-    suite,
-    keyTypes
+  testVectors.disclosed.array.full = await deriveInvalidVectors({
+    vectors: transformVectors(subjectHasArrays),
+    suiteName: suite,
+    keys
   });
   const lessThanFullVectors = transformVectors(
     subjectHasArrays,
@@ -104,10 +106,10 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       return vector;
     }
   );
-  testVectors.disclosed.array.lessThanFull = await deriveCredentials({
+  testVectors.disclosed.array.lessThanFull = await deriveInvalidVectors({
     vectors: lessThanFullVectors,
-    suite,
-    keyTypes
+    suiteName: suite,
+    keys
   });
   const removeFirst7Vectors = transformVectors(
     subjectHasArrays,
@@ -117,25 +119,24 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       return vector;
     }
   );
-  testVectors.disclosed.array.missingElements = await deriveCredentials({
+  testVectors.disclosed.array.missingElements = await deriveInvalidVectors({
     vectors: removeFirst7Vectors,
-    suite,
-    keyTypes
+    suiteName: suite,
+    keys
   });
   const {mandatory, shared} = generators;
   const {invalidProofType} = mandatory;
   const {invalidCryptosuite} = shared;
-  const keys = await getMultikeys({keyTypes});
   testVectors.disclosed.invalid.proofTypeAndCryptosuite =
     await deriveInvalidVectors({
       keys,
-      vectors: subjectNestedObjects,
+      vectors: transformVectors(subjectNestedObjects),
       suiteName: suite,
       generators: [invalidProofType, invalidCryptosuite]
     });
   testVectors.disclosed.invalid.cryptosuite = await deriveInvalidVectors({
     keys,
-    vectors: subjectNestedObjects,
+    vectors: transformVectors(subjectNestedObjects),
     suiteName: suite,
     generators: [invalidCryptosuite]
   });
