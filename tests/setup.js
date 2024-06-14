@@ -4,11 +4,11 @@
  */
 import {
   deriveCredentials,
+  deriveInvalidVectors,
   getMultikeys,
-  getSuite,
   issueCredentials
 } from './vc-generator/index.js';
-import {generators, issueCloned} from 'data-integrity-test-suite-assertion';
+import {generators} from 'data-integrity-test-suite-assertion';
 
 export async function verifySetup({credentials, keyTypes, suite}) {
   const testVectors = {
@@ -122,34 +122,6 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suite,
     keyTypes
   });
-  const deriveInvalidVectors = async ({
-    keys,
-    vectors,
-    map = new Map(),
-    generators = []
-  }) => {
-    for(const [keyType, {signer, issuer}] of keys) {
-      map.set(keyType, new Map());
-      for(const [vcVersion, vector] of Object.entries(vectors)) {
-        const {credential, mandatoryPointers, selectivePointers} = vector;
-        const _credential = structuredClone(credential);
-        _credential.issuer = issuer;
-        // the first params passed to the first generator
-        const initParams = {
-          suite: getSuite({suite, signer, mandatoryPointers}),
-          selectiveSuite: getSuite({suite, signer, selectivePointers}),
-          credential: _credential
-        };
-        // call each generator on itself to produce accumulated invalid suites
-        // and vectors
-        const testData = generators.reduce((accumulator, current) =>
-          current(accumulator), initParams);
-        const vc = await issueCloned(testData);
-        map.get(keyType).set(vcVersion, vc);
-      }
-    }
-    return map;
-  };
   const {mandatory, shared} = generators;
   const {invalidProofType} = mandatory;
   const {invalidCryptosuite} = shared;
@@ -158,11 +130,13 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     await deriveInvalidVectors({
       keys,
       vectors: subjectNestedObjects,
+      suiteName: suite,
       generators: [invalidProofType, invalidCryptosuite]
     });
   testVectors.disclosed.invalid.cryptosuite = await deriveInvalidVectors({
     keys,
     vectors: subjectNestedObjects,
+    suiteName: suite,
     generators: [invalidCryptosuite]
   });
   return testVectors;
