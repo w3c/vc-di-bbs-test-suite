@@ -65,52 +65,6 @@ export async function issueCredential({
   });
 }
 
-/**
- * Derives test data locally and then returns a Map
- * with the test data.
- *
- * @param {object} options - Options to use.
- * @param {Map<string, object>} options.vectors - Version & VC creation options.
- * @param {Function} [options.documentLoader = defaultLoader] - A
- * documentLoader(url).
- * @param {string} options.suite - A cryptosuite id.
- * @param {Array<string>} options.keyTypes - A list of key types.
- *
- * @returns {Promise<Map<string, object>>} Returns a Map <keyType, vc>.
- */
-export async function deriveCredentials({
-  vectors,
-  documentLoader = defaultLoader,
-  suite,
-  keyTypes = ['P-381']
-}) {
-  const results = new Map();
-  const keys = await getMultikeys({keyTypes});
-  for(const [keyType, {signer, issuer}] of keys) {
-    const versionedVcs = new Map();
-    for(const [vcVersion, vector] of vectors) {
-      const {credential, mandatoryPointers, selectivePointers} = vector;
-      const verifiableCredential = await issueCredential({
-        credential,
-        issuer,
-        signer,
-        suite,
-        mandatoryPointers
-      });
-      const derivedVc = await deriveCredential({
-        verifiableCredential,
-        documentLoader,
-        suite,
-        signer,
-        selectivePointers
-      });
-      versionedVcs.set(vcVersion, derivedVc);
-    }
-    results.set(keyType, versionedVcs);
-  }
-  return results;
-}
-
 export async function deriveCredential({
   documentLoader = defaultLoader,
   verifiableCredential,
@@ -137,7 +91,7 @@ export async function verifyCredential({
   });
 }
 
-export async function deriveInvalidVectors({
+export async function deriveCredentials({
   keys,
   vectors,
   map = new Map(),
