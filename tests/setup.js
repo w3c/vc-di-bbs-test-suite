@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import {
-  deriveInvalidVectors,
+  deriveCredentials,
   getMultikeys,
   issueCredentials
 } from './vc-generator/index.js';
@@ -59,7 +59,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       return vector;
     });
   // use initial VCs for a basic selective disclosure test
-  testVectors.disclosed.base = await deriveInvalidVectors({
+  testVectors.disclosed.base = await deriveCredentials({
     vectors: disclosedBaseVectors,
     suiteName: suite,
     keys
@@ -72,7 +72,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     }
   );
   // create initial nestedDisclosedCredential from signedVc
-  testVectors.disclosed.nested = await deriveInvalidVectors({
+  testVectors.disclosed.nested = await deriveCredentials({
     vectors: disclosedNestedVectors,
     suiteName: suite,
     keys
@@ -87,13 +87,13 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       return vector;
     }
   );
-  testVectors.disclosed.noIds = await deriveInvalidVectors({
+  testVectors.disclosed.noIds = await deriveCredentials({
     vectors: disclosedNoIdVectors,
     keys,
     suiteName: suite
   });
   // select full arrays
-  testVectors.disclosed.array.full = await deriveInvalidVectors({
+  testVectors.disclosed.array.full = await deriveCredentials({
     vectors: transformVectors(subjectHasArrays),
     suiteName: suite,
     keys
@@ -106,7 +106,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       return vector;
     }
   );
-  testVectors.disclosed.array.lessThanFull = await deriveInvalidVectors({
+  testVectors.disclosed.array.lessThanFull = await deriveCredentials({
     vectors: lessThanFullVectors,
     suiteName: suite,
     keys
@@ -119,7 +119,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       return vector;
     }
   );
-  testVectors.disclosed.array.missingElements = await deriveInvalidVectors({
+  testVectors.disclosed.array.missingElements = await deriveCredentials({
     vectors: removeFirst7Vectors,
     suiteName: suite,
     keys
@@ -128,13 +128,13 @@ export async function verifySetup({credentials, keyTypes, suite}) {
   const {invalidProofType} = mandatory;
   const {invalidCryptosuite} = shared;
   testVectors.disclosed.invalid.proofTypeAndCryptosuite =
-    await deriveInvalidVectors({
+    await deriveCredentials({
       keys,
       vectors: transformVectors(subjectNestedObjects),
       suiteName: suite,
       generators: [invalidProofType, invalidCryptosuite]
     });
-  testVectors.disclosed.invalid.cryptosuite = await deriveInvalidVectors({
+  testVectors.disclosed.invalid.cryptosuite = await deriveCredentials({
     keys,
     vectors: transformVectors(subjectNestedObjects),
     suiteName: suite,
