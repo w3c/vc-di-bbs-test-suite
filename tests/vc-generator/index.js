@@ -6,6 +6,7 @@ import * as vc from '@digitalbazaar/vc';
 import {documentLoader as defaultLoader} from './documentLoader.js';
 import {getMultikeys} from './key-gen.js';
 import {getSuite} from './cryptosuites.js';
+import {issueCloned} from 'data-integrity-test-suite-assertion';
 
 /**
  * Issues test data locally and then returns a Map
@@ -134,6 +135,36 @@ export async function verifyCredential({
     documentLoader,
     suite: getSuite({suite, verify: true})
   });
+}
+
+export async function deriveInvalidVectors({
+  keys,
+  vectors,
+  map = new Map(),
+  suiteName,
+  generators = []
+}) {
+  for(const [keyType, {signer, issuer}] of keys) {
+    map.set(keyType, new Map());
+    for(const [vcVersion, vector] of Object.entries(vectors)) {
+      const {credential, mandatoryPointers, selectivePointers} = vector;
+      const _credential = structuredClone(credential);
+      _credential.issuer = issuer;
+      // the first params passed to the first generator
+      const initParams = {
+        suite: getSuite({suite: suiteName, signer, mandatoryPointers}),
+        selectiveSuite: getSuite({suite: suiteName, signer, selectivePointers}),
+        credential: _credential
+      };
+      // call each generator on itself to produce accumulated invalid suites
+      // and vectors
+      const testData = generators.reduce((accumulator, current) =>
+        current(accumulator), initParams);
+      const vc = await issueCloned(testData);
+      map.get(keyType).set(vcVersion, vc);
+    }
+  }
+  return map;
 }
 
 export {getSuite, getMultikeys};
