@@ -110,6 +110,7 @@ export async function deriveCredentials({
         suite: getSuite({suite: suiteName, signer, mandatoryPointers}),
         selectiveSuite: getSuite({suite: suiteName, signer, selectivePointers}),
         credential: _credential,
+        // add the ability to overwrite the defaults
         ...initialParams
       };
       // call each generator on itself to produce accumulated invalid suites
