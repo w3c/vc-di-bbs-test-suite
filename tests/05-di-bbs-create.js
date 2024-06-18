@@ -16,5 +16,6 @@ const {match} = endpoints.filterByTag({
 
 checkDataIntegrityProofFormat({
   implemented: match,
-  testDescription: 'Data Integrity (bbs-2023 issuers)'
+  testDescription: 'Data Integrity (bbs-2023 issuers)',
+  cryptosuiteName: 'bbs-2023'
 });
