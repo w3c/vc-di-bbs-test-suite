@@ -124,9 +124,8 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suiteName: suite,
     keys
   });
-  const {mandatory, shared} = generators;
-  const {invalidProofType} = mandatory;
-  const {invalidCryptosuite} = shared;
+  const {mandatory} = generators;
+  const {invalidCryptosuite, invalidProofType} = mandatory;
   testVectors.disclosed.invalid.proofTypeAndCryptosuite =
     await deriveCredentials({
       keys,
