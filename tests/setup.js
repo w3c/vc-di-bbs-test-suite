@@ -212,6 +212,10 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     keys,
     vectors: transformVectors(subjectNestedObjects),
     suiteName: suite,
+    initialParams: {
+      // disclosed suite has no created
+      selectiveSuite: null
+    },
     generators: [invalidCreated]
   });
   return {
