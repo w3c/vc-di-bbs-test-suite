@@ -101,6 +101,12 @@ export function verifySuite({
             disclosed?.invalid?.proofTypeAndCryptosuite);
           await verificationFail({credential, verifier});
         });
+        it('Whenever this algorithm (base proof) encodes strings, it MUST ' +
+          'use UTF-8 encoding.', async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#serializebaseproofvalue:~:text=Whenever%20this%20algorithm%20encodes%20strings%2C%20it%20MUST%20use%20UTF%2D8%20encoding.';
+          const credential = cloneTestVector(disclosed?.invalid?.nonUTF8);
+          await verificationFail({credential, verifier});
+        });
         it('MUST fail to verify a base proof.', async function() {
           const credential = cloneTestVector(base);
           await verificationFail({credential, verifier});

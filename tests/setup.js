@@ -7,8 +7,8 @@ import {
   getMultikeys,
   issueCredentials
 } from './vc-generator/index.js';
-import {invalidStringEncoding} from './vc-generator/generator.js';
 import {generators} from 'data-integrity-test-suite-assertion';
+import {invalidStringEncoding} from './vc-generator/generator.js';
 
 export async function verifySetup({credentials, keyTypes, suite}) {
   const disclosed = {
@@ -126,19 +126,19 @@ export async function verifySetup({credentials, keyTypes, suite}) {
   disclosed.invalid.proofTypeAndCryptosuite =
     await deriveCredentials({
       keys,
-      vectors: transformVectors(subjectNestedObjects),
+      vectors: disclosedBaseVectors,
       suiteName: suite,
       generators: [invalidProofType, invalidCryptosuite]
     });
   disclosed.invalid.cryptosuite = await deriveCredentials({
     keys,
-    vectors: transformVectors(subjectNestedObjects),
+    vectors: disclosedBaseVectors,
     suiteName: suite,
     generators: [invalidCryptosuite]
   });
   disclosed.invalid.nonUTF8 = await deriveCredentials({
     keys,
-    vectors: transformVectors(subjectNestedObjects),
+    vectors: disclosedBaseVectors,
     suiteName: suite,
     generators: [invalidStringEncoding]
   });
