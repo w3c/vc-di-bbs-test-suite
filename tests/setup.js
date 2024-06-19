@@ -42,8 +42,8 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       return [vcVersion, func(structuredClone(vector))];
     });
 
-  // create initial signed VCs
-  const signed = await issueCredentials({
+  // create initial base proofs
+  const base = await issueCredentials({
     credentials: Object.entries(subjectNestedObjects),
     suite,
     keyTypes
@@ -136,7 +136,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     generators: [invalidCryptosuite]
   });
   return {
-    signed,
+    base,
     disclosed
   };
 }

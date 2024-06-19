@@ -47,7 +47,7 @@ export function verifySuite({
             columnId: name, rowId: this.currentTest.title
           };
         });
-        const {disclosed, signed} = credentials;
+        const {disclosed, base} = credentials;
         const cloneTestVector = map => structuredClone(
           map?.get(keyType)?.get(vcVersion));
         it('MUST verify a valid VC with a bbs-2023 proof.',
@@ -102,7 +102,7 @@ export function verifySuite({
           await verificationFail({credential, verifier});
         });
         it('MUST fail to verify a base proof.', async function() {
-          const credential = cloneTestVector(signed);
+          const credential = cloneTestVector(base);
           await verificationFail({credential, verifier});
         });
         it('MUST fail to verify a modified disclosed credential.',
