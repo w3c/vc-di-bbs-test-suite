@@ -12,7 +12,7 @@ import {generators} from 'data-integrity-test-suite-assertion';
 export async function verifySetup({credentials, keyTypes, suite}) {
   const disclosed = {
     //disclosedCredentials
-    base: new Map(),
+    basic: new Map(),
     //nestedDisclosedCredentials
     nested: new Map(),
     //disclosedDlCredentialNoIds
@@ -48,15 +48,15 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suite,
     keyTypes
   });
-  const disclosedBaseVectors = transformVectors(
+  const disclosedBasicVectors = transformVectors(
     subjectNestedObjects,
     vector => {
       vector.selectivePointers = ['/credentialSubject/id'];
       return vector;
     });
   // use initial VCs for a basic selective disclosure test
-  disclosed.base = await deriveCredentials({
-    vectors: disclosedBaseVectors,
+  disclosed.basic = await deriveCredentials({
+    vectors: disclosedBasicVectors,
     suiteName: suite,
     keys
   });

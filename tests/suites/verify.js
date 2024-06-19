@@ -52,7 +52,7 @@ export function verifySuite({
           map?.get(keyType)?.get(vcVersion));
         it('MUST verify a valid VC with a bbs-2023 proof.',
           async function() {
-            const credential = cloneTestVector(disclosed?.base);
+            const credential = cloneTestVector(disclosed?.basic);
             await verificationSuccess({credential, verifier});
           });
         it('MUST verify a valid VC with nested disclosed properties.',
@@ -83,7 +83,7 @@ export function verifySuite({
           });
         it('If the "proofValue" string does not start with "u", an ' +
           'error MUST be raised.', async function() {
-          const credential = cloneTestVector(disclosed?.base);
+          const credential = cloneTestVector(disclosed?.basic);
           // intentionally modify proofValue to not start with 'u'
           credential.proof.proofValue = 'a';
           await verificationFail({credential, verifier});
@@ -107,7 +107,7 @@ export function verifySuite({
         });
         it('MUST fail to verify a modified disclosed credential.',
           async function() {
-            const credential = cloneTestVector(disclosed?.base);
+            const credential = cloneTestVector(disclosed?.basic);
             // intentionally modify `credentialSubject` ID
             credential.credentialSubject.id = 'urn:invalid';
             await verificationFail({credential, verifier});
