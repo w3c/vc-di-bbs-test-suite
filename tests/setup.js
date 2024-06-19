@@ -8,7 +8,7 @@ import {
   issueCredentials
 } from './vc-generator/index.js';
 import {generators} from 'data-integrity-test-suite-assertion';
-import {invalidStringEncoding} from './vc-generator/generator.js';
+import {invalidStringEncoding} from './vc-generator/generators.js';
 
 export async function verifySetup({credentials, keyTypes, suite}) {
   const disclosed = {
