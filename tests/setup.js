@@ -30,7 +30,9 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       // invalid "proof.type" and "proof.cryptosuite"
       proofTypeAndCryptosuite: new Map(),
       // invalid "proof.cryptosuite"
-      cryptosuite: new Map()
+      cryptosuite: new Map(),
+      // for invalid string encoding test
+      nonUTF8: new Map()
     }
   };
   const {subjectNestedObjects, subjectHasArrays} = credentials.verify;
@@ -126,19 +128,19 @@ export async function verifySetup({credentials, keyTypes, suite}) {
   disclosed.invalid.proofTypeAndCryptosuite =
     await deriveCredentials({
       keys,
-      vectors: disclosedBaseVectors,
+      vectors: disclosedBasicVectors,
       suiteName: suite,
       generators: [invalidProofType, invalidCryptosuite]
     });
   disclosed.invalid.cryptosuite = await deriveCredentials({
     keys,
-    vectors: disclosedBaseVectors,
+    vectors: disclosedBasicVectors,
     suiteName: suite,
     generators: [invalidCryptosuite]
   });
   disclosed.invalid.nonUTF8 = await deriveCredentials({
     keys,
-    vectors: disclosedBaseVectors,
+    vectors: disclosedBasicVectors,
     suiteName: suite,
     generators: [invalidStringEncoding]
   });
