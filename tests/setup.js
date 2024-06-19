@@ -135,6 +135,12 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suiteName: suite,
     generators: [invalidCryptosuite]
   });
+  disclosed.invalid.nonUTF8 = await deriveCredentials({
+    keys,
+    vectors: transformVectors(subjectNestedObjects),
+    suiteName: suite,
+    generators: [invalidCryptosuite]
+  });
   return {
     base,
     disclosed
