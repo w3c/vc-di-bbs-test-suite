@@ -7,6 +7,7 @@ import {
   getMultikeys,
   issueCredentials
 } from './vc-generator/index.js';
+import {invalidStringEncoding} from './vc-generator/generator.js';
 import {generators} from 'data-integrity-test-suite-assertion';
 
 export async function verifySetup({credentials, keyTypes, suite}) {
@@ -139,7 +140,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     keys,
     vectors: transformVectors(subjectNestedObjects),
     suiteName: suite,
-    generators: [invalidCryptosuite]
+    generators: [invalidStringEncoding]
   });
   return {
     base,
