@@ -96,6 +96,7 @@ export async function deriveCredentials({
   vectors,
   map = new Map(),
   suiteName,
+  initialParams,
   generators = []
 }) {
   for(const [keyType, {signer, issuer}] of keys) {
@@ -108,7 +109,8 @@ export async function deriveCredentials({
       const initParams = {
         suite: getSuite({suite: suiteName, signer, mandatoryPointers}),
         selectiveSuite: getSuite({suite: suiteName, signer, selectivePointers}),
-        credential: _credential
+        credential: _credential,
+        ...initialParams
       };
       // call each generator on itself to produce accumulated invalid suites
       // and vectors
