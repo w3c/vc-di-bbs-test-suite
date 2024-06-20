@@ -138,6 +138,17 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suiteName: suite,
     generators: [invalidCryptosuite]
   });
+  disclosed.invalid.noProofTypeOrCryptosuite = await deriveCredentials({
+    keys,
+    vectors: disclosedBasicVectors,
+    suiteName: suite,
+    initialParams: {
+      proofType: '',
+      cryptosuiteName: ''
+    },
+    generators: [invalidProofType, invalidCryptosuite]
+  });
+console.log(JSON.stringify(disclosed.invalid.noProofTypeOrCryptosuite.get('P-381').get('2.0'), null, 2));
   disclosed.invalid.nonUTF8 = await deriveCredentials({
     keys,
     vectors: disclosedBasicVectors,
