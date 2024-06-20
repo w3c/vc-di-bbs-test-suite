@@ -213,7 +213,8 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     vectors: transformVectors(subjectNestedObjects),
     suiteName: suite,
     initialParams: {
-      // disclosed suite has no created
+      // FIXME while created is not recommended for bbs it should be in
+      // the disclosed VC too.
       selectiveSuite: null
     },
     generators: [invalidCreated]
