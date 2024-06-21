@@ -8,7 +8,7 @@ import {
   issueCredentials
 } from './vc-generator/index.js';
 import {generators} from 'data-integrity-test-suite-assertion';
-import {invalidStringEncoding} from './vc-generator/generators.js';
+import {noProofTypeorCryptosuite, invalidStringEncoding} from './vc-generator/generators.js';
 
 export async function verifySetup({credentials, keyTypes, suite}) {
   const disclosed = {
@@ -146,9 +146,9 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       proofType: '',
       cryptosuiteName: ''
     },
-    generators: [invalidProofType, invalidCryptosuite]
+    // add a generator to turns safe mode off for proof cannonize and hash
+    generators: [noProofTypeorCryptosuite, invalidProofType, invalidCryptosuite]
   });
-console.log(JSON.stringify(disclosed.invalid.noProofTypeOrCryptosuite.get('P-381').get('2.0'), null, 2));
   disclosed.invalid.nonUTF8 = await deriveCredentials({
     keys,
     vectors: disclosedBasicVectors,
