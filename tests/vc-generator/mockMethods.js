@@ -11,7 +11,6 @@ import {createShuffledIdLabelMapFunction} from
   '../../node_modules/@digitalbazaar/bbs-2023-cryptosuite/lib/sdFunctions.js';
 
 const TEXT_ENCODER = new TextEncoder();
-const name = 'bbs-2023';
 
 export async function createProofValue({verifyData, dataIntegrityProof}) {
   const {signer} = dataIntegrityProof;
@@ -45,6 +44,80 @@ export async function createProofValue({verifyData, dataIntegrityProof}) {
     bbsSignature, bbsHeader, publicKey, hmacKey, mandatoryPointers
   });
   return proofValue;
+}
+
+export function stubVerifyData({
+  // jsonld safeMode
+  safe = true,
+  // expected cryptosuite name
+  name = 'bbs-2023',
+  // should created by deleted?
+  deleteCreated = true,
+  // A key for the hmac
+  hmacSeed = null
+}) {
+  return async function createVerifyData({
+    cryptosuite,
+    document,
+    proof,
+    documentLoader
+  }) {
+    if(cryptosuite?.name !== name) {
+      throw new TypeError(`"cryptosuite.name" must be "${name}".`);
+    }
+    if(!(cryptosuite.options && typeof cryptosuite.options === 'object')) {
+      throw new TypeError(`"cryptosuite.options" must be an object.`);
+    }
+    const {mandatoryPointers = []} = cryptosuite.options;
+    if(!Array.isArray(mandatoryPointers)) {
+      throw new TypeError(
+        `"cryptosuite.options.mandatoryPointers" must be an array.`);
+    }
+
+    // used for tests that need created to be in the proof
+    if(deleteCreated) {
+      // 0. Remove `created` from proof if present.
+      // FIXME: implement `updateProof` or another method to ensure `created`
+      // is not set once some API is exposed via `data-integrity`
+      delete proof.created;
+    }
+
+    // 1. Generate `proofHash` in parallel.
+    const options = {documentLoader, safe};
+    const proofHashPromise = hashCanonizedProof({document, proof, options})
+      .catch(e => e);
+
+    // 2. Create HMAC label replacement function to randomize bnode labels.
+    const hmac = await createHmac({key: hmacSeed});
+    const labelMapFactoryFunction = createShuffledIdLabelMapFunction({hmac});
+
+    // 3. Canonicalize document with randomized bnode labels and group N-Quads
+    //  by mandatory pointers.
+    const {
+      groups: {mandatory: mandatoryGroup}
+    } = await canonicalizeAndGroup({
+      document,
+      labelMapFactoryFunction,
+      groups: {mandatory: mandatoryPointers},
+      options
+    });
+    const mandatory = [...mandatoryGroup.matching.values()];
+    const nonMandatory = [...mandatoryGroup.nonMatching.values()];
+
+    // 4. Hash any mandatory N-Quads.
+    const {mandatoryHash} = await hashMandatory({mandatory});
+
+    // 5. Export HMAC key.
+    const hmacKey = await hmac.export();
+
+    // 6. Return data used by cryptosuite to sign.
+    const proofHash = await proofHashPromise;
+    if(proofHash instanceof Error) {
+      throw proofHash;
+    }
+    return {proofHash, mandatoryPointers, mandatoryHash, nonMandatory, hmacKey};
+
+  };
 }
 
 export async function createVerifyData({

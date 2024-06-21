@@ -10,7 +10,7 @@ export function allowUnsafeCanonize({
   ...args}) {
   suite._cryptosuite = _proxyStub({
     object: suite._cryptosuite,
-    mocks: {createVerifyData: mocks.createVerifyData},
+    mocks: {createVerifyData: mocks.stubVerifyData({safe: false})},
   });
   return {...args, suite, selectiveSuite};
 }
