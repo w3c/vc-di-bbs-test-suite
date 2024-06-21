@@ -7,11 +7,12 @@ import * as mocks from './mockMethods.js';
 export function noProofTypeorCryptosuite({
   suite,
   selectiveSuite,
-  proofType,
-  cryptosuiteName,
   ...args}) {
-
-  return {...args, suite, selectiveSuite, proofType, cryptosuiteName};
+  suite._cryptosuite = _proxyStub({
+    object: suite._cryptosuite,
+    mocks: {createVerifyData: mocks.createVerifyData},
+  });
+  return {...args, suite, selectiveSuite};
 }
 
 export function invalidStringEncoding({suite, selectiveSuite, ...args}) {
