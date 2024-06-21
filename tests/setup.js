@@ -3,14 +3,14 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import {
+  allowUnsafeCanonize,
+  invalidStringEncoding
+} from './vc-generator/generators.js';
+import {
   deriveCredentials,
   getMultikeys,
   issueCredentials
 } from './vc-generator/index.js';
-import {
-  invalidStringEncoding,
-  noProofTypeorCryptosuite
-} from './vc-generator/generators.js';
 import {generators} from 'data-integrity-test-suite-assertion';
 
 export async function verifySetup({credentials, keyTypes, suite}) {
@@ -150,7 +150,17 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       cryptosuiteName: ''
     },
     // add a generator to turn safe mode off for proof, canonize, and hash
-    generators: [noProofTypeorCryptosuite, invalidProofType, invalidCryptosuite]
+    generators: [allowUnsafeCanonize, invalidProofType, invalidCryptosuite]
+  });
+  disclosed.invalid.noProofType = await deriveCredentials({
+    keys,
+    vectors: disclosedBasicVectors,
+    suiteName: suite,
+    initialParams: {
+      proofType: '',
+    },
+    // add a generator to turn safe mode off for proof, canonize, and hash
+    generators: [allowUnsafeCanonize, invalidProofType]
   });
   disclosed.invalid.nonUTF8 = await deriveCredentials({
     keys,
