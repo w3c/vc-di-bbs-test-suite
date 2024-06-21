@@ -7,8 +7,11 @@ import {
   getMultikeys,
   issueCredentials
 } from './vc-generator/index.js';
+import {
+  invalidStringEncoding,
+  noProofTypeorCryptosuite
+} from './vc-generator/generators.js';
 import {generators} from 'data-integrity-test-suite-assertion';
-import {noProofTypeorCryptosuite, invalidStringEncoding} from './vc-generator/generators.js';
 
 export async function verifySetup({credentials, keyTypes, suite}) {
   const disclosed = {
