@@ -116,6 +116,21 @@ export function verifySuite({
             disclosed?.invalid?.noProofTypeOrCryptosuite);
           await verificationFail({credential, verifier});
         });
+        it('The proof options MUST contain a type identifier for the ' +
+        'cryptographic suite (type) and MAY contain a cryptosuite ' +
+        'identifier (cryptosuite).', async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#linkage-via-proof-options-and-mandatory-reveal:~:text=The%20proof%20options%20MUST%20contain%20a%20type%20identifier%20for%20the%20cryptographic%20suite%20(type)%20and%20MAY%20contain%20a%20cryptosuite%20identifier%20(cryptosuite).';
+          await verificationFail({
+            credential: cloneTestVector(
+              disclosed?.invalid?.noProofTypeOrCryptosuite),
+            verifier
+          });
+          await verificationFail({
+            credential: cloneTestVector(
+              disclosed?.invalid?.noProofType),
+            verifier
+          });
+        });
 
         it('MUST fail to verify a base proof.', async function() {
           const credential = cloneTestVector(base);

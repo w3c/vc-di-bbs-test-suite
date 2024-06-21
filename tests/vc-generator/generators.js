@@ -4,7 +4,7 @@
  */
 import * as mocks from './mockMethods.js';
 
-export function noProofTypeorCryptosuite({
+export function allowUnsafeCanonize({
   suite,
   selectiveSuite,
   ...args}) {
