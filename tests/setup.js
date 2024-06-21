@@ -162,6 +162,17 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     // add a generator to turn safe mode off for proof, canonize, and hash
     generators: [allowUnsafeCanonize, invalidProofType]
   });
+  disclosed.invalid.noCryptosuite = await deriveCredentials({
+    keys,
+    vectors: disclosedBasicVectors,
+    suiteName: suite,
+    initialParams: {
+      cryptosuiteName: ''
+    },
+    // add a generator to turns safe mode off for proof canonize and hash
+    generators: [allowUnsafeCanonize, invalidCryptosuite]
+  });
+
   disclosed.invalid.nonUTF8 = await deriveCredentials({
     keys,
     vectors: disclosedBasicVectors,
