@@ -116,6 +116,5 @@ export function stubVerifyData({
       throw proofHash;
     }
     return {proofHash, mandatoryPointers, mandatoryHash, nonMandatory, hmacKey};
-
   };
 }

@@ -4,6 +4,7 @@
  */
 import {
   allowUnsafeCanonize,
+  invalidHmac,
   invalidStringEncoding
 } from './vc-generator/generators.js';
 import {
@@ -172,12 +173,17 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     // add a generator to turn safe mode off for proof, canonize, and hash
     generators: [allowUnsafeCanonize, invalidCryptosuite]
   });
-
   disclosed.invalid.nonUTF8 = await deriveCredentials({
     keys,
     vectors: disclosedBasicVectors,
     suiteName: suite,
     generators: [invalidStringEncoding]
+  });
+  disclosed.invalid.hmac = await deriveCredentials({
+    keys,
+    vectors: disclosedBasicVectors,
+    suiteName: suite,
+    generators: [invalidHmac]
   });
   return {
     base,
