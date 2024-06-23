@@ -4,6 +4,8 @@
  */
 import * as mocks from './mockMethods.js';
 
+const longHmacSeed = new Uint8Array(128).map(() => Math.random() * 255);
+
 export function allowUnsafeCanonize({
   suite,
   selectiveSuite,
@@ -21,6 +23,14 @@ export function invalidStringEncoding({suite, selectiveSuite, ...args}) {
     mocks: {createProofValue: mocks.createProofValue}
   });
   return {...args, suite, selectiveSuite};
+}
+
+export function invalidHmac({suite, ...args}) {
+  suite._cryptosuite = _proxyStub({
+    object: suite._cryptosuite,
+    mocks: {createVerifyData: mocks.stubVerifyData({hmacSeed: longHmacSeed})},
+  });
+  return {...args, suite};
 }
 
 /**
