@@ -1,3 +1,8 @@
+/*!
+ * Copyright (c) 2024 Digital Bazaar, Inc.
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+import * as base64url from 'base64url-universal';
 import * as cborg from 'cborg';
 import {
   canonicalizeAndGroup,
@@ -5,12 +10,11 @@ import {
   hashCanonizedProof,
   hashMandatory,
 } from '@digitalbazaar/di-sd-primitives';
-import {concatBuffers, serializeBaseProofValue} from
-  '../../node_modules/@digitalbazaar/bbs-2023-cryptosuite/lib/proofValue.js';
 import {createShuffledIdLabelMapFunction} from
   '../../node_modules/@digitalbazaar/bbs-2023-cryptosuite/lib/sdFunctions.js';
 
 const TEXT_ENCODER = new TextEncoder();
+const CBOR_PREFIX_BASE = new Uint8Array([0xd9, 0x5d, 0x02]);
 
 export async function createProofValue({verifyData, dataIntegrityProof}) {
   const {signer} = dataIntegrityProof;
@@ -118,3 +122,37 @@ export function stubVerifyData({
     return {proofHash, mandatoryPointers, mandatoryHash, nonMandatory, hmacKey};
   };
 }
+
+function serializeBaseProofValue({
+  bbsSignature, bbsHeader, publicKey, hmacKey, mandatoryPointers
+} = {}) {
+  // NOTE: mocked version does not check params here
+  // encode as multibase (base64url no pad) CBOR
+  const payload = [
+    // Uint8Array
+    bbsSignature,
+    // Uint8Array
+    bbsHeader,
+    // Uint8Array
+    publicKey,
+    // Uint8Array
+    hmacKey,
+    // array of strings
+    mandatoryPointers
+  ];
+  const cbor = concatBuffers([
+    CBOR_PREFIX_BASE, cborg.encode(payload, {useMaps: true})
+  ]);
+  return `u${base64url.encode(cbor)}`;
+}
+
+function concatBuffers(buffers) {
+  const bytes = new Uint8Array(buffers.reduce((acc, b) => acc + b.length, 0));
+  let offset = 0;
+  for(const b of buffers) {
+    bytes.set(b, offset);
+    offset += b.length;
+  }
+  return bytes;
+}
+
