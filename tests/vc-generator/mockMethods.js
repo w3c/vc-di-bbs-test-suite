@@ -15,6 +15,10 @@ import {createShuffledIdLabelMapFunction} from
 
 const TEXT_ENCODER = new TextEncoder();
 const CBOR_PREFIX_BASE = new Uint8Array([0xd9, 0x5d, 0x02]);
+// CBOR decoder for implementations that use tag 64 for Uint8Array instead
+// of byte string major type 2
+const TAGS = [];
+TAGS[64] = bytes => bytes;
 
 export function stubProofValue({
   utfOffset = 0
@@ -158,5 +162,162 @@ function concatBuffers(buffers) {
     offset += b.length;
   }
   return bytes;
+}
+
+export function stubDisclosureData({
+  name = 'bbs2023',
+  utfOffset = 0
+}) {
+  return async function({
+    cryptosuite, document, proof, documentLoader
+  }) {
+    if(cryptosuite?.name !== name) {
+      throw new TypeError(`"cryptosuite.name" must be "${name}".`);
+    }
+    if(!(cryptosuite.options && typeof cryptosuite.options === 'object')) {
+      throw new TypeError(`"cryptosuite.options" must be an object.`);
+    }
+    if(!(cryptosuite.options.presentationHeader instanceof Uint8Array)) {
+      throw new TypeError(
+        '"cryptosuite.options.presentationHeader" must be a Uint8Array.');
+    }
+
+    // 1. Parse base `proof` to get parameters for disclosure proof.
+    const {
+      bbsSignature, bbsHeader, publicKey, hmacKey, mandatoryPointers
+    } = await parseBaseProofValue({proof});
+
+    // 2. Ensure mandatory and / or selective data will be disclosed.
+    const {selectivePointers = []} = cryptosuite.options;
+    if(!(mandatoryPointers?.length > 0 || selectivePointers?.length > 0)) {
+      throw new Error('Nothing selected for disclosure.');
+    }
+
+    // 3. Create HMAC label replacement function from `hmacKey` to randomize
+    //   bnode identifiers.
+    const hmac = await createHmac({key: hmacKey});
+    const labelMapFactoryFunction = createShuffledIdLabelMapFunction({hmac});
+
+    // 4. Canonicalize document with randomized bnode labels and group N-Quads
+    //  by mandatory, selective, and combined pointers.
+    const options = {documentLoader};
+    const combinedPointers = mandatoryPointers.concat(selectivePointers);
+    const {
+      groups: {
+        mandatory: mandatoryGroup,
+        selective: selectiveGroup,
+        combined: combinedGroup,
+      },
+      labelMap
+    } = await canonicalizeAndGroup({
+      document,
+      labelMapFactoryFunction,
+      groups: {
+        mandatory: mandatoryPointers,
+        selective: selectivePointers,
+        combined: combinedPointers
+      },
+      options
+    });
+
+    // 5. Convert absolute indexes of mandatory N-Quads to indexes relative to
+    // the combined output to be revealed.
+    let relativeIndex = 0;
+    const mandatoryIndexes = [];
+    for(const absoluteIndex of combinedGroup.matching.keys()) {
+      if(mandatoryGroup.matching.has(absoluteIndex)) {
+        mandatoryIndexes.push(relativeIndex);
+      }
+      relativeIndex++;
+    }
+
+    // 6. Convert absolute indexes of selective N-Quads to indexes relative to
+    // the non-mandatory messages as these are the indexes used in BBS.
+    relativeIndex = 0;
+    const selectiveIndexes = [];
+    for(const absoluteIndex of mandatoryGroup.nonMatching.keys()) {
+      if(selectiveGroup.matching.has(absoluteIndex)) {
+        selectiveIndexes.push(relativeIndex);
+      }
+      relativeIndex++;
+    }
+
+    // 7. Set `bbsMessages` to an array with the UTF-8 encoding of each
+    // non-mandatory message.
+    const bbsMessages = [...mandatoryGroup.nonMatching.values()]
+      .map(stringToUtf8Bytes);
+
+    // 8. Produce reveal document using combination of mandatory and selective
+    //   pointers.
+    const revealDoc = selectJsonLd({document, pointers: combinedPointers});
+
+    // 9. Canonicalize deskolemized N-Quads for the combined group to generate
+    //   the canonical blank node labels a verifier will see.
+    let canonicalIdMap = new Map();
+    await canonicalize(
+      combinedGroup.deskolemizedNQuads.join(''),
+      {...options, inputFormat: 'application/n-quads', canonicalIdMap});
+    // implementation-specific bnode prefix fix
+    canonicalIdMap = stripBlankNodePrefixes(canonicalIdMap);
+
+    // 10. Produce a blank node label map from the canonical blank node labels
+    //   the verifier will see to the HMAC labels.
+    const verifierLabelMap = new Map();
+    for(const [inputLabel, verifierLabel] of canonicalIdMap) {
+      verifierLabelMap.set(verifierLabel, labelMap.get(inputLabel));
+    }
+
+    // 11. Generate BBS proof.
+    const importedKey = await Bls12381Multikey.fromRaw({
+      algorithm: Bls12381Multikey.ALGORITHMS.BBS_BLS12381_SHA256, publicKey
+    });
+    const {presentationHeader} = cryptosuite.options;
+    const bbsProof = await importedKey.deriveProof({
+      signature: bbsSignature, header: bbsHeader, messages: bbsMessages,
+      presentationHeader, disclosedMessageIndexes: selectiveIndexes
+    });
+
+    // 12. Return data used by cryptosuite to disclose.
+    return {
+      bbsProof, labelMap: verifierLabelMap,
+      mandatoryIndexes, selectiveIndexes, presentationHeader,
+      revealDoc
+    };
+  };
+}
+
+function parseBaseProofValue({proof} = {}) {
+  try {
+    if(typeof proof?.proofValue !== 'string') {
+      throw new TypeError('"proof.proofValue" must be a string.');
+    }
+    if(proof.proofValue[0] !== 'u') {
+      throw new Error('Only base64url multibase encoding is supported.');
+    }
+
+    // decode from base64url
+    const proofValue = base64url.decode(proof.proofValue.slice(1));
+    // NOTE: skipped pase proof prefix check
+
+    const payload = proofValue.subarray(CBOR_PREFIX_BASE.length);
+    const [
+      bbsSignature,
+      bbsHeader,
+      publicKey,
+      hmacKey,
+      mandatoryPointers
+    ] = cborg.decode(payload, {useMaps: true, tags: TAGS});
+
+    const params = {
+      bbsSignature, bbsHeader, publicKey, hmacKey, mandatoryPointers
+    };
+    // NOTE: params validation skipped
+    return params;
+  } catch(e) {
+    const err = new TypeError(
+      'The proof does not include a valid "proofValue" property.');
+    err.cause = e;
+    throw err;
+  }
 }
 
