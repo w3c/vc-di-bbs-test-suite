@@ -20,7 +20,7 @@ export function allowUnsafeCanonize({
 export function invalidStringEncoding({suite, selectiveSuite, ...args}) {
   suite._cryptosuite = _proxyStub({
     object: suite._cryptosuite,
-    mocks: {createProofValue: mocks.createProofValue}
+    mocks: {createProofValue: mocks.stubProofValue({utfOffset: 1})}
   });
   return {...args, suite, selectiveSuite};
 }
@@ -28,7 +28,10 @@ export function invalidStringEncoding({suite, selectiveSuite, ...args}) {
 export function invalidHmac({suite, ...args}) {
   suite._cryptosuite = _proxyStub({
     object: suite._cryptosuite,
-    mocks: {createVerifyData: mocks.stubVerifyData({hmacSeed: longHmacSeed})},
+    mocks: {
+      createVerifyData: mocks.stubVerifyData({hmacSeed: longHmacSeed}),
+      createProofValue: mocks.stubProofValue()
+    }
   });
   return {...args, suite};
 }
