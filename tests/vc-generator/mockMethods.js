@@ -324,6 +324,44 @@ function parseBaseProofValue({proof} = {}) {
   }
 }
 
+export function stubDerive({utfOffset} = {}) {
+  const createDisclosureData = stubDisclosureData({utfOffset});
+  return async function({
+    cryptosuite, document, purpose, proofSet,
+    documentLoader, dataIntegrityProof
+  }) {
+  // find matching base `proof` in `proofSet`
+    const {options: {proofId}} = cryptosuite;
+    const baseProof = await _findProof({proofId, proofSet, dataIntegrityProof});
+
+    // ensure `purpose` matches `baseProof`
+    if(baseProof.proofPurpose !== purpose.term) {
+      throw new Error(
+        'Base proof purpose does not match purpose for derived proof.');
+    }
+
+    // generate data for disclosure
+    const {
+      bbsProof, labelMap,
+      mandatoryIndexes, selectiveIndexes, presentationHeader,
+      revealDoc
+    } = await createDisclosureData(
+      {cryptosuite, document, proof: baseProof, documentLoader});
+
+    // create new disclosure proof
+    const newProof = {...baseProof};
+    newProof.proofValue = await serializeDisclosureProofValue({
+      bbsProof, labelMap, mandatoryIndexes, selectiveIndexes,
+      presentationHeader
+    });
+
+    // attach proof to reveal doc w/o context
+    delete newProof['@context'];
+    revealDoc.proof = newProof;
+    return revealDoc;
+  };
+}
+
 // converts a string to a Uint8Array and then adds an
 // offset to produce an optional invalid encoding
 export function stringToUtf8Bytes({str, utfOffset = 0}) {
