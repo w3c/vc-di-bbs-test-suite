@@ -6,10 +6,13 @@ import * as base64url from 'base64url-universal';
 import * as Bls12381Multikey from '@digitalbazaar/bls12-381-multikey';
 import * as cborg from 'cborg';
 import {
+  canonicalize,
   canonicalizeAndGroup,
   createHmac,
   hashCanonizedProof,
   hashMandatory,
+  selectJsonLd,
+  stripBlankNodePrefixes,
 } from '@digitalbazaar/di-sd-primitives';
 import {createShuffledIdLabelMapFunction} from
   '../../node_modules/@digitalbazaar/bbs-2023-cryptosuite/lib/sdFunctions.js';
