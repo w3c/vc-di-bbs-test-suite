@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import * as base64url from 'base64url-universal';
+import * as Bls12381Multikey from '@digitalbazaar/bls12-381-multikey';
 import * as cborg from 'cborg';
 import {
   canonicalizeAndGroup,
@@ -34,9 +35,8 @@ export function stubProofValue({
 
     // 2. Set BBS messages to all non-mandatory messages using
     // invalid UTF-8 encoding.
-    const messages = nonMandatory.map(str => {
-      return TEXT_ENCODER.encode(str).map(c => c + utfOffset);
-    });
+    const messages = nonMandatory.map(
+      str => stringToUtf8Bytes({str, utfOffset}));
     // 3. Create BBS signature.
     const {publicKey} = signer;
     let bbsSignature;
@@ -244,8 +244,8 @@ export function stubDisclosureData({
 
     // 7. Set `bbsMessages` to an array with the UTF-8 encoding of each
     // non-mandatory message.
-    const bbsMessages = [...mandatoryGroup.nonMatching.values()]
-      .map(stringToUtf8Bytes);
+    const bbsMessages = [...mandatoryGroup.nonMatching.values()].map(
+      str => stringToUtf8Bytes({str, utfOffset}));
 
     // 8. Produce reveal document using combination of mandatory and selective
     //   pointers.
@@ -321,3 +321,8 @@ function parseBaseProofValue({proof} = {}) {
   }
 }
 
+// converts a string to a Uint8Array and then adds an
+// offset to produce an optional invalid encoding
+export function stringToUtf8Bytes({str, utfOffset = 0}) {
+  return TEXT_ENCODER.encode(str).map(b => b + utfOffset);
+}
