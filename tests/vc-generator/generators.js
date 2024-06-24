@@ -25,12 +25,18 @@ export function invalidStringEncoding({suite, selectiveSuite, ...args}) {
   return {...args, suite, selectiveSuite};
 }
 
-export function invalidHmac({suite, ...args}) {
+export function invalidHmac({suite, selectiveSuite, ...args}) {
   suite._cryptosuite = _proxyStub({
     object: suite._cryptosuite,
     mocks: {
       createVerifyData: mocks.stubVerifyData({hmacSeed: longHmacSeed}),
       createProofValue: mocks.stubProofValue()
+    }
+  });
+  selectiveSuite._cryptosuite = _proxyStub({
+    object: selectiveSuite._cryptosuite,
+    mocks: {
+
     }
   });
   return {...args, suite};
