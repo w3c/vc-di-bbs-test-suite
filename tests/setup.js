@@ -169,7 +169,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     initialParams: {
       cryptosuiteName: ''
     },
-    // add a generator to turns safe mode off for proof canonize and hash
+    // add a generator to turn safe mode off for proof, canonize, and hash
     generators: [allowUnsafeCanonize, invalidCryptosuite]
   });
 
