@@ -36,10 +36,10 @@ export function invalidHmac({suite, selectiveSuite, ...args}) {
   selectiveSuite._cryptosuite = _proxyStub({
     object: selectiveSuite._cryptosuite,
     mocks: {
-
+      derive: mocks.stubDerive()
     }
   });
-  return {...args, suite};
+  return {...args, suite, selectiveSuite};
 }
 
 /**
