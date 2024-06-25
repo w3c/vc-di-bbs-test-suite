@@ -29,7 +29,7 @@ export function invalidStringEncoding({suite, selectiveSuite, ...args}) {
           // 3. Create BBS signature.
           const {publicKey} = signer;
           let bbsSignature;
-          // use `multisign` if provided, otherwise use CBOR
+          // use `multisign` if provided; otherwise, use CBOR
           // to encode `data` for `sign`
           if(signer.multisign) {
             bbsSignature = await signer.multisign({
