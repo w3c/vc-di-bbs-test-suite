@@ -19,6 +19,8 @@ import {createShuffledIdLabelMapFunction} from
 
 const TEXT_ENCODER = new TextEncoder();
 const CBOR_PREFIX_BASE = new Uint8Array([0xd9, 0x5d, 0x02]);
+const CBOR_PREFIX_DERIVED = new Uint8Array([0xd9, 0x5d, 0x03]);
+
 // CBOR decoder for implementations that use tag 64 for Uint8Array instead
 // of byte string major type 2
 const TAGS = [];
@@ -360,6 +362,62 @@ export function stubDerive({utfOffset} = {}) {
     revealDoc.proof = newProof;
     return revealDoc;
   };
+}
+
+function serializeDisclosureProofValue({
+  bbsProof, labelMap, mandatoryIndexes, selectiveIndexes, presentationHeader
+} = {}) {
+  // NOTE: validator is skipped here
+
+  // encode as multibase (base64url no pad) CBOR
+  const payload = [
+    // Uint8Array
+    bbsProof,
+    // Map of strings => strings compressed to ints => Uint8Arrays
+    _compressLabelMap(labelMap),
+    // array of numbers
+    mandatoryIndexes,
+    // array of numbers
+    selectiveIndexes,
+    // Uint8Array
+    presentationHeader
+  ];
+  const cbor = concatBuffers([
+    CBOR_PREFIX_DERIVED, cborg.encode(payload, {useMaps: true})
+  ]);
+  return `u${base64url.encode(cbor)}`;
+}
+
+function _compressLabelMap(labelMap) {
+  const map = new Map();
+  for(const [k, v] of labelMap.entries()) {
+    map.set(parseInt(k.slice(4), 10), parseInt(v.slice(1), 10));
+  }
+  return map;
+}
+
+async function _findProof({proofId, proofSet, dataIntegrityProof}) {
+  let proof;
+  if(proofId) {
+    proof = proofSet.find(p => p.id === proofId);
+  } else {
+    // no `proofId` given, so see if a single matching proof exists
+    for(const p of proofSet) {
+      if(await dataIntegrityProof.matchProof({proof: p})) {
+        if(proof) {
+          // already matched
+          throw new Error(
+            'Multiple matching proofs; a "proofId" must be specified.');
+        }
+        proof = p;
+      }
+    }
+  }
+  if(!proof) {
+    throw new Error(
+      'No matching base proof found from which to derive a disclosure proof.');
+  }
+  return proof;
 }
 
 // converts a string to a Uint8Array and then adds an
