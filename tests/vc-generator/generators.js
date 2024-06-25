@@ -46,7 +46,7 @@ export function invalidStringEncoding({suite, selectiveSuite, ...args}) {
           return proofValue;
         };
       }
-      // if a stub is not found return the original property
+      // if a stub is not found, return the original property
       return Reflect.get(...arguments);
     }
   });
