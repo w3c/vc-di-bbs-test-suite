@@ -2,7 +2,7 @@
  * Copyright (c) 2024 Digital Bazaar, Inc.
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import * as stubs from './mockMethods.js';
+import * as stubs from './stubMethods.js';
 
 // creates an hmac of an invalid size
 const longHmacSeed = new Uint8Array(128).map(() => Math.random() * 255);
