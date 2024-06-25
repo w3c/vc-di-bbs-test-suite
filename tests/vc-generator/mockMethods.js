@@ -74,7 +74,7 @@ export function stubVerifyData({
         `"cryptosuite.options.mandatoryPointers" must be an array.`);
     }
 
-    // used for tests that need created to be in the proof
+    // used for tests that need `created` to be in the proof
     if(deleteCreated) {
       // 0. Remove `created` from proof if present.
       // FIXME: implement `updateProof` or another method to ensure `created`
