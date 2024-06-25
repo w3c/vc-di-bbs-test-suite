@@ -170,7 +170,7 @@ function concatBuffers(buffers) {
 }
 
 export function stubDisclosureData({
-  name = 'bbs2023',
+  name = 'bbs-2023',
   utfOffset = 0
 }) {
   return async function({
@@ -326,8 +326,11 @@ function parseBaseProofValue({proof} = {}) {
   }
 }
 
-export function stubDerive({utfOffset} = {}) {
-  const createDisclosureData = stubDisclosureData({utfOffset});
+export function stubDerive({
+  name,
+  utfOffset
+} = {}) {
+  const createDisclosureData = stubDisclosureData({utfOffset, name});
   return async function({
     cryptosuite, document, purpose, proofSet,
     documentLoader, dataIntegrityProof
