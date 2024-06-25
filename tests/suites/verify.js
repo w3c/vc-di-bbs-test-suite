@@ -129,6 +129,15 @@ export function verifySuite({
             verifier
           });
         });
+        it('the HMAC key MUST be the same length as the digest size',
+          async function() {
+            this.test.link = 'https://w3c.github.io/vc-di-bbs/#base-proof-transformation-bbs-2023:~:text=the%20HMAC%20key%20MUST%20be%20the%20same%20length%20as%20the%20digest%20size';
+            await verificationFail({
+              credential: cloneTestVector(
+                disclosed?.invalid?.hmac),
+              verifier
+            });
+          });
 
         it('MUST fail to verify a base proof.', async function() {
           const credential = cloneTestVector(base);
