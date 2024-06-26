@@ -154,7 +154,7 @@ export function verifySuite({
             verifier
           });
         });
-        it('If proofConfig.created is set and if the value is not a valid ' +
+        it('If proofConfig.created is set and the value is not a valid ' +
         '[XMLSCHEMA11-2] datetime, an INVALID_PROOF_DATETIME error MUST be ' +
         'raised.', async function() {
           this.test.link = 'https://w3c.github.io/vc-di-bbs/#linkage-via-proof-options-and-mandatory-reveal:~:text=If%20proofConfig.created%20is%20set%20and%20if%20the%20value%20is%20not%20a%20valid%20%5BXMLSCHEMA11%2D2%5D%20datetime%2C%20an%20INVALID_PROOF_DATETIME%20error%20MUST%20be%20raised.';
