@@ -291,7 +291,7 @@ export function stubDisclosureData({
   };
 }
 
-function parseBaseProofValue({proof} = {}) {
+export function parseBaseProofValue({proof} = {}) {
   try {
     if(typeof proof?.proofValue !== 'string') {
       throw new TypeError('"proof.proofValue" must be a string.');

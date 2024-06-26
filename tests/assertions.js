@@ -11,6 +11,7 @@ import {
 } from 'data-integrity-test-suite-assertion';
 import chai from 'chai';
 import {getMultikeys} from './vc-generator/key-gen.js';
+import {parseBaseProofValue} from './vc-generator/stubMethods.js';
 
 const should = chai.should();
 
@@ -69,6 +70,19 @@ export const checkEncoding = ({value, propertyName}) => {
   }
   throw new Error(`Expected ${propertyName} to start with a multibase ` +
   `prefix. Received ${head}`);
+};
+
+export const checkHmacKeyLength = ({proof, keyLength}) => {
+  should.exist(proof, 'Expected proof to exist.');
+  proof.should.be.an('object', 'Expected proof to be an object.');
+  const {hmacKey} = parseBaseProofValue({proof});
+  should.exist(hmacKey, 'Expected hmacKey to exist.');
+  hmacKey.should.be.an.instanceOf(
+    Uint8Array,
+    'Expected hmacKey to be a Uint8Array');
+  hmacKey.length.should.equal(
+    keyLength,
+    `Expected hmacKey length to be ${keyLength} received: ${hmacKey.length}`);
 };
 
 export const shouldBeMultibaseEncoded = async ({
