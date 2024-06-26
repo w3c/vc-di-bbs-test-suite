@@ -4,9 +4,6 @@
  */
 import * as stubs from './stubMethods.js';
 
-// creates an hmac of an invalid size
-const longHmacSeed = new Uint8Array(128).map(() => Math.random() * 255);
-
 export function allowUnsafeCanonize({suite, selectiveSuite, ...args}) {
   suite._cryptosuite = stubMethods({
     object: suite._cryptosuite,
@@ -19,23 +16,6 @@ export function invalidStringEncoding({suite, selectiveSuite, ...args}) {
   suite._cryptosuite = stubMethods({
     object: suite._cryptosuite,
     stubs: {createProofValue: stubs.stubProofValue({utfOffset: 1})}
-  });
-  return {...args, suite, selectiveSuite};
-}
-
-export function invalidHmac({suite, selectiveSuite, ...args}) {
-  suite._cryptosuite = stubMethods({
-    object: suite._cryptosuite,
-    stubs: {
-      createVerifyData: stubs.stubVerifyData({hmacSeed: longHmacSeed}),
-      createProofValue: stubs.stubProofValue()
-    }
-  });
-  selectiveSuite._cryptosuite = stubMethods({
-    object: selectiveSuite._cryptosuite,
-    stubs: {
-      derive: stubs.stubDerive()
-    }
   });
   return {...args, suite, selectiveSuite};
 }

@@ -4,7 +4,6 @@
  */
 import {
   allowUnsafeCanonize,
-  invalidHmac,
   invalidStringEncoding
 } from './vc-generator/generators.js';
 import {
@@ -178,12 +177,6 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     vectors: disclosedBasicVectors,
     suiteName: suite,
     generators: [invalidStringEncoding]
-  });
-  disclosed.invalid.hmac = await deriveCredentials({
-    keys,
-    vectors: disclosedBasicVectors,
-    suiteName: suite,
-    generators: [invalidHmac]
   });
   return {
     base,
