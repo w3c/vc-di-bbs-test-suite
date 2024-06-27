@@ -192,7 +192,7 @@ export function stubDisclosureData({
       bbsSignature, bbsHeader, publicKey, hmacKey, mandatoryPointers
     } = await parseBaseProofValue({proof});
 
-    // 2. Ensure mandatory and / or selective data will be disclosed.
+    // 2. Ensure mandatory and/or selective data will be disclosed.
     const {selectivePointers = []} = cryptosuite.options;
     if(!(mandatoryPointers?.length > 0 || selectivePointers?.length > 0)) {
       throw new Error('Nothing selected for disclosure.');
