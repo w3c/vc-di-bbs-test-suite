@@ -45,7 +45,7 @@ export function stubProofValue({
     // 3. Create BBS signature.
     const {publicKey} = signer;
     let bbsSignature;
-    // encode `data` for `sign` using `multisign` if provided; 
+    // encode `data` for `sign` using `multisign` if provided;
     // otherwise, using CBOR
     if(signer.multisign) {
       bbsSignature = await signer.multisign({
