@@ -237,7 +237,7 @@ export function stubDisclosureData({
     }
 
     // 6. Convert absolute indexes of selective N-Quads to indexes relative to
-    // the non-mandatory messages as these are the indexes used in BBS.
+    // the non-mandatory messages, as these are the indexes used in BBS.
     relativeIndex = 0;
     const selectiveIndexes = [];
     for(const absoluteIndex of mandatoryGroup.nonMatching.keys()) {
