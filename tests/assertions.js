@@ -82,7 +82,7 @@ export const checkHmacKeyLength = ({proof, keyLength}) => {
     'Expected hmacKey to be a Uint8Array');
   hmacKey.length.should.equal(
     keyLength,
-    `Expected hmacKey length to be ${keyLength} received: ${hmacKey.length}`);
+    `Expected hmacKey length to be ${keyLength}. Received: ${hmacKey.length}.`);
 };
 
 export const shouldBeMultibaseEncoded = async ({
