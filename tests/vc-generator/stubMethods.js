@@ -68,7 +68,7 @@ export function stubVerifyData({
   safe = true,
   // expected cryptosuite name
   name = 'bbs-2023',
-  // should created by deleted?
+  // should created be deleted?
   deleteCreated = true,
   // A key for the hmac
   hmacSeed = null
