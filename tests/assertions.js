@@ -85,6 +85,19 @@ export const checkHmacKeyLength = ({proof, keyLength}) => {
     `Expected hmacKey length to be ${keyLength}. Received: ${hmacKey.length}.`);
 };
 
+export const shouldNotUseCborTags = ({proof}) => {
+  let error;
+  let result;
+  try {
+    // try to parse the base proof with no cbor tags
+    result = parseBaseProofValue({proof, tags: {}});
+  } catch(e) {
+    error = e;
+  }
+  should.not.exist(error, 'Expected proof to decode with out cbor tags.');
+  should.exist(result, 'Expected proof to be decoded.');
+};
+
 export const shouldBeMultibaseEncoded = async ({
   expectedLength,
   prefixes = {
