@@ -8,8 +8,8 @@ import {
   checkHmacKeyLength,
   shouldBeMultibaseEncoded,
   shouldBeProofValue,
-  shouldVerifyDerivedProof,
-  shouldNotUseCborTags
+  shouldNotUseCborTags,
+  shouldVerifyDerivedProof
 } from '../assertions.js';
 import {createInitialVc, getBs58Bytes, supportsVc} from '../helpers.js';
 import chai from 'chai';
