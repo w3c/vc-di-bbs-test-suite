@@ -20,6 +20,25 @@ export function invalidStringEncoding({suite, selectiveSuite, ...args}) {
   return {...args, suite, selectiveSuite};
 }
 
+export function invalidCborEncoding({suite, ...args}) {
+  suite._cryptosuite = stubMethods({
+    object: suite._cryptosuite,
+    stubs: {createProofValue: stubs.stubProofValue({
+      typeEncoders: {
+        Uint8Array(uint8Array) {
+          console.log('called on unit8Array encoder', uint8Array);
+          return null;
+        },
+        string(str) {
+          console.log('string encoder called', str);
+          return null;
+        }
+      }
+    })}
+  });
+  return {...args, suite};
+}
+
 /**
  * Creates a Proxy which stubs method(s) on an object.
  *

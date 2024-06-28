@@ -27,7 +27,8 @@ const TAGS = [];
 TAGS[64] = bytes => bytes;
 
 export function stubProofValue({
-  utfOffset = 0
+  utfOffset = 0,
+  typeEncoders
 } = {}) {
   return async function({verifyData, dataIntegrityProof}) {
     const {signer} = dataIntegrityProof;
@@ -51,13 +52,15 @@ export function stubProofValue({
       bbsSignature = await signer.multisign({
         header: bbsHeader, messages});
     } else {
-      const data = cborg.encode([bbsHeader, messages]);
+      const data = cborg.encode([bbsHeader, messages], {typeEncoders});
       bbsSignature = await signer.sign({data});
     }
 
     // 4. Generate `proofValue`.
     const proofValue = serializeBaseProofValue({
-      bbsSignature, bbsHeader, publicKey, hmacKey, mandatoryPointers
+      bbsSignature, bbsHeader,
+      publicKey, hmacKey,
+      mandatoryPointers, typeEncoders
     });
     return proofValue;
   };
@@ -137,7 +140,7 @@ export function stubVerifyData({
 }
 
 function serializeBaseProofValue({
-  bbsSignature, bbsHeader, publicKey, hmacKey, mandatoryPointers
+  bbsSignature, bbsHeader, publicKey, hmacKey, mandatoryPointers, typeEncoders
 } = {}) {
   // NOTE: mocked version does not check params here
   // encode as multibase (base64url no pad) CBOR
@@ -154,7 +157,7 @@ function serializeBaseProofValue({
     mandatoryPointers
   ];
   const cbor = concatBuffers([
-    CBOR_PREFIX_BASE, cborg.encode(payload, {useMaps: true})
+    CBOR_PREFIX_BASE, cborg.encode(payload, {useMaps: true, typeEncoders})
   ]);
   return `u${base64url.encode(cbor)}`;
 }
