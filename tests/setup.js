@@ -4,6 +4,7 @@
  */
 import {
   allowUnsafeCanonize,
+  invalidCborEncoding,
   invalidStringEncoding
 } from './vc-generator/generators.js';
 import {
@@ -35,7 +36,9 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       // invalid "proof.cryptosuite"
       cryptosuite: new Map(),
       // for invalid string encoding test
-      nonUTF8: new Map()
+      nonUTF8: new Map(),
+      // invalid cbor encoding
+      cbor: new Map()
     }
   };
   const {subjectNestedObjects, subjectHasArrays} = credentials.verify;
@@ -177,6 +180,12 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     vectors: disclosedBasicVectors,
     suiteName: suite,
     generators: [invalidStringEncoding]
+  });
+  disclosed.invalid.cborg = await deriveCredentials({
+    keys,
+    vectors: disclosedBasicVectors,
+    suiteName: suite,
+    generators: [invalidCborEncoding]
   });
   return {
     base,
