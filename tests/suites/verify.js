@@ -160,8 +160,6 @@ export function verifySuite({
           this.test.link = 'https://w3c.github.io/vc-di-bbs/#linkage-via-proof-options-and-mandatory-reveal:~:text=If%20proofConfig.created%20is%20set%20and%20if%20the%20value%20is%20not%20a%20valid%20%5BXMLSCHEMA11%2D2%5D%20datetime%2C%20an%20INVALID_PROOF_DATETIME%20error%20MUST%20be%20raised.';
           const credential = cloneTestVector(disclosed?.invalid?.created);
           //FIXME assert on error code or message when available
-          //a base proof will fail verification in any case
-          //we need to know the specific reason it fails
           await verificationFail({credential, verifier});
         });
         it('MUST fail to verify a base proof.', async function() {
