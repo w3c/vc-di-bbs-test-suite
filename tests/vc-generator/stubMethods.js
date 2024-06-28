@@ -295,7 +295,7 @@ export function stubDisclosureData({
   };
 }
 
-export function parseBaseProofValue({proof} = {}) {
+export function parseBaseProofValue({proof, tags = TAGS} = {}) {
   try {
     if(typeof proof?.proofValue !== 'string') {
       throw new TypeError('"proof.proofValue" must be a string.');
@@ -315,8 +315,7 @@ export function parseBaseProofValue({proof} = {}) {
       publicKey,
       hmacKey,
       mandatoryPointers
-    ] = cborg.decode(payload, {useMaps: true, tags: TAGS});
-
+    ] = cborg.decode(payload, {useMaps: true, tags});
     const params = {
       bbsSignature, bbsHeader, publicKey, hmacKey, mandatoryPointers
     };
