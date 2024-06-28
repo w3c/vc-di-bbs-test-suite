@@ -119,13 +119,11 @@ export function verifySuite({
             verifier
           });
           await verificationFail({
-            credential: cloneTestVector(
-              disclosed?.invalid?.noProofType),
+            credential: cloneTestVector(disclosed?.invalid?.noProofType),
             verifier
           });
           await verificationFail({
-            credential: cloneTestVector(
-              disclosed?.invalid?.noCryptosuite),
+            credential: cloneTestVector(disclosed?.invalid?.noCryptosuite),
             verifier
           });
         });
@@ -134,8 +132,7 @@ export function verifySuite({
         'to proofValue.', async function() {
           this.test.link = 'https://w3c.github.io/vc-di-bbs/#base-proof-transformation-bbs-2023:~:text=and%20pseudonym.-,CBOR%2Dencode%20components%20per%20%5BRFC8949%5D%20where%20CBOR%20tagging%20MUST%20NOT%20be%20used%20on%20any%20of%20the%20components.%20Append%20the%20produced%20encoded%20value%20to%20proofValue.,-Return%20the%20derived';
           await verificationFail({
-            credential: cloneTestVector(
-              disclosed?.invalid?.cborg),
+            credential: cloneTestVector(disclosed?.invalid?.cborg),
             verifier
           });
         });
