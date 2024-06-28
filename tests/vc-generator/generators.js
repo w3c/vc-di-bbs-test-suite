@@ -13,6 +13,14 @@ export function allowUnsafeCanonize({suite, selectiveSuite, ...args}) {
   return {...args, suite, selectiveSuite};
 }
 
+export function passCreated({suite, ...args}) {
+  suite._cryptosuite = stubMethods({
+    object: suite._cryptosuite,
+    stubs: {createVerifyData: stubs.stubVerifyData({deleteCreated: false})},
+  });
+  return {...args, suite};
+}
+
 export function invalidStringEncoding({suite, selectiveSuite, ...args}) {
   suite._cryptosuite = stubMethods({
     object: suite._cryptosuite,

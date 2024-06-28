@@ -6,7 +6,8 @@ import * as base64url from 'base64url-universal';
 import {
   allowUnsafeCanonize,
   invalidCborEncoding,
-  invalidStringEncoding
+  invalidStringEncoding,
+  passCreated
 } from './vc-generator/generators.js';
 import {
   deriveCredentials,
@@ -212,12 +213,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     keys,
     vectors: transformVectors(subjectNestedObjects),
     suiteName: suite,
-    initialParams: {
-      // FIXME while created is not recommended for bbs it should be in
-      // the disclosed VC too.
-      selectiveSuite: null
-    },
-    generators: [invalidCreated]
+    generators: [invalidCreated, passCreated]
   });
   return {
     base,
