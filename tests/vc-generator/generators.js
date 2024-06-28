@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import * as stubs from './stubMethods.js';
+import {Token, Type} from 'cborg';
 
 export function allowUnsafeCanonize({suite, selectiveSuite, ...args}) {
   suite._cryptosuite = stubMethods({
@@ -20,23 +21,24 @@ export function invalidStringEncoding({suite, selectiveSuite, ...args}) {
   return {...args, suite, selectiveSuite};
 }
 
-export function invalidCborEncoding({suite, ...args}) {
+export function invalidCborEncoding({suite, selectiveSuite, ...args}) {
+  const typeEncoders = {
+    Uint8Array(uint8Array) {
+      return [
+        new Token(Type.tag, 2),
+        new Token(Type.bytes, uint8Array.map(b => b + 1))
+      ];
+    }
+  };
   suite._cryptosuite = stubMethods({
     object: suite._cryptosuite,
-    stubs: {createProofValue: stubs.stubProofValue({
-      typeEncoders: {
-        Uint8Array(uint8Array) {
-          console.log('called on unit8Array encoder', uint8Array);
-          return null;
-        },
-        string(str) {
-          console.log('string encoder called', str);
-          return null;
-        }
-      }
-    })}
+    stubs: {createProofValue: stubs.stubProofValue({typeEncoders})}
   });
-  return {...args, suite};
+  selectiveSuite._cryptosuite = stubMethods({
+    object: selectiveSuite._cryptosuite,
+    stubs: {derive: stubs.stubDerive({typeEncoders})}
+  });
+  return {...args, suite, selectiveSuite};
 }
 
 /**

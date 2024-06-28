@@ -25,6 +25,7 @@ const CBOR_PREFIX_DERIVED = new Uint8Array([0xd9, 0x5d, 0x03]);
 // of byte string major type 2
 const TAGS = [];
 TAGS[64] = bytes => bytes;
+TAGS[2] = bytes => bytes.map(b => b - 1);
 
 export function stubProofValue({
   utfOffset = 0,
@@ -331,7 +332,8 @@ export function parseBaseProofValue({proof} = {}) {
 
 export function stubDerive({
   name,
-  utfOffset
+  utfOffset,
+  typeEncoders
 } = {}) {
   const createDisclosureData = stubDisclosureData({utfOffset, name});
   return async function({
@@ -359,8 +361,9 @@ export function stubDerive({
     // create new disclosure proof
     const newProof = {...baseProof};
     newProof.proofValue = await serializeDisclosureProofValue({
-      bbsProof, labelMap, mandatoryIndexes, selectiveIndexes,
-      presentationHeader
+      bbsProof, labelMap,
+      mandatoryIndexes, selectiveIndexes,
+      presentationHeader, typeEncoders
     });
 
     // attach proof to reveal doc w/o context
@@ -371,7 +374,9 @@ export function stubDerive({
 }
 
 function serializeDisclosureProofValue({
-  bbsProof, labelMap, mandatoryIndexes, selectiveIndexes, presentationHeader
+  bbsProof, labelMap,
+  mandatoryIndexes, selectiveIndexes,
+  presentationHeader, typeEncoders
 } = {}) {
   // NOTE: validator is skipped here
 
@@ -389,7 +394,7 @@ function serializeDisclosureProofValue({
     presentationHeader
   ];
   const cbor = concatBuffers([
-    CBOR_PREFIX_DERIVED, cborg.encode(payload, {useMaps: true})
+    CBOR_PREFIX_DERIVED, cborg.encode(payload, {useMaps: true, typeEncoders})
   ]);
   return `u${base64url.encode(cbor)}`;
 }
