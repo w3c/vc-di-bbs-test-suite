@@ -129,6 +129,15 @@ export function verifySuite({
             verifier
           });
         });
+        it('CBOR-encode components per [RFC8949] where CBOR tagging MUST NOT ' +
+        'be used on any of the components. Append the produced encoded value ' +
+        'to proofValue.', async function() {
+          await verificationFail({
+            credential: cloneTestVector(
+              disclosed?.invalid?.cborg),
+            verifier
+          });
+        });
         it('MUST fail to verify a base proof.', async function() {
           const credential = cloneTestVector(base);
           await verificationFail({credential, verifier});
