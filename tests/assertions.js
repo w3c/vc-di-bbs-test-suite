@@ -88,9 +88,11 @@ export const checkHmacKeyLength = ({proof, keyLength}) => {
 export const shouldNotUseCborTags = ({proof}) => {
   let error;
   let result;
+  const tags = [];
+  tags[64] = bytes => bytes;
   try {
     // try to parse the base proof with no cbor tags
-    result = parseBaseProofValue({proof, tags: {}});
+    result = parseBaseProofValue({proof, tags});
   } catch(e) {
     error = e;
   }
