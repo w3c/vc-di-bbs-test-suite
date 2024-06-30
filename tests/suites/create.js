@@ -14,6 +14,7 @@ import {
 import {createInitialVc, getBs58Bytes, supportsVc} from '../helpers.js';
 import chai from 'chai';
 import {documentLoader} from '../documentLoader.js';
+import {shouldBeUrl} from 'data-integrity-test-suite-assertion';
 
 const should = chai.should();
 
@@ -153,7 +154,10 @@ export function createSuite({
           function() {
             this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=The%20verificationMethod%20property%20of%20the%20proof%20MUST%20be%20a%20URL';
             for(const proof of bbsProofs) {
-
+              shouldBeUrl({
+                url: proof.verificationMethod,
+                prop: 'proof.verificationMethod'
+              });
             }
           });
         it('Dereferencing "verificationMethod" MUST result in an object ' +
