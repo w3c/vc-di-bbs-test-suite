@@ -77,13 +77,15 @@ export function createSuite({
             verificationMethodDocuments.push(verificationMethodDocument);
           }
         });
-        it('The field "cryptosuite" MUST be "bbs-2023".', function() {
-          proofs.some(
-            proof => proof.cryptosuite === 'bbs-2023'
-          ).should.equal(true, 'Expected at least one proof to have ' +
-            '"cryptosuite" property "bbs-2023".'
-          );
-        });
+        it('The cryptosuite property of the proof MUST be bbs-2023.',
+          function() {
+            this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=The%20cryptosuite%20property%20of%20the%20proof%20MUST%20be%20bbs%2D2023.';
+            proofs.some(
+              proof => proof.cryptosuite === 'bbs-2023'
+            ).should.equal(true, 'Expected at least one proof to have ' +
+              '"cryptosuite" property "bbs-2023".'
+            );
+          });
         /*
          * Checked on 2024-04-17.
          * {@link https://w3c.github.io/vc-di-bbs/#create-base-proof-bbs-2023:~:text=The%20type%20property%20of%20the%20proof%20MUST%20be%20DataIntegrityProof.}
