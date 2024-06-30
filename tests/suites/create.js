@@ -47,7 +47,6 @@ export function createSuite({
         continue;
       }
       describe(name, function() {
-
         let issuedVc;
         let proofs;
         let bbsProofs;
@@ -86,16 +85,12 @@ export function createSuite({
               '"cryptosuite" property "bbs-2023".'
             );
           });
-        /*
-         * Checked on 2024-04-17.
-         * {@link https://w3c.github.io/vc-di-bbs/#create-base-proof-bbs-2023:~:text=The%20type%20property%20of%20the%20proof%20MUST%20be%20DataIntegrityProof.}
-         */
+        // Checked on 2024-06-30.
         it('The type property of the proof MUST be DataIntegrityProof.',
           function() {
+            this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=The%20type%20property%20of%20the%20proof%20MUST%20be%20DataIntegrityProof.';
             bbsProofs.length.should.be.gte(
-              1,
-              'Expected at least one "bbs-2023" proof'
-            );
+              1, 'Expected at least one "bbs-2023" proof');
             for(const proof of bbsProofs) {
               should.exist(proof.type, 'Expected "proof.type" to exist.');
               proof.type.should.equal(
@@ -104,19 +99,14 @@ export function createSuite({
               );
             }
           });
-        /*
-        * Checked on 2024-04-15.
-        * {@link https://w3c.github.io/vc-di-bbs/#dataintegrityproof:~:text=The%20value%20of%20the%20proofValue%20property%20of%20the%20proof%20MUST%20be%20a%20BBS%20signature%20or%20BBS%20proof%20produced%20according%20to%20%5BCFRG%2DBBS%2DSIGNATURE%5D%20that%20is%20serialized%20and%20encoded%20according%20to%20procedures%20in%20section%203.%20Algorithms.}
-        * Link to relevant section above.
-        */
+        // Checked on 2024-06-30.
         it('The value of the proofValue property of the proof MUST be a BBS ' +
           'signature or BBS proof produced according to ' +
           '[CFRG-BBS-SIGNATURE] that is serialized and encoded according to ' +
           'procedures in section 3. Algorithms.', async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=The%20value%20of%20the%20proofValue%20property%20of%20the%20proof%20MUST%20be%20a%20BBS%20signature';
           bbsProofs.length.should.be.gte(
-            1,
-            'Expected at least one "bbs-2023" proof'
-          );
+            1, 'Expected at least one "bbs-2023" proof');
           for(const proof of bbsProofs) {
             await shouldBeProofValue(proof.proofValue);
           }
@@ -162,6 +152,7 @@ export function createSuite({
               });
             }
           });
+        // Checked 2024-06-30
         it('Dereferencing "verificationMethod" MUST result in an object ' +
           'containing a type property with "Multikey" value.',
         async function() {
@@ -182,6 +173,7 @@ export function createSuite({
         'encoded using base58-btc (z) as the prefix. Any other encodings ' +
         'MUST NOT be allowed.',
         async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=Any%20other%20encodings%20MUST%20NOT%20be%20allowed.';
           verificationMethodDocuments.should.not.eql([], 'Expected ' +
             'at least one "verificationMethodDocument".');
           const proof = proofs.find(p => p.cryptosuite === 'bbs-2023');
@@ -212,9 +204,7 @@ export function createSuite({
           });
         });
         /*
-         * Checked on 2024-04-16
-         * {@link https://w3c.github.io/vc-di-bbs/#create-base-proof-bbs-2023:~:text=The%20transformation%20options%20MUST%20contain%20a%20type%20identifier%20for%20the%20cryptographic%20suite%20(type)%2C%20a%20cryptosuite%20identifier%20(cryptosuite)%2C%20and%20a%20verification%20method%20(verificationMethod).}
-         *
+         * Checked on 2024-06-30
          * NOTE: this suite can not control the transformation options so it
          * just checks the proof was created correctly.
          */
@@ -222,10 +212,9 @@ export function createSuite({
         'the cryptographic suite (type), a cryptosuite identifier ' +
         '(cryptosuite), and a verification method (verificationMethod).',
         async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=transformation%20options%20MUST%20contain%20a%20type%20identifier%20for%20the%20cryptographic%20suite%20(type)%2C%20a%20cryptosuite%20identifier%20(cryptosuite)%2C%20and%20a%20verification%20method%20(verificationMethod)';
           bbsProofs.length.should.be.gte(
-            1,
-            'Expected at least one "bbs-2023" proof'
-          );
+            1, 'Expected at least one "bbs-2023" proof');
           for(const proof of bbsProofs) {
             should.exist(proof.type, 'Expected "proof.type" to exist.');
             proof.type.should.equal(
