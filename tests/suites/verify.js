@@ -85,7 +85,8 @@ export function verifySuite({
           'error MUST be raised.', async function() {
           const credential = cloneTestVector(disclosed?.basic);
           // intentionally modify proofValue to not start with 'u'
-          credential.proof.proofValue = 'a';
+          credential.proof.proofValue = 'a' +
+            credential.proof.proofValue.substr(1);
           await verificationFail({credential, verifier});
         });
         it('If the "cryptosuite" field is not the string "bbs-2023", ' +
