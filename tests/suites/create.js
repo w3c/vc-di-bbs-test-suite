@@ -14,6 +14,7 @@ import {
 import {createInitialVc, getBs58Bytes, supportsVc} from '../helpers.js';
 import chai from 'chai';
 import {documentLoader} from '../documentLoader.js';
+import {shouldBeUrl} from 'data-integrity-test-suite-assertion';
 
 const should = chai.should();
 
@@ -149,9 +150,20 @@ export function createSuite({
             'to match the verification method controller.'
           );
         });
+        it('The verificationMethod property of the proof MUST be a URL.',
+          function() {
+            this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=The%20verificationMethod%20property%20of%20the%20proof%20MUST%20be%20a%20URL';
+            for(const proof of bbsProofs) {
+              shouldBeUrl({
+                url: proof.verificationMethod,
+                prop: 'proof.verificationMethod'
+              });
+            }
+          });
         it('Dereferencing "verificationMethod" MUST result in an object ' +
           'containing a type property with "Multikey" value.',
         async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=Dereferencing%20the%20verificationMethod%20MUST%20result%20in%20an%20object%20containing%20a%20type%20property%20with%20the%20value%20set%20to%20Multikey';
           verificationMethodDocuments.should.not.eql([], 'Expected ' +
             'at least one "verificationMethodDocument".');
           verificationMethodDocuments.some(
