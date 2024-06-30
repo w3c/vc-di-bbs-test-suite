@@ -100,6 +100,15 @@ export const shouldNotUseCborTags = ({proof}) => {
   should.exist(result, 'Expected proof to be decoded.');
 };
 
+export const shouldHaveMandatoryPointers = ({proof}) => {
+  const {mandatoryPointers} = parseBaseProofValue({proof});
+  should.exist(mandatoryPointers, 'Expected "mandatoryPointers" to exist.');
+  mandatoryPointers.should.be.an(
+    'Array', 'Expected "mandatoryPointers" to be an Array.');
+  mandatoryPointers.length.should.be.gt(
+    0, 'Expected at least one "mandatoyPointer".');
+};
+
 export const shouldBeMultibaseEncoded = async ({
   expectedLength,
   prefixes = {
