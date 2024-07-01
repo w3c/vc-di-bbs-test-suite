@@ -5,7 +5,8 @@
 import {
   allowUnsafeCanonize,
   invalidCborEncoding,
-  invalidStringEncoding
+  invalidStringEncoding,
+  passCreated
 } from './vc-generator/generators.js';
 import {
   deriveCredentials,
@@ -129,7 +130,8 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suiteName: suite,
     keys
   });
-  const {mandatory} = generators;
+  const {mandatory, created} = generators;
+  const {invalidCreated} = created;
   const {invalidCryptosuite, invalidProofType} = mandatory;
   disclosed.invalid.proofTypeAndCryptosuite =
     await deriveCredentials({
@@ -186,6 +188,12 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     vectors: disclosedBasicVectors,
     suiteName: suite,
     generators: [invalidCborEncoding]
+  });
+  disclosed.invalid.created = await deriveCredentials({
+    keys,
+    vectors: transformVectors(subjectNestedObjects),
+    suiteName: suite,
+    generators: [invalidCreated, passCreated]
   });
   return {
     base,
