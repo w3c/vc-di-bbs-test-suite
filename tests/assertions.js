@@ -106,7 +106,7 @@ export const shouldHaveMandatoryPointers = ({proof}) => {
   mandatoryPointers.should.be.an(
     'Array', 'Expected "mandatoryPointers" to be an Array.');
   mandatoryPointers.length.should.be.gt(
-    0, 'Expected at least one "mandatoyPointer".');
+    0, 'Expected at least one "mandatoryPointer".');
 };
 
 export const shouldBeMultibaseEncoded = async ({
