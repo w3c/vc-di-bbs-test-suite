@@ -81,12 +81,16 @@ export function verifySuite({
               disclosed?.array?.missingElements);
             await verificationSuccess({credential, verifier});
           });
-        it('If the "proofValue" string does not start with "u", an ' +
-          'error MUST be raised.', async function() {
+        it('If the proofValue string does not start with u (U+0075 LATIN ' +
+            'SMALL LETTER U), indicating that it is a multibase-base64url' +
+            '-no-pad-encoded value, an error MUST be raised and SHOULD ' +
+            'convey an error type of PROOF_VERIFICATION_ERROR.',
+        async function() {
           const credential = cloneTestVector(disclosed?.basic);
           // intentionally modify proofValue to not start with 'u'
           credential.proof.proofValue = 'a' +
             credential.proof.proofValue.substr(1);
+          //FIXME assert on error type in the future
           await verificationFail({credential, verifier});
         });
         it('If the "cryptosuite" field is not the string "bbs-2023", ' +
