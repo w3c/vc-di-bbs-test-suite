@@ -144,6 +144,12 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suiteName: suite,
     generators: [invalidCryptosuite]
   });
+  disclosed.invalid.proofType = await deriveCredentials({
+    keys,
+    vectors: disclosedBasicVectors,
+    suiteName: suite,
+    generators: [invalidProofType]
+  });
   disclosed.invalid.noProofTypeOrCryptosuite = await deriveCredentials({
     keys,
     vectors: disclosedBasicVectors,

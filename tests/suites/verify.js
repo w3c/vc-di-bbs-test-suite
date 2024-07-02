@@ -95,12 +95,25 @@ export function verifySuite({
           await verificationFail({credential, verifier});
         });
         it('If proofConfig.type is not set to DataIntegrityProof and/or ' +
-        'proofConfig.cryptosuite is not set to bbs-2023, an ' +
-        'INVALID_PROOF_CONFIGURATION error MUST be raised.', async function() {
-          this.test.link = 'https://w3c.github.io/vc-di-bbs/#base-proof-transformation-bbs-2023:~:text=If%20proofConfig.type%20is%20not%20set%20to%20DataIntegrityProof%20and/or%20proofConfig.cryptosuite%20is%20not%20set%20to%20bbs%2D2023%2C%20an%20INVALID_PROOF_CONFIGURATION%20error%20MUST%20be%20raised.';
-          const credential = cloneTestVector(
-            disclosed?.invalid?.proofTypeAndCryptosuite);
-          await verificationFail({credential, verifier});
+            'proofConfig.cryptosuite is not set to bbs-2023, an error MUST ' +
+            'be raised and SHOULD convey an error type of ' +
+            'PROOF_GENERATION_ERROR.', async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=If%20proofConfig.type%20is%20not%20set%20to%20DataIntegrityProof%20and/or%20proofConfig.cryptosuite%20is%20not%20set%20to%20bbs%2D2023%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_GENERATION_ERROR.';
+          await verificationFail({
+            credential: cloneTestVector(
+              disclosed?.invalid?.proofTypeAndCryptosuite),
+            verifier
+          });
+          await verificationFail({
+            credential: cloneTestVector(
+              disclosed?.invalid?.cryptosuite),
+            verifier
+          });
+          await verificationFail({
+            credential: cloneTestVector(
+              disclosed?.invalid?.proofType),
+            verifier
+          });
         });
         it('Whenever this algorithm (base proof) encodes strings, it MUST ' +
           'use UTF-8 encoding.', async function() {
