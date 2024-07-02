@@ -2,6 +2,7 @@
  * Copyright 2024 Digital Bazaar, Inc.
  * SPDX-License-Identifier: BSD-3-Clause
  */
+import * as base64url from 'base64url-universal';
 import {
   allowUnsafeCanonize,
   invalidCborEncoding,
@@ -187,6 +188,19 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suiteName: suite,
     generators: [invalidCborEncoding]
   });
+  const valuePrefix = new Map();
+  for(const [keyType, versions] of disclosed?.basic) {
+    valuePrefix.set(keyType, new Map());
+    for(const [vcVersion, vc] of versions) {
+      const modifiedVc = structuredClone(vc);
+      const proofValue = base64url.decode(modifiedVc.proof.proofValue.slice(1));
+      proofValue.writeUInt8(0x0, 0);
+      proofValue.writeUInt8(0x0, 1);
+      modifiedVc.proof.proofValue = `u${base64url.encode(proofValue)}`;
+      valuePrefix.get(keyType).set(vcVersion, modifiedVc);
+    }
+  }
+  disclosed.invalid.valuePrefix = valuePrefix;
   return {
     base,
     disclosed

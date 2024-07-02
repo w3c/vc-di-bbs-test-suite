@@ -152,6 +152,13 @@ export function verifySuite({
             credential.credentialSubject.id = 'urn:invalid';
             await verificationFail({credential, verifier});
           });
+        it('If the decodedProofValue starts with any other three byte ' +
+          'sequence, an error MUST be raised and SHOULD convey an error ' +
+          'type of PROOF_VERIFICATION_ERROR.', async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=If%20the%20decodedProofValue%20starts%20with%20any%20other%20three%20byte%20sequence%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR.';
+          const credential = cloneTestVector(disclosed?.invalid?.valuePrefix);
+          await verificationFail({credential, verifier});
+        });
       });
     }
   });
