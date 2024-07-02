@@ -86,6 +86,7 @@ export function verifySuite({
             '-no-pad-encoded value, an error MUST be raised and SHOULD ' +
             'convey an error type of PROOF_VERIFICATION_ERROR.',
         async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=If%20the%20proofValue%20string%20does%20not%20start%20with%20u%20(U%2B0075%20LATIN%20SMALL%20LETTER%20U)%2C%20indicating%20that%20it%20is%20a%20multibase%2Dbase64url%2Dno%2Dpad%2Dencoded%20value%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR.';
           const credential = cloneTestVector(disclosed?.basic);
           // intentionally modify proofValue to not start with 'u'
           credential.proof.proofValue = 'a' +
