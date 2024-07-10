@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import {
+  baseProofShouldHaveElementCount,
   checkEncoding,
   checkHmacKeyLength,
   shouldBeMultibaseEncoded,
@@ -265,6 +266,17 @@ export function createSuite({
           this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=The%20transformation%20options%20MUST%20contain%20an%20array%20of%20mandatory%20JSON%20pointers%20(mandatoryPointers)';
           for(const proof of bbsProofs) {
             shouldHaveMandatoryPointers({proof});
+          }
+        });
+        it('Initialize components to an array that is the result of ' +
+        'CBOR-decoding the bytes that follow the three-byte BBS disclosure ' +
+        'proof header. If the result is not an array of five or six elements ' +
+        '— a byte array, a map of integers to integers, two arrays of ' +
+        'integers, and one or two byte arrays; an error MUST be raised and ' +
+        'SHOULD convey an error type of PROOF_VERIFICATION_ERROR.', function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=%22pseudonym_hidden_pid%22.-,Initialize%20components%20to%20an%20array%20that%20is%20the%20result%20of%20CBOR,be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR.,-Replace%20the%20second';
+          for(const proof of bbsProofs) {
+            baseProofShouldHaveElementCount({proof});
           }
         });
       });
