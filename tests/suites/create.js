@@ -113,10 +113,13 @@ export function createSuite({
             await shouldBeProofValue(proof.proofValue);
           }
         });
-        it('The derived "proof" MUST verify when using a conformant verifier.',
-          async function() {
-            await shouldVerifyDerivedProof({verifiableCredential: issuedVc});
-          });
+        it('A conforming proof is any concrete expression of the data model ' +
+          'that complies with the normative statements in this ' +
+          'specification. Specifically, all relevant normative statements ' +
+          'in Sections 2. Data Model and 3. Algorithms of this document ' +
+          'MUST be enforced.', async function() {
+          await shouldVerifyDerivedProof({verifiableCredential: issuedVc});
+        });
         it.skip('The "proof.proofPurpose" field MUST match the verification ' +
           'relationship expressed by the verification method controller.',
         async function() {
