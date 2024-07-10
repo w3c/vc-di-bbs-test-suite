@@ -118,6 +118,7 @@ export function createSuite({
           'specification. Specifically, all relevant normative statements ' +
           'in Sections 2. Data Model and 3. Algorithms of this document ' +
           'MUST be enforced.', async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=all%20relevant%20normative%20statements%20in%20Sections%202.%20Data%20Model%20and%203.%20Algorithms%20of%20this%20document%20MUST%20be%20enforced.';
           await shouldVerifyDerivedProof({verifiableCredential: issuedVc});
         });
         it.skip('The "proof.proofPurpose" field MUST match the verification ' +
