@@ -14,11 +14,16 @@ import {getMultikeys} from './vc-generator/key-gen.js';
 import {parseBaseProofValue} from './vc-generator/stubMethods.js';
 
 const should = chai.should();
+// various reasons for failures
+const reasons = {
+  verificationFail: 'Expected no result from verifier.',
+  statusCodeFail: 'Expected HTTP Status code 400 or 422 for invalid input!'
+};
 
 export const verificationFail = async ({
   credential,
   verifier,
-  reason = 'Expected no result from verifier.'
+  reason = reasons.verificationFail
 }) => {
   const body = {
     verifiableCredential: credential,
@@ -29,8 +34,11 @@ export const verificationFail = async ({
   const {result, error} = await verifier.post({json: body});
   should.not.exist(result, reason);
   should.exist(error, 'Expected verifier to error.');
-  should.exist(error.status, 'Expected verifier to return an HTTP Status code');
-  error.status.should.be.oneOf([400, 422], reason);
+  should.exist(error.status,
+    'Expected verifier Response to have an HTTP Status code.');
+  const statusReason = (reason === reasons.verificationFail) ?
+    reasons.statusCodeFail : reason;
+  error.status.should.be.oneOf([400, 422], statusReason);
 };
 
 export const verificationSuccess = async ({credential, verifier}) => {
