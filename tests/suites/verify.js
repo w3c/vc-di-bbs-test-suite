@@ -171,6 +171,18 @@ export function verifySuite({
             const credential = cloneTestVector(disclosed?.invalid?.modified);
             await verificationFail({credential, verifier});
           });
+        it('Conforming processors MUST produce errors when non-conforming ' +
+            'documents are consumed.', async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=Conforming%20processors%20MUST%20produce%20errors%20when%20non%2Dconforming%20documents%20are%20consumed.';
+          for(const [prop, vector] of Object.entries(disclosed?.invalid)) {
+            await verificationFail({
+              credential: cloneTestVector(vector),
+              verifier,
+              reason: `Verified invalid VC "${prop}" version ` +
+                 `${vcVersion} keyType ${keyType}`
+            });
+          }
+        });
         it('If the decodedProofValue starts with any other three byte ' +
           'sequence, an error MUST be raised and SHOULD convey an error ' +
           'type of PROOF_VERIFICATION_ERROR.', async function() {
