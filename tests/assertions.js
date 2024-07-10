@@ -100,6 +100,24 @@ export const shouldNotUseCborTags = ({proof}) => {
   should.exist(result, 'Expected proof to be decoded.');
 };
 
+export const baseProofShouldHaveElementCount = ({
+  proof,
+  expectedLengths = [5, 6],
+  reason = 'Expected baseProof to have expected number of components'
+}) => {
+  let error;
+  let result;
+  try {
+    // try to parse the base proof with no cbor tags
+    result = parseBaseProofValue({proof});
+  } catch(e) {
+    error = e;
+  }
+  should.not.exist(error, 'Expected proof to decode.');
+  should.exist(result, 'Expected proof to be decoded.');
+  Object.keys(result).length.should.be.oneOf(expectedLengths, reason);
+};
+
 export const shouldHaveMandatoryPointers = ({proof}) => {
   const {mandatoryPointers} = parseBaseProofValue({proof});
   should.exist(mandatoryPointers, 'Expected "mandatoryPointers" to exist.');
