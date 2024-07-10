@@ -168,9 +168,7 @@ export function verifySuite({
         });
         it('MUST fail to verify a modified disclosed credential.',
           async function() {
-            const credential = cloneTestVector(disclosed?.basic);
-            // intentionally modify `credentialSubject` ID
-            credential.credentialSubject.id = 'urn:invalid';
+            const credential = cloneTestVector(disclosed?.invalid?.modified);
             await verificationFail({credential, verifier});
           });
         it('If the decodedProofValue starts with any other three byte ' +
