@@ -283,6 +283,19 @@ export function createSuite({
             baseProofShouldHaveElementCount({proof});
           }
         });
+        it.skip(' If featureOption is set to "anonymous_holder_binding" or ' +
+        '"pseudonym_hidden_pid", the commitment_with_proof input MUST be ' +
+        'supplied.', async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=If%20featureOption%20is%20set%20to%20%22anonymous_holder_binding%22%20or%20%22pseudonym_hidden_pid%22%2C%20the%20commitment_with_proof%20input%20MUST%20be%20supplied.';
+          //FIXME implement this test
+        });
+        it.skip('If featureOption is set to "anonymous_holder_binding" or ' +
+        '"pseudonym_hidden_pid", the commitment_with_proof input MUST be ' +
+        'supplied; if not supplied, an error MUST be raised and SHOULD ' +
+        'convey an error type of PROOF_GENERATION_ERROR.', async function() {
+          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=If%20featureOption%20is%20set%20to%20%22anonymous_holder_binding%22%20or%20%22pseudonym_hidden_pid%22%2C%20the%20commitment_with_proof%20input%20MUST%20be%20supplied%3B%20if%20not%20supplied%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_GENERATION_ERROR.';
+          //FIXME implement this test
+        });
       });
     }
   });
