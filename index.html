@@ -87,22 +87,22 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 150/164 91%
+      Tests passed 153/170 90%
       </p>
       <p>
-      Tests failed 14/164 9%
+      Tests failed 17/170 10%
       </p>
       <p>
-      Failures 14
+      Failures 17
       </p>
       <p>
-      Tests skipped 3
+      Tests skipped 9
       </p>
       <p>
-      Total tests 167
+      Total tests 179
       </p>
       <p>
-        These tests were run on <time>10 July 2024 at 6:38 pm UTC</time>
+        These tests were run on <time>14 July 2024 at 5:07 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -1662,7 +1662,7 @@
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">The derived &quot;proof&quot; MUST verify when using a conformant verifier.</td>
+                <td class="subtest">A conforming proof is any concrete expression of the data model that complies with the normative statements in this specification. Specifically, all relevant normative statements in Sections 2. Data Model and 3. Algorithms of this document MUST be enforced.</td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
@@ -2181,6 +2181,80 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">The transformation options MUST contain an array of mandatory JSON pointers (mandatoryPointers)</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                    </div>
+                  </td>
+                  <td class="pending not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">🚫</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "message": "Test skipped."
+                    }</pre>
+                      </span>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">Initialize components to an array that is the result of CBOR-decoding the bytes that follow the three-byte BBS disclosure proof header. If the result is not an array of five or six elements — a byte array, a map of integers to integers, two arrays of integers, and one or two byte arrays; an error MUST be raised and SHOULD convey an error type of PROOF_VERIFICATION_ERROR.</td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
@@ -2537,7 +2611,7 @@
               </tr>
               <tr>
                 <!--This is the name of the test-->
-                <td class="subtest">The derived &quot;proof&quot; MUST verify when using a conformant verifier.</td>
+                <td class="subtest">A conforming proof is any concrete expression of the data model that complies with the normative statements in this specification. Specifically, all relevant normative statements in Sections 2. Data Model and 3. Algorithms of this document MUST be enforced.</td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
@@ -3021,6 +3095,75 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">The transformation options MUST contain an array of mandatory JSON pointers (mandatoryPointers)</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                    </div>
+                  </td>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">Initialize components to an array that is the result of CBOR-decoding the bytes that follow the three-byte BBS disclosure proof header. If the result is not an array of five or six elements — a byte array, a map of integers to integers, two arrays of integers, and one or two byte arrays; an error MUST be raised and SHOULD convey an error type of PROOF_VERIFICATION_ERROR.</td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">✓</div>
@@ -3495,8 +3638,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:01 GMT', etag: 'W/\"866-snFW8Ye3MTlTwQwmMCbNEa1CeTU\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:01 GMT', etag: 'W/\"866-snFW8Ye3MTlTwQwmMCbNEa1CeTU\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/verify.js:78:7)"
+                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:32 GMT', etag: 'W/\"866-KNQevkwh/GByeCLQgk0T0SYukZc\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:32 GMT', etag: 'W/\"866-KNQevkwh/GByeCLQgk0T0SYukZc\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/verify.js:78:7)"
                     }</pre>
                       </span>
                     </div>
@@ -4396,8 +4539,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:04 GMT', etag: 'W/\"835-IyiNOveudshvV87OS7VENrzqtSQ\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:04 GMT', etag: 'W/\"835-IyiNOveudshvV87OS7VENrzqtSQ\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/verify.js:78:7)"
+                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:35 GMT', etag: 'W/\"835-ETxihrLz4sr6DcGmMEzx1dbr8fY\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:35 GMT', etag: 'W/\"835-ETxihrLz4sr6DcGmMEzx1dbr8fY\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/verify.js:78:7)"
                     }</pre>
                       </span>
                     </div>
@@ -4435,8 +4578,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:07 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:07 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/verify.js:78:7)"
+                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:38 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:38 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/verify.js:78:7)"
                     }</pre>
                       </span>
                     </div>
@@ -4794,8 +4937,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:08 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:08 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/verify.js:129:9)"
+                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:39 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:39 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/verify.js:129:9)"
                     }</pre>
                       </span>
                     </div>
@@ -4870,8 +5013,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:08 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:08 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/verify.js:138:9)"
+                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:39 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', connection: 'keep-alive', 'content-length': '27', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:39 GMT', etag: 'W/\"1b-rRfMrqLEzOSc4mDcQ32caLaauZM\"', server: 'nginx/1.18.0 (Ubuntu)', 'x-powered-by': 'Express' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/verify.js:138:9)"
                     }</pre>
                       </span>
                     </div>
@@ -5878,8 +6021,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:17 GMT', etag: 'W/\"87e-Y+kWfZzbUsJOdqsbQd4w+8Ay3IM\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:17 GMT', etag: 'W/\"87e-Y+kWfZzbUsJOdqsbQd4w+8Ay3IM\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:30:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:163:11)"
+                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:47 GMT', etag: 'W/\"87e-Afrky+zlnL3RFn1MHZTpfrzKuA0\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:47 GMT', etag: 'W/\"87e-Afrky+zlnL3RFn1MHZTpfrzKuA0\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:163:11)"
                     }</pre>
                       </span>
                     </div>
@@ -6030,6 +6173,87 @@
                          margin-left: 1rem;
                        }
                       </style>
+                    </div>
+                  </td>
+                  <td class="pending not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">🚫</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "message": "Test skipped."
+                    }</pre>
+                      </span>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">Conforming processors MUST produce errors when non-conforming documents are consumed.</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Verified invalid VC \"created\" version 1.1 keyType P-381: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:49 GMT', etag: 'W/\"87e-Afrky+zlnL3RFn1MHZTpfrzKuA0\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                      "stack": "AssertionError: Verified invalid VC \"created\" version 1.1 keyType P-381: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:49 GMT', etag: 'W/\"87e-Afrky+zlnL3RFn1MHZTpfrzKuA0\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:178:13)"
+                    }</pre>
+                      </span>
                     </div>
                   </td>
                   <td class="pending not-optional highlight-on-hover text-center">
@@ -6497,7 +6721,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist",
-                      "stack": "AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:47:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:71:13)"
+                      "stack": "AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:71:13)"
                     }</pre>
                       </span>
                     </div>
@@ -6573,7 +6797,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist",
-                      "stack": "AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:47:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:76:13)"
+                      "stack": "AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:76:13)"
                     }</pre>
                       </span>
                     </div>
@@ -6649,7 +6873,7 @@
                         <pre>{
                       "name": "AssertionError",
                       "message": "Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist",
-                      "stack": "AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:47:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:82:13)"
+                      "stack": "AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:82:13)"
                     }</pre>
                       </span>
                     </div>
@@ -6724,8 +6948,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected HTTP Status code 400 invalid input!: expected 500 to equal 400",
-                      "stack": "AssertionError: Expected HTTP Status code 400 invalid input!: expected 500 to equal 400\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:33:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:95:11)"
+                      "message": "Expected HTTP Status code 400 or 422 for invalid input!: expected 500 to be one of [ 400, 422 ]",
+                      "stack": "AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 500 to be one of [ 400, 422 ]\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:41:26)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:95:11)"
                     }</pre>
                       </span>
                     </div>
@@ -7113,8 +7337,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:26 GMT', etag: 'W/\"84d-Mz2zTdmxaJFEpdWO9cmUXdZKw5o\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
-                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Wed, 10 Jul 2024 18:38:26 GMT', etag: 'W/\"84d-Mz2zTdmxaJFEpdWO9cmUXdZKw5o\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:30:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:163:11)"
+                      "message": "Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:57 GMT', etag: 'W/\"84d-0PDI0qMibunJekEX5gg3+t+mNJY\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                      "stack": "AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:57 GMT', etag: 'W/\"84d-0PDI0qMibunJekEX5gg3+t+mNJY\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:163:11)"
                     }</pre>
                       </span>
                     </div>
@@ -7292,6 +7516,89 @@
               </tr>
               <tr>
                 <!--This is the name of the test-->
+                <td class="subtest">Conforming processors MUST produce errors when non-conforming documents are consumed.</td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Verified invalid VC \"created\" version 2.0 keyType P-381: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:58 GMT', etag: 'W/\"84d-0PDI0qMibunJekEX5gg3+t+mNJY\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist",
+                      "stack": "AssertionError: Verified invalid VC \"created\" version 2.0 keyType P-381: expected Response { status: 200, statusText: 'OK', headers: Headers { 'access-control-allow-origin': '*', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', authorization: '** SANITIZED TO PREVENT EXPOSING OF SECRETS ***', 'cache-control': 'no-cache, no-store, must-revalidate', 'content-encoding': 'gzip', 'content-type': 'application/json; charset=utf-8', date: 'Sun, 14 Jul 2024 05:06:58 GMT', etag: 'W/\"84d-0PDI0qMibunJekEX5gg3+t+mNJY\"', expires: '0', pragma: 'no-cache', server: 'Google Frontend', 'transfer-encoding': 'chunked', vary: 'X-HTTP-Method-Override, Accept-Encoding', via: '1.1 google' }, body: ReadableStream { locked: false, state: 'readable', supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: 'default', url: '' } to not exist\n    at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:178:13)"
+                    }</pre>
+                      </span>
+                    </div>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <style>
+                       .hide {
+                         display: none;
+                       }
+                       .err {
+                         position: relative;
+                         z-index: 1;
+                         width: 50rem;
+                         right: calc(0% + 15rem);
+                         background: rgba(0, 0, 0, 0.0);
+                       }
+                       .no-space-around {
+                         margin: 0;
+                         padding: 0;
+                       }
+                       pre {
+                         width: 75%;
+                         white-space: pre-line;
+                         word-break: break-all;
+                         margin: 0;
+                         padding: 0;
+                         background: white;
+                       }
+                       code > span.hljs-attr {
+                         margin-left: 1rem;
+                       }
+                      </style>
+                      <span class="err hide no-space-around">
+                        <pre>{
+                      "name": "AssertionError",
+                      "message": "Verified invalid VC \"valuePrefix\" version 2.0 keyType P-381: expected 500 to be one of [ 400, 422 ]",
+                      "stack": "AssertionError: Verified invalid VC \"valuePrefix\" version 2.0 keyType P-381: expected 500 to be one of [ 400, 422 ]\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:41:26)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:178:13)"
+                    }</pre>
+                      </span>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
                 <td class="subtest">If the decodedProofValue starts with any other three byte sequence, an error MUST be raised and SHOULD convey an error type of PROOF_VERIFICATION_ERROR.</td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -7359,8 +7666,8 @@
                       <span class="err hide no-space-around">
                         <pre>{
                       "name": "AssertionError",
-                      "message": "Expected HTTP Status code 400 invalid input!: expected 500 to equal 400",
-                      "stack": "AssertionError: Expected HTTP Status code 400 invalid input!: expected 500 to equal 400\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:33:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:181:11)"
+                      "message": "Expected HTTP Status code 400 or 422 for invalid input!: expected 500 to be one of [ 400, 422 ]",
+                      "stack": "AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 500 to be one of [ 400, 422 ]\n    at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:41:26)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Context.<anonymous> (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:191:11)"
                     }</pre>
                       </span>
                     </div>
