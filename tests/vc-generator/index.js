@@ -92,6 +92,7 @@ export async function verifyCredential({
 }
 
 export async function deriveCredentials({
+  documentLoader = defaultLoader,
   keys,
   vectors,
   map = new Map(),
@@ -110,6 +111,7 @@ export async function deriveCredentials({
         suite: getSuite({suite: suiteName, signer, mandatoryPointers}),
         selectiveSuite: getSuite({suite: suiteName, signer, selectivePointers}),
         credential: _credential,
+        loader: documentLoader,
         // add the ability to overwrite the defaults
         ...initialParams
       };

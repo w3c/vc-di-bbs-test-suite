@@ -3,7 +3,8 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 import {
-  contexts as credentialsContexts
+  contexts as credentialsContexts,
+  named as namedCredentialsContexts
 } from '@digitalbazaar/credentials-context';
 import dataIntegrityCtx from '@digitalbazaar/data-integrity-context';
 import didCtx from '@digitalcredentials/did-context';
@@ -16,29 +17,19 @@ const setContexts = contexts => {
   }
 };
 
-/*
+const {context: vc2Context} = namedCredentialsContexts.get('v2');
+const v2Ctx = vc2Context['@context'];
+v2Ctx.UnknownProofType = structuredClone(v2Ctx.DataIntegrityProof);
 const _dataIntegrityCtx = structuredClone(dataIntegrityCtx.CONTEXT);
 const diCtx = _dataIntegrityCtx['@context'];
-// add UnknownProofType to local context for test data
-diCtx.UnknownProofType =
-  structuredClone(_dataIntegrityCtx['@context'].DataIntegrityProof);
-// add invalidPurpose to context for test data
-diCtx.DataIntegrityProof['@context'].proofPurpose['@context'].invalidPurpose = {
-  '@id': 'https://w3id.org/security#invalidPurpose',
-  '@type': '@id',
-  '@container': '@set'
-};
+diCtx.UnknownProofType = structuredClone(diCtx.DataIntegrityProof);
 contextMap.set(
   dataIntegrityCtx.constants.CONTEXT_URL,
   _dataIntegrityCtx
 );
-*/
-
 // add contexts for the documentLoader
 contextMap.set(multikeyCtx.constants.CONTEXT_URL, multikeyCtx.CONTEXT);
 
-// add the data integrity contexts
-setContexts(dataIntegrityCtx.contexts);
 // add the dids contexts
 setContexts(didCtx.contexts);
 
