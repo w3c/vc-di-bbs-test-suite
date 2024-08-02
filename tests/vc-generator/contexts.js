@@ -2,13 +2,14 @@
  * Copyright (c) 2022-2024 Digital Bazaar, Inc.
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import * as credentialsV2Ctx from '@digitalbazaar/credentials-v2-context';
-import credentialsCtx from 'credentials-context';
+import {
+  contexts as credentialsContexts
+} from '@digitalbazaar/credentials-context';
 import dataIntegrityCtx from '@digitalbazaar/data-integrity-context';
 import didCtx from '@digitalcredentials/did-context';
 import multikeyCtx from '@digitalbazaar/multikey-context';
 
-const contextMap = new Map();
+const contextMap = new Map(credentialsContexts);
 const setContexts = contexts => {
   for(const [key, value] of contexts) {
     contextMap.set(key, structuredClone(value));
@@ -40,9 +41,5 @@ contextMap.set(multikeyCtx.constants.CONTEXT_URL, multikeyCtx.CONTEXT);
 setContexts(dataIntegrityCtx.contexts);
 // add the dids contexts
 setContexts(didCtx.contexts);
-// add the credentials v1 contexts
-setContexts(credentialsCtx.contexts);
-// add the credentials v2 contexts
-setContexts(credentialsV2Ctx.contexts);
 
 export {contextMap};
