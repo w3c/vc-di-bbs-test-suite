@@ -1,5 +1,5 @@
 {
-  "specStatus": "unofficial",
+  "specStatus": "base",
   "shortName": "vc-di-bbs-test-suite",
   "subtitle": "Interoperability test suite for BBS Data Integrity cryptosuite.",
   "github": "https://github.com/w3c/vc-di-bbs-test-suite",
