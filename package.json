@@ -54,6 +54,7 @@
     "chai": "^4.3.7",
     "data-integrity-test-suite-assertion": "github:w3c-ccg/data-integrity-test-suite-assertion",
     "jsonld": "^8.3.2",
+    "jsonld-document-loader": "^2.2.0",
     "mocha": "^10.2.0",
     "uuid": "^9.0.0",
     "vc-test-suite-implementations": "github:w3c/vc-test-suite-implementations"
