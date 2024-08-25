@@ -182,13 +182,13 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 365/375 97%
+      Tests passed 354/375 94%
       </p>
       <p>
-      Tests failed 10/375 3%
+      Tests failed 21/375 6%
       </p>
       <p>
-      Failures 10
+      Failures 21
       </p>
       <p>
       Tests skipped 27
@@ -197,7 +197,7 @@
       Total tests 402
       </p>
       <p>
-        These tests were run on <time>18 August 2024 at 5:06 am UTC</time>
+        These tests were run on <time>25 August 2024 at 5:06 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -1743,7 +1743,29 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    <a href="https://www.w3.org/TR/vc-data-integrity/#proofs:~:text&#x3D;be%20a%20string.-,created,-The%20date%20and">A conforming processor MAY chose to consume time values that were incorrectly serialized without an offset.</a>
+                    <a href="https://www.w3.org/TR/vc-data-integrity/#proofs:~:text&#x3D;be%20a%20string.-,created,-The%20date%20and">(created) A conforming processor MAY chose to consume time values that were incorrectly serialized without an offset.</a>
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    <a href="https://www.w3.org/TR/vc-data-integrity/#proofs:~:text&#x3D;interpreted%20as%20UTC.-,expires,-The%20expires%20property">(expires) A conforming processor MAY chose to consume time values that were incorrectly serialized without an offset.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2169,7 +2191,29 @@
               <tr>
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    <a href="https://www.w3.org/TR/vc-data-integrity/#proofs:~:text&#x3D;be%20a%20string.-,created,-The%20date%20and">A conforming processor MAY chose to consume time values that were incorrectly serialized without an offset.</a>
+                    <a href="https://www.w3.org/TR/vc-data-integrity/#proofs:~:text&#x3D;be%20a%20string.-,created,-The%20date%20and">(created) A conforming processor MAY chose to consume time values that were incorrectly serialized without an offset.</a>
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <!--This is the name of the test-->
+                <td class="subtest">
+                    <a href="https://www.w3.org/TR/vc-data-integrity/#proofs:~:text&#x3D;interpreted%20as%20UTC.-,expires,-The%20expires%20property">(expires) A conforming processor MAY chose to consume time values that were incorrectly serialized without an offset.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2224,9 +2268,17 @@
                     MUST verify a valid VC with a bbs-2023 proof.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:56:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2246,9 +2298,17 @@
                     MUST verify a valid VC with nested disclosed properties.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:61:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2268,9 +2328,17 @@
                     MUST verify a valid VC with disclosed properties and bnodes.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:66:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2290,9 +2358,17 @@
                     MUST verify with full array revealed properties
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:71:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2312,9 +2388,17 @@
                     MUST verify with fewer array revealed properties
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:76:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2334,9 +2418,17 @@
                     MUST verify w/o first element revealed properties
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:82:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2488,17 +2580,9 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20proofConfig.created%20is%20set%20and%20if%20the%20value%20is%20not%20a%20valid%20%5BXMLSCHEMA11%2D2%5D%20datetime%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_GENERATION_ERROR.">If proofConfig.created is set and if the value is not a valid [XMLSCHEMA11-2] datetime, an error MUST be raised and SHOULD convey an error type of PROOF_GENERATION_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected no result from verifier.: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;87e-ReSGKk8tnulWOlO/ntp2r+V7Y7o&quot;&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, date: &#x27;Sun, 18 Aug 2024 05:05:39 GMT&#x27;, server: &#x27;Google Frontend&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;87e-ReSGKk8tnulWOlO/ntp2r+V7Y7o&quot;&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, date: &#x27;Sun, 18 Aug 2024 05:05:39 GMT&#x27;, server: &#x27;Google Frontend&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:35:14)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:163:11)</pre>
-                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2562,17 +2646,9 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;Conforming%20processors%20MUST%20produce%20errors%20when%20non%2Dconforming%20documents%20are%20consumed.">Conforming processors MUST produce errors when non-conforming documents are consumed.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Verified invalid VC &quot;created&quot; version 1.1 keyType P-381: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;87e-ReSGKk8tnulWOlO/ntp2r+V7Y7o&quot;&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, date: &#x27;Sun, 18 Aug 2024 05:05:42 GMT&#x27;, server: &#x27;Google Frontend&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Verified invalid VC &quot;created&quot; version 1.1 keyType P-381: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;87e-ReSGKk8tnulWOlO/ntp2r+V7Y7o&quot;&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, date: &#x27;Sun, 18 Aug 2024 05:05:42 GMT&#x27;, server: &#x27;Google Frontend&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:35:14)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:178:13)</pre>
-                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2644,9 +2720,17 @@
                     MUST verify a valid VC with a bbs-2023 proof.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:56:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2666,9 +2750,17 @@
                     MUST verify a valid VC with nested disclosed properties.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:61:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2688,9 +2780,17 @@
                     MUST verify a valid VC with disclosed properties and bnodes.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:66:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2710,9 +2810,17 @@
                     MUST verify with full array revealed properties
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:71:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
@@ -2740,9 +2848,17 @@
                     MUST verify with fewer array revealed properties
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:76:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
@@ -2770,9 +2886,17 @@
                     MUST verify w/o first element revealed properties
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:82:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
@@ -2932,17 +3056,9 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20proofConfig.created%20is%20set%20and%20if%20the%20value%20is%20not%20a%20valid%20%5BXMLSCHEMA11%2D2%5D%20datetime%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_GENERATION_ERROR.">If proofConfig.created is set and if the value is not a valid [XMLSCHEMA11-2] datetime, an error MUST be raised and SHOULD convey an error type of PROOF_GENERATION_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected no result from verifier.: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;84d-Y65NIKyo0wag/qCAc3p4Lx69utk&quot;&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, date: &#x27;Sun, 18 Aug 2024 05:06:02 GMT&#x27;, server: &#x27;Google Frontend&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Expected no result from verifier.: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;84d-Y65NIKyo0wag/qCAc3p4Lx69utk&quot;&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, date: &#x27;Sun, 18 Aug 2024 05:06:02 GMT&#x27;, server: &#x27;Google Frontend&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:35:14)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:163:11)</pre>
-                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -3006,17 +3122,9 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;Conforming%20processors%20MUST%20produce%20errors%20when%20non%2Dconforming%20documents%20are%20consumed.">Conforming processors MUST produce errors when non-conforming documents are consumed.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Verified invalid VC &quot;created&quot; version 2.0 keyType P-381: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;84d-Y65NIKyo0wag/qCAc3p4Lx69utk&quot;&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, date: &#x27;Sun, 18 Aug 2024 05:06:05 GMT&#x27;, server: &#x27;Google Frontend&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist:</summary>
-                        <pre>AssertionError: Verified invalid VC &quot;created&quot; version 2.0 keyType P-381: expected Response { status: 200, statusText: &#x27;OK&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;84d-Y65NIKyo0wag/qCAc3p4Lx69utk&quot;&#x27;, &#x27;content-encoding&#x27;: &#x27;gzip&#x27;, date: &#x27;Sun, 18 Aug 2024 05:06:05 GMT&#x27;, server: &#x27;Google Frontend&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, &#x27;transfer-encoding&#x27;: &#x27;chunked&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:35:14)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:178:13)</pre>
-                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -3088,9 +3196,17 @@
                     Digital Bazaar
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/30-bbs-interop.js:63:9)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -3110,9 +3226,17 @@
                     Grotto Networking
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/30-bbs-interop.js:63:9)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -3132,9 +3256,17 @@
                     SpruceID
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist:</summary>
+                        <pre>AssertionError: Expected verifier to not error.: expected HTTPError: Request failed with status cod… { …(6) } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at verificationSuccess (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:52:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/30-bbs-interop.js:63:9)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
