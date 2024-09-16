@@ -131,8 +131,8 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suiteName: suite,
     keys
   });
-  const {mandatory, created} = generators;
-  const {invalidCreated} = created;
+  const {mandatory, dates} = generators;
+  const {invalidCreated} = dates;
   const {invalidCryptosuite, invalidProofType} = mandatory;
   disclosed.invalid.proofTypeAndCryptosuite =
     await deriveCredentials({
