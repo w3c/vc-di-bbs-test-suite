@@ -183,22 +183,22 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 327/348 93%
+      Tests passed 315/333 94%
       </p>
       <p>
-      Tests failed 21/348 7%
+      Tests failed 18/333 6%
       </p>
       <p>
-      Failures 21
+      Failures 18
       </p>
       <p>
       Tests skipped 18
       </p>
       <p>
-      Total tests 366
+      Total tests 351
       </p>
       <p>
-        These tests were run on <time>16 September 2024 at 3:47 pm UTC</time>
+        These tests were run on <time>22 September 2024 at 5:07 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -600,137 +600,6 @@
                 <!--This is the name of the test-->
                 <td class="subtest">
                     <a href="https://w3c.github.io/vc-data-integrity/#introduction:~:text&#x3D;The%20value%20of%20the%20cryptosuite%20property%20MUST%20be%20a%20string%20that%20identifies%20the%20cryptographic%20suite.%20If%20the%20processing%20environment%20supports%20subtypes%20of%20string%2C%20the%20type%20of%20the%20cryptosuite%20value%20MUST%20be%20the%20https%3A//w3id.org/security%23cryptosuiteString%20subtype%20of%20string.">The value of the cryptosuite property MUST be a string that identifies the cryptographic suite. If the processing environment supports subtypes of string, the type of the cryptosuite value MUST be the https://w3id.org/security#cryptosuiteString subtype of string.</a>
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    <a href="https://w3c.github.io/vc-data-integrity/#context-injection:~:text&#x3D;if%20an%20%40context%20property%20is%20not%20provided%20in%20the%20document%20or%20the%20Data%20Integrity%20terms%20used%20in%20the%20document%20are%20not%20mapped%20by%20existing%20values%20in%20the%20%40context%20property%2C%20implementations%20SHOULD%20inject%20or%20append">When an application is securing a document, if an @context property is not provided in the document or the Data Integrity terms used in the document are not mapped by existing values in the @context property, implementations SHOULD inject or append an @context property with a value of https://w3id.org/security/data-integrity/v2 or one or more contexts with at least the same declarations, such as the Verifiable Credential Data Model v2.0 context (https://www.w3.org/ns/credentials/v2).</a>
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected issuer Digital Bazaar to perform context injection on a VC with out an &quot;@context&quot; property: expected HTTPError: A validation error occured in … { …(6) } to not exist</summary>
-                        <pre>AssertionError: Expected issuer Digital Bazaar to perform context injection on a VC with out an &quot;@context&quot; property: expected HTTPError: A validation error occured in … { …(6) } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/create.js:343:18)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
-                      </details>
-                    </div>
-                  </td>
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected issuer Grotto Networking to perform context injection on a VC with out an &quot;@context&quot; property: expected HTTPError: Request failed with status cod… { …(6) } to not exist</summary>
-                        <pre>AssertionError: Expected issuer Grotto Networking to perform context injection on a VC with out an &quot;@context&quot; property: expected HTTPError: Request failed with status cod… { …(6) } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/create.js:343:18)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
-                      </details>
-                    </div>
-                  </td>
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
-                    <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected issuer SpruceID to perform context injection on a VC with out an &quot;@context&quot; property: expected HTTPError: Request failed with status cod… { …(5) } to not exist</summary>
-                        <pre>AssertionError: Expected issuer SpruceID to perform context injection on a VC with out an &quot;@context&quot; property: expected HTTPError: Request failed with status cod… { …(5) } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/create.js:343:18)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
-                      </details>
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    <a href="https://www.w3.org/TR/vc-data-integrity/#:~:text&#x3D;The%20date%20and%20time%20the%20proof%20was%20created%20is%20OPTIONAL%20and%2C%20if%20included%2C%20MUST%20be%20specified%20as%20an%20%5BXMLSCHEMA11%2D2%5D%20dateTimeStamp%20string%2C%20either%20in%20Universal%20Coordinated%20Time%20(UTC)%2C%20denoted%20by%20a%20Z%20at%20the%20end%20of%20the%20value%2C%20or%20with%20a%20time%20zone%20offset%20relative%20to%20UTC.">The date and time the proof was created is OPTIONAL and, if included, MUST be specified as an [XMLSCHEMA11-2] dateTimeStamp string, either in Universal Coordinated Time (UTC), denoted by a Z at the end of the value, or with a time zone offset relative to UTC.</a>
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    <a href="https://w3c.github.io/vc-data-integrity/#proofs:~:text&#x3D;MUST%20be%20an%20%5BXMLSCHEMA11%2D2%5D%20dateTimeStamp%20string%2C%20either%20in%20Universal%20Coordinated%20Time">The expires property is OPTIONAL and, if present, specifies when the proof expires. If present, it MUST be an [XMLSCHEMA11-2] dateTimeStamp string, either in Universal Coordinated Time (UTC), denoted by a Z at the end of the value, or with a time zone offset relative to UTC.</a>
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    <a href="https://w3c.github.io/vc-data-integrity/#verify-proof:~:text&#x3D;The%20domain%20property%20is%20OPTIONAL.%20It%20conveys%20one%20or%20more%20security%20domains%20in%20which%20the%20proof%20is%20meant%20to%20be%20used.%20If%20specified%2C%20the%20associated%20value%20MUST">The domain property is OPTIONAL. It conveys one or more security domains in which the proof is meant to be used. If specified, the associated value MUST be either a string, or an unordered set of strings. A verifier SHOULD use the value to ensure that the proof was intended to be used in the security domain in which the verifier is operating.</a>
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr>
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    <a href="https://w3c.github.io/vc-data-integrity/#verify-proof:~:text&#x3D;A%20string%20value%20that%20SHOULD%20be%20included%20in%20a%20proof%20if%20a%20domain%20is%20specified.">(challenge) A string value that SHOULD be included in a proof if a domain is specified.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
