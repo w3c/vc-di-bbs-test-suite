@@ -94,11 +94,6 @@ export function verifySuite({
           //FIXME assert on error type in the future
           await verificationFail({credential, verifier});
         });
-        it('If the "cryptosuite" field is not the string "bbs-2023", ' +
-          'an error MUST be raised.', async function() {
-          const credential = cloneTestVector(disclosed?.invalid?.cryptosuite);
-          await verificationFail({credential, verifier});
-        });
         it('If proofConfig.type is not set to DataIntegrityProof and/or ' +
             'proofConfig.cryptosuite is not set to bbs-2023, an error MUST ' +
             'be raised and SHOULD convey an error type of ' +
