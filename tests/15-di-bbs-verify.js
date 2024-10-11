@@ -15,7 +15,7 @@ import {getSuiteConfig} from './test-config.js';
 const tag = 'bbs-2023';
 const {tags, credentials, vectors} = getSuiteConfig(tag);
 const key = await getMultiKey({keyType: 'P-381'});
-const {subjectNestedObjects} = credentials.verify;
+const subjectNestedObjects = credentials.verify;
 
 for(const vcVersion of vectors.vcTypes) {
   const {match} = endpoints.filter({

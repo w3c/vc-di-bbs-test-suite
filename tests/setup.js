@@ -39,7 +39,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
       cbor: new Map()
     }
   };
-  const {subjectNestedObjects} = credentials.verify;
+  const subjectNestedObjects = credentials.verify;
   const keys = await getMultikeys({keyTypes});
   // takes an object with keys versions values vector and
   // transforms the vectors
