@@ -25,6 +25,10 @@ export const verificationFail = async ({
   verifier,
   reason = reasons.verificationFail
 }) => {
+  should.exist(
+    credential,
+    `Expected test data to exist received ${credential}`
+  );
   const body = {
     verifiableCredential: credential,
     options: {

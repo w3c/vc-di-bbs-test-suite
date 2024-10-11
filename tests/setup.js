@@ -126,7 +126,7 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suiteName: suite,
     generators: [invalidStringEncoding]
   });
-  disclosed.invalid.cborg = await deriveCredentials({
+  disclosed.invalid.cbor = await deriveCredentials({
     keys,
     vectors: disclosedBasicVectors,
     suiteName: suite,
