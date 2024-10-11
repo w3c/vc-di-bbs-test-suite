@@ -20,8 +20,6 @@ export async function verifySetup({credentials, keyTypes, suite}) {
   const disclosed = {
     //disclosedCredentials
     basic: new Map(),
-    //nestedDisclosedCredentials
-    nested: new Map(),
     array: {
       //disclosedCredentialsWithFullArray
       full: new Map(),
@@ -66,19 +64,6 @@ export async function verifySetup({credentials, keyTypes, suite}) {
   // use initial VCs for a basic selective disclosure test
   disclosed.basic = await deriveCredentials({
     vectors: disclosedBasicVectors,
-    suiteName: suite,
-    keys
-  });
-  const disclosedNestedVectors = transformVectors(
-    subjectNestedObjects,
-    vector => {
-      vector.selectivePointers = vector.selectivePointers.slice(1, 3);
-      return vector;
-    }
-  );
-  // create initial nestedDisclosedCredential from signedVc
-  disclosed.nested = await deriveCredentials({
-    vectors: disclosedNestedVectors,
     suiteName: suite,
     keys
   });
