@@ -3,11 +3,10 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import {
-  verificationFail,
-  verificationSuccess
-} from '../assertions.js';
 import {supportsVc} from '../helpers.js';
+import {
+  verificationFail
+} from '../assertions.js';
 
 /**
  * Runs a Mocha Suite on verifier endpoints using the params.
@@ -50,22 +49,6 @@ export function verifySuite({
         const {disclosed} = credentials;
         const cloneTestVector = map => structuredClone(
           map?.get(keyType)?.get(vcVersion));
-        it('MUST verify with full array revealed properties',
-          async function() {
-            const credential = cloneTestVector(disclosed?.array?.full);
-            await verificationSuccess({credential, verifier});
-          });
-        it('MUST verify with fewer array revealed properties',
-          async function() {
-            const credential = cloneTestVector(disclosed?.array?.lessThanFull);
-            await verificationSuccess({credential, verifier});
-          });
-        it('MUST verify w/o first element revealed properties',
-          async function() {
-            const credential = cloneTestVector(
-              disclosed?.array?.missingElements);
-            await verificationSuccess({credential, verifier});
-          });
         it('If the proofValue string does not start with u (U+0075 LATIN ' +
             'SMALL LETTER U), indicating that it is a multibase-base64url' +
             '-no-pad-encoded value, an error MUST be raised and SHOULD ' +

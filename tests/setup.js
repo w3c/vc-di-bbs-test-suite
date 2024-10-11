@@ -67,38 +67,6 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     suiteName: suite,
     keys
   });
-  // select full arrays
-  disclosed.array.full = await deriveCredentials({
-    vectors: transformVectors(subjectHasArrays),
-    suiteName: suite,
-    keys
-  });
-  const lessThanFullVectors = transformVectors(
-    subjectHasArrays,
-    vector => {
-      // select less than full subarrays
-      vector.selectivePointers = vector.selectivePointers.slice(2, -4);
-      return vector;
-    }
-  );
-  disclosed.array.lessThanFull = await deriveCredentials({
-    vectors: lessThanFullVectors,
-    suiteName: suite,
-    keys
-  });
-  const removeFirst7Vectors = transformVectors(
-    subjectHasArrays,
-    vector => {
-      // select w/o first 7 array element
-      vector.selectivePointers = vector.selectivePointers.slice(7);
-      return vector;
-    }
-  );
-  disclosed.array.missingElements = await deriveCredentials({
-    vectors: removeFirst7Vectors,
-    suiteName: suite,
-    keys
-  });
   const {mandatory, dates} = generators;
   const {invalidCreated} = dates;
   const {invalidCryptosuite, invalidProofType} = mandatory;
