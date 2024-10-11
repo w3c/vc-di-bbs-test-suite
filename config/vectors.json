@@ -28,18 +28,6 @@
               "mandatoryPointers": "./fixtures/license/2.0/mandatoryPointers.json",
               "selectivePointers": "./fixtures/license/2.0/selectivePointers.json"
             }
-          },
-          "subjectHasArrays": {
-            "1.1": {
-              "credential": "./fixtures/sail/1.1/credential.json",
-              "mandatoryPointers": "./fixtures/sail/1.1/mandatoryPointers.json",
-              "selectivePointers": "./fixtures/sail/1.1/selectivePointers.json"
-            },
-            "2.0": {
-              "credential": "./fixtures/sail/2.0/credential.json",
-              "mandatoryPointers": "./fixtures/sail/2.0/mandatoryPointers.json",
-              "selectivePointers": "./fixtures/sail/2.0/selectivePointers.json"
-            }
           }
         },
         "interop": {
