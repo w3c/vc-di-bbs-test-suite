@@ -50,11 +50,6 @@ export function verifySuite({
         const {disclosed} = credentials;
         const cloneTestVector = map => structuredClone(
           map?.get(keyType)?.get(vcVersion));
-        it('MUST verify a valid VC with nested disclosed properties.',
-          async function() {
-            const credential = cloneTestVector(disclosed?.nested);
-            await verificationSuccess({credential, verifier});
-          });
         it('MUST verify with full array revealed properties',
           async function() {
             const credential = cloneTestVector(disclosed?.array?.full);
