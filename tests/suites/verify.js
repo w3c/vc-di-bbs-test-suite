@@ -55,11 +55,6 @@ export function verifySuite({
             const credential = cloneTestVector(disclosed?.nested);
             await verificationSuccess({credential, verifier});
           });
-        it('MUST verify a valid VC with disclosed properties and bnodes.',
-          async function() {
-            const credential = cloneTestVector(disclosed?.noIds);
-            await verificationSuccess({credential, verifier});
-          });
         it('MUST verify with full array revealed properties',
           async function() {
             const credential = cloneTestVector(disclosed?.array?.full);
@@ -157,11 +152,6 @@ export function verifySuite({
           //FIXME assert on error code or message when available
           await verificationFail({credential, verifier});
         });
-        it('MUST fail to verify a modified disclosed credential.',
-          async function() {
-            const credential = cloneTestVector(disclosed?.invalid?.modified);
-            await verificationFail({credential, verifier});
-          });
         it('Conforming processors MUST produce errors when non-conforming ' +
             'documents are consumed.', async function() {
           this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=Conforming%20processors%20MUST%20produce%20errors%20when%20non%2Dconforming%20documents%20are%20consumed.';

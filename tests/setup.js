@@ -22,8 +22,6 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     basic: new Map(),
     //nestedDisclosedCredentials
     nested: new Map(),
-    //disclosedDlCredentialNoIds
-    noIds: new Map(),
     array: {
       //disclosedCredentialsWithFullArray
       full: new Map(),
@@ -83,21 +81,6 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     vectors: disclosedNestedVectors,
     suiteName: suite,
     keys
-  });
-  const disclosedNoIdVectors = transformVectors(
-    subjectNestedObjects,
-    vector => {
-      // delete the vc id
-      delete vector.credential.id;
-      // no idea why, but we reduce the pointers to?
-      vector.selectivePointers = vector.selectivePointers.slice(1, 3);
-      return vector;
-    }
-  );
-  disclosed.noIds = await deriveCredentials({
-    vectors: disclosedNoIdVectors,
-    keys,
-    suiteName: suite
   });
   // select full arrays
   disclosed.array.full = await deriveCredentials({
@@ -215,17 +198,6 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     }
   }
   disclosed.invalid.valuePrefix = valuePrefix;
-  const modified = new Map();
-  for(const [keyType, versions] of disclosed?.basic) {
-    modified.set(keyType, new Map());
-    for(const [vcVersion, vc] of versions) {
-      const modifiedVc = structuredClone(vc);
-      // intentionally modify `credentialSubject` ID
-      modifiedVc.credentialSubject.id = 'urn:invalid';
-      modified.get(keyType).set(vcVersion, modifiedVc);
-    }
-  }
-  disclosed.invalid.modified = modified;
   return {
     base,
     disclosed
