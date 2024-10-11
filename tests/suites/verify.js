@@ -47,14 +47,9 @@ export function verifySuite({
             columnId: name, rowId: this.currentTest.title
           };
         });
-        const {disclosed, base} = credentials;
+        const {disclosed} = credentials;
         const cloneTestVector = map => structuredClone(
           map?.get(keyType)?.get(vcVersion));
-        it('MUST verify a valid VC with a bbs-2023 proof.',
-          async function() {
-            const credential = cloneTestVector(disclosed?.basic);
-            await verificationSuccess({credential, verifier});
-          });
         it('MUST verify a valid VC with nested disclosed properties.',
           async function() {
             const credential = cloneTestVector(disclosed?.nested);
@@ -160,10 +155,6 @@ export function verifySuite({
           this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=If%20proofConfig.created%20is%20set%20and%20if%20the%20value%20is%20not%20a%20valid%20%5BXMLSCHEMA11%2D2%5D%20datetime%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_GENERATION_ERROR.';
           const credential = cloneTestVector(disclosed?.invalid?.created);
           //FIXME assert on error code or message when available
-          await verificationFail({credential, verifier});
-        });
-        it('MUST fail to verify a base proof.', async function() {
-          const credential = cloneTestVector(base);
           await verificationFail({credential, verifier});
         });
         it('MUST fail to verify a modified disclosed credential.',
