@@ -187,22 +187,22 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 401/444 90%
+      Tests passed 372/416 89%
       </p>
       <p>
-      Tests failed 43/444 10%
+      Tests failed 44/416 11%
       </p>
       <p>
-      Failures 43
+      Failures 44
       </p>
       <p>
       Tests skipped 24
       </p>
       <p>
-      Total tests 468
+      Total tests 440
       </p>
       <p>
-        These tests were run on <time>6 October 2024 at 5:06 am UTC</time>
+        These tests were run on <time>13 October 2024 at 5:07 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -648,6 +648,41 @@
               <tr class="confirmed">
                 <!--This is the name of the test-->
                 <td class="subtest">
+                    <a href="https://w3c.github.io/vc-data-integrity/#dfn-input-document:~:text&#x3D;If%20the%20algorithm%20produces%20an%20error%2C%20the%20error%20MUST%20be%20propagated%20and%20SHOULD%20convey%20the%20error%20type">If the algorithm produces an error, the error MUST be propagated and SHOULD convey the error type.</a>
+                </td>
+                <!--These contain if the test passed, failed, or was skipped-->
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
+                    <div class="relative-pos">
+                    </div>
+                  </td>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
+                    <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected issuer to error when VC has no credentialSubject.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { date: &#x27;Sun, 13 Oct 2024 05:06:12 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/json&#x27;, &#x27;content-length&#x27;: &#x27;1204&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8d1ccc8b7bdf104c-ORD&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
+                        <pre>AssertionError: Expected issuer to error when VC has no credentialSubject.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { date: &#x27;Sun, 13 Oct 2024 05:06:12 GMT&#x27;, &#x27;content-type&#x27;: &#x27;application/json&#x27;, &#x27;content-length&#x27;: &#x27;1204&#x27;, connection: &#x27;keep-alive&#x27;, &#x27;cf-cache-status&#x27;: &#x27;DYNAMIC&#x27;, server: &#x27;cloudflare&#x27;, &#x27;cf-ray&#x27;: &#x27;8d1ccc8b7bdf104c-ORD&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at shouldFailIssuance (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/assertions.js:104:14)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/create.js:255:7)</pre>
+                      </details>
+                    </div>
+                  </td>
+              </tr>
+              <tr class="confirmed">
+                <!--This is the name of the test-->
+                <td class="subtest">
                     <a href="https://w3c.github.io/vc-data-integrity/#introduction:~:text&#x3D;The%20value%20of%20the%20cryptosuite%20property%20MUST%20be%20a%20string%20that%20identifies%20the%20cryptographic%20suite.%20If%20the%20processing%20environment%20supports%20subtypes%20of%20string%2C%20the%20type%20of%20the%20cryptosuite%20value%20MUST%20be%20the%20https%3A//w3id.org/security%23cryptosuiteString%20subtype%20of%20string.">The value of the cryptosuite property MUST be a string that identifies the cryptographic suite.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
@@ -695,7 +730,7 @@
                         <summary>Expected property https://w3id.org/security#cryptosuite to exist.: expected undefined to exist</summary>
                         <pre>AssertionError: Expected property https://w3id.org/security#cryptosuite to exist.: expected undefined to exist
                         at should.exist (node_modules/chai/lib/chai/interface/should.js:144:34)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/create.js:280:20)</pre>
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/data-integrity-test-suite-assertion/suites/create.js:293:20)</pre>
                       </details>
                     </div>
                   </td>
@@ -839,8 +874,8 @@
                       <details class="err hide">
                         <summary>&quot;issuanceDate&quot; property is required.</summary>
                         <pre>Error: &quot;issuanceDate&quot; property is required.
-                        at _checkCredential (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/@digitalbazaar/vc/lib/index.js:605:13)
-                        at Module.derive (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/@digitalbazaar/vc/lib/index.js:174:3)
+                        at _checkCredential (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/@digitalbazaar/vc/lib/index.js:635:13)
+                        at Module.derive (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/node_modules/@digitalbazaar/vc/lib/index.js:180:3)
                         at deriveCredential (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/vc-generator/index.js:75:13)
                         at shouldVerifyDerivedProof (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:190:29)
                         at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/create.js:122:11)</pre>
@@ -1528,7 +1563,7 @@
               <tr class="confirmed">
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    If the &quot;proof&quot; field is missing, an error MUST be raised.
+                    <a href="https://w3c.github.io/vc-data-integrity/#:~:text&#x3D;If%20either%20securedDocument%20is%20not%20a%20map%20or%20securedDocument.proof%20is%20not%20a%20map%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PARSING_ERROR.">If either securedDocument is not a map or securedDocument.proof is not a map, an error MUST be raised and SHOULD convey an error type of PARSING_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1555,34 +1590,7 @@
               <tr class="confirmed">
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    If the &quot;proof&quot; field is invalid, an error MUST be raised.
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr class="confirmed">
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    If the &quot;proof.type&quot; field is missing, an error MUST be raised.
+                    <a href="https://w3c.github.io/vc-data-integrity/#:~:text&#x3D;If%20one%20or%20more%20of%20proof.type%2C%20proof.verificationMethod%2C%20and%20proof.proofPurpose%20does%20not%20exist%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR.">If one or more of proof.type, proof.verificationMethod, and proof.proofPurpose does not exist, an error MUST be raised and SHOULD convey an error type of PROOF_VERIFICATION_ERROR</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1636,61 +1644,7 @@
               <tr class="confirmed">
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    If the &quot;proof.verificationMethod&quot; field is missing, an error MUST be raised.
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr class="confirmed">
-                <!--This is the name of the test-->
-                <td class="subtest">
                     If the &quot;proof.verificationMethod&quot; field is invalid, an error MUST be raised.
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr class="confirmed">
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    If the &quot;proof.proofPurpose&quot; field is missing, an error MUST be raised.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2018,7 +1972,7 @@
               <tr class="confirmed">
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    If the &quot;proof&quot; field is missing, an error MUST be raised.
+                    <a href="https://w3c.github.io/vc-data-integrity/#:~:text&#x3D;If%20either%20securedDocument%20is%20not%20a%20map%20or%20securedDocument.proof%20is%20not%20a%20map%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PARSING_ERROR.">If either securedDocument is not a map or securedDocument.proof is not a map, an error MUST be raised and SHOULD convey an error type of PARSING_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2045,34 +1999,7 @@
               <tr class="confirmed">
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    If the &quot;proof&quot; field is invalid, an error MUST be raised.
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr class="confirmed">
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    If the &quot;proof.type&quot; field is missing, an error MUST be raised.
+                    <a href="https://w3c.github.io/vc-data-integrity/#:~:text&#x3D;If%20one%20or%20more%20of%20proof.type%2C%20proof.verificationMethod%2C%20and%20proof.proofPurpose%20does%20not%20exist%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR.">If one or more of proof.type, proof.verificationMethod, and proof.proofPurpose does not exist, an error MUST be raised and SHOULD convey an error type of PROOF_VERIFICATION_ERROR</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2126,61 +2053,7 @@
               <tr class="confirmed">
                 <!--This is the name of the test-->
                 <td class="subtest">
-                    If the &quot;proof.verificationMethod&quot; field is missing, an error MUST be raised.
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr class="confirmed">
-                <!--This is the name of the test-->
-                <td class="subtest">
                     If the &quot;proof.verificationMethod&quot; field is invalid, an error MUST be raised.
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr class="confirmed">
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    If the &quot;proof.proofPurpose&quot; field is missing, an error MUST be raised.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2713,33 +2586,6 @@
                 <!--This is the name of the test-->
                 <td class="subtest">
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20the%20proofValue%20string%20does%20not%20start%20with%20u%20(U%2B0075%20LATIN%20SMALL%20LETTER%20U)%2C%20indicating%20that%20it%20is%20a%20multibase%2Dbase64url%2Dno%2Dpad%2Dencoded%20value%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR.">If the proofValue string does not start with u (U+0075 LATIN SMALL LETTER U), indicating that it is a multibase-base64url-no-pad-encoded value, an error MUST be raised and SHOULD convey an error type of PROOF_VERIFICATION_ERROR.</a>
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr class="confirmed">
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    If the &quot;cryptosuite&quot; field is not the string &quot;bbs-2023&quot;, an error MUST be raised.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -3323,33 +3169,6 @@
                 <!--This is the name of the test-->
                 <td class="subtest">
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20the%20proofValue%20string%20does%20not%20start%20with%20u%20(U%2B0075%20LATIN%20SMALL%20LETTER%20U)%2C%20indicating%20that%20it%20is%20a%20multibase%2Dbase64url%2Dno%2Dpad%2Dencoded%20value%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR.">If the proofValue string does not start with u (U+0075 LATIN SMALL LETTER U), indicating that it is a multibase-base64url-no-pad-encoded value, an error MUST be raised and SHOULD convey an error type of PROOF_VERIFICATION_ERROR.</a>
-                </td>
-                <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
-                    <div class="relative-pos">
-                    </div>
-                  </td>
-              </tr>
-              <tr class="confirmed">
-                <!--This is the name of the test-->
-                <td class="subtest">
-                    If the &quot;cryptosuite&quot; field is not the string &quot;bbs-2023&quot;, an error MUST be raised.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
                   <td class="passed not-optional highlight-on-hover text-center">
