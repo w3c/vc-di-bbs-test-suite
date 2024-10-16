@@ -150,19 +150,36 @@ export async function verifySetup({credentials, keyTypes, suite}) {
   };
 }
 
-export async function exportMap(map, path) {
-  const mapArray = _unwrapMap(map);
+export async function exportFixtures(map, path) {
+  const mapArray = _unwrap(map);
   return writeFile(path, JSON.stringify(mapArray, null, 2));
+}
+
+const prims = new Set([
+  'string', 'number',
+  'undefined', 'symbol',
+  'bigint', 'boolean']);
+
+function _unwrap(value) {
+  if(prims.has((typeof value))) {
+    return value;
+  }
+  if(Array.isArray(value)) {
+    return value.map(_unwrap);
+  }
+  if(value instanceof Map) {
+    return _unwrapMap(value);
+  }
+  for(const key in value) {
+    value[key] = _unwrap(value[key]);
+  }
+  return value;
 }
 
 function _unwrapMap(map) {
   const unwrapped = [];
   for(const [key, value] of map) {
-    if(value instanceof Map) {
-      unwrapped.push(key, _unwrapMap(value));
-      continue;
-    }
-    unwrapped.push(key, value);
+    unwrapped.push(key, _unwrap(value));
   }
   return unwrapped;
 }
