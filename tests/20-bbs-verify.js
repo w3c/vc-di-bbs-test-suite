@@ -4,9 +4,9 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
+import {exportFixtures, verifySetup} from './setup.js';
 import {endpoints} from 'vc-test-suite-implementations';
 import {getSuiteConfig} from './test-config.js';
-import {verifySetup} from './setup.js';
 import {verifySuite} from './suites/verify.js';
 
 const tag = 'bbs-2023';
@@ -26,6 +26,19 @@ const testVectors = await verifySetup({
   suite: tag
 });
 describe('bbs-2023 (verify)', async function() {
+  after(async function() {
+    try {
+      const {base, disclosed} = testVectors;
+      const path = file => `./reports/${file}.json`;
+      await exportFixtures(base, path('base'));
+      await exportFixtures(
+        disclosed,
+        path('verifier-test-fixtures')
+      );
+    } catch(e) {
+      console.error('Failed to export test fixtures', e);
+    }
+  });
   for(const vcVersion of vectors.vcTypes) {
     for(const keyType of vectors.keyTypes) {
       verifySuite({
