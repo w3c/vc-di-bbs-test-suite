@@ -30,10 +30,10 @@ describe('bbs-2023 (verify)', async function() {
     try {
       const {base, disclosed} = testVectors;
       const path = file => `./reports/${file}.json`;
-      await exportFixtures(base, path('base'));
+      await exportFixtures(base, path('base-fixtures'));
       await exportFixtures(
         disclosed,
-        path('verifier-test-fixtures')
+        path('derived-fixtures')
       );
     } catch(e) {
       console.error('Failed to export test fixtures', e);
