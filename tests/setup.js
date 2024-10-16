@@ -170,6 +170,9 @@ function _unwrap(value) {
   if(value instanceof Map) {
     return _unwrapMap(value);
   }
+  if(value instanceof Set) {
+    return [...value].map(_unwrap);
+  }
   for(const key in value) {
     value[key] = _unwrap(value[key]);
   }
