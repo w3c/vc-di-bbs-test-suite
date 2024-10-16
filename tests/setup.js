@@ -15,19 +15,12 @@ import {
   issueCredentials
 } from './vc-generator/index.js';
 import {generators} from 'data-integrity-test-suite-assertion';
+import {writeFile} from 'node:fs/promises';
 
 export async function verifySetup({credentials, keyTypes, suite}) {
   const disclosed = {
     //disclosedCredentials
     basic: new Map(),
-    array: {
-      //disclosedCredentialsWithFullArray
-      full: new Map(),
-      //disclosedCredentialsWithLessThanFullSubArray
-      lessThanFull: new Map(),
-      //disclosedCredentialsWithoutFirstArrayElement
-      missingElements: new Map()
-    },
     invalid: {
       // invalid "proof.type" and "proof.cryptosuite"
       proofTypeAndCryptosuite: new Map(),
@@ -155,4 +148,21 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     base,
     disclosed
   };
+}
+
+export async function exportMap(map, path) {
+  const mapArray = _unwrapMap(map);
+  return writeFile(path, JSON.stringify(mapArray, null, 2));
+}
+
+function _unwrapMap(map) {
+  const unwrapped = [];
+  for(const [key, value] of map) {
+    if(value instanceof Map) {
+      unwrapped.push(key, _unwrapMap(value));
+      continue;
+    }
+    unwrapped.push(key, value);
+  }
+  return unwrapped;
 }

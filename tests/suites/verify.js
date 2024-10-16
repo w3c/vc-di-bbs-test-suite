@@ -3,6 +3,7 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
+import {exportMap} from '../setup.js';
 import {supportsVc} from '../helpers.js';
 import {
   verificationFail
@@ -28,6 +29,19 @@ export function verifySuite({
   credentials = {}
 }) {
   return describe(`bbs-2023 (verifiers) VC ${vcVersion}`, function() {
+    after(async function() {
+      try {
+        const {base, disclosed} = credentials;
+        const path = file => `./reports/${file}.json`;
+        await exportMap(base, path('base'));
+        await exportMap(
+          Object.entries(disclosed),
+          path('verifier-test-fixtures')
+        );
+      } catch(e) {
+        console.error('Failed to export test fixtures', e);
+      }
+    });
     // this will tell the report
     // to make an interop matrix with this suite
     this.matrix = true;
