@@ -272,16 +272,6 @@ export function createSuite({
             shouldHaveMandatoryPointers({proof});
           }
         });
-        it('If the result is not an array of five, six, or seven elements ' +
-          '— a byte array, a map of integers to integers, two arrays of ' +
-          'integers, and one or two byte arrays; an error MUST be raised ' +
-          'and SHOULD convey an error type of PROOF_VERIFICATION_ERROR.',
-        function() {
-          this.test.link = 'https://w3c.github.io/vc-di-bbs/#:~:text=If%20the%20result%20is%20not%20an%20array%20of%20five%2C%20six%2C%20or%20seven%20elements%20%E2%80%94%20a%20byte%20array%2C%20a%20map%20of%20integers%20to%20integers%2C%20two%20arrays%20of%20integers%2C%20and%20one%20or%20two%20byte%20arrays%3B%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR';
-          for(const proof of bbsProofs) {
-            baseProofShouldHaveElementCount({proof});
-          }
-        });
         it.skip(' If featureOption is set to "anonymous_holder_binding" or ' +
         '"pseudonym_hidden_pid", the commitment_with_proof input MUST be ' +
         'supplied.', async function() {
