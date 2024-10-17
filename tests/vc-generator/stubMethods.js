@@ -392,6 +392,10 @@ function serializeDisclosureProofValue({
     // Uint8Array
     presentationHeader
   ];
+  return encodeProofValue({payload, typeEncoders});
+}
+
+export function encodeProofValue({payload, typeEncoders}) {
   const cbor = concatBuffers([
     CBOR_PREFIX_DERIVED, cborg.encode(payload, {useMaps: true, typeEncoders})
   ]);
