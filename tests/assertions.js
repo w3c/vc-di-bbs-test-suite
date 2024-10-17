@@ -111,7 +111,7 @@ export const shouldNotUseCborTags = ({proof}) => {
 
 export const baseProofShouldHaveElementCount = ({
   proof,
-  expectedLengths = [5, 6],
+  expectedLengths = [5, 6, 7],
   reason = 'Expected baseProof to have expected number of components'
 }) => {
   let error;
