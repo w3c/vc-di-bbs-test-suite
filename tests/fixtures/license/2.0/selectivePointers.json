@@ -1,6 +1,6 @@
 [
-  "/credentialSubject/driverLicense/documentIdentifier",
-  "/credentialSubject/driverLicense/dateOfBirth",
-  "/credentialSubject/driverLicense/expirationDate",
-  "/credentialSubject/driverLicense/issuingAuthority"
+  "/credentialSubject/driversLicense/document_number",
+  "/credentialSubject/driversLicense/birth_date",
+  "/credentialSubject/driversLicense/expiry_date",
+  "/credentialSubject/driversLicense/issuing_authority"
 ]
