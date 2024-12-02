@@ -51,7 +51,10 @@ const {
         holderSettings.holderName).endpoints;
       const vcHolder = vcHolders.find(endpoint => endpoint.tags.has(tag));
       ({disclosedCredential} = await createDisclosedVc({
-        selectivePointers: ['/credentialSubject/id'],
+        selectivePointers: [
+          '/credentialSubject/id',
+          '/credentialSubject/driversLicense/document_number'
+        ],
         signedCredential: issuedVc,
         vcHolder
       }));
