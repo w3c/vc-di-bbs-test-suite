@@ -3,9 +3,9 @@
   "suites": {
     "bbs-2023": {
       "tags": ["bbs-2023"],
-      "issuerName": "Grotto Networking",
+      "issuerName": "Digital Bazaar",
       "vcHolder": {
-        "holderName": "Grotto Networking",
+        "holderName": "Digital Bazaar",
         "tags": ["vcHolder", "bbs-2023"]
       }
     }
