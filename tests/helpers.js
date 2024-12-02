@@ -39,6 +39,9 @@ export const supportsVc = ({vcVersion, endpoint}) => {
  */
 export function filterVerifiers({implementation}) {
   const endpoints = implementation.verifiers;
+  if(undefined === endpoints) {
+    return [];
+  }
   return endpoints.filter(endpoint => {
     // this.tags must be supplied via bind
     if(this.tags.every(tag => endpoint.tags.has(tag))) {
