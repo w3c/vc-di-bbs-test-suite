@@ -53,7 +53,7 @@ const {
       ({disclosedCredential} = await createDisclosedVc({
         selectivePointers: [
           '/credentialSubject/id',
-          '/credentialSubject/driverLicense/issuingAuthority'
+          '/credentialSubject/driversLicense/document_number'
         ],
         signedCredential: issuedVc,
         vcHolder
