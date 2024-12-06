@@ -6,38 +6,38 @@
       "credentials": {
         "create": {
           "1.1": {
-            "credential": "./fixtures/license/1.1/credential.json",
-            "mandatoryPointers": "./fixtures/license/1.1/mandatoryPointers.json",
-            "selectivePointers": "./fixtures/license/1.1/selectivePointers.json"
+            "credential": "./fixtures/1.1/credential.json",
+            "mandatoryPointers": "./fixtures/1.1/mandatoryPointers.json",
+            "selectivePointers": "./fixtures/1.1/selectivePointers.json"
           },
           "2.0": {
-            "credential": "./fixtures/license/2.0/credential.json",
-            "mandatoryPointers": "./fixtures/license/2.0/mandatoryPointers.json",
-            "selectivePointers": "./fixtures/license/2.0/selectivePointers.json"
+            "credential": "./fixtures/2.0/credential.json",
+            "mandatoryPointers": "./fixtures/2.0/mandatoryPointers.json",
+            "selectivePointers": "./fixtures/2.0/selectivePointers.json"
           }
         },
         "verify": {
           "1.1": {
-            "credential": "./fixtures/license/1.1/credential.json",
-            "mandatoryPointers": "./fixtures/license/1.1/mandatoryPointers.json",
-            "selectivePointers": "./fixtures/license/1.1/selectivePointers.json"
+            "credential": "./fixtures/1.1/credential.json",
+            "mandatoryPointers": "./fixtures/1.1/mandatoryPointers.json",
+            "selectivePointers": "./fixtures/1.1/selectivePointers.json"
           },
           "2.0": {
-            "credential": "./fixtures/license/2.0/credential.json",
-            "mandatoryPointers": "./fixtures/license/2.0/mandatoryPointers.json",
-            "selectivePointers": "./fixtures/license/2.0/selectivePointers.json"
+            "credential": "./fixtures/2.0/credential.json",
+            "mandatoryPointers": "./fixtures/2.0/mandatoryPointers.json",
+            "selectivePointers": "./fixtures/2.0/selectivePointers.json"
           }
         },
         "interop": {
           "1.1": {
-            "credential": "./fixtures/license/1.1/credential.json",
-            "mandatoryPointers": "./fixtures/license/1.1/mandatoryPointers.json",
-            "selectivePointers": "./fixtures/license/1.1/selectivePointers.json"
+            "credential": "./fixtures/1.1/credential.json",
+            "mandatoryPointers": "./fixtures/1.1/mandatoryPointers.json",
+            "selectivePointers": "./fixtures/1.1/selectivePointers.json"
           },
           "2.0": {
-            "credential": "./fixtures/license/2.0/credential.json",
-            "mandatoryPointers": "./fixtures/license/2.0/mandatoryPointers.json",
-            "selectivePointers": "./fixtures/license/2.0/selectivePointers.json"
+            "credential": "./fixtures/2.0/credential.json",
+            "mandatoryPointers": "./fixtures/2.0/mandatoryPointers.json",
+            "selectivePointers": "./fixtures/2.0/selectivePointers.json"
           }
         }
       }
