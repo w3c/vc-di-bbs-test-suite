@@ -14,6 +14,10 @@ import {
   getMultikeys,
   issueCredentials
 } from './vc-generator/index.js';
+import {
+  encodeProofValue,
+  parseDisclosureProofValue
+} from './vc-generator/stubMethods.js';
 import {generators} from 'data-integrity-test-suite-assertion';
 import {writeFile} from 'node:fs/promises';
 
@@ -144,6 +148,21 @@ export async function verifySetup({credentials, keyTypes, suite}) {
     }
   }
   disclosed.invalid.valuePrefix = valuePrefix;
+  // invalid element count means less than 4 components
+  const componentCount = disclosed.invalid.componentCount = new Map();
+  // use the basic disclosed vc
+  for(const [keyType, versions] of disclosed?.basic) {
+    componentCount.set(keyType, new Map());
+    for(const [vcVersion, vc] of versions) {
+      const modifiedVc = structuredClone(vc);
+      const params = parseDisclosureProofValue({proof: modifiedVc.proof});
+      // create a payload with only 2 components
+      const payload = [params.bbsProof, params.presentationHeader];
+      // replace the existing proofValue with the smaller payload
+      modifiedVc.proof.proofValue = encodeProofValue({payload});
+      componentCount.get(keyType).set(vcVersion, modifiedVc);
+    }
+  }
   return {
     base,
     disclosed
