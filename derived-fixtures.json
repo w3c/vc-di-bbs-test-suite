@@ -1,0 +1,1029 @@
+{
+  "basic": [
+    "P-381",
+    [
+      "1.1",
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          {
+            "@protected": true,
+            "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+            "DriverLicense": {
+              "@id": "urn:example:DriverLicense",
+              "@context": {
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "documentIdentifier": "urn:example:documentIdentifier",
+                "dateOfBirth": "urn:example:dateOfBirth",
+                "expirationDate": "urn:example:expiration",
+                "issuingAuthority": "urn:example:issuingAuthority"
+              }
+            },
+            "driverLicense": {
+              "@id": "urn:example:driverLicense",
+              "@type": "@id"
+            }
+          },
+          "https://w3id.org/security/data-integrity/v2"
+        ],
+        "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+        "type": [
+          "VerifiableCredential",
+          "DriverLicenseCredential"
+        ],
+        "issuanceDate": "2024-12-08T19:05:32Z",
+        "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+        "credentialSubject": {
+          "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+        },
+        "proof": {
+          "type": "DataIntegrityProof",
+          "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "cryptosuite": "bbs-2023",
+          "proofPurpose": "assertionMethod",
+          "proofValue": "u2V0DhVkB0LP7LT7vchn5TVdFz6PaXKDQ_SBOR4VMbUhtBbZBvZwrJshTiSmehtuqkLZuZrjPzLa_NuFT8IueS1-4xd1-GWbvEDbGkB2zlqe-SzGNsWkFRu4jLkFQRBQwauq-aIYjQYwAF89Wo4SVDi7LhCq0GJ7QQenKOCEa8NC-2tTptwe2ScLXj3TkiCkMmxr_BHay3x7RmtJ3OG2YTtDrcKfuELw0aJ14ZQzRaagWOXck-74ZPjDJZ3JCemF9-MpP2QXvCGXnzj_5nOsApnJBT7Dfn0FTTXVNUXgPyoc3EC2nRN2NnEJ2m3BOtTw5BcmM28UvQQnn7K8eX-X3EzY_l7FSXbDAzcCx0RA4ClvTp0E5-aisDhPvxqkDM6Q0B7xP-TI1FrA3NbueflGk7qOVgmimNyJIhiSaXxWIU1vT-X6hyuhM3gfMP1mLK6yMlfsdivCwj1t7rZTMVmi385k5ytT26OvKtR7173eYaNiYgtFrIztGRdtDiNMuJlJEN6FrkBfRZrjY8Rxys4yA709YYPTtU9hvvAKWqrhyW5muPXJnz5NuQy9gzUcM8EzpAcKXBDYfzgffbwYkAt_RlHmSAsoPuMM4kIfvszSaGIIOYoHDNOpSoIQAAQMEgQFA"
+        }
+      },
+      "2.0",
+      {
+        "@context": [
+          "https://www.w3.org/ns/credentials/v2",
+          {
+            "@protected": true,
+            "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+            "DriverLicense": {
+              "@id": "urn:example:DriverLicense",
+              "@context": {
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "documentIdentifier": "urn:example:documentIdentifier",
+                "dateOfBirth": "urn:example:dateOfBirth",
+                "expirationDate": "urn:example:expiration",
+                "issuingAuthority": "urn:example:issuingAuthority"
+              }
+            },
+            "driverLicense": {
+              "@id": "urn:example:driverLicense",
+              "@type": "@id"
+            }
+          }
+        ],
+        "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+        "type": [
+          "VerifiableCredential",
+          "DriverLicenseCredential"
+        ],
+        "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+        "credentialSubject": {
+          "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+        },
+        "proof": {
+          "type": "DataIntegrityProof",
+          "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "cryptosuite": "bbs-2023",
+          "proofPurpose": "assertionMethod",
+          "proofValue": "u2V0DhVkB0Ig5tOYa7QPAAWHaUvfGQetSmShd091fNzq4bkeNA2txdXR42XM9mTjCZbW_zaxLG4gqLnjoqRUss8vTnM43XT-lZMawI61x-X88yvMitZC0k-YJtTRkNJvZBsKQ-Ofr9a_tYhs76YV_5HKJ6HPBh1BYWn9P5tGTd35xNmJ1u_-p_RX4qAzZRp8bsO702XbeTUxGd-He4galDsCyA-Iydbgu5r_LsOWWZaECwpPInrGkBcLWwknBVGalt5fKmtlgqRHliq8qgHyJmCt2a92EdiI5f-dBk4JP7pzbjmKYtj6OZBVm2Cf97lA0BfJrtW8ubmYw_ZqBM0xQMHmQnVXB08KbyCrjZ5LRg05U5gULBNq9clpVDAiyjjXDpo3sLJs4wvFyD48nOEhZBQaOIxQAXkFYFox1BBnMOWfUQJI9sW5OxYTR2P6Z3eSQsuhrJDp45z4fpfMwIduviytVGWM3hlX_H1NzZI0rTN4k_h5-SHXZZMNR6Ugh0t4e5HctGPxByxwDsslkfRiPFu2kFKJfYkQMMElzaFvT7UFGR-PcAYbK_Y4cALuupydU-cNLJar18W79EzszFn2vvNqb589GOTH5ZgD4EEscgLnAP1TLKG5SoIMAAQOBAUA"
+        }
+      }
+    ]
+  ],
+  "invalid": {
+    "proofTypeAndCryptosuite": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuanceDate": "2024-12-08T19:05:33Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "UnknownProofType",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "UnknownCryptosuite",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0LIDEyjEjJo4TLuLRQtmpk5qljDAOw6-M9tymWhvxkQ4JM_m-5FDPtI6WXdo_HkiJ6ZLcVmb2sQTgkEKKl_rscfZV8W4hB10b_WdukuJpeAv3zLD3vgy81U_7U6DMWXflIXzsNxsAZxmRdiULYzWvF6TU_zqe57ERoEYDXc-dj43PMCfMMnlttuZ4ihxkgeyViQO4JloGyoQQwS6HyTLoGTQ44OX4jIrS3wCTYB1OJD3NlvGV7XmRLXZzicuJKIA0HzGTMF2rYkqm9tXuAS24dQ9bzSuaJiYiaZcNHaK8nwBuI1Ngl0GbD52F4cDFrJl9h1dijU9VQq0plk4R1wtv-35waPDxE_XyAMvNo7ePuRVBrj47gSgp358R6o_shPIVNsdLyKZSYVjWFhGX3LNHtBVX2KvALzmImLZa1BX1LJrX_fb_LTMRfa9WiGgsc1AVU1cDEBHweXqv7ziAD2XoH0sA0VZ3xNo6jbxGLlbnfBzcJcOQ1zpqEC8uRZS_j2L0RGT-59k9DwbGs1Rd5Qharxatus6xrbOoFnjyxjYzVDVu1KIRZLNKnUyu_7BQ5GyrlBbPANmNNgRoYwZJJWuv-K9wE0sF_vUV6rmUWzDVaf8oIQAAQMEgQFA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            }
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "UnknownProofType",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "UnknownCryptosuite",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0LU5m10RgPRqb0gcN8bmvXuW2B5QYR2LknoDlTP7_6WtYnVCI3KupWyGIXedMfIlp7KUPIfzFoZeTBkbzuHSC7giVGiyzxiPuODDS0QF1khIfaAIjNqI-EtNKG8DyclvNoShhBQidfL8jLrOOsIaOn8pFyThYj_e-IoV7O8pEceRw6LXAqKASsXlWbD43X2lhmVsILN47SrHc7XIAEbqjCLA8T_VHDejbbd0v6hcRa6dL3AZ4TppUPBsjLkiI7akIBNKy4d3Yrj-TAVTt_rt5GRJS7DPwkD9SFmboH4gLtGTKj8R9cQm_oeOMKU-GxHn5hx0fx1tLMJmSXH4Jmp937fWyCAm_c30ulbM1fbhzr6nZqUxCJaALj58w9NyPNUcdDtXyKWbYNOEGCmL_lFSqTpV6EjjxSMl-LN0OPQuqECiJlMIkQiJvpuKofhCUu2KSh_LRHXZGjpttZexPv3oqxq3obZbrn06p55cOSKJhdXZNZ1MHAR-J-ATfw9Urb_vasNeLi5pbwk0AgqHQOfyLyZZ15L_cKkhJIx8I6es2ekGWKNTi5KZt-idLTadYcndQC3IivNyKof-WSoCg4PAIxqNZEFsl4iuSoG0zFKzFMYJoIMAAQOBAUA"
+          }
+        }
+      ]
+    ],
+    "cryptosuite": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuanceDate": "2024-12-08T19:05:33Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "UnknownCryptosuite",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0Jf1jQMJDCEpaNE-d-CAQZpv6f5UXFWKW5rlvk5s9lfS31Ht8mDH1n_z3orv3s9oyok4Xtv0vQ-xaBz35p_s6uFhXv2xF5lIYQuSeqd2kOlk-5d-uqznGZXtTusXffTrxZfBhJa-5GS83xvbxZK1TfMVIe_Wq4gsQQ2hVHaNwHooM3ZhHCRkQrM-3fOZblaVElnnl5EuXGz1ilNsqdNT5brc6_mox3nbBnNdpO5dZSHCULt-FlknrgO3L7drlXOc0uGxe0L8I0P71GyLUOi0bCVRsUsYY-ydWhbKeb1d14I7pg6WNO95EmbXyGtZNVjFCAqsLkEJBAkyX79EnVhEOK95bbBgTqKgDuB7u7BAZArxBEeUpeWlEWtDlMDmpt9drcEz7fY6y1INbf2P8KWkK0UeRPeGdV7jt7j5opwQIbp373bz3AaVMw3iKTPhA1RCcwDwjUTafVT_UM8lCIOd61SGDBkTmPA6n4Csea6ojeQ5WIHfd_hy1W0_eDWxO2UAF6auiwT6DA7yUrFYYKP9yYIkgFgDzXZIjgOr4rhdMQNnDjW5AbEfk7nJLo37vfwL8RwwWqOUTUOFTF2UXIv8sT9ngPUzIiyOOSiQ_kqCDRQQoIQAAQMEgQFA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            }
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "UnknownCryptosuite",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0K0KTyLTTxtAokeVtlQAS2JmAEMASQ9NK1oQw-hAB5NBDop7LcZjjJ6NBfCT7D1RnqplB9IkSRZAvQHlB5ZEJKqVXXbA9YZ5uvxY-wef9Vp0Bfr5afcwuWb_xj94dDfMRY8rS0SrRBEsmLJ97vI1QFAL7C1uviKgpxd_Eyu2yYhii-zrBGAn1aHQmrpn5GV1ZlVb7CgzZPxr2qqruKUCqQJF7GlsWf0Qm2YXd4PM--QLLk2-i-JDtl3UXo1fghX5pzcNxVj370o1wlLmMCumSTdmgx-w2oU7CIemkvuhCp_wXOJYjNQwXeEFfIbgmF8SZVFK3oozJlL7PzHxOMKAvcTeZJXKf3fMOZAWi--VcKh5TkORGoQLPJmTXyZmNIQ9NqACAlbFluq2aSVUnnHXBEQ7mfVObFDDOcbOubPWM73yYeUp7yMYpiBN2zCpIhEmG2KKdFNUo7TCjTLesb1kdki1iq46ap90onvm2Mg_S6sqK32EPKKaIRZzGB__rHC_B9IK7eirm8jyWuC6-PvTKeM4K-HMCevU9AHqPSn5-bgFyso8at6Dbcow5mlCpnfepEB5lKDSXR85Z8zVnW1uYXdHLksoxmDbTt7S8WvR8uKloIMAAQOBAUA"
+          }
+        }
+      ]
+    ],
+    "nonUTF8": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuanceDate": "2024-12-08T19:05:35Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0JLqGi_eTs1vRKcJ1rlhMU8dvUsGxqD_ZySCKu3CYB6_0ZtAaDLq-LdLz4BpIXuqG45ibzIV9NNmfwC0ZPynMt9ScpqaYcrvDdEt4HMYA0PxRPdozGhdkE-eSc0pkMtMX7h9kY_Sdh85zlAM4Ec22LsmeJOGlbCrTBSvvdDSPpl8XFBX7q5TaZHMjv8dqGiqmBb8FJvKCebHFLGpInAeon1GfywYzBFcR53m7ndKFQ9WHMeA8cacwhDP0Ld6Aj3ZZvFJtybWBWeE6oo-jyRjTQVE6Dh3ghOstmYquxwlQ8ynedHTAYilfF0jCS0vWklrJhhfWAdAxgn2ATdS4Ylkg0CJTLXAThdJIWVVruqKwNXOD70rtU63uHfzbVCjsHtVZTDuDPdKHE3xJ74W1Leb2N1u2PgaUCGf25l81l-CfpRmIbGNAF5_K_m7Cs07kPk5VSP04SFP3_v5su-YGfsde2tG25XEXUQxZL3imPvSgD3qS_1NyHjumxk6267RT9wJWF6hSBDuF3SKOljax8PYnNUjm3qwPc7EUToZ9JCBkHfpJJYD9Icnvq-InLLXUSR0TWCvUD8evHI5SzRLCduCm61nDquDZrwhvk2PQAS-QGx3oIQAAQMEgQFA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            }
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0IpsNefBqmLSPp9FkgLkHS4TY7XrlonOY7Sx110Sw668s0-KnCACbgh7mzw_pMJEwKbzXxQsYKq-Mdvc3rofwg07iRx-YhTK81VkDLRiE_5_YiXcMy4rpj6nWJXlv5c494jtd8oKQfBTAdbLH2Xlr-b0mBHjdxhQtuiF2wBcbwOxFIU7Zb78hKRsLNBIjbCxfilEQH9XL95I2rzeP38q-9v2vvXqh3YCQAn_J2Q4tVxQTR3njXopPWm8oflBxGMWPblOEZnRIEzcp4HMVlwo4yoJ332FdgCp7pRrDzI8qHZXYknM8H6JBJ2CbW7wvOxmI3AYC4zTl8FvEj2mJfyVfu7xq99MPIM-UNu4eMmkRLkUFSfa2gqAhWEvDVrXFE7BABEPQ56B7EPzLYfsjykJcyZE4bQ9f4Tm10iCk9kbUAnDE7je-myCi3_n8IU6Y4p8tVvmEdJF7aS47myXwUqsKsTguvnbaVELDi571hFBi-ZcUe82DOlsV4A0RC_EfPxUzj33dUXEplFul0S0SZoSE-tGmxUZRQMr5mvPo-f8TPTg0qNV_aYuNcr77KlmXN12ozb4vYjXqqQ9ZTQkPxA1WPzVw5_jga-1pqP4UgDy3BI-oIMAAQOBAUA"
+          }
+        }
+      ]
+    ],
+    "cbor": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuanceDate": "2024-12-08T19:05:36Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhcJZAdCDf6fo97xa17_pHriwDCA8VNyml8mobJuG10OxmI6vk1LPvqnLea0JGoJ2uDJQYTaYg2YYQKPqMMHnEk6SaS4Ad2IBNXjkStHr1vuOl_KN4RVY9nCTtoSVMUDDpxRnCmWvZdUHJstqxHEDJrhHEDzGss6S_j0jpx9G3qtNoYG7TMn1yMM10mMAeMRLWviaVNxthgzDjohoSF8laRUpmACWdEfLvw8q84vPXgS53p4IxTrMh7QAv_4grTTjccDHU8LFndKEQmKNrP8TbS0qQkw9GbaMFTD_BP8aSZyER0PMT4YSjVlXduBLzPJeRfXh2p5MU4w-3UwnNMNLN8TmXOHZBAaEYBafJCM-iXb-4NhiOWrOj4m73gLqdiTkWCmgZ6uVKTEODIFq-al3S3qR-JPXAWFJGuCwKhvA2aAX2GmMkL73l9KzuttABRAPc2Ypln0e_2GmMY30I8wdTEUgnqf8XDBWFnmkz79RVYtC1LtFUgOpdBlyVxVjApGEgpLv8RCQCZrlkEffOMhTBYRkV8BbZX38cvlV1puFiEDHqMYErVDLaYVCNFiP_yJCRCC4pMAGGP8P2Kqby9HhcrhhONfu5a4L0h0j1KComhsAFG09RKCEAAEDBIEBwkA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            }
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhcJZAdCkxA6C-iki70h1L0thssKSNAch6EI433ZVyZxOe2vEC5nGLl18RX_uYcf8dcXafpatZ_fpevX6nH3w3shHEPbMXwTDlBjNuF8NQgfl4LNeYuQ7IqIPTBD3MNLVbBqqC7Wv1GL7bSH9DV07uaY8ZXgyaLHc3Dq84mAMCgS_Lx2uuli0ACKYkee5fZb3ghV2LmoQv7hNMs4Iokkfk1GGynWwyWuAlMOiYt4nUlh1zV3KrDwyx7TXrTqXi91rYs5mG2OAgoaTOAWVWeUpUSYCRL4PZZsV2f2xP3eSyii7ZaY0wexbZwK9lt-y6l4Ru-1efidlxrLPWpYMdhtIcccJoNMB8GW0xUy8IFRvo9k7So3ZFGBlvGp13Qg8BiXGnoHah4wlGRXanKQrGypNTNli3ZMRNuFcmyZP2jf34V5rzgSmL22uSURJ4hjouMt5ie0U_tgmJuONiBzKsopY05Av98uTOw-f93dwxOgQy13GYk8KGFRc1G45et0ri8yVse1h_YZUaXgiOIHUEpLccFQVl6L8KPwEEld6AIqIUXqtKPg_NAhzOcsRVfqVaW0hOayX_PwdfIdKl3ZV8E397KVSNFTHvsQ83cRRflYPYx9BXs29TqCDAAEDgQHCQA"
+          }
+        }
+      ]
+    ],
+    "proofType": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuanceDate": "2024-12-08T19:05:34Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "UnknownProofType",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0Io50F0Byo2o0IM2KaSRsXfTQ7MQ5VGu_GRWGIQs-u-8f1yqmlnZWC3Yp49-9a4pBoDXUKCtyL8TBJSBe464wz_bwz64bouEPWorVs70W8uckYSXhdBa9aP235MDM9cEgIbYtvG-mpaefHjanOChdpVDiBwpTsLr8WL8tqDEGoPqwkstPyxSkAAf9qtgN9rvgylVPF8j05OKL9kgzDINQF2Kz8qajrEE7zmUsM93LgBiKV-JKPaaFvNMsDl9VoYg1BkZysx_h2GY27vefd9D5eJtE_1MPHvNRNeb8z2pINq8yWRd4aBqMR7FKMKrUMN8fDAOxUtNyKDigbAZZ0bPL9015GsNlfG4V_gXbmh-ly_nc32BlHU1Qj19mIGfFwLPubBz8xDTyX8NoTAWD-KbCHsrs4cMA_TKqWFEPucvbZ9ThNiLNObIN5FqwU4zWYLl3wgxEKrZ4re-M5iv1eyNB068zbe7comJ4ZpgHZbfYv-JBmlF4RM6AajBp4fABLdNlPlw6zK9KqHZrba1lnj_2blLkspKe_F9vysGqyFZJRRZTveluVX_lZSqdMK1y7S4MhlpOaV3WiZ-dpt5vaowJ_eVOWIuwcJKS0BvkDPEdA77oIQAAQMEgQFA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            }
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "UnknownProofType",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0K2dCnSfqNj4xRU84mwKeAfjq8sEQECpN-2R-CkeASa7IIKRNJxcTmvtyJz_YXs0gKGmqFDcoNhZLKIjiGuckie6U9HPvMwWxZR60CjkjIGq50CTPnLtakf1JVewNUyWLYCLmU2944faqpo-cndEcBt-Z4qtc_cvqqn47O56Q-rXkTO7a2pWD7Cku752I6d3wx4j9J1L4GwgSdU8zpk5VXk4NklUe1jExIG2EbeK8Z9MDNnaBuSHJ1V9DPj0MwfMLAxKN5Epf08RbKvTQTHOYPwxoqhkKllnfoge4KBG8kIVnNtBjR2kCWEtj7ERMasNUwrpfKu1ZhVa6GW_q8pb5ZTq3WFsnFc6-mfohUK1Dr_jciuuViURD76ec2t3nr1MD8uHHA2DIIX1za762-CZpdESfrtQsevns38LjM83Bv9AX3YX_6jZqyFElGE0z4CmGT_CqvjJMruRyQykj5arAWTIOpmWbLybRR8iFeQmldskFwxkbSqA0JXz71Jtr9cjntXaJQNkei6AIoFs2xGjuNVSKWsi--hwWbFxlHhragkwXwOx2K0d79p7nVwn3gR2h0Bt6cthCvUjZFB5fgIpTKxqP8IADlyK0GLU4DKXU7n_oIMAAQOBAUA"
+          }
+        }
+      ]
+    ],
+    "noProofTypeOrCryptosuite": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuanceDate": "2024-12-08T19:05:34Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0Kd2kyOdqpmmpyApv294RGucQovVTY6t-RFBIS_LO-alGlIYFrWDLN6jx5qZ5tP2W4WpeLl8GPtmWazyv1wx5olhYRxSXfloK2sf1R7CcPCUI8wcnMpcJac7xhYrWKp6wrd0KjIufx3P1_PQsAfWNjq7YJ4526Nm4WZIaGbHiz7y7oz08VmjmKjwqNjd2oq8NGkJ41yP6yeOe-pYxaLvYEQZI7aj5k_8T1K3Di3s6d7lA0GVCsciJf_f-SkiHqvjxI3_kQJNgsn9Zy8WtlugUI0F8fVCgom22kMU74qpKB4UvQcl88wuT9JRwW1EAo_f6CyErsDPehIDc8QbmdFGK05W9fLrw1kVYOLlFqIFoTXQYkbpJQsBZ1zqj0UbsitiSKsaZS7A2mH4-cfUR291KD9Wi_fI1bBkpGjMtkFf9GyhcbhOJN3P6Ng0nEGgprjSSx4bWdXp88anjqT2G1uOLRbNae-IWfbGALjnEkQDXRwtDIFbpXww4IoLHNGZT2_r9ZU7Q7pgvQEA9q0U4_vcjsQhvyUoxHSOG3OwlJ6DVBvm985Dq39mtg3r4YUeL0Mjw0MvoexUOvi6HoMc9bg9MmR1FWc12sSvE2ommf1zXvIBoIQAAQMEgQFA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            }
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0KrDv44HwvAun5-M28WkT2ydw9DIeASfmX_QZgCXtJ3Jg0H752QOu0UbFi351LmmPIjDwK26KaHM10up_PsQVzEypC_JwybsWV263b1F5A6KvTZpNDkoVaFjP2YSojgQDa-ZM6CYWSmS9OclfsTonRaGX7_PKmDvbbjqiCtGzUBiK1i_w8CAzhx2xGYSmzqtTQ58Ihd4U1NE94cfEcKw7VP6QnW1dIPACkQPbwD9_s_5YiXut-ErOc4f0XyTm80uPBX9IcPnUKHzNfSdrmtpvw1upY0TREmKqYQ6RyBc01VFnJEZAEhvpfl8auZGGNZ6kyKjBusmLI7eh7q916ONKDBsttwXOt6DXVDEGUE3xdq4EbMNHyIbjhuqGCk0EwbLPB0BJ1dnL_WO0QFlKGgaTJAcwZIt3G4j_CNp3boqlnD-C_d_qgJaJXRNAOnXeGlt8nMhB_HVrUBtBavZ2ag-Bmq0AfcTMp-C0Y18BUP-we_MSykTi3og5s2lebvhHWwFAAqfeUHdQIjChVm8I7XCu_ByyD3_HoI2kyZu5hbfQ0CLhf76NnTWxj2bdXvTFHBaMFXmQW-kQpGmr24o3gPo74xtkHLA8NKaFlFqdU50JVW-oIMAAQOBAUA"
+          }
+        }
+      ]
+    ],
+    "noProofType": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuanceDate": "2024-12-08T19:05:34Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0JIWWFjBAlX8dsqn0Ig5Wo8g7D59E9Lq_AhOOU9uVwJJ3_yNYPprNDqPJTHSl9W7Zq1wK3UbnDCWOekZGojOQMb0Bckm0qf_fx3_be-fOTMNOaSDs8Fon86pq9PinwQbU6_N4dXLRI3a3FjtZR9BYBOC6h9V1ywoWLOqBy0J5iNKmnX3UewEinmauJiIUo-si0e7oGw11_sfCFu_Ft0Fs6uBdz9hHSKyoflnqKjw2DPXGvjnUZ7lY8Civwff1n5aVZj3h_p6HFXWYYlAGbjc_91iIbPNwHWgO430yWEeEYqw4K78SiXZndJgokUi5HSlGFJdofsMg9BkmnvtraOnx2QLKRdKa9o-kEgDA1wodohmODnkBCvt4Pbo9cVef5CRNzffdYMVLsTMSw1RAvsqwyNTX7rtR9ssoX-gu-QPzKN7JUQYhBpfxkGHbSYNHY0lpToOAM0F6RgL1gD6P6hiNMMvZpPOeUQYPGEwqoxGFNWcS9I9qwbLfZUvlWcEN-ZORKU_qYCtJB-jUhvbZI6R6Jxjqb9fk0N64zVywOCsqjqjrWw3eoX_ee30EGv2NiKbKii6egWO8zBAcvQ6Xg3289yetgbyNncw1alChA9uyqtBoIQAAQMEgQFA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            }
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0LGGNQGHC3IduJUQKEMt3Kl2yKyF-NPDniYEQEjjyV4KU8mniRKsTAjLExjwJkOpBLB6iI_UGC25grr52qtMYFkle-ON2vuy3AwdkEVFeX__SaHRzm1M_uqZ87bjEcnVSLPzhbmUaSkdDqs1ZF4GLGqN_FP2J9PP_qIsnwV2jB7HZbS98LljP12nN25VMgQ8TQvMyeSldhw9NG3-AWqNb4941bL8sFKyZBiwgrvDlIE9ZXuun_1CMgNa1WFvsPAvJ-A2c6SIWCMh7OyVOk_O651CY4Tjk1R8pyV9267nl-vCwZIuKZgccJnEH5Jnb6TeHkIbTJaE0G8gWwMoaoIZxpCtSrHnKh30f7FnQpiwdCpBAbGguOGyFvv8rE6rSaNYzGYIiZlwjqX_EcOSw6Ruc7I-rmobTJ32piHek5uihPGXddaeGT3C6JJZiVuWW41OizublHDjXD0yhHbeB_AX8fe2cv6z6BLiGgkPCZ68p7HdUWFoDwMqeAGJKuahdXN9y2l3qx_yhkJXf4ibxO60rsguJTgu-o8V3KJpkJWG80V4yNVGdP3rUfJXTTBk1Q1_ojjBpw_NIZ4r4TGVC-RIqsjrhIS6kF21QkkPBijJ8O3ioIMAAQOBAUA"
+          }
+        }
+      ]
+    ],
+    "noCryptosuite": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuanceDate": "2024-12-08T19:05:35Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0IEo3EmMbENYFoodtxBNO7MuNRVz1AS0W0JHf6CN8zC3p-HjPMbdIc1z7Tek7bU59qRHciobo3FbkzCK_PC5oUesn3HvRTpH_GGG2RR_A9PpnZ9eO8MgDj9rXEMz6il9RpgTATXqZ4yBwJIVXbdFGachot-C5dg9nuRn4OFz2sC26f2OyC936mpeeqXokMR7PAXiIWUdtM_ga4Hyy6LoKjx7MlWO2uNxTNZaTSbFcUXuVJSUYvAyIuBNgog3CIajd3gYnaH9HfCstRJEJ7La8x0kE8EPTKPHdvuat4QBlEv6ddr3rpGjXgMWW-eRJyGWqDA33vpkmqKpgNVNIFe2PHAMcUiJOnE29EIp16nWCVwYRAxLPW8OFrNuR9_vT_BA5f-9M71ys5G-a_FyLv0h7dIjuwrVTmXOfKhLeUzt-SnCC0CDPU4YusiDNHvGsCgqPXH_5-EoiMjyBep4jr-86tKzaPBT2ldbdXtfUdi_lcLjL6yEqi4aiLSddwKu1f67pJXXCtaKSpkIKxScG8nPmnNyid4-7CrEUyMMUwFf0Rg6pCUhNoKRuSg7g79jeePQ2wkjx_YpquYwUP_Sz269c22MBiNX0nU7ENlsXya-b6SxoIQAAQMEgQFA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            }
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkB0KYxlGkMt4BQ_P_ye6Ut8WpqP0NUBLawdaAFV2PZIg1Gc05UEAeYM6d4FHO4w0J7FoV4uLQ0XFnwNyWeaIAYYs7kqbeiFM_24aivAfZezumLVEJmqE5xqwh2iJycrC8fwrHkGSvGmBoFrXGrWQMLHpia48PQSmlYIR95VRz4RK6BhnRDDlJIZePf1vitLFEEGjSj8SCSDARQNRehs_jTcwRqBZelq3lhSozEc7Oz7heWQA2KBamx7Lc7SlMSZcXy8cttwvkBo2dxNufCVz7_NMJOdUTnuUK2QqxpBtEZyk34WIfep_yodyz4d4J8fewqqzFzBnmESrHT3wxRxSnekJw0DuJvDNY88meibT8eUHKBXct30Miv8gaDDDO0flP46G2XEEjfMiH2KN0G4ALIxn8ogEuJMOOXdF3TGgAhtFfLcSn_Yu_JrZEIAJ9DaNmDEyhD0eSICNc4JlPwJwlEZGDDsvTg0EihuGvsbmfFuao_VPc9Po1MWxb0xVF-t4uPewZ4jiEQbPt8VJVDL0O28MdyRL7FV0ZSSSU2a-kpTUzKUKnFXp5Hfz9zW-csTOZ3oAMOtW7b9mWVYFag4wtV9GOKTUmp3h1aYdc0aUOQ7XR8oIMAAQOBAUA"
+          }
+        }
+      ]
+    ],
+    "created": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuanceDate": "2024-12-08T19:05:36Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
+            "driverLicense": {
+              "type": "DriverLicense",
+              "documentIdentifier": "T21387yc328c7y32h23f23",
+              "dateOfBirth": "01-01-1990",
+              "expirationDate": "01-01-2030",
+              "issuingAuthority": "VA"
+            }
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "created": "invalidDate",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBEIejP58opZNxq7MNqx1_cEiZuEluq3mytNl90YRKhJ2472p4bFkumMD0tTl7wXoenJBxeTHN_GOsMNPWwaNaUjA8S3-fcoMLPH3LDrpxEEz516lOshvJu_68y2FQXY-yLqbWX7zzd0fM_43fPu59DGwBPgllbwHenhV36glXInKOj5YqPk52ne4VyU1dsIrSK1Hz2W2yMNbMCbM_b667R9SOFziIFaDCBkyYz8YJMWm2XO0NZMGd7ZFPm9r0Rp8ApC57_C786pfcsDepETf9RwQplZeRavi3SFkSL9OjiRrCsUOtYKftVH2uDzJq9eFBZVnRPS0ag7VFhqy7_M-3KFFbr33skMckBp2RHLr46H37oQAAhAECBAWHAAECAwQFBkA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            }
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
+            "driverLicense": {
+              "type": "DriverLicense",
+              "documentIdentifier": "T21387yc328c7y32h23f23",
+              "dateOfBirth": "01-01-1990",
+              "expirationDate": "01-01-2030",
+              "issuingAuthority": "VA"
+            }
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "created": "invalidDate",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBEJfRVv6AiRVm6EB_uJrGuBnswMarVRlQUpRzQacpWQG_bx1UBvoQg5jvm5HZKj7GjqA11jcg4JpvLcFDQMimyiBarAacCnAHZP3DTk9C3ZP5nH3ZFoPCcrCqdDZqeFKT66bO0vTlIfoNly4vkJSVhnsPwIAqnkmHdtaMXI9ScUSIrM--ksCjm-LdVPV_x0WdhVK37I43sURJgiQobQ18_ZzQApy4norKxqcdA1T-iFkIR6oAFng2gzI6K9xPvFs763JQs7vBu7SXxRTkpkQYm6QWhrze84Rafb6BWzgG-Rc1PcZZV3bC_uyHSNqOC1AlhDcMOsCMDH38UL4sSdAZmFz8hqFCkg838whIN9UhXqJvoQAAgwECBIcAAQIDBAUGQA"
+          }
+        }
+      ]
+    ],
+    "valuePrefix": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuanceDate": "2024-12-08T19:05:32Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "uAAADhVkB0LP7LT7vchn5TVdFz6PaXKDQ_SBOR4VMbUhtBbZBvZwrJshTiSmehtuqkLZuZrjPzLa_NuFT8IueS1-4xd1-GWbvEDbGkB2zlqe-SzGNsWkFRu4jLkFQRBQwauq-aIYjQYwAF89Wo4SVDi7LhCq0GJ7QQenKOCEa8NC-2tTptwe2ScLXj3TkiCkMmxr_BHay3x7RmtJ3OG2YTtDrcKfuELw0aJ14ZQzRaagWOXck-74ZPjDJZ3JCemF9-MpP2QXvCGXnzj_5nOsApnJBT7Dfn0FTTXVNUXgPyoc3EC2nRN2NnEJ2m3BOtTw5BcmM28UvQQnn7K8eX-X3EzY_l7FSXbDAzcCx0RA4ClvTp0E5-aisDhPvxqkDM6Q0B7xP-TI1FrA3NbueflGk7qOVgmimNyJIhiSaXxWIU1vT-X6hyuhM3gfMP1mLK6yMlfsdivCwj1t7rZTMVmi385k5ytT26OvKtR7173eYaNiYgtFrIztGRdtDiNMuJlJEN6FrkBfRZrjY8Rxys4yA709YYPTtU9hvvAKWqrhyW5muPXJnz5NuQy9gzUcM8EzpAcKXBDYfzgffbwYkAt_RlHmSAsoPuMM4kIfvszSaGIIOYoHDNOpSoIQAAQMEgQFA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2",
+            {
+              "@protected": true,
+              "DriverLicenseCredential": "urn:example:DriverLicenseCredential",
+              "DriverLicense": {
+                "@id": "urn:example:DriverLicense",
+                "@context": {
+                  "@protected": true,
+                  "id": "@id",
+                  "type": "@type",
+                  "documentIdentifier": "urn:example:documentIdentifier",
+                  "dateOfBirth": "urn:example:dateOfBirth",
+                  "expirationDate": "urn:example:expiration",
+                  "issuingAuthority": "urn:example:issuingAuthority"
+                }
+              },
+              "driverLicense": {
+                "@id": "urn:example:driverLicense",
+                "@type": "@id"
+              }
+            }
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential",
+            "DriverLicenseCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "uAAADhVkB0Ig5tOYa7QPAAWHaUvfGQetSmShd091fNzq4bkeNA2txdXR42XM9mTjCZbW_zaxLG4gqLnjoqRUss8vTnM43XT-lZMawI61x-X88yvMitZC0k-YJtTRkNJvZBsKQ-Ofr9a_tYhs76YV_5HKJ6HPBh1BYWn9P5tGTd35xNmJ1u_-p_RX4qAzZRp8bsO702XbeTUxGd-He4galDsCyA-Iydbgu5r_LsOWWZaECwpPInrGkBcLWwknBVGalt5fKmtlgqRHliq8qgHyJmCt2a92EdiI5f-dBk4JP7pzbjmKYtj6OZBVm2Cf97lA0BfJrtW8ubmYw_ZqBM0xQMHmQnVXB08KbyCrjZ5LRg05U5gULBNq9clpVDAiyjjXDpo3sLJs4wvFyD48nOEhZBQaOIxQAXkFYFox1BBnMOWfUQJI9sW5OxYTR2P6Z3eSQsuhrJDp45z4fpfMwIduviytVGWM3hlX_H1NzZI0rTN4k_h5-SHXZZMNR6Ugh0t4e5HctGPxByxwDsslkfRiPFu2kFKJfYkQMMElzaFvT7UFGR-PcAYbK_Y4cALuupydU-cNLJar18W79EzszFn2vvNqb589GOTH5ZgD4EEscgLnAP1TLKG5SoIMAAQOBAUA"
+          }
+        }
+      ]
+    ]
+  }
+}
