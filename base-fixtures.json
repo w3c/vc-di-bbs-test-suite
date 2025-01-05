@@ -1,0 +1,57 @@
+[
+  "P-381",
+  [
+    "1.1",
+    {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        {
+          "name": "https://schema.org/name",
+          "description": "https://schema.org/description"
+        },
+        "https://w3id.org/security/data-integrity/v2"
+      ],
+      "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+      "type": [
+        "VerifiableCredential"
+      ],
+      "credentialSubject": {
+        "id": "did:example:alice",
+        "name": "Alice",
+        "description": "A credential about Alice."
+      },
+      "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+      "issuanceDate": "2025-01-05T23:06:00Z",
+      "proof": {
+        "type": "DataIntegrityProof",
+        "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+        "cryptosuite": "bbs-2023",
+        "proofPurpose": "assertionMethod",
+        "proofValue": "u2V0ChVhQg1WJZrOtsLXeFgEFW1hDg26QQkiXDMEsa5RkPWVtjXiAiX8VwABFlLfSh6EAUScpW9Leo8EUNE-JnGtpbet3uoZ-1udx8XBw_tnV2s1IAhFYQPC5xiUbKkwcvZGNg7SGt2aWuKaKj-YqEdoi3yFG8df4Xjs8Wcu1SCixTunHsTmX-ZfvK_jyKU_MskQmnmmKONdYYKzL14_y4mzHkazYdrKppAagR-MSnjlpgGCvIp1TF9fN_cul3qJZ20-r8Z8VNj5lfRVyfq7XM-k8Xu79oo9XRczB7gU9U8ga7RGVrQkjjEyAV6Z1bDjDEnYbEwdYlEvaNVggcWK58EoQoo63_b6XWlPzGwaep2zPhMZDH-2ksDT9DRWCbS9pc3N1YW5jZURhdGVnL2lzc3Vlcg"
+      }
+    },
+    "2.0",
+    {
+      "@context": [
+        "https://www.w3.org/ns/credentials/v2"
+      ],
+      "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+      "type": [
+        "VerifiableCredential"
+      ],
+      "credentialSubject": {
+        "id": "did:example:alice",
+        "name": "Alice",
+        "description": "A credential about Alice."
+      },
+      "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+      "proof": {
+        "type": "DataIntegrityProof",
+        "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+        "cryptosuite": "bbs-2023",
+        "proofPurpose": "assertionMethod",
+        "proofValue": "u2V0ChVhQqibbkXWhHCQrLzHB4n565itW3Uqf1G1Oyavgfo7_JGmApMIvIiQtAUbwsWdbIjcaMuxd9i6yjNjAQ_dElY-NVt9ykFO6DBDZYNZQwI9YzQJYQPC5xiUbKkwcvZGNg7SGt2aWuKaKj-YqEdoi3yFG8df4TnbEe7XAL27OxB09dwJR0qoCr8dwyKtIn7VHUxc0RiJYYKzL14_y4mzHkazYdrKppAagR-MSnjlpgGCvIp1TF9fN_cul3qJZ20-r8Z8VNj5lfRVyfq7XM-k8Xu79oo9XRczB7gU9U8ga7RGVrQkjjEyAV6Z1bDjDEnYbEwdYlEvaNVggFbLGzhi1cLmBhNC6P3rmSwqtvZhJIWE6qLAhziUEVr2BZy9pc3N1ZXI"
+      }
+    }
+  ]
+]

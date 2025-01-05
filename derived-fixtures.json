@@ -1,0 +1,599 @@
+{
+  "basic": [
+    "P-381",
+    [
+      "1.1",
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          {
+            "name": "https://schema.org/name",
+            "description": "https://schema.org/description"
+          },
+          "https://w3id.org/security/data-integrity/v2"
+        ],
+        "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+        "type": [
+          "VerifiableCredential"
+        ],
+        "issuanceDate": "2025-01-05T23:06:01Z",
+        "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+        "credentialSubject": {
+          "id": "did:example:alice"
+        },
+        "proof": {
+          "type": "DataIntegrityProof",
+          "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "cryptosuite": "bbs-2023",
+          "proofPurpose": "assertionMethod",
+          "proofValue": "u2V0DhVkBULiVTb99BfDh5sXXxPIb9tQPVC8p9RNG7izsL62BkoOJq2qQJdhPhh4G4LdnchqP5ZaL8CnLgzLgPR7hH4eux2BVVA2sxdRLuiKu-yk5wDShQ4UDYqpnh6o2jGkpRK2cqo9-rQj7HgXOpqEXTZCJMg8cspjRYipxUY6izQ1gDsErSHt2p0ow-6YDgXlUSxWFlyl6_na8mak7AeMzSKmbJ-zTt1CucqjNQlQt-xOEYQISa4wi2wD9Rg4wXH_c8FDm10blTRui4OKS4kSr9Tc7BdEjucUOb6O1fCnfKwnogFvTnM5A3o4t2Gx3xGgb_rLLLFt5ugsNWTn6iAUemzsMUBUj71pg2-Esjs2V2Qx56QNAcLH0sXbleFGPTZ0_cr6tbGFRzTUwA5n7ZBHLIphys58ivln0L7Tc8lo0BFFisHXnbF9z-W6_R_OMK2iGkDpGvqCDAAIDgQJA"
+        }
+      },
+      "2.0",
+      {
+        "@context": [
+          "https://www.w3.org/ns/credentials/v2"
+        ],
+        "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+        "type": [
+          "VerifiableCredential"
+        ],
+        "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+        "credentialSubject": {
+          "id": "did:example:alice"
+        },
+        "proof": {
+          "type": "DataIntegrityProof",
+          "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "cryptosuite": "bbs-2023",
+          "proofPurpose": "assertionMethod",
+          "proofValue": "u2V0DhVkBUK1acPYc161Sn4gNl_C2QgE5hU3_nXwsBpLaDZ3LTUD_Q5aUluc7_NIF_LQenARRUanOuUZMzqOkzl1XQMzM88sIR1bKfqqO24Cedkv9TU3Zbbv_nfr0NWujIMiAUcC7kZInArPgiQPmfMFaKglg_pU12ukAPdazzFEfLVZ_b9IZ_ddlFWTsvK-at7rtCZDpTD9MsydQJfJBFH_taTIC0mnvO-iZBT41LgrXslGMhD4KUNRZfzT86hqwSKUji6c7TfOCmGj5Kf3zgwHvcPl-pIJRMiLqJ6mqu8EZ7VAmbloW5xjiXa8ttWn_lyBzZHaTrQG9R0teb0IWqNbzx34R7We4tE0oAi0r5BrJAoKc72w5XUo19NNA1e52gq0jDczQ-bPPU4j2cMzrnlBPh7nCyShfBvxYCZiAiY26Y-m3jBrEbzNHUCyHT985UhrE94zY-6CCAAKBAkA"
+        }
+      }
+    ]
+  ],
+  "invalid": {
+    "proofTypeAndCryptosuite": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "name": "https://schema.org/name",
+              "description": "https://schema.org/description"
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuanceDate": "2025-01-05T23:06:01Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "UnknownProofType",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "UnknownCryptosuite",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUJdVbnHU0sqP8ioqTv7mdtDHw95mNGz5hKvz_1CzUVyvjiC6xodFulQp-waD9LupX4K0QpU-SIDCCbWz3jmlfDebqUcKQwRkDlYjD4jDsHveaOvGoimqPKTrv48KM768brfNSQz8sBxok_8Yfx1L2iVKkVdLHBaMG8uAQVhljlvVjzax0j9ot_nyzbxFmXoBbmDPM4iesg91kbSx0soZo1e5izwRxG41nCpVXkYjeoL2EHVCcoLSxQ7cm5R0IgL8wYGqLfBLEywfOEHYK7L3oMQW5PL1tv7BQ3TwYAKc5LcmlbIMndGpgz394q1NjNlESxhrupHysEq8XJbB7ggARZhATWViMEJE7JmANH53NIbIMep3o0-Wlxo22d1o4Gh-Qp03VTTeybvlrAFdHqxPlxZkWq81wys5csd9wUVSG7bVtKEBxsCyxYtrJHEsNHHh3KCDAAIDgQJA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "UnknownProofType",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "UnknownCryptosuite",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUJmegd-Wk9Z1mNhNF_W4akC5XOaAPlAix7bGma_wP94KAEUI8JNESanu5ZnIiR85SK-UCEXF09zdLbBcvaF6vzoa4SBLqiqUouZBtqKgELet2xQsHCCrziv3T3DVqFrM1LjlGISeyZRgk1wnk5b62NcJHz6GylNejPCSyKIZEoy6W_isRRdDwDelEhcO9-6R7xrscV34ALVoAM9YCOPvGIXOEoMSiJmhD6AJwFKR1ighOGmqILgfdecVmQc8PUYWwoetF-XzqrfACA0b1TcAVacaw5OBpUs92Nr67XB8dmXdZaF3mKJcaLC0_OdDcrSg-GGq-_hTcHPfRL-m0yoKveKVpjFSZr9PHkpsi5kcIh7HFIr8g__Cpt9j2U0QHMwAg-pZ9govHjuwo0HWZiZ8iVogCkJFU8Cta8WRwBM973f9kxh8mb54-GHuelxYIeg3ZaCCAAKBAkA"
+          }
+        }
+      ]
+    ],
+    "cryptosuite": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "name": "https://schema.org/name",
+              "description": "https://schema.org/description"
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuanceDate": "2025-01-05T23:06:01Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "UnknownCryptosuite",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUIyeLuA0Ao_XIEz5parehZDm6LP6PQYspP9N0N-cj71X2LNVqmqfBI6Wc7aA7C8Z9YZbZRt8wkHDyFCdr2_RD9LRw27UFbfHbVYGQapiWGsirxHYhHeLg3QRiw85VwAr_rLfqonRGQkiruHHbTDB-0YVPpFD5iUhcwYk7hSEvNUhnAAapRXs2p4UK2NjMCQXLxGS0qFWsr7Atet2kXThVsAAOGgnrOsbMU-DjAh-YMBYACspCxdrNh91nG_dh1RDNrE796aqwXJiBu6BHPssFLAIsPqt7bFK11Gc7hQ7k4ipDi4p_hrxQEo2_AtXepEiYxRujDY6_32576B47Am49-o4KFTE_rxbUsl626NlcboLaGByciqKKgvK_bT0r7WyOhc9biC2YrSpFbnr4QPYdeM6Q5motyx4qXZ_Tmi61z5RllayfHTU9wAw_2sKq1aJfaCDAAIDgQJA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "UnknownCryptosuite",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUK9Sy6jAvsXfjfe0p-07jFzQl6tXVNKsVu0tvp7GQvanNwog7g-fJ3riiIkfvo1RXpOD1-h3_A8A3iHV_noDcE0j0xgK2pv9TLc3Mgw8PxY1T0jj0s6JrZcB3I6bnUSyy6X07PudjbIWTspH1tliIKHv_9Ywo5p_UcxRFnhfjz2nCb8JYuWf9B6bv8f8qrzIQF6_7s7tuYy_vPh1mZQf9r3vcoLwbHmJwbc3aZbsjQdkDxac4zLLwvlGgfznSoutrHr2VHF3-_Yxnq9B2TfOtEVzbygq6oDksEnSGXXZ2TNoNMhN5qdc32YXbl6v5irzVh8uEGpVV_3Gcwru7FyVavA5NWen4fcf-EhcUi5wk0a5CTz7vmNA4-dbMg2kMF3bUEAwIoK855C_Br7DCZPoECUb46evbddyQoisxOIkLGwBHuKTyngwG25n0-w30FokMKCCAAKBAkA"
+          }
+        }
+      ]
+    ],
+    "nonUTF8": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "name": "https://schema.org/name",
+              "description": "https://schema.org/description"
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuanceDate": "2025-01-05T23:06:02Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUKlfsYi94G4xvEgj1U7MAvqilSkOpzayCF8-W6UFbLQDIi7-zAKBF0l_5VijKyKGvpieDsz5eOFsKbk53sucqO_PZGTiI74XscAwVsZ1WfK2W6NdAGaUA7o8ZZS2N4ckeaDGqbEFCApWLN1ZnWF7mR3YXcUY0lxvTUkH8uIlDMXWXRh6hhazv-ogY5dCJETNB13t2VyEZb1wK6-ENsLkVneDiR_iS9u89FQXLngInTvUJWWm_UiagEp9XU8QhWTDy5n1jwKhgvHikQ01lH49FGYTIIDf3Y_2_doqF5v9NqnpBbMbPoMkI62e3no8Nok0sFl6eqSVGak4lrThdr_QxI1Ucwxc_0J_9SL8zdRlOGjQPBLcJ2YXppJ4oheEwR3mvWfDQ7pM-tX2iinop42UgDUgxDymyA07giZfxinn6od5b45RTvDwFarSRNw2osNdNKCDAAIDgQJA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUIs-lGzleF87eKHD_Qw4TF_29BZP1QPvpkZ4sU2hus-W_EexTXFHYCmVEVGqV5Upj5IXgfM7WOFM4sMQHtOFWtyrqqjJu-xmdS-Kz7WI_RK7ih2auEhWxTQdjiN3DlnPB6BsvN6qQuoWlHA_2b9XX35BYOR6mwPf5OLRLuopxLjEUi6zhhK-yFtIz6NXFeZQ70VmUiPdPux9B1C7ODUSnJhPDCYBlG1L2paNLjzm8qHkXWPUbyBPwEDqRGDNbLYWCBDKunie-yjmV9VMYWvrFhZSzt2L9UoLxBuPPhWc8rM7OUzC4ltkPLNPFqB1idWfZmAw26-vpg6bQX2Kvp3Ug7GNjnXRpe8VIgrjdgrEPRiFYrYLDqmAJkRGD9R5f148195DYrqT-T92lUIAZhmJoTJZDwlcO55w4t38vd_wk779FaAYs6wEGK-2KGVQcvnCsKCCAAKBAkA"
+          }
+        }
+      ]
+    ],
+    "cbor": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "name": "https://schema.org/name",
+              "description": "https://schema.org/description"
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuanceDate": "2025-01-05T23:06:02Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhcJZAVCsft8wmms6BGusGzb4dSwv67UwBlAndOO0D1wXmxygj6V5LrR6IRoG_RsT_BGDsd2NjHYnD1N6MIMUKYaWiUeYPozGmPjWLEP-s7fug28sgdSGGYWDy0-YXi-dWWN8vMSB09DDDpGzJZMup8WNZBoqtP4HY0ab469s-92Um47jYtGD-J9tevgKAee-s5Bg7y8NuVr03TG6DZMti2sqQZsCxLcTOlNU0Gou2ftULumaiXAs7VBGV9MVKJAOqK_oVL2Z3DA1Ov_2Zj4XkGESXbhUaY-XJDt_iGMWnWT5aK4EKq0FU4wB8LPX5rvHDK7FT0AMwJ442LeNCPn4p_JOW6PUc4eZtowSZz_sq5c-LMcIWCG79wmq1PlUl6MJJQQo040Ulu7lw8KZI4JS3lbTYNWdRrzwsTsaeANNTqwnzGiSZ8CVn398KjviW0awtewcy1OggwACA4ECwkA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhcJZAVCTIaIVxjLzwd94KdzaAFNBL0Ltfwih_SSao4XSdX4YczY4bVTXNYktXy3T-gOaH9S2UsD-pvCCNJ_ETSizaenRLo79THDeMMHFhiaKnhI3f30pscresEgQLEz9s3w2p8SuF6e4PVCn9TGMrNDwdmdWnJDC98-wJ2Re9o3ZqF1UVYuccAF07usbgP5AHpJA9jxTmIY2sXj4RmUBHorPeRKtblEtTmca0lUGckW_acf8ETkce-ZOvGzzm33wzEA2phxoPJO2Mwf7TMHRR0JCQuzIcyOsBzigRIezEriEaGiEvisFIYP8Wjnxukb2VP9SsqwOHyg5-qJH24pCxV_qm-MT1CJGddxnt-FfUXbc8Xj8qj4kQNDxhoCDWo3uH7-fgm6uS_hHhrzUuo6oNq9L1wcvKNVbLJAvYD8h1PRQ2a5ergQnipUw7AgFgYja3Q7bcTWgggACgQLCQA"
+          }
+        }
+      ]
+    ],
+    "proofType": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "name": "https://schema.org/name",
+              "description": "https://schema.org/description"
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuanceDate": "2025-01-05T23:06:01Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "UnknownProofType",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUI-7nBk7mo4VyuYJAzzX05I-Pupj1Aa_ebyxAYEis8iq-n40KVOg_VNl3W-tdSfAKrUcuUP8qRY1IFwEffxLgYo2woOIYehaYWCdi-7DQO8gJx_Zjcdattc75sZhg02ZwoeEIXoPoxsG2rdFQ14RNUnQ8Epe6x7gNysRBWngUC3Ih3SQXWuvstz-hlj-VltgzwtBKCjRLbMAZWdAIi3Dxm9R_RlTC1MLvlxefOw5sM2XDRRkUrS7LlmHSLZf72bFNiBT2gwFM7a2K7VXliJuDCxr9TVZ0Qnzap898tm-DabKelX-r9KlL6RKR6no3qClp1ItJFgffo_xgliWxyKH-0G8AMqmLMp7wbxVK-VKUO4SV_YuxBT13YDk80qSW48J-y5goiLqs1J4fEXnbo9UzAlGY61nMSNuNdQ-4n-JEG-ZqxAklZhl2SJcRgOUaKfTPqCDAAIDgQJA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "UnknownProofType",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBULQyL7kjsqsydYSzrl1V4p2lcZRJz92wCZdfHhVDoL2NRCy8ZeOj0ZBhGLxxLG-TM6Zo8GtS5B7v3_hJvjAAAOMfdaCmtNYZK7BOYB2S1eZ4GKBJUSt7GC9A-vzyeSQDRYTudxfnGcZ4c8pye-cn3J-qWfZt7e4pxd13-tGEG6YNTzOI752o4tDpm0AAPBd4HlFhDTlXr600fM-KnpwEdOxxrW1ZzAtWVXqT2Vy5VLOiZas3DaCClTToT0P3pXDKkzmGxQrWtRt8mF_UNGCFmk1wi-IgZbhDeU8vUuRXNY6Cc9BTMzrYKm7_UYRTRy_ZwTri4cNzETR2pthcZT-bMgoOfSvLueIiUpx8BLoEXQ87NMRUHbSww0OwsAZsE5kmTnpOPHu34I72M0BuBfJkARwZAyRMV5-MBU6JyexUATaHxv7sTLYusv4Q4ekq0bulWaCCAAKBAkA"
+          }
+        }
+      ]
+    ],
+    "noProofTypeOrCryptosuite": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "name": "https://schema.org/name",
+              "description": "https://schema.org/description"
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuanceDate": "2025-01-05T23:06:01Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUKnH7Mhgkk9hlpVI8SYAPDo_yhD15D9iqGHJjmrp7UGTrcW7TzUwftiXQm02Ly5-0ooJDeF4jdEPxXHiuL2m5mBlHvR4018STOLzXUelQM5w_rEYEU4NQpVjg9znu0_zaITpgETVIzoGPNybP_7KA5AMOxhMVp4T8DV-HwQLBAL2sphnjcU5YuURDnM7Xt7gVg6QYyPOdjOI3TqObFz-eS-22ixoNya2-jrB7i2jj_xqLSIaDyWHrOcG09k2DKIHf4U2tj0wXsRn9pplYkHo0zQArJgRNYf-FWVBYup-J9mVgr-OJf5AmGr20C8v0gUTVi4--Hr2kRSuPBqnK_KiYGU36Pgwwg0vtPiOI0C3Sq0VELnCjkfD6lzdmSt1OaMF_hlUEbQopAmA_6LE-BXVkr9NyPlzjbtbs9cBipQ8rBTARE20vJnJBwzb4-N7ID6pyaCDAAIDgQJA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUIM0n-IuXQUQuQ_E8Ucd-yTiHl1b0WiPYkIyyNEbG0PCw4hGLsi4EdZUDeFKXo-mKLCCn-Fifo7ZPTC6eCeuIPTXfWqh9FYIEl6fq-hSG3WwU_v6e4wxD9qjvA3PH-4Zb4JZYO2Im83uq18YVEKbXSn64CYJ3NNWW6YjUnVmeJWW1wcqMOLN3PbFXDIiOeKpExw-lEcinEm0zCYob3cvTOw6Z2H_x-6_8NJ5Qt0r-mSFEDlzJR7YNXeMXwXuaacoUAtPGPG2ZL3s2_bq7-VYImYxQ3A_YtwwRjBG4VYg7D_sDkf-TKACgDBni4_gZIB8Xx7dSdm115QHb0HcfcinUtU48bScd7Fl9w--aOsUtIWUBkZla8NUx_sd2-_rCPqUpoJNRgoJGGTyEGJr6ZgI1-lTfO4CX_j4poaZOJSbdZn-5LxVWGpQpYxZ_LsFK3KlOaCCAAKBAkA"
+          }
+        }
+      ]
+    ],
+    "noProofType": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "name": "https://schema.org/name",
+              "description": "https://schema.org/description"
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuanceDate": "2025-01-05T23:06:02Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUJIc0xTw6PSlDV0v_J-BkiAj1fN10hOepDrMnHE__MINgmZLIix-zaA74IhTJkES-5EkUh7h9chXVj_rqAE3be0InScQiJ324kk9L8YzfARgvRNj3UknjVg_CxEBNp9LVoiDexb1-4FoM0BpUCq86w2T79pCBdryxlIo3Ap8r59YBoKuKoThq0s0pMnJQPuPOk5fUKaEZRmuRIfhKAjBR9QyikYdVSF8u-R51Lvb2RykWhkBYwX_B_LboPsjeCukfjeebdCbecEQ-IcsrSLwrsVvRtazMnFIvNByV7DBcES9QZyrOUh1Zbbiwb80zNrLRDKZ58aieevrrxiEj9VxRG3N5R20D-ELcLYhpg_D6wzWUy81wm2Wd-Cw8ZDMo5pX8ga-P6s56BX8BpqTeXd8nvEY7o1D4_udLYAfEtI3oAAlSvXdCPKYRMbwknq7aOrtFqCDAAIDgQJA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "id": "urn:uuid:no-proof-type-test",
+            "type": "",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUI8wEwiofziMupflcMd54EsMuNTim1_MzOJ1ydbbalD_y_LPUmG7HhQSbErbAyJRyaZF4zydyEl_hLHEvnY8xBbxo3tfpMr85m-dniICTuWdbHOHJixpSlxLzW7gw8DeTqHbhxAdfDzc1WSXMj9RengypHQuQrWNu2S46KEDwRDLY65QgjLLEcZLsCI_XOZjuADz_VRzilaGLLcRXHgN8hpPZSr2T8BAJyHUr-9q93WuO3qSoPMiwp3rAKNOuVw62AaRvwA76CDACu2ylxJ99_QbTW8sR9TwYqbv9o_3udVpKIiTlPRVPJvMrbs4kYmE9WatEQHEzdmdilKswQ_oftv7nlz5PQf5Loe5i82_uaw3bW4rPAhUvrCPa-zJHxK1ASchBfAPfUgjQxDX6PqYkPsyFgWnlmbYUpbkGeuAbpf3_E74SI9Ad0J-3Zec71zp36CCAAKBAkA"
+          }
+        }
+      ]
+    ],
+    "noCryptosuite": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "name": "https://schema.org/name",
+              "description": "https://schema.org/description"
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuanceDate": "2025-01-05T23:06:02Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBULO03nrsnkZ6rwzLChEKMO7DKif3lUvisRJ09P2cgSJuYWov4s48t7XkGCnm2Jv78LcAE8JlvuXrsYbP_p6Dw17R26p3xK4OB1H3yNt3iqXVlpQQqGghrXPHGSG5IJ03DKliVg7vTmosqed245DmJvT5HTuLcacNg8g_jqygC5x7UbBsESVWcsGcUF4KjsXIKwUDikxdgO8kO7gQm8wOvxf54ZS7u7N6KVu-zpqt9kmDV1f3_LD6EIO72gCsUfFVvwH7_o5I07I_giprlNg_L_Qe2r5cHN3IoJy4oEcg8xWF_GB-TQrybq8Fl4PhjQgGeEKmjoa3vg1ouzy1O0_kPV1WVWmLlig1iHeQaUBnrRwBLo55PnVQ_K8Mv5yugQ_1kV2-dHQnNF5rJzlY9ucVn11smdGy7DL6NPbogwN7HgTSMOlr4-JeCWwujdAvybVsoKCDAAIDgQJA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBUKSBpeyLw5l7Y5nu03zcYfYAe4_l1DupK5wLXHJFSrGkUBVU4TFcFqqAbJ1GiXy6bbTLvDfUGtdDCVX6WctnO1HjFKn71UfyeNUVi3MkIGUKVsyg7x2DkzEs9uLYqQbCFqI_WmHItGBCRGt-TkygPrbu8_GDEAEXKaA4oXaSrIKGDjyAuunWczaFGcmWRAxPXy84tkJ8lnIFhTuEtl8XhhF441P5XIoU0SGmjWlc5q5OOzYic2qR8MTZZ-Y6YMQGaewsOqHpei9ZOPcQT4JUXzFgzYp_n9a0DL6YSZEmgE3FWpsHoR5lYcfkF28rmT55VkT4b0z6MY6Yr4tRjpi9ogzpSwggLPYDMUj07ft1H1qnakacBswL6lZSA7Kf--u5XoN8qsJa3YE_F8v1fcvGtdYVg6NVTUwFKLqnktpwWoxE8oUsiB-0bLbVsvxXpc4OBaCCAAKBAkA"
+          }
+        }
+      ]
+    ],
+    "created": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "name": "https://schema.org/name",
+              "description": "https://schema.org/description"
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuanceDate": "2025-01-05T23:06:03Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice",
+            "name": "Alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "created": "invalidDate",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBMKmRHJzGuw9SU6KBZ5lvRrJW4ASbt-hdCVCQNdMkKK2uTV5FP9ypYMsYv7leGKqLCrlwAKPVetkUVz-BD83eG8vIIAQoCVaeF8eu0Mh6A5oZ_RgQF8SxMeaHiNQInh9mCJdWNjHw7DkNjwOLSKHb4_XKqlmQCymCtoZa4l4kRqXdgLnwQ8062AoUr3BHFWKVmV1H9ldpWGO3hGnQW7AcW_Qw7Bn1a3fhDx1yy3Apiis9IyMdjfdU6_MN41UDnLsv7g3bFu9ADsz5J2qT-7dLREcWBYih-gcfenXSAKant40F_ko_c8Ft0u8R8gIKT93cPVxOmbPmiIpKzDgq2f5yxchWbcc_IWA2U6t08PeECQtuOZzq8Vp6P362s1C4ef12I06L9Bq3V1UbRGoOvkOUbX2ggwEDBIIBAkA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice",
+            "name": "Alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "created": "invalidDate",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "u2V0DhVkBMLidDLYIOScH5rImE-SZDbYk6fJfHRyzxM9PUZPZkpV1PNVrB3wvOUhr78Gj8C4Dx6GjKkm48aab2PDNLqDZk1FunE6VViugL_eQrh9b_-2M70xd8-7kUTem81OfnYO6vosSbOUFMYS1cEetx9m2E2E5XBCTZDuY5ZOPaS8FxV-W6eZD26SV4II9ZHEGF5H26xPnD7YvSQ8k9hw74WEz3pD7CPsc8GgwyvCFcSRLQ90xEugM4Up9m7tZiZQ_z9sYFrmYHvTVGSjO00dym_6uU41qJaBCz8PAUJhoKgGMWbFMvThWQT8n76UJwD7wdxlkvVyZLoqoY5ygrPXET_NrcdsNS2-UIo840UA8gfd51qXYVYnFxa9HOyS4GkICQqTSSToZwToMHWT2j0HwKMzMeFqgggEDggECQA"
+          }
+        }
+      ]
+    ],
+    "valuePrefix": [
+      "P-381",
+      [
+        "1.1",
+        {
+          "@context": [
+            "https://www.w3.org/2018/credentials/v1",
+            {
+              "name": "https://schema.org/name",
+              "description": "https://schema.org/description"
+            },
+            "https://w3id.org/security/data-integrity/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuanceDate": "2025-01-05T23:06:01Z",
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "uAAADhVkBULiVTb99BfDh5sXXxPIb9tQPVC8p9RNG7izsL62BkoOJq2qQJdhPhh4G4LdnchqP5ZaL8CnLgzLgPR7hH4eux2BVVA2sxdRLuiKu-yk5wDShQ4UDYqpnh6o2jGkpRK2cqo9-rQj7HgXOpqEXTZCJMg8cspjRYipxUY6izQ1gDsErSHt2p0ow-6YDgXlUSxWFlyl6_na8mak7AeMzSKmbJ-zTt1CucqjNQlQt-xOEYQISa4wi2wD9Rg4wXH_c8FDm10blTRui4OKS4kSr9Tc7BdEjucUOb6O1fCnfKwnogFvTnM5A3o4t2Gx3xGgb_rLLLFt5ugsNWTn6iAUemzsMUBUj71pg2-Esjs2V2Qx56QNAcLH0sXbleFGPTZ0_cr6tbGFRzTUwA5n7ZBHLIphys58ivln0L7Tc8lo0BFFisHXnbF9z-W6_R_OMK2iGkDpGvqCDAAIDgQJA"
+          }
+        },
+        "2.0",
+        {
+          "@context": [
+            "https://www.w3.org/ns/credentials/v2"
+          ],
+          "id": "urn:uuid:36245ee9-9074-4b05-a777-febff2e69757",
+          "type": [
+            "VerifiableCredential"
+          ],
+          "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+          "credentialSubject": {
+            "id": "did:example:alice"
+          },
+          "proof": {
+            "type": "DataIntegrityProof",
+            "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
+            "cryptosuite": "bbs-2023",
+            "proofPurpose": "assertionMethod",
+            "proofValue": "uAAADhVkBUK1acPYc161Sn4gNl_C2QgE5hU3_nXwsBpLaDZ3LTUD_Q5aUluc7_NIF_LQenARRUanOuUZMzqOkzl1XQMzM88sIR1bKfqqO24Cedkv9TU3Zbbv_nfr0NWujIMiAUcC7kZInArPgiQPmfMFaKglg_pU12ukAPdazzFEfLVZ_b9IZ_ddlFWTsvK-at7rtCZDpTD9MsydQJfJBFH_taTIC0mnvO-iZBT41LgrXslGMhD4KUNRZfzT86hqwSKUji6c7TfOCmGj5Kf3zgwHvcPl-pIJRMiLqJ6mqu8EZ7VAmbloW5xjiXa8ttWn_lyBzZHaTrQG9R0teb0IWqNbzx34R7We4tE0oAi0r5BrJAoKc72w5XUo19NNA1e52gq0jDczQ-bPPU4j2cMzrnlBPh7nCyShfBvxYCZiAiY26Y-m3jBrEbzNHUCyHT985UhrE94zY-6CCAAKBAkA"
+          }
+        }
+      ]
+    ]
+  }
+}
