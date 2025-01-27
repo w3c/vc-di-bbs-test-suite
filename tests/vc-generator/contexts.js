@@ -6,6 +6,10 @@ import {
   contexts as credentialsContexts,
   named as namedCredentialsContexts
 } from '@digitalbazaar/credentials-context';
+import {
+  CONTEXT as vdlCtx,
+  CONTEXT_URL as vdlCtxUrl
+} from '@digitalbazaar/vdl-context';
 import dataIntegrityCtx from '@digitalbazaar/data-integrity-context';
 import didCtx from '@digitalcredentials/did-context';
 import multikeyCtx from '@digitalbazaar/multikey-context';
@@ -29,7 +33,7 @@ contextMap.set(
 );
 // add contexts for the documentLoader
 contextMap.set(multikeyCtx.constants.CONTEXT_URL, multikeyCtx.CONTEXT);
-
+contextMap.set(vdlCtxUrl, vdlCtx);
 // add the dids contexts
 setContexts(didCtx.contexts);
 

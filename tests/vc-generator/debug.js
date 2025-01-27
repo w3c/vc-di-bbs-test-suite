@@ -1,0 +1,28 @@
+import {documentLoader as customLoader} from './documentLoader.js';
+import jsonld from 'jsonld';
+
+jsonld.documentLoader = customLoader;
+const doc = {
+  '@context': [
+    'https://www.w3.org/ns/credentials/v2',
+    'https://w3id.org/vdl/v1'
+  ],
+  id: 'urn:uuid:36245ee9-9074-4b05-a777-febff2e69757',
+  type: ['VerifiableCredential', 'Iso18013DriversLicenseCredential'],
+  credentialSubject: {
+    id: 'urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440',
+    type: 'LicensedDriver',
+    driversLicense: {
+      type: 'Iso18013DriversLicense',
+      document_number: 'T21387yc328c7y32h23f23',
+      birth_date: '01-01-1990',
+      expiry_date: '01-01-2030',
+      issuing_authority: 'VA'
+    }
+  }
+};
+
+// alternatively, pass the custom loader for just a specific call:
+const expanded = await jsonld.expand(
+  doc, {documentLoader: customLoader});
+console.log(expanded);

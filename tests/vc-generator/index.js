@@ -119,6 +119,7 @@ export async function deriveCredentials({
       // and vectors
       const testData = generators.reduce((accumulator, current) =>
         current(accumulator), initParams);
+      testData.loader = defaultLoader;
       const vc = await issueCloned(testData);
       map.get(keyType).set(vcVersion, vc);
     }
