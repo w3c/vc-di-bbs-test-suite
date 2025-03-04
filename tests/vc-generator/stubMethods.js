@@ -392,6 +392,10 @@ function serializeDisclosureProofValue({
     // Uint8Array
     presentationHeader
   ];
+  return encodeProofValue({payload, typeEncoders});
+}
+
+export function encodeProofValue({payload, typeEncoders}) {
   const cbor = concatBuffers([
     CBOR_PREFIX_DERIVED, cborg.encode(payload, {useMaps: true, typeEncoders})
   ]);
@@ -434,4 +438,59 @@ async function _findProof({proofId, proofSet, dataIntegrityProof}) {
 // offset to produce an optional invalid encoding
 export function stringToUtf8Bytes({str, utfOffset = 0}) {
   return TEXT_ENCODER.encode(str).map(b => b + utfOffset);
+}
+
+export function parseDisclosureProofValue({proof} = {}) {
+  try {
+    if(typeof proof?.proofValue !== 'string') {
+      throw new TypeError('"proof.proofValue" must be a string.');
+    }
+    if(proof.proofValue[0] !== 'u') {
+      throw new Error('Only base64url multibase encoding is supported.');
+    }
+
+    // decode from base64url
+    const proofValue = base64url.decode(proof.proofValue.slice(1));
+    if(!_startsWithBytes(proofValue, CBOR_PREFIX_DERIVED)) {
+      throw new TypeError('"proof.proofValue" must be a derived proof.');
+    }
+
+    const payload = proofValue.subarray(CBOR_PREFIX_DERIVED.length);
+    const [
+      bbsProof,
+      compressedLabelMap,
+      mandatoryIndexes,
+      selectiveIndexes,
+      presentationHeader
+    ] = cborg.decode(payload, {useMaps: true, tags: TAGS});
+
+    const labelMap = _decompressLabelMap(compressedLabelMap);
+    const params = {
+      bbsProof, labelMap, mandatoryIndexes, selectiveIndexes,
+      presentationHeader
+    };
+    return params;
+  } catch(e) {
+    const err = new TypeError(
+      'The proof does not include a valid "proofValue" property.');
+    err.cause = e;
+    throw err;
+  }
+}
+
+function _decompressLabelMap(compressedLabelMap) {
+  const map = new Map();
+  for(const [k, v] of compressedLabelMap.entries()) {
+    map.set(`c14n${k}`, `b${v}`);
+  }
+  return map;
+}
+
+function _startsWithBytes(buffer, prefix) {
+  for(let i = 0; i < prefix.length; ++i) {
+    if(buffer[i] !== prefix[i]) {
+      return false;
+    }
+  }
+  return true;
 }
