@@ -187,7 +187,7 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-        These tests were run on <time>27 July 2025 at 5:12 am UTC</time>
+        These tests were run on <time>3 August 2025 at 5:13 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -1831,9 +1831,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20the%20proofValue%20string%20does%20not%20start%20with%20u%20(U%2B0075%20LATIN%20SMALL%20LETTER%20U)%2C%20indicating%20that%20it%20is%20a%20multibase%2Dbase64url%2Dno%2Dpad%2Dencoded%20value%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR.">If the proofValue string does not start with u (U+0075 LATIN SMALL LETTER U), indicating that it is a multibase-base64url-no-pad-encoded value, an error MUST be raised and SHOULD convey an error type of PROOF_VERIFICATION_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:63:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1868,9 +1875,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20proofConfig.type%20is%20not%20set%20to%20DataIntegrityProof%20and/or%20proofConfig.cryptosuite%20is%20not%20set%20to%20bbs%2D2023%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_GENERATION_ERROR.">If proofConfig.type is not set to DataIntegrityProof and/or proofConfig.cryptosuite is not set to bbs-2023, an error MUST be raised and SHOULD convey an error type of PROOF_GENERATION_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:70:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1905,9 +1919,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#serializebaseproofvalue:~:text&#x3D;Whenever%20this%20algorithm%20encodes%20strings%2C%20it%20MUST%20use%20UTF%2D8%20encoding.">Whenever this algorithm (base proof) encodes strings, it MUST use UTF-8 encoding.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:90:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1942,9 +1963,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#linkage-via-proof-options-and-mandatory-reveal:~:text&#x3D;The%20proof%20options%20MUST%20contain%20a%20type%20identifier%20for%20the%20cryptographic%20suite%20(type)%20and%20MUST%20contain%20a%20cryptosuite%20identifier%20(cryptosuite).%20A%20proof%20configuration%20object%20is%20produced%20as%20output.">The proof options MUST contain a type identifier for the cryptographic suite (type) and MUST contain a cryptosuite identifier (cryptosuite). A proof configuration object is produced as output.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:97:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1979,9 +2007,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#base-proof-transformation-bbs-2023:~:text&#x3D;and%20pseudonym.-,CBOR%2Dencode%20components%20per%20%5BRFC8949%5D%20where%20CBOR%20tagging%20MUST%20NOT%20be%20used%20on%20any%20of%20the%20components.%20Append%20the%20produced%20encoded%20value%20to%20proofValue.,-Return%20the%20derived">CBOR-encode components per [RFC8949] where CBOR tagging MUST NOT be used on any of the components. Append the produced encoded value to proofValue.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:115:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2016,9 +2051,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20proofConfig.created%20is%20set%20and%20if%20the%20value%20is%20not%20a%20valid%20%5BXMLSCHEMA11%2D2%5D%20datetime%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_GENERATION_ERROR.">If proofConfig.created is set and if the value is not a valid [XMLSCHEMA11-2] datetime, an error MUST be raised and SHOULD convey an error type of PROOF_GENERATION_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:126:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2053,9 +2095,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;Conforming%20processors%20MUST%20produce%20errors%20when%20non%2Dconforming%20documents%20are%20consumed.">Conforming processors MUST produce errors when non-conforming documents are consumed.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Verified invalid VC &quot;proofTypeAndCryptosuite&quot; version 1.1 keyType P-381: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Verified invalid VC &quot;proofTypeAndCryptosuite&quot; version 1.1 keyType P-381: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:132:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2090,9 +2139,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20the%20decodedProofValue%20starts%20with%20any%20other%20three%20byte%20sequence%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR.">If the decodedProofValue starts with any other three byte sequence, an error MUST be raised and SHOULD convey an error type of PROOF_VERIFICATION_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:145:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2160,9 +2216,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20the%20proofValue%20string%20does%20not%20start%20with%20u%20(U%2B0075%20LATIN%20SMALL%20LETTER%20U)%2C%20indicating%20that%20it%20is%20a%20multibase%2Dbase64url%2Dno%2Dpad%2Dencoded%20value%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR.">If the proofValue string does not start with u (U+0075 LATIN SMALL LETTER U), indicating that it is a multibase-base64url-no-pad-encoded value, an error MUST be raised and SHOULD convey an error type of PROOF_VERIFICATION_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:63:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2197,9 +2260,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20proofConfig.type%20is%20not%20set%20to%20DataIntegrityProof%20and/or%20proofConfig.cryptosuite%20is%20not%20set%20to%20bbs%2D2023%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_GENERATION_ERROR.">If proofConfig.type is not set to DataIntegrityProof and/or proofConfig.cryptosuite is not set to bbs-2023, an error MUST be raised and SHOULD convey an error type of PROOF_GENERATION_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:70:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2234,9 +2304,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#serializebaseproofvalue:~:text&#x3D;Whenever%20this%20algorithm%20encodes%20strings%2C%20it%20MUST%20use%20UTF%2D8%20encoding.">Whenever this algorithm (base proof) encodes strings, it MUST use UTF-8 encoding.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:90:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2271,9 +2348,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#linkage-via-proof-options-and-mandatory-reveal:~:text&#x3D;The%20proof%20options%20MUST%20contain%20a%20type%20identifier%20for%20the%20cryptographic%20suite%20(type)%20and%20MUST%20contain%20a%20cryptosuite%20identifier%20(cryptosuite).%20A%20proof%20configuration%20object%20is%20produced%20as%20output.">The proof options MUST contain a type identifier for the cryptographic suite (type) and MUST contain a cryptosuite identifier (cryptosuite). A proof configuration object is produced as output.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:97:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2308,9 +2392,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#base-proof-transformation-bbs-2023:~:text&#x3D;and%20pseudonym.-,CBOR%2Dencode%20components%20per%20%5BRFC8949%5D%20where%20CBOR%20tagging%20MUST%20NOT%20be%20used%20on%20any%20of%20the%20components.%20Append%20the%20produced%20encoded%20value%20to%20proofValue.,-Return%20the%20derived">CBOR-encode components per [RFC8949] where CBOR tagging MUST NOT be used on any of the components. Append the produced encoded value to proofValue.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:115:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2345,9 +2436,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20proofConfig.created%20is%20set%20and%20if%20the%20value%20is%20not%20a%20valid%20%5BXMLSCHEMA11%2D2%5D%20datetime%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_GENERATION_ERROR.">If proofConfig.created is set and if the value is not a valid [XMLSCHEMA11-2] datetime, an error MUST be raised and SHOULD convey an error type of PROOF_GENERATION_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:126:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2382,9 +2480,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;Conforming%20processors%20MUST%20produce%20errors%20when%20non%2Dconforming%20documents%20are%20consumed.">Conforming processors MUST produce errors when non-conforming documents are consumed.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Verified invalid VC &quot;proofTypeAndCryptosuite&quot; version 2.0 keyType P-381: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Verified invalid VC &quot;proofTypeAndCryptosuite&quot; version 2.0 keyType P-381: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:132:13)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -2419,9 +2524,16 @@
                     <a href="https://w3c.github.io/vc-di-bbs/#:~:text&#x3D;If%20the%20decodedProofValue%20starts%20with%20any%20other%20three%20byte%20sequence%2C%20an%20error%20MUST%20be%20raised%20and%20SHOULD%20convey%20an%20error%20type%20of%20PROOF_VERIFICATION_ERROR.">If the decodedProofValue starts with any other three byte sequence, an error MUST be raised and SHOULD convey an error type of PROOF_VERIFICATION_ERROR.</a>
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected HTTP Status code 400 or 422 for invalid input!: expected 403 to be one of [ 400, 422 ]
+                        at verificationFail (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/assertions.js:45:26)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-di-bbs-test-suite/vc-di-bbs-test-suite/tests/suites/verify.js:145:11)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
