@@ -15,7 +15,10 @@ import {
   issueCredentials
 } from './vc-generator/index.js';
 import {generators} from 'data-integrity-test-suite-assertion';
+import {inspect} from 'util';
 import {writeFile} from 'node:fs/promises';
+
+inspect.defaultOptions.depth = null;
 
 export async function verifySetup({credentials, keyTypes, suite}) {
   const disclosed = {
