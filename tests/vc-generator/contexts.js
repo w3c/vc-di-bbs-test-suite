@@ -20,13 +20,26 @@ const setContexts = contexts => {
     contextMap.set(key, structuredClone(value));
   }
 };
+const invalidPurpose = {
+  '@id': 'https://w3id.org/security#invalidPurpose',
+  '@type': '@id',
+  '@container': '@set'
+};
 
 const {context: vc2Context} = namedCredentialsContexts.get('v2');
 const v2Ctx = vc2Context['@context'];
 v2Ctx.UnknownProofType = structuredClone(v2Ctx.DataIntegrityProof);
+v2Ctx.DataIntegrityProof['@context'].proofPurpose['@context'].invalidPurpose =
+  invalidPurpose;
+v2Ctx.undefinedTerm = 'urn:example:undefinedTerm';
+
 const _dataIntegrityCtx = structuredClone(dataIntegrityCtx.CONTEXT);
 const diCtx = _dataIntegrityCtx['@context'];
 diCtx.UnknownProofType = structuredClone(diCtx.DataIntegrityProof);
+diCtx.DataIntegrityProof['@context'].proofPurpose['@context'].invalidPurpose =
+  invalidPurpose;
+diCtx.undefinedTerm = 'urn:example:undefinedTerm';
+
 contextMap.set(
   dataIntegrityCtx.constants.CONTEXT_URL,
   _dataIntegrityCtx
