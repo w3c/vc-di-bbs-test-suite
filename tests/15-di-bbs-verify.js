@@ -7,6 +7,7 @@ import * as bbs2023Cryptosuite from '@digitalbazaar/bbs-2023-cryptosuite';
 import {
   checkDataIntegrityProofVerifyErrors
 } from 'data-integrity-test-suite-assertion';
+import {documentLoader} from './vc-generator/documentLoader.js';
 import {endpoints} from 'vc-test-suite-implementations';
 import {filterVerifiers} from './helpers.js';
 import {getMultiKey} from './vc-generator/key-gen.js';
@@ -30,6 +31,7 @@ for(const vcVersion of vectors.vcTypes) {
       authentication: true
     },
     testDataOptions: {
+      documentLoader,
       suiteName: 'bbs-2023',
       key,
       cryptosuite: bbs2023Cryptosuite,
