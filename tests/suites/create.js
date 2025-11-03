@@ -42,7 +42,7 @@ export function createSuite({
     this.report = true;
     this.implemented = [...match.keys()];
     this.rowLabel = 'Test Name';
-    this.columnLabel = 'Implementation';
+    this.columnLabel = 'Issuer';
     for(const [name, {endpoints}] of match) {
       const [issuer] = endpoints;
       if(!supportsVc({vcVersion, endpoint: issuer})) {
