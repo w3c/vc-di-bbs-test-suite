@@ -25,13 +25,13 @@
         }
       },
       "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
-      "issuanceDate": "2026-05-10T06:03:59Z",
+      "issuanceDate": "2026-05-17T06:07:32Z",
       "proof": {
         "type": "DataIntegrityProof",
         "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
         "cryptosuite": "bbs-2023",
         "proofPurpose": "assertionMethod",
-        "proofValue": "u2V0ChVhQjJ4kx31d7d7oBeDhCyl1JJGGyXoAZVJJXi5FkJQPbPmgORxTOoSNZVkqOZCRxD_6QYTIGJwNd2Cm8MIxFYwQJ237KJXhTKxA8LnHm6NhjhFYQPC5xiUbKkwcvZGNg7SGt2aWuKaKj-YqEdoi3yFG8df4lujyCw9bNlo2nz3Sm-RJyZiICYQKuB1A8RKvVG0jcyVYYKzL14_y4mzHkazYdrKppAagR-MSnjlpgGCvIp1TF9fN_cul3qJZ20-r8Z8VNj5lfRVyfq7XM-k8Xu79oo9XRczB7gU9U8ga7RGVrQkjjEyAV6Z1bDjDEnYbEwdYlEvaNVggjCedHzh8E4AmS7OU4VdfgLsJx47vyrAlqaKpxoj4Y7qCbS9pc3N1YW5jZURhdGVnL2lzc3Vlcg"
+        "proofValue": "u2V0ChVhQqeFAfHyKNKe7Mg-T2oimIh36Ixgxnw897ZJTcZjieLNzq_WjYQeMJxhhVtQ39wIBRMKYsOplO0qaqPitFz0ylCNUfK25U61kaoy1LxWdgoZYQPC5xiUbKkwcvZGNg7SGt2aWuKaKj-YqEdoi3yFG8df4DC_E2fj5beM5XeJw6mCzX4P2JWXH6tfH-bLoIB6WgHZYYKzL14_y4mzHkazYdrKppAagR-MSnjlpgGCvIp1TF9fN_cul3qJZ20-r8Z8VNj5lfRVyfq7XM-k8Xu79oo9XRczB7gU9U8ga7RGVrQkjjEyAV6Z1bDjDEnYbEwdYlEvaNVggW7MoX9aSfsDDHJMB8HZEkoG2poSHDqIHAJw-Q7pid92CbS9pc3N1YW5jZURhdGVnL2lzc3Vlcg"
       }
     },
     "2.0",
@@ -62,7 +62,7 @@
         "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
         "cryptosuite": "bbs-2023",
         "proofPurpose": "assertionMethod",
-        "proofValue": "u2V0ChVhQtiyzUoh_sG4B_D7eeaZU8RhLvcxTdAQNnmm0jH72_4LWjJseSePZwjAwgiY1QjFsF--pKCTyYYCnXQ-ugEedKTt9j6AErueueXOqJhB0SsVYQPC5xiUbKkwcvZGNg7SGt2aWuKaKj-YqEdoi3yFG8df45Ha5ynEZnbu_Z33TZiSI6V4SbHCT8MzQyQUJQreM8RRYYKzL14_y4mzHkazYdrKppAagR-MSnjlpgGCvIp1TF9fN_cul3qJZ20-r8Z8VNj5lfRVyfq7XM-k8Xu79oo9XRczB7gU9U8ga7RGVrQkjjEyAV6Z1bDjDEnYbEwdYlEvaNVggk5VBH3qkRdcM4qp9jHGdYeVMBx7fgqO1NPx9WflxX6aBZy9pc3N1ZXI"
+        "proofValue": "u2V0ChVhQtiyzUoh_sG4B_D7eeaZU8RhLvcxTdAQNnmm0jH72_4LWjJseSePZwjAwgiY1QjFsF--pKCTyYYCnXQ-ugEedKTt9j6AErueueXOqJhB0SsVYQPC5xiUbKkwcvZGNg7SGt2aWuKaKj-YqEdoi3yFG8df45Ha5ynEZnbu_Z33TZiSI6V4SbHCT8MzQyQUJQreM8RRYYKzL14_y4mzHkazYdrKppAagR-MSnjlpgGCvIp1TF9fN_cul3qJZ20-r8Z8VNj5lfRVyfq7XM-k8Xu79oo9XRczB7gU9U8ga7RGVrQkjjEyAV6Z1bDjDEnYbEwdYlEvaNVggggjEN6lrdCMp7G_sNLNahyNWeVe8y4QULd6YzZoI6PeBZy9pc3N1ZXI"
       }
     }
   ]
