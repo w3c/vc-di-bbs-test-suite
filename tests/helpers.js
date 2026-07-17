@@ -6,7 +6,7 @@
 import * as bs58 from 'base58-universal';
 import * as bs64 from 'base64url-universal';
 import {createRequire} from 'node:module';
-import {v4 as uuidv4} from 'uuid';
+import {randomUUID} from 'node:crypto';
 
 // remove first element and decode
 export const getBs58Bytes = async s => bs58.decode(s.slice(1));
@@ -61,7 +61,7 @@ export const createInitialVc = async ({
   const {settings: {id: issuerId, options = {}}} = issuer;
   const testOptions = structuredClone(options);
   const credential = structuredClone(vc);
-  credential.id = `urn:uuid:${uuidv4()}`;
+  credential.id = `urn:uuid:${randomUUID()}`;
   credential.issuer = issuerId;
   if(addIssuanceDate) {
     credential.issuanceDate = ISOTimeStamp();
