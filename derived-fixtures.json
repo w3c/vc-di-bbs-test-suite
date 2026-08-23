@@ -14,7 +14,7 @@
           "VerifiableCredential",
           "Iso18013DriversLicenseCredential"
         ],
-        "issuanceDate": "2026-08-16T05:09:25Z",
+        "issuanceDate": "2026-08-23T05:10:21Z",
         "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
         "credentialSubject": {
           "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
@@ -25,7 +25,7 @@
           "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "cryptosuite": "bbs-2023",
           "proofPurpose": "assertionMethod",
-          "proofValue": "u2V0DhVkB0LDTi3nNnb7O_VEu-zt6f-6MZyMLgZlCgsne8SM7gENhkOh8mG2LSZ0OD0sP5e1UcKB_aX8z_aV8nLN1-raTPnxVp6w5Xd23DVFVDlEYC7JwOBBBz8P5DKzzJYWL0iXwxYswka5Pcpa2MZGSZu5_rMa47-SLfBqqyd8FbprPtnYDYS-AdjOInXsuvBSJH-Z9AHMJwInDGTMsMbSUZuD4d-E1EQ_jIrhBqucJ0VcHV3vEcUgfyYrqq3AWuQAj5-Bk01hFMy7ueeFM7gt7OQ_SZY4-5RKFFcdhoUt_l7nxRsqP1Uy_EMklYvVL1RYDnhiSvhUT3hX5v3-Zb2jOpvFDXzJl-qKVjLWlVzccqAqB1lTHVaHrNhnTjoc5EfiIV2OICTNNbfmjFqyXzsWUwj6sYd9Bs8Vhb3EZC_SpK2x1R6SmFV2-chYiEvTzuppDSGY8oiqF10XIHaTjLqb1kFazdViKyEpt1b6-Ue3kAWErhR7JU-1zdqlQAp10J9a-SluzU86-OhC_vxklgMwH_Q8_l3Yy-O7s5Zao9CMs6qFIIOft0IAYSBXwuSA1TUocbEGQYFu3d0laxlMD36rXLqBY5viVmD8CkGPoT9RrXdqwkVrkoIQBAgQFggACQA"
+          "proofValue": "u2V0DhVkB0LfbJ2aXkGCgkmCY8XgZycO7GjuDz68od7lYhhygA57Dx66WEk3R0HOAUeBlvvT53batpUIMgSZZZD-WeHEcUVMV7WK0WB0up2yNruNpMCnVrc8cpcb-uNolOopoZM9vJIE9q-F2fJljZV4uo03NjEIEUeqcuSn8KF5-T13g21_BHtHoExnpQbPHyuiHlASMJzk0-iz_ogmjXSpz_KvHHu8FIDV52Bg9gYv8FTnis5ntF2D-qx98VpQJHt9H-EHe8o3VX-DIOlgxcUxHWdCqPEEWyegg-RC0aGKonYBvZkOGU6jWlfQirFTALSmIXepe4CbWYmnY_vejeV5MEv5aPwLlkzcREzQuWz9spEg8UCnEC-eFA0q9GFd2fYtlm3EtR_l5r2I7f43TiKqPn92uTKwGqKuVSMiezJnb7XzIGqfIhEt-VgRuwnAtRFEQj5eYyTuQlJhDC0rlY_4YYPS22iJTf5mGlRxUN8I6CGPAuzhIDeXX9fIGBcgYtMWlhxstSNOwpxu1Khe_ydU5Gu76P28UMuDJlQRc4XQEkOcbPyVJ5X40i_q7dbdLlVDvpK4pzDUVpc24L8GymKLfDzXfetoe2N0Z242SQ1DKPXkW9dScoIQBAgQFggACQA"
         }
       },
       "2.0",
@@ -49,7 +49,7 @@
           "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "cryptosuite": "bbs-2023",
           "proofPurpose": "assertionMethod",
-          "proofValue": "u2V0DhVkB0JKFziJZetnzmNtFg2mbrsssYtn0_vmEOXFY3F8xWU2MnxtzgULW23tTOjRbIAhk5ZF7-dzCUy_gtq1i_0vam-iPTGHz4ZLJg3KB6WDjrjaO4Igx6QpRiIVsrigZ6cx0gaauKJP1P3hWa4cdFCdaYEw3s5XGR0brej-mGeV9bcj1oSzp_RAewMGhOJ5d0zFbUmNpX0q-9StWBJJzDIydnuD2wX0CHQ8Q8yDikAkwVju2DJxZSpaAJvNf0FaAMQOp0JEXIbUQjF9FUCncsP2AKwZw6G4M6b25WYIxd0FIIzJSkfTeTgGViMC9tvb0lEA4RC_jKDSiTSA9zuWpNwPy2SM52O8D0BfSYG6VzdUbfUtEHt1GejFWD5eDT9xk__JbjWQJHZWosjkYLhgN9lah_qsUhJfegMaqmn_gs9_NpXk_gdxUprmmhZLk7T3D9_dyMyb6H-JLOedXHtJtsXebTCv6LxsYALLh13078Q6v8GqNVBfTzu1eyOOqN1Y10DyPcQPm8APHedicQSzp5BxsOlBvQHh42z-6qdbJyAU2WnLfCECr4NMI40Wvd0m7POHq7RWozBH-PGCR0p5AWgm7wQ2UIvaaj4fs6M524Rcds6F8oIMBAgSCAAJA"
+          "proofValue": "u2V0DhVkB0JSrABa7PpU1T-NO4tDr8oRuKKax05OrD8f3AkYInz0ITnEsRoHK0XYHTiTr1Kxl969mhgnaFNUQoAScRYDLEwvp1m5M9eeTu5ZiEM4BhWxD8cTBaymJi3yL2_-D9kPQVqgS6bbiHcTWjEykmtrFW95ghb4UppiUv4F1sx5siuTTOOgM4zJYPMDI4TqmiCM3DnE2UeangK2cOHlOwuWBaBypTHTlpGdkhDL8NRU5P84BHzk01VDtcA6DCBTCmnVZKymjreU-rBibAlh6BV8PLAss_nAUUB9KELIe8HPRUzGOgW0nc6kmlXjtBm10gJm690VdENZ3Pmy6bf8VBOwOKb0oX15eWyrH_61Ab7jDinvrNDFbDJJXwxoJvV7R0W_3gPnlmAASQYhPlNUVR9_AsIocMAuKLO4JXcW_eBsnWbOaY2cVgVr3b72GBIqaEXUzqnA1Zu4dbmVKhbCcvEFLu991xlDM06r4dSrDus963BCcTJpopVJTkYsfsVUcJA7HjgrU9wvbwtYOHU11Vr9xTEE2z2lfEzPdqFV-NM9a0DUnVhlfG2fwNPsPMTBNl_4fCEMe171YiqsAMongzctDmG5xjlsLwxzLMqHkjWYcNprEoIMBAgSCAAJA"
         }
       }
     ]
@@ -70,7 +70,7 @@
             "VerifiableCredential",
             "Iso18013DriversLicenseCredential"
           ],
-          "issuanceDate": "2026-08-16T05:09:25Z",
+          "issuanceDate": "2026-08-23T05:10:22Z",
           "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "credentialSubject": {
             "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
@@ -82,7 +82,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "UnknownCryptosuite",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0InDmSWO7EFxVRYVVi_c8QLina9zOgsDJG6r7-a-OqiKop6OcR6wc8PCH33Elopt7a5id-xp9EPTtIwn_nC9d6eKyP-Md2BUkRSrjSeg8dDV_qUa_NR1K16LGUrkf-33cYK-vGt3KY7ktJCch3QHre_5x63-rmKVYceN6HYCK0i3IG1ImiKpjBdEem2fA8R3Dkob0q40SdKYVDK8tOZb482ls7Dr8j2MElbod8YXMoSzApTNAUMG5hvPrfTUZarJ8MOm6j2K-99YjiW2UlsJBkVdTmJknGz-B5LLCqBQOiQEm4NT8Qod42TWMo_Udf2nNQiUCMC6wqaKGalv-TUhBEteiV8oAlklRbMhsSGJtdMxBHAFP04s08B_sDpY42uILRTXHTxdaHWJJX2eHZ0RwBYilBgL-bsxzKM3AvC4UB9PplcpBMTvWqRAwm3qqtJEyV2_frVIz7D35sdSctrmiL2rGXnod7NlWDuAgbMDyWFlUdQR0FfF2SwdBzgsY39URlAtzYtfTUkTlxLHcEcH7eUgMkfF15IEoxzp2t1BMr1m_9R639pMHSeDWluZzfmoeDgZ4_uMimuPK0nfbIAtlbJCb3SEuVnypqmCxO6I0dX7oIQBAgQFggACQA"
+            "proofValue": "u2V0DhVkB0KJqnqAw-oZLnXaj4_RAbZ5nduzOaYGaP1W7vrPepLEhVE3fbKbUnjc9jM5hfLbHk4QlraYSj9Ql6D1YC-ImmJG6dWuwQWQcjG0UAsgPqv7rMN06chGeouxjwtOT2aQ-_IMN1iw1nRpyN58GSJK6nHKHAd7cnqRRw1ZAVh7oOJKpmbnZOIhkFZ9LHweyxBug6CrfHFySgk6gD2DVw926k-7pK_7gFtQIdsk8bBPkR7U9azCpErAUK8HZZY84jKHIeNcTAw7zept8uo14DxekMM5U6VA4LrhuBkAp95fq-vUnXyMSjsP8yT2KKtGYrEt_11PC-v1BEwi3viU75gunh8X3MYE3rBb6azt6LeDgwQJ0OKUXCTfNt-G5rAlKKzF4HaGRaPjitxJVN7hgzZGHJ2he1qtrvrJeW-6SkD5eqHxHuZUJI2IkIzIxNRHpBGKHRFJu4eKOD756TRrerCmQOq1iUZS7ZmcTGU7m1ddUybYkQb3rZrJxbwagrZdfpbpmtdOnzjdBsBif6ruqhHdA5e9JP6zuENFBxfKucXUb-gbpNNhA6mYjOGnBDWGSR8NMgxkAB_2IKQ4-l3-ei-EEfe1XomNLf3ODxHUTqID4dOZPoIQBAgQFggACQA"
           }
         },
         "2.0",
@@ -107,7 +107,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "UnknownCryptosuite",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0I13kPmaHs8KEF3TkYtODrxba8So3lk7HqKq7cbGhYOS83G3zULRlxiBcBwhzFgaBorLpdtxJqcPfG2nosC9ZX_HZXZeggXsBuDkCWcuXayPH34xIaxWfQYlERDY4KDAhI2pTqOHK6ZBZG_6nTTxDG_MOT5hBX3WoCVtzH_vvecO1vo_2qlol9rSns_S6FVExzzr5wRWdRzHOrDQmHu5XON_1cud6bBa0iKHapGXo5e1JWtekRSqXU2cV4RloWuAoB1EQysT3Qeo-RbRb9G8mEUDcJ0bjDbCzZDEuwoDIy7v_nmg6MKtLh4OyjIJCKSY_jdZD1wuB4aFBV54eBgmSeFEKQ6qWK9Yy2VL3WcOgp6WL1gSKg555bps_07J6qKygPWc9f9olv5hMFz0AivhKqNxgP2z_CYlXwleewOxk0l18Nx-QvTYRie7mCiz-MYOFSdrmeQZieyjs9OXEXlgzjUtn4_c0sUmQcdSwr3FrGO5Yr6EuNyWry8PvT5kem6cZlFrgUnSd3TwOqhcQZA2Wk4P5XfVYnYw2nr8e4yT9ra1Vy-Bh4xtpBw_1ho6BCymPA3LZRjn4bJ1E7ECZReLLv13rDgWJuPKt6zO5oVJjQR-oIMBAgSCAAJA"
+            "proofValue": "u2V0DhVkB0IQ9xRAvb54iLf8uC_aaJJV9sAxcQ8wXiy7SoOMOvQRFkQfW_ZtvdKKTN1ZJbikKO4eHGkB9XS_W2ajrp_sMV1wITjW7ybv_7DLm7S-tZyjApxIk1Rce6fPeUjlqw50_I6gzVF33G4rl_0CEkwghFoLe19Pq9LIPz-WTdrryKyD1SBcJzR39gZ22ST66dJw6mC_Yby_Tn2UnlMFTbXV1V_9JZhaTwksADo5RdfSAb8lRMg-9V1rC2V1pq88JGYxlkQTtyv4gEG4UNqN3M95PpDViqCP9-76tbKKzbyREbHyYDqCDV89Jge4iL6g8r2_eT3OAfolCt02wVZhh00eg5DzOTDlDvkIcIOwakOSK5WBMM2qkE2E3ehWLodDYyk53jPCaRF0qF1HkA7ppKeYPMPBJ6jyc5mIjfTSN6V4pjvqu08Fpd_eyxFBCL09OZfvYcXBdslw-IY8o_pDgvGRpkylaSrhZvQg61WyZnrRO-gQlHXN17BXLrhPM2u3ygNw8juMIREy_XqFM6dqI3862gRAm14hLrzbsvdqBg1GJxnb6tte5jgLthxWnGapZAPRwIzu7QJRej8fzTtw5juyjTJCvVyo8w5zfZRLNdSKpqvNHoIMBAgSCAAJA"
           }
         }
       ]
@@ -127,7 +127,7 @@
             "VerifiableCredential",
             "Iso18013DriversLicenseCredential"
           ],
-          "issuanceDate": "2026-08-16T05:09:26Z",
+          "issuanceDate": "2026-08-23T05:10:22Z",
           "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "credentialSubject": {
             "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
@@ -138,7 +138,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "UnknownCryptosuite",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0KGNlTl3LHu0FdtNM2X2i_5kN5fhnLfDB4xA8BPg4Mvdz1axOKTUqIboFoizRg-Lf5Vyv0oF5XHGR4YhspobWZiZcVfsoHNyAwcasK9ElQNJAPchZFGmT5yyxJ9rbBdjSo7-896AoF1zAkamwg90Q1nWeCpm_eUN3bPsbcymMnnG51GfbhQEKWBpljirfdmd3B7d159dDY7DpuJxS_FWDS_HZ0aINhLqAd6fC0YDlahIS4R09hqGGCxIkq-bhO4ms8FT1sSE_KBdWJYX7aag6TQfwV-QCCPcSTiJ7NPX_qFSoZCtB1g5eime5l65qRYEOHG7K7t7Bw9G_UY8Ma4JqbtraeLoHRaIAF_jKHv0IBg1Xksr8MeLuhBjmJLPa-byI3a-v1l0HP9_QasNm456BLcCKOCl0G026lJIh73nuJ6uX_i8YtbY53pXyL_7eAQOaVvEBkLjQXOFsLvweMMz27AWNo1-Fa7yfUbdwAlvZh8cVzk2HKy0rUaF1neFgPovH8W2R_yZPgrPRnsrMNFhX-YeAgGaAxfnEGv3lHEU5dPjA7rN3od9NhLJTefsgAsfEnCPFEz7pQH29_QVfuRjO1kXUAQuuOT764BO6haQ7ftKoIQBAgQFggACQA"
+            "proofValue": "u2V0DhVkB0IqFXneHtZBkSPu9reI0mpFnUdwLkv7ZTH_6Fh7wa3VUv06ZJvgAHlrhHlFNIFMQ_IcSvqTTc4RnWOFEiDeOR5QRugvUy0vZaeAna81on-ZXnHAGtQPbz3lUpZVc0yu_1Kw0SM4j4CQIKwSnaFxASrC-P8fcZmcQppRvqsDXl_PH5Z9aB68TI3H-FULFDdpz9iiaYvnio32zYY_ZrBBT_TVIX1iT3gEk26K3AxtiUJTbV_yuH5jOEXWm-46I4alZq8QfG8obSbuWUEUyviGCVtIa2VREzb2RfLO46ZDuJFIw0PbIrf1aGutc-4BFw4lgaVHF5icZIKeDDi1uDVt1FpRRES9qR2lDq30ovXiRPqEZNud0yIjEB8q51foG4AHY0QBuTjEJi8Mxvri8_aidLHczOW0hvQKITDFjMkIJcrmMfTj2lbZnKLtrGHmsnEcfCGv-HNJUf5f9QmooMFwf1itNM3PDIiBERwv4D40XIBTaEAskjFqw7a6pMBifaHacP7YfL6638YjqKdWWhTsdyyFOl-pmY5NOaUEyizMZjmnkpZXa_QlD06xKfRgEemzCRmasOw4M973CwbASYwr3ORG2S72relzls95ZDMwDFSX8oIQBAgQFggACQA"
           }
         },
         "2.0",
@@ -162,7 +162,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "UnknownCryptosuite",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0Kxa6blj-kGzZC6fX6ixxikuaDfwk4zx5FQAgI7kFUB2NgqmMDlRC29pbJJW-A9X54kI7ZHql3PdIeAFBcgeveFDRCyDlKf5o6roHjede3-7eZfimohMkqQyqAc4Y3eIT6e-ftV-VCJYcL1uO-t5J9wFpgQ9Z8g-cMw5ILwxjvtnKzEOLh5WAv1XkoKv0ru_W0ElBUa7zwiBbC51UK8BSBPI0dmRaq76uKss-hdB7WDKGSVIoSOVJXNNIhPLXv-tt9bSOFsnLcWadnFjIeTek-4GSzeOvaEMg0LMcZy4QqIKhYvRKy0j_4uLT6ZyX8rQxGIHyDCnVJ2zGBXBf6GjzUEW2soaxUPbFm2e7ZVjudB8CjriLa-FgPVWqJtTN5hYiXInIw_1J9FLLA-OwUZ5AftcgGiaeD_ICC5IXcMdlDgy0KmtptSZN4o7sE8iXdHP2xJyZIRwYp38sV0_rdFdrflXbhqaLGAX3q7Gk0xRAkg_WDeoD03VyGioalJn3dTChWpbdRV6QrB7epEkBe0hlFBdPZYZcsTtVBrfmWq2t2eLQFD-N58x5H7yCidfY61-YxXcM8POLX9zLKoM-9SVyfUfTtl3k1qTNPeU54UrcHUtoIMBAgSCAAJA"
+            "proofValue": "u2V0DhVkB0Kvjc327VrFO_2c4pabGIfuk40u_rLrBAgdZ9FYpWcAbV2GmRV-bBMUoDtdPROAJpZJx_2bKHkYafozGWzUzDeWYP0FYmgWaX497_omcBsmP2jXpROzkZiNA08TrE39CLY2SX3u0Cw6ROWWXZXXkBNIFg6Zgoje8XxrtY4msXfJm30rLLxXN0qGLLdC-AHQHLTxqQrNZYwaWzJuM43inuQEuQ4ne2qjhfvPmNIayj2nJGb-ITAjXeIHmbMIwJdTQ8xoKbDz-qrGMG8GxTso4hLEKPhNFrrHnpa-E6vb8P1pN6ZjpIPvun75JehHTmVU_qQ8cRx3i4jIRQThpX-1uHtamLYy0146lQL8pOJu3lX0UBH-o384rWb-7AMnQ6pYYCEfc0RRWGTPKCX6D5t0CLBk1dkybsDsARzWAgIOk1dOE3GuXiD0Oda6GDUrsDnnJ0m2Wa6dX7RDp4Q6p3iU1cPf1acDvNtsFPTBa4D0CWAaxNDxPOGDXQFUzzLedG7npuHjfpkDPZAfNTTiDhqXBrXYheCr7dm7S-jIENRoC6vt4KWxoGPRugNs1LATQBzNlhQewICfmWYs88Ob3cKKFdMWsaOUBNny1MkFOv8ThD0qMoIMBAgSCAAJA"
           }
         }
       ]
@@ -182,7 +182,7 @@
             "VerifiableCredential",
             "Iso18013DriversLicenseCredential"
           ],
-          "issuanceDate": "2026-08-16T05:09:28Z",
+          "issuanceDate": "2026-08-23T05:10:24Z",
           "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "credentialSubject": {
             "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
@@ -193,7 +193,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0KYu9btVywk1oOeheHmrbyQubjXhrGgFzwaL0tFLMsmByYMcrBMTVq3dBeXxGE7jQKWnPna6PF1ezDIA8SEMxVQhpWqy7hk1S8yedGKjzqPV9sY1ZJKTPW4P-Xyfyi9BgJipDazIPzP0RZfD1i4nUtCJfi4ou0RE1q0KFGLM9dScErZWY1HXfoQG1vbZu0vu71KcSB18trZtEk1-05klH4-lB---fQyVSCIYu8HkGL93BCkJfmxnghPz7tAvs-rc9Gz3-EDfto1PYVNX2O28GqgszPrQY_ML2zLLnBCG2SS_vp0D3lNpL5aWIteb7bkr6Ah5uzCmpnRsGq7WOOQrK22MIkA5NfmhI1cbJs0XITFFI10OIpGnwPkgBdFJBk9eXy39BA89hWGs4OtgjjARdr4LDDzFkndGsH_gQaGFQniy4dzX3_b1oHeu9-pkunaL_GIrQYhPZfCNt9Av3dCchoh7o52HbdRcgxX6WnR40ptUGXx0f4nqjeyc_LkpPUrhN4TeUtkpub0d5pwNeONNgRFNA_zkyyvQiJO-T11X_Vj0mCtLJBLp9lSvlX0zmz9k2yZWwkvCkwmaYvO43k5VrUnnJbETxNgmZK6jcKB6l6MaoIQBAgQFggACQA"
+            "proofValue": "u2V0DhVkB0IwQ-zDLmf0fZvxt-nufKuGoEXCmRm6CED4qFOJPaipqeWVtxP1RsFvQw-Db4LkpRKidSR8V7t4eD6vatFcJMtyPa7f_7frm9uP1ggfmn3CPR9OQL50xKjabseW3LMCXAIAsGJKuS-fkox2KxHb9RyvkdS-DW4mpO1Opiw6GBxI8eIkXXrfbzuIHEoj2Zo9wOw30U4kIEEJqpZiRd9KbEkVbcocp6iuJZmXDuwm_c0DmZy3dpBjnb29Xt6Iov36KZOZByCzQ4bp5KO9iUwN8kFMuW8F4Ctln-Txaq1vOUO_-A-8o1nVF8hEJcjSkKdk_rSLta2ZufhWhhJtAr2iSW7W-TuRoThv1k7_oJ2aWI534ZQVItmCUFDqXbScDw6x-hNKv0jwG0HXYi3XheQJwO01yR1dV2aPr_jWg5ysmKXxsPb7hcHd5hb4oLOnE_MR58HFDdptRVDwBubPZm0_SBvc-7QBtKg6qqfyDdvMAh0oRCeMgFS0VDFdIH_9PyTJkSC7rSUkyfNEQnloTYMIwLtw23PA3D9hWelD6xPf3-vfV-dE5GffPYb4ucpjmyYGDCUUlobsPhUnasf4CpgswgZlkRzPn-eC82pwgcPvpy9w4oIQBAgQFggACQA"
           }
         },
         "2.0",
@@ -217,7 +217,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0IYphPNjrnvEuPftKzRgsqkaTlBPnE81Fz3OblMwXYnsi-xrrBsAlIIXSKfxdsw6i5WfRzR3aBVSsl5mG3bOc8ppSdVaU6tOfPz4MzxG_AbCqYUmNNRK0d0yTlWJWh1i9a1HiKV9RhgtOH75J0CYLappitED2zSoA_o6_SoEgoi01QeLwEYTuq9uSh9TjlZ5aCxsR9MzTNR7tOZ5eMC8LAVIl5dQFTAixhYZYg9YYxWdUxm8-5kHEiR_jZ0kyXsj_HmgT4Oh3InExMVWk8PA-zZJ7ComAJ-QANlYqCJ3B0NEUQEGFppwnPeC2MwDtHjqXQD8sO1QSz-VL_oGQn1ZxaMFJu46ZM5SSPM4FBurt-kjLMGgKBBllQWm9MnU5PpjktOXkcGBW34uxlc04RhDwyBSuM-CZm1ZtbOg4607y-d3Sw1kJmNULUjzAklr-nTxmhpnM0tdbR0ONBnY9msQBEfjLagoHDoOg5SrtGX_WFQaPnup4VpNRYJDcnmhOZyeoAL8ADePGyVX7UhIN_xvWY0i07gkddN2EeGvgFhVmqpNUly5RTIIcrIiD8jTLcSWojaaHuf7k2byLrihoNZ2A4HopVe_TQRABjiPgIX_sM9QoIMBAgSCAAJA"
+            "proofValue": "u2V0DhVkB0Kt6rlFtmKovKWzdCKZ-2xKCHSoOi_4gxZ5t7sRRkcujC4jyDnPLxEH7i2p2AxhTEZOY34CL2SIAzHKI5A2A7q1p4nsMmjMVBHB3OjmN1r1jC_GMmXoE7qeeDiQOR_3mOqQ6zF91MEitn0KaMAH5YaC3OBo47EORGRKGELMEnb4XxqKc-YM4Y900pjtz0RK7yl4ZMC8IUgpQ5p3xAvo6wS4z7ti2hXe2orjYGGRrvHvVIft6pBxyU7iYlnHkEtqeauCr7bA2yCdyiu9csHyRvDRveqfkCiYecF46RH_BH9DlJ_vcqMZnIEgP3CYWTFivNEzxFcO4xl82TPuYeJiYApgybjRLH3Z2-gAc0p4fUzNPIW4fAc6aVwHH4DCiV43xUsDYO0Wq-oSvrnmiTvEnl2scwY_yXskj7c1HvvWmKQuZGeANRWPvDY7M18BQhZYehkM4qXh6hwe_uxHRA4y8mQtQdDKuQAYpRtKVF_MCIdcONexfqf_kY4uN8TgfqX2LvnWPa2RnWlORhQFYRiR8gRY2BYLLjETNg0L6VBmlY13KrbgMpeV_zruW_Zm64PUddFjrLih2uvFRrCDdpqDRub5k0sAenN0lE_fxwomTiJmHoIMBAgSCAAJA"
           }
         }
       ]
@@ -237,7 +237,7 @@
             "VerifiableCredential",
             "Iso18013DriversLicenseCredential"
           ],
-          "issuanceDate": "2026-08-16T05:09:28Z",
+          "issuanceDate": "2026-08-23T05:10:24Z",
           "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "credentialSubject": {
             "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
@@ -248,7 +248,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhcJZAdCF1AmMFOqkz6U0z_C-C4nHtOKAJr8xZvAngT7PvN-2l4bY8_scdoh2Q43rn3P7kHar8PxmH9p6Az5a5-bu94s2D1NvQqc8NO20REzulN2mh6f6psSJw0jlRObKky-FTQSzwQDk-5gXT6VLN8d6r1jDcSHlXEnFg8x7fua-8V6yUlR9aXoIeiXRIajljygpTM8j2P-CLAXups5TAlDAiNeV1OmQD3zhvC6OTGkeERY6sx3gV-qQpE5BjDXX-QhdouX3rpLGdIdoC7aOybO_46yyYqbjia0va9HV7Y3VrLXLlVnB7R-2hkBDG-r7qNZMoUIGfIDf2gOFNprtMsYe_5Fyp65BwtDewB_-wPkL25mXNgQylwHTXRcKNiFdEw-6sU9UozeRzhVRv6AWq6xyO5T8EhLEFktOLxb8nFSIizlnI2lFTgrUHgzoK4_0rMoUr6RYBpOzYGvq4uE21AGQk4MVrZhR043fJ507R45CNRqF2mior7ehGktTOoLp8l0D5jnWe8zTAXPG4NJJHrU0NEdVXi1UceYUpeI8tI9xE2-WPGgS15giISL0fpK7ZDrT264kH0yP8q3iQ5uZpaJWeFQ1PkqD03RZocu8U1IsHD6cDqCEAQIEBYIAAsJA"
+            "proofValue": "u2V0DhcJZAdC2ighQNwnvmlnwFW7_qc24n5KCfzDJnWDwLvlwzz6BjNiQrH2rL1hz4R4RbmBBRvKB_RebyIdhkmT7KhJyDaJmxjEL-ED4ZS_dBoAgs8Rvf_kZbFfY3-_6_OdgrAIP6dC6G4C0F1SlOWCnELz63xST-5VX6A_cFQPLDj9LnFQ07ey6ma7iV38sbxI4nyHqfiEyW53L_zcWYB9dXPU6yeP2DclO3AtNphteTcyFpyfLnCqJFeZuVfAYO10H-u_61af72rVBbuz7AJYCQQWIYIMMPqfUfb9qulNsTFATkt-ZK2jurgdS6fir0tF9BEVCQbMM8xJmYB7t6aRiHcDZ5f5DjMTuGrDzcbzyKKcajRj0T08b0crzk4mp3-W8_DyFxbwX_aXP3FrN0FK3NAvJmKFCNAXwpBMRPCaRkDSG8gBoTP8_uO8zMa4HNl3jxwXz86U-gqz_cYuexrgBswmhFjhfUr2fag-kILjOPnEPbnWnFEqSSKMJRxqGvhZ5EVllF26jo0Uv-40w2F9EHrppjyKRQ4r2w5jMqnK6pWcfcI0NjQN3mt_yTVqQvS56d4U15QFaf2MeDeEwQFOCO-5sCgSg51rj2bFeHXDw_zwdUQuVF6CEAQIEBYIAAsJA"
           }
         },
         "2.0",
@@ -272,7 +272,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhcJZAdC2Hd7yZCn1LGA8iOUzRNDmVUjkXFp8F4aRFJJ1Y14GaYAhqC1VKItn-YnSfKFJKSKMnfqS-Ih0nKQzLUANx8HJCtcSMUn5FljX_NrjZsDR7euLQspcMUV0y-pHmOPPjpqwZxDq7kwA0Opl1INFzZWcAFyMjkpgnTQvXIbtB0ve5nIqAoVr0R5LLyD4HpooMNAkDlbrvGxQmILqJ3h-wC-2_c8aILAkBPkFvI9TC8EA9WZ4qVxVu8ztV1WLJokKNfLBRKDmFZVDpp5ARKeU9Jmib7eOKjP3MAZpfHsglHtMvs2_rOrDajST7Lema7JZ2olvKLqufGE3nqUWlDdMimSVTXrGwecmE6k2-HGhGgavh2B0aqrKrPzgC-jbA31D5akFrQgBaPFtmEmqqo31BxTmDu2UdSzO4ftdCXel7_y2gKCNAqIgTOJcN_c4MSiqh61Lu6bTGX6N-uMwbq5UCT4BIf7LrWPhgzYjriDapaHilGZYmkOcKBTknQuojTvmCeSLaEsofOzqVdJZzbvKRfTyTmS7un62ewRXaYVwdodNEwmnWLwQ64sQXj_r8qPVxnEje_8Z0lkCFh6Fr4pGI9rfNTkxsHzCdQ1Ys4DzT4lBkqCDAQIEggACwkA"
+            "proofValue": "u2V0DhcJZAdCpdWaC1AxSQyVJihcU2DAK_KVkteEbnAhc_ofg5CHu3mRbt4-iRg6i5cXqP1OMYYqk6TlPL_-1QRdO0dnrmkTZXn6n8j7SCaQYiNapgEQBnIJ0TjGOCx_J8hoJoZcAEiOUTj0U7AStwHIzBaRdrIsNzG44ffq83eBOSOjzf2tXB_SrNBBJdaY3Ody-aL2j0B8wVT_pwUb_slroAs9TyLeKIdzvVGR-KVCU1QbLyzUjBWpt-uZlSJTJTMJKWV1MKPG2jnsDL5T2A7lPK_0DhtS6ZhNFL_urr7N-kgewUWobqLs-seC90hivsCyNWzRl4n5QOIGA5mr6_6RA-vGoFIkiWmiDR1Ko-Wi_VKGgTRV7B1n2j4-xBiqXZMLIO6Yvn3af4cMirJOO4ZxMwldsyHRbScXsfU9sVx_McIV_IswepYvDWAORcmRBorz71pwgSZYe6LfSrWlGwvtk9wdhJVUUx-XVyHl4JOC3wcDA0qx3HUvjUf12OSp_ov6jHvO2MLeXLCM6zprDnpVFFos7kfs0UneBjxMhXn5qbKoRwAV32j1Hrjt0adLZ6O9WZmnGlpEsr-ncQJF847Pakvot5Xoj5rQyjTr5bsUPDCeYEnIU5aCDAQIEggACwkA"
           }
         }
       ]
@@ -292,7 +292,7 @@
             "VerifiableCredential",
             "Iso18013DriversLicenseCredential"
           ],
-          "issuanceDate": "2026-08-16T05:09:26Z",
+          "issuanceDate": "2026-08-23T05:10:22Z",
           "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "credentialSubject": {
             "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
@@ -304,7 +304,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0IO-uuK8QoVdjpoKcMsQI0oWJHpB3O66xWlNN9UsEZJKZAUNYJuc2CQR6xk51XwuHIoRGd7bT8vQfQuomRo4afMlzjK8P2W1HdQ8Yefier00ojl0bRqBvuDviuiBquJAMK2w5Ame32eYOqZDb4OX9Nh7LSJOCap7KKvCbpaoekWto0C8bUYrp6Z-iYgyuIvYXiO7EnQYahN7r_WmQI96JE7eACfh0wzfNuKa3DVgUk-rDX9LG3Pc15i5FJGn6RgjrjAvaFx4G9p_d7tNQrjcrbFL-xKlyV3EqsiH--aPc7HZvtEtWPM5hC6mihJbEbxKD2oBoiEoCYhEd-Vbh1JtJ1hT7qiOssaxh8-Cjl456J7JISiwjC6UbEfusVO_OZJyq-E-MWTJ_RR7J1AvfJQbyH0nqRMJQC8JOJXVyQFpaO5tgu24JShUXyil3OfmCO8uDAq7WSlMPydGVSX6l1gK9CMKn7KI2xf0UE1riV7U4LlwaS7hNqm1yGRMZkzbd56jZ3st11VIc2PJiwPvigfo_kIYbLP32DF-xcDWfdWWiSqG7xDWGTJ0kGsMAH50ntBy2w976Y8wi4Ss1Y_fuDgMVm1FY0_rRZ3yFY6TV1yuoS7NoIQBAgQFggACQA"
+            "proofValue": "u2V0DhVkB0KRgb3duHucnGhy-sEbnBHPoyS_Wybt5E4UbaJCrPpWXOCLxQQDHdyq7hQr6EsX1pa_M-_w_L9YaJEx-xtc9Vu5e1yIKpdpDzdUBTmr0I4PiH3ucWITnFkp7Toze5fzEL7B02TZd094leE9ygWazuxHXUAn9utiVZmDrLasPwgwK6ZQXhXu1ISQI5BT9El75_1N33-aeG-G_ToTupzcG28lNqddvHBZCZ_vPybmB7ywjRdwf47s0eb2JpQWcPd03SBWN3Koze5WGWJgbvFdoXUdX6CJzvcBodT0g39cA338R0v7oB2GUHjq8sShMR93VqGZVvcssS4FkNcBl7I1kbTIfSW3BBPto17QugzNUQpozU62yfkAlCUVk8iqPwS8govkI_FQ00YbRdUbWf9SN0C4gUsneokWh8OCZFAMDCFbazLUcDubELjHpvT7ojxzoDgocepn4UM0T8a1B_vqxSEo9g_UI_BwLV09FZWZV5qwoZ2ptJzxJizWCg1NAUEg40Nd1KFURClQBFOzHj9a_kLlYAziz-gbqsUJPTVnzw-0WHtd7Vs53FhSODRu-irQOYhxkxpQFL6rhV3flgH-ck_wQKK3sdWMUfIDNsm6CFht8oIQBAgQFggACQA"
           }
         },
         "2.0",
@@ -329,7 +329,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0LDCNjpPatwkLmJtx3O9BkiJYhr9xX4jvEWAOuULT9eC2tReBbBJl41-yQ7jL9HxwZEaTAM5mud0lf0ERxbbnSuuKNFaea9OlsJPIh-gs4-RFW6BGAF01Xb76gMKcn-hAKP477-wwH-ymeQj68ePaPGyskDw-UOZR2qwGitCwIsjAPuInUKLr299VPRupdhu6FSYNIowABcv3C9P664ekIfZ6cickKsNOn9GXTh27WgqUd26XCl4IYGBHydwBODoSTsKW8znhcQUPjbYulj7m7VrOjchawW6DH8yRH85ndXZlVpiiFY6I7nmru6s_q1joELOGHZ5EALRR210ECijUaikEg2_hmIS-tzisgoY2M2TBEKu_aKwlj1Ds-UumuLrK9ussvifzcch3jvsAjgV3bE5lxVjv3kd6bgt5gmECkG5za0YuNNmGyBUtgwQQs2UPFEwOKX-kimBVgKwBJBM-38xqmVTHs3Q2-PZjuszaZkqZvIFg4fv6NU8kUOd904Hr7VPG7ZKBRHZ71HGF8didIYeKzLnZ8kfT7AiIZfXr4q8lSlXKG0Gvw6WvoByy1GVa2RDkA8hfwU8RF31R29CxSQbJ_fufKmGl9ZkL5gBNrYRoIMBAgSCAAJA"
+            "proofValue": "u2V0DhVkB0I0W6Iw7jus058CiqqsYajesHJN3V9IPMeghnNYn4EOQ0LccHLczOzcgZB0lCHwDqZSqxoUkyIt9u53pxRQqasCEax1OF1P2Leb3T8pGuu5gSwazSOv6c1q8yDnKi6ZtG6I4z5ADoZtVaykLLaI7DU4KcBQ2CGW11UTqBXD7SHukEqdzfsSbs91rCMglGEHKBmXHrM8v_Brbr4WCLPmdlYlWCm4cStwVPTwN3QGuBgZ1K-bol36s9w7gChTaOYpoeQqsvqYx82_lSiFC3FVAz1JYS4xjEiy9_b_HppszhMj7qtr0I4N3iSufOjJsnp04ng_n49VQhlS6BnhM76Mb0BuYIYSfcwXfEbBioqA0cQXEGDJB8ELTlaI2-V6oGvNBcDnLcRcl23iiCD9V9zYf0i4QXeCRIghniiesNkNSo9YMhQeCER8YV0H3gB4gV43lqE9NtRrDj8X4bzeag-j97Z1AAiZLeMX0_uqWfMBOuw_gBxbarhxttct1vzVmnbD3ksG5Si5AKCPoMmHu2BCTHXA0ErwUjEcc2M3GvI_7A5JYnVF6dpxeb367t_B43xQMHTfD5ljDyjGu1y7GKQSM9PxFj_58-xrBs2PLd7JKqqWnoIMBAgSCAAJA"
           }
         }
       ]
@@ -349,7 +349,7 @@
             "VerifiableCredential",
             "Iso18013DriversLicenseCredential"
           ],
-          "issuanceDate": "2026-08-16T05:09:27Z",
+          "issuanceDate": "2026-08-23T05:10:23Z",
           "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "credentialSubject": {
             "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
@@ -361,7 +361,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0Ks4zN6G4ced1_9CP--eXQkT5U-5e-ugiKYlF5TtC-9UWl46LggwKXlWBPyf04clIYcVnT8cSIaqFFKTJ3fYkBl9ga8cS7f9tlJcGAEUAxpC6W094ApLsNmMl3P2Pcp2sIyihHTpesnW9a1vdyBHkUN49lh0XPOa4em8jJYpGzTRGKvroEQOvKUsNR5_WFqIbRtw1T8ywmqtoV67P2iLfzuvo_nrh_o2LfUGqlc3RJuwI_i7Qz8dodN_P-ltj4ukEBpcMPmze81cLEpdro1RmYU5jvMe6LBSJSBa-8HZKiSlyCwf0zEVEF8PBQJSEJz_4jJURRpSRccs0vX-EP-UCLohSxAFuDbO0rx1KnqU88-VRLhznSOWBgo1L9vFo5MotvZZ5UWDEQJfQ6NkQxs0nQwvOnUdv-DfpFP3iWAK79pGG4KZZr2CFruuLCuj_owERFNzQOnD721M_rMHwKkNa4Ir3aIoBklEwFBsglvLZb62IoirUgjUvSQOkgFqvrdH4MIP8bNHEFHCEEpH6sVEp9Y3fckb_jdCNCKK4uvjNccXMRrN3SHQRcrz2pvKxulS83DiPm3R-3qA9hmGwZLPLhw2R2sbmvgmG6eyURa0AAuWoIQBAgQFggACQA"
+            "proofValue": "u2V0DhVkB0JOW08tUvzvCOP4yJTC6KG_Gr2scP-Xp0yXBHW0ZsbBzIFMYXFuzFJ_WC_ZLVxfS_4De9FX3Y2OO65a1ujiezRRSbpEf2a5y2N0Ac1AEWURze2XqHS21ZMxUHdW5p1zaZJClJXVm14Zzpbx4hTG4HwhXANH3FutCoNBYi4l86ZgCtnWgO6JHA5c5t0HSkBFU4lypdiwC9bK0_hd54ja00yPLrvGcGtwCujrdUSI91SnlEDB5-_3K7pD2TcWRehQmC9jG6mrmZttxPcwczCMXU7QQ5651ths5Eks3-WY4-JNaCrfTYZ6k2hGRtCeK3p20-UroL5GTLMH6DTKpMcL3LqzBSGxg4nW3R5GViGjKVy9BRPgd_I9ujxizlnXXoh3dW2xp3GILASgS-SYwYaCFHRdwO2wVPwz4yfTG_4QEuL2xNs9AlhMlTTtVP_lTfRINw0EIaBOIMOoCcL8bzu9vG78_Z7I161Gh3Mczl-owriR9WxHmaZq-mTvYy7AQbb3Be9yeZE63Qcig--gI2nTScJM894tXtrmwCgpgZuptsY6xrxnCPNAupCcW0Gb96ihz9Fy84ckxKhm1gtuw7i5P5zgNUcAXstHSYyC9ZWVWsKtYoIQBAgQFggACQA"
           }
         },
         "2.0",
@@ -386,7 +386,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0LiepJp7uEa8QV8AHHNfQYqMASR40-chvdU_qJcgkt59hjcteOxKkpibqBT1mqG_uq-SoIKL_O2SENR2W14lIJyp3XDr1qfJHbyukkgTA_pvb9hR2SJxX38KyzDtINc5LbMQr34wFW4NWgMOvSh5E3KXGa2sskCVkgk63IdA8CxSdqIpWLKb5t-ha6FvqqjUZAxG2_LHzxCGIdgB_CHkMMP9XC_RoX0Bw9fpDsCZJVPaVlBQmJpS19UfXj-PvDxpvBXyQ5e8UW8oo87jha12KF0ESDeXQkvRd1NKja38TkeYfq3DzzBQ04DeRExN3kKu6l-EoBorhsl5Qq7ZNX3Ztbzfz3Ll0WI0QtVv5JFGLVPuP6JWWjB2A9dYV8XPf-5XldlcUeMeFoyCTXbQnI3NIqJOyhgm-o6JMOMxkC4L2TmYt0iWRfPcXMl9pipx31gP6xR5m1TzeH6FHdBgyVy0gTxI5nFsUhHlZky5_pj_8MXwOkQOgxW-PczgtujEFvR_XOuzHo85pPaA_KHnB646tgMigSSTI1P1ZyCt7PQU2ol_IbxLG5JwKrhe6-8fZ7gRbTzO88nVdvV01VTprfn0NslsDy6Y6ZOvWbb_JOMSMrlioIMBAgSCAAJA"
+            "proofValue": "u2V0DhVkB0INg1ZtIHYtHXhCxMjOIjRf1adCMvq4xBu8rlPw__wVd4my0yjpKpKuNnaKS_ZPdj4KFaFdsL4L5WNzt5pwAHLS-0HUOk41BfvmbeQVCgt7EVTenMktuzBP_MdGrrAYTq6bekajhMjuUSvz7GUnoGuNxSETiFZ7olZ5bsOpctMqjSytlhr31-9P38C8X-xsbwy3Cu0KrtcKSfewOFiDfbRsTnkjVi7ds2Hty5eL90GIkI3mbaqIYQSJtysftpWBHfmxoU6a9sxK4qyHLrqmGGMw3XKPEQ0M4ku2kDbr1ZI93fVEfo2LHGDxJ3AC2nRw1Hgir6akWnoycUPUYfVeYolbQbYzhXUDaiVK9hpeMXC9AcgD8mVbN0Xbk6bVf9Vy5IN63SXwywU7mvpw6eUsBWq5nBVGTVhdvmKAZGP_1ZZKLG-Y4hd3uATVWrfv18LTkhjxwj6kVCIZQZLh_aOiyaXoMmo5Pu9c3LaCF08-2niTxKE5YOt3jxYCM4Cv1z6fZiwDISKkeztc4INaxdxe7sDthMST3geSiN3MJFVMdkeobOX57JrBhu6pe160k-F13NFWYOnsJe-2IN6vkRXRuXuMW4v00EkDf6Tx9Zsk1Mp-noIMBAgSCAAJA"
           }
         }
       ]
@@ -406,7 +406,7 @@
             "VerifiableCredential",
             "Iso18013DriversLicenseCredential"
           ],
-          "issuanceDate": "2026-08-16T05:09:27Z",
+          "issuanceDate": "2026-08-23T05:10:23Z",
           "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "credentialSubject": {
             "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
@@ -418,7 +418,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0JYKyRHu1hmvqM7TrYC4Vxx7x3ZpEH-c8m8ZTvvauA0RusPbPAcM1gbS2TJwO9Tbtogscq-0jkolaoLUuBqp-Npu3pQyDh1fRihEHRObMu_vzwzaeCzc3NzjRwh2_YLCfrYAJB4df0rosy7Sw8huKuLQVmqIC4UzFcXPc3BuQDwtgsJZaawk-0NE_GPpz_eDwkhiuoNihDHScM3UAI2JM1F0pNG8phUncdDAESu3tltJKusMC-i8LqignxUmofY2eYolXRKkU4MSdoHjk3PMxV85wfzrkNh9pRf0HFAq9skz6ZkDoRbCSdEM0ST0cNM4HlFv6jOi7IQRngspZH9L6AraljzKqsRSg8ffjq3fuQ7hTjGcfQr7e3E8yT7GgHBQRu3uBGZH2bWFddoinAdJNPQSb1Hq-idYON9X9vBeCu3Cj_l-1jGbloOOFYy4R5hkpx_mtHz1YcXYPiRGdLtlER4ridzdDIO6slQ98CES7LRYK_-19UJE3tgUlSiSLJAz8uqDK-idDCe9n8lbh_ZgK7ZTpZ6YH0Y7sV4AODq7GcC9GE7dfPstd5jIFU2tqa-Eoxi5iBEcwSidpfpSPAgeyoMKwjO7w8rwnioEbqGSXPDOoIQBAgQFggACQA"
+            "proofValue": "u2V0DhVkB0IFMMYoGZ7dFGyRhsTjJHr6n2upwPGSpNGz-_xZwjiziTW2djQYQokeCYhVK6GdrYLgD-tzCO3-e0u4usRIJdHb4h5pVE-r1BIr__HcjdnGwnb-NuFZ4q7BFHc581mYm8pCg8M--R7qkHbeDo-rGal3gXlKLOBrqjscxsWnERYxUWiTVQfa-Nxv9bKNDJ5dnE0GoOsKDi0sK27AJwwPGWSsV_Vq59_DW_Vs1wWCRI7r8NYajINpawWeAWDc0Clc31OoxiQtGSkAkeIqLULladiQm2MGZI8MXr2yKrqVMIPMRggQWH23VSX22cgXmuAF0Qxwxho9mKvlUW4U9R1ehaXvqBjyBAKod-d_FfN0r9XUZWk6zpzNAZYQxc5p4WbPWBbmz7Zh7Yf4kOFahvJvgii1efx7IKIuOo7hYuHRPfObWePGikYzlYYEXHPOKoTyfNkqbzqOQAUGoVEVIGh1DUYjm_5njf6BQKG6sf3TeSNtgXg5lj6ZU4MqHNOgOO18JxRCdAs6btOaLWIFLOVlSbUgl-vuoQEoC8KI1Pv5aBxPvHfFliBKuH9RDC-rLjWJpPCj-_nn7-7lUtmIVDyomKqUS87DltutFmosGmhMqwuOXoIQBAgQFggACQA"
           }
         },
         "2.0",
@@ -443,7 +443,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0I6133iAFnesju24FanoZ4wi0yDL2YkeRrF2kD2bTiW1HtVMuqSeZTL6sB4xvRcHw7FbNYQanvwgFNYJLvjYcgSSKNcQuG_4y-xc2-uWR_8RyBW6OoWXALfTGbWzPPbiw7Y3J-RlM6yI-nr45j7bHDcBfLmYR2VhdbNeh1c-6RA_urzXRMBVKgJKf_eWB_JYGgNhQgJSsYsnoSEw0gE4gGrDA5l9hsAxZ76Nf5YN3W6LF_yPyPX202XX0wwfyMkKuyj7QSycFMc6FFYGrgQ7MS1bif1y1A5f_Yn27HkKIuViLxSUNQXuhgKIXj-xGs0pTyqHzESGLv5l0BD43auYQ7aIJG4Hnb7SsQ7_1jRVho53WERmtFpWOHXEtLwvXGYJ0aH_Qvv75lKZcGbMq9LtAWxATMrCqF1C-JImQlj1cgKPYoeVtDzKjvXh5GteWH_i7kLSzKRbWNXqaRoe1yzoEj_4X7x-kt0dLDpq9ShPLS8oOTflutpvbDfIq3SnfHA_y38Al69lEsFoaBZh8F7uRppgvT25B9SBkorG31g1B8Eqw1-O0kuwhR2KGZvGqqB4jTPSICqoY9LHnUBxMcnRVCyT3hNZyAwd3XsPnEA9LIfboIMBAgSCAAJA"
+            "proofValue": "u2V0DhVkB0I_sKengrZ2OTk3McUQWQRQfhNs4Z6LNZjPgDrfzuppj0bsnEMFK2AKwabLJ2dETo4KWUVaEcXUpVSTkS0NX32o2WPwd4vloJx8GFVlDG7u04KOa2QsSJeaPk1tPqdjfw44DuPPO-qu9UAXdpcMyQu03eSoiG6C8-PnMymJcnhpWyj_CRTAKtNFdCWuQJP36KV0LJrVyXagtj3EV5JSxzwP5kXBkOd03He0G9Wujs-8dG6q2cLWhDnNM85B3fogHFMINfcm3LSzXOunouP0idF5WGUGnlOpjeNYKFFfpo_WZdFSJzzh6xX6h67m7tOoXp29WL0VbcjzuZuZBVpg_M5iaFuU0yYe5IYFP2od7rh3RWiGNW1Fnh0egVX6U42VHyEdLg3BsGZGvMeeBCrMrG2AspMfjxK2kZT1NMkA5Im9t1vfie9wS2j9-l7dvat1jBRa2cyqIcUNA5j2Bj3zwRUtgdfCVBUEOxijKFV1ZyO37ROpwDV0DutUrBbT2j8SaeNDpZ29tWWr9RV7uEsFbMGJcgKUOLxOYWs98xSEK69MuYUBpXDcGtJci3HWkzydl4D4HdITLkxdBPZvq5UlblDKm9PMPQNqHJmzcxUVmLqIHoIMBAgSCAAJA"
           }
         }
       ]
@@ -463,7 +463,7 @@
             "VerifiableCredential",
             "Iso18013DriversLicenseCredential"
           ],
-          "issuanceDate": "2026-08-16T05:09:27Z",
+          "issuanceDate": "2026-08-23T05:10:23Z",
           "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "credentialSubject": {
             "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
@@ -474,7 +474,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0IwZw89Hou6mbzEt3Rv83ieB4Fl9DFAW6RwhGYkGiH0h6rVheMrNCy-nUz4fF33-pYsLRdT31wbCRonqApBQJxkqEVRs76QLEWc_GPtoI_fLs4Z9HXiMF2zgvm8VnC3jHYc4TF-3RzACUIs9sv58Gaf5W8Nbq-8D6DC9hkX7D0h01_9cNyfa_bnTyjeOgjXHFxHVZ99md9Id1YFlmGKX6Yz3v-oRmyd0Mh-zblwv7XDHN5kKnQ5MjBv6AKMkNK3zJcaXSBqgHWZ3LgeKva9RDVsvvAkjVQu-6qHeVwBp_0MhoenBR4OraJQ7jteAyFFXwTblbDGvhS4ImGU4HieHNzKkPdSxuHitN1sLidlnY_uyNe7IuUgO8K9-ohJYjQCXN4M4V1KkaVwBKitUD2XYWLZuXaIDfdBI00N3NX3GkE8gM5N2VKsaA0z9ChgQNcY1XCQFhBkKq31X_wtI0vgBlSzx1_3gm0GBVXoy8RVFy-lAY6yyWKZKk39QiKmaANnqKIE_vEPF2GFZN7seyd-rxzYn4chUqCgH_rk6YXGc2AKG5DUEHEvzFMzfZQYRIt9m3iB6OTAItBNBDCxXtrgQyuCYD3B1cIydOSsFvY4e4EqioIQBAgQFggACQA"
+            "proofValue": "u2V0DhVkB0LAb6K7zVhw9ZNbC2aoT0XyBw0gBBcrbz3vDWEbYb0nh_VZFgFOi2RL0Lo7nEU_LKaSAvtEv6ggJ_tMCS7yUUBxeGeBjMXWH1oaY1BrCgWvEVlwHpELIJpF_-2nyNIoew6jvrPkxFuG61vivlJMZAcodnC-m4tmEjYNugUzuHhjZVBwT1HOLihNWQsV5Fsb7NUQAGyK6gS0byHqH_pH_QoiuDiP2XX2tRMW49SiW-nt1Un05sVdprwv1Y-QD63DkCLdYEWdzTAFDow9D0yNQ6Xoh_t3XyAZlQVNjvOwTmNKUteIgQI4-Kbg2ftEYBHeR8V8W5br4NHYjeYcxerwuLnP2yS52rbJHBcn0ebwqi3ZhOMv4ZkfEomxkFNBCFn0vyfHCyrYFozsEaL_oOb0lC_0ZoWldkYO32s0yGSwaZJLrsEwB8zG3gXXvFbbRX8bc1DvYs7Jw7TiPhSV12SuXwtUU6CKAy5-mu1_lNUGccQ-vA8d95UwWXePgmU9zu8mN76az5-6ir8D0ez2q3zeaCN9E-woXxqaM0jbisK1xyIMqbKHG6-RKS286yYnfw0Ut_09fO8UkmmRF4cHUckzBPGsWLJxhIKqgJaIDzflf-1ShoIQBAgQFggACQA"
           }
         },
         "2.0",
@@ -498,7 +498,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkB0LU-vk1krBCaeNyYpBelhS4pWycP1K4Y9H-JrXmiB5Bxse9Tk25y_KXeYW5jpC96mbiIy3RWSo6USezqG_8PwODiitQlITLWwUYRGI2-Gcy3sEGowiYgRJEliF9sFLmtcLO8i17yOd7nZAJ6nlhO-KJZX6d9yLu4LMuQOseNeXjHZZFZ5PFBo3ftqyomG26NbQwLteNGG32EJXQfMLmw_5jQ1NvI8b01bDmd7BxBvep0XmYxp-1tnF9s89GFJhflOQ-QgZE0I_h5MFI9bddZcJdzK3p4OI1uEpA8mmLqqtJ8FrX5npmu4u8JTqDRIrfCbAFBFXibQP9BwffpH9BBeOuDtMZr88PkMC-jY1ku5jWzBiukE-BHlNxyRL04tSwWpg95i5LoI6VNsDKy_OQ5d0Jg9SwgCQefW0vjfCESB-vmWtcQFgn2_z8YDRtmke7Ro2R8qlYVsYn2xIbHxfEZfYJGG8hDm3LT2ykRuD1Tk_d5JFNi1kS6PAp-fBw9j_PFfDw0QQmDtzqU8PWjluH-lIVAgKIWZ-J2baaJi4B21q4AAfLR8SalViA480oWUK-k3x6a-y-CP7ZdvEsOYfMTagdhIQvCSITgZkzu7LfL9-zKoIMBAgSCAAJA"
+            "proofValue": "u2V0DhVkB0Jhq_2LTTdlozrED50etYwdukD-OfaEQn9mFtNXCx9-K4YrEOlX-NXTV-sMN89WMtqs57aqu8ocivvzYaONw3oAYFQ96dHdunPpChDP0B52f923Ack5xPB76T5sOOYN9zKnd5Jb1iP7hX1be3LR6y79HlbNz2ujqJr_DsqXIYjmrCiCNzQHITL7xVpyK32HDxmZZb72IK9paArOHMRpB_SKO-L9v6V8_We_2jlpV0eT_S8y_Yi7S1velNxixyRyLlOyUvSrECxoB1iz0qTWhdUFC28zcQvKp-BYDV34wjW5fAeM8eji-soeSulvKAIdi600enP7cZ5acf9fLDej0ePHHlG1UldCWkOwnuJEcM_DIKXBikiR-XCjb_qVfU0w9_SsH1jomNXtQJzH7j-AfNakklB2KoJNwQpCRgOW9PllEjs90cy1azsz0HduM-r7t2E7ZsM84SAO16aOc8M2DwhVHWwYTYZKDiTQPbyi5TvswKP4Y6IPQAqum3w0aEG9FUjb0LpDHQjrpwZQ1J3ZJuLoOn_Fu45w2Q7BWWPBLOm1Go5xZ1GaVscl9zbjKwcBRzGj4x_742f0j4eHo4TeVKtCUBUi87NDsVDn_Ych_9ECLoIMBAgSCAAJA"
           }
         }
       ]
@@ -518,7 +518,7 @@
             "VerifiableCredential",
             "Iso18013DriversLicenseCredential"
           ],
-          "issuanceDate": "2026-08-16T05:09:29Z",
+          "issuanceDate": "2026-08-23T05:10:24Z",
           "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "credentialSubject": {
             "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
@@ -537,7 +537,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkBEI9zapMq7tRKw9tRQoJpE8_0MKMOUlndYT1-_cXdE0DZC-YPtQxIIndCh8iTe7ktIahRMrisr8-ZyUEdKdWk5gKfFLS4j1jA2flAc_7bRhUaJWiPE3AbhUsxumvOEjwGw6a56VhgpTKtiQVLO-D9nG70oZFrLNiIH4KPGBtampJLbu5vTS76RViSDOG164arxwc4stlOng2yDxf32hLJPDUWxNxipv5s4Ar9c7bqw8HkQ_jlZdmmF9sjsNejuGOCe2-azAlY0aRbVOJQ0J9JkhEurjfmWJv9N8iG2OKwyIYWzTx5-H-zeCLp8PbRpmH_EwfFpnTpDX5UbMom3waa70lIVsmv-HSqHl2Vl5Xw2R0joQAAhAIDBQaIAAECAwQFBgdA"
+            "proofValue": "u2V0DhVkBELMVoeIGYR2sBA9rfv0Wn0dFdLQlqp4p20ZRZYLUDM0KJkvjnIIwxp9lou1dRc5Igqqgtwz8BKfVCORG-SBd111YuMMHMmGEKMe-pJvWlZmBySSGkmCRpZcHJJUasI13QICRmSBY4lAoC_qMSNoogEuz5ywKhm_qmxHKW3poypiAsuSDIHsuXGwQcjWxSgGREWhABsq5CmiQiYZbtJZmdCYMWbp_JlaSJj7TxayvE74vIShxtGr6nZflWXxSYcrRw9DurSg2c7iQECDVoxc_IdkPMlc8EeqC9jSOQR34l7m4N1y9AFZT-9LGobjJjHhRVxaRFyglMKsg8Fvr_udVo5kA6QYjVbL3lwLeKErHQuLMoQAAhAIDBQaIAAECAwQFBgdA"
           }
         },
         "2.0",
@@ -569,7 +569,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "u2V0DhVkBEI9ZdszPW72TfA0-_GECpNAPqa7zZ_3-KYGZSuD2kI16M4PcicM4grl-BE4CnpK5BKqu_gb4lKDqj3URmvnpw-ljU6Tq3W0VPb-sDKUaVIaGylJznrDt3huX0UGWRhenMqVcFbEjOvcQ3WcjHHLpGbJhyFbjD-WOi7Q5DEHvmSJqGH-kyWcG_qkujcS-cP8oVwt5e7ezaYe1eUmgN6gSdIGD598nLR3wB7oQqBNw6CIRR6f8xz-3RaDAOTuKzft5NkF9XbPQb0lyrCEFnWPy4UpAPN5k901Psfr8c7cxi1KmaQW1Q7yF1Ci7JUyRjf6YLVjWTP3N1BsYIWwqf2hKVrsO3nYUHUlayQqzDcShV5t8oQAAgwIDBYgAAQIDBAUGB0A"
+            "proofValue": "u2V0DhVkBEJXUT_LB9NTRv7rsOuV9BwmBz7OV6tuUoN1mZgpQL9ypJFDyzhAOSuqERWwKCyhDJ6EoFunUtiwl_JnTAs5-nFlmBYNhj8RGhq1_-bHi5nhKbEL2Lw5EHNO_m35DlPEcCZgJuxgT73yZx9195STlUaflVta-xKP18G9Bh98ekFSYGDzXfOSTtkzHzKhwM0yK1ROREDcGAZIFOnUjeasC5TB8xPar-iPwFAp8uJr-bKUQZk_CrhmkGmRJGkNNqVGi_ol9K3uzN2Z36PmEuRJL6QYM5KHVoFGbwLqO4gj49sVEYf7y-eAbHRg6nCZor9efAx6I4oVdoVTtX5r0VuSR9urvOD3OSMv5Nbmz8N7i9hZqoQAAgwIDBYgAAQIDBAUGB0A"
           }
         }
       ]
@@ -589,7 +589,7 @@
             "VerifiableCredential",
             "Iso18013DriversLicenseCredential"
           ],
-          "issuanceDate": "2026-08-16T05:09:25Z",
+          "issuanceDate": "2026-08-23T05:10:21Z",
           "issuer": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
           "credentialSubject": {
             "id": "urn:uuid:1a0e4ef5-091f-4060-842e-18e519ab9440",
@@ -600,7 +600,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "uAAADhVkB0LDTi3nNnb7O_VEu-zt6f-6MZyMLgZlCgsne8SM7gENhkOh8mG2LSZ0OD0sP5e1UcKB_aX8z_aV8nLN1-raTPnxVp6w5Xd23DVFVDlEYC7JwOBBBz8P5DKzzJYWL0iXwxYswka5Pcpa2MZGSZu5_rMa47-SLfBqqyd8FbprPtnYDYS-AdjOInXsuvBSJH-Z9AHMJwInDGTMsMbSUZuD4d-E1EQ_jIrhBqucJ0VcHV3vEcUgfyYrqq3AWuQAj5-Bk01hFMy7ueeFM7gt7OQ_SZY4-5RKFFcdhoUt_l7nxRsqP1Uy_EMklYvVL1RYDnhiSvhUT3hX5v3-Zb2jOpvFDXzJl-qKVjLWlVzccqAqB1lTHVaHrNhnTjoc5EfiIV2OICTNNbfmjFqyXzsWUwj6sYd9Bs8Vhb3EZC_SpK2x1R6SmFV2-chYiEvTzuppDSGY8oiqF10XIHaTjLqb1kFazdViKyEpt1b6-Ue3kAWErhR7JU-1zdqlQAp10J9a-SluzU86-OhC_vxklgMwH_Q8_l3Yy-O7s5Zao9CMs6qFIIOft0IAYSBXwuSA1TUocbEGQYFu3d0laxlMD36rXLqBY5viVmD8CkGPoT9RrXdqwkVrkoIQBAgQFggACQA"
+            "proofValue": "uAAADhVkB0LfbJ2aXkGCgkmCY8XgZycO7GjuDz68od7lYhhygA57Dx66WEk3R0HOAUeBlvvT53batpUIMgSZZZD-WeHEcUVMV7WK0WB0up2yNruNpMCnVrc8cpcb-uNolOopoZM9vJIE9q-F2fJljZV4uo03NjEIEUeqcuSn8KF5-T13g21_BHtHoExnpQbPHyuiHlASMJzk0-iz_ogmjXSpz_KvHHu8FIDV52Bg9gYv8FTnis5ntF2D-qx98VpQJHt9H-EHe8o3VX-DIOlgxcUxHWdCqPEEWyegg-RC0aGKonYBvZkOGU6jWlfQirFTALSmIXepe4CbWYmnY_vejeV5MEv5aPwLlkzcREzQuWz9spEg8UCnEC-eFA0q9GFd2fYtlm3EtR_l5r2I7f43TiKqPn92uTKwGqKuVSMiezJnb7XzIGqfIhEt-VgRuwnAtRFEQj5eYyTuQlJhDC0rlY_4YYPS22iJTf5mGlRxUN8I6CGPAuzhIDeXX9fIGBcgYtMWlhxstSNOwpxu1Khe_ydU5Gu76P28UMuDJlQRc4XQEkOcbPyVJ5X40i_q7dbdLlVDvpK4pzDUVpc24L8GymKLfDzXfetoe2N0Z242SQ1DKPXkW9dScoIQBAgQFggACQA"
           }
         },
         "2.0",
@@ -624,7 +624,7 @@
             "verificationMethod": "did:key:zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv#zUC7GMwWWkA5UMTx7Gg6sabmpchWgq8p1xGhUXwBiDytY8BgD6eq5AmxNgjwDbAz8Rq6VFBLdNjvXR4ydEdwDEN9L4vGFfLkxs8UsU3wQj9HQGjQb7LHWdRNJv3J1kGoA3BvnBv",
             "cryptosuite": "bbs-2023",
             "proofPurpose": "assertionMethod",
-            "proofValue": "uAAADhVkB0JKFziJZetnzmNtFg2mbrsssYtn0_vmEOXFY3F8xWU2MnxtzgULW23tTOjRbIAhk5ZF7-dzCUy_gtq1i_0vam-iPTGHz4ZLJg3KB6WDjrjaO4Igx6QpRiIVsrigZ6cx0gaauKJP1P3hWa4cdFCdaYEw3s5XGR0brej-mGeV9bcj1oSzp_RAewMGhOJ5d0zFbUmNpX0q-9StWBJJzDIydnuD2wX0CHQ8Q8yDikAkwVju2DJxZSpaAJvNf0FaAMQOp0JEXIbUQjF9FUCncsP2AKwZw6G4M6b25WYIxd0FIIzJSkfTeTgGViMC9tvb0lEA4RC_jKDSiTSA9zuWpNwPy2SM52O8D0BfSYG6VzdUbfUtEHt1GejFWD5eDT9xk__JbjWQJHZWosjkYLhgN9lah_qsUhJfegMaqmn_gs9_NpXk_gdxUprmmhZLk7T3D9_dyMyb6H-JLOedXHtJtsXebTCv6LxsYALLh13078Q6v8GqNVBfTzu1eyOOqN1Y10DyPcQPm8APHedicQSzp5BxsOlBvQHh42z-6qdbJyAU2WnLfCECr4NMI40Wvd0m7POHq7RWozBH-PGCR0p5AWgm7wQ2UIvaaj4fs6M524Rcds6F8oIMBAgSCAAJA"
+            "proofValue": "uAAADhVkB0JSrABa7PpU1T-NO4tDr8oRuKKax05OrD8f3AkYInz0ITnEsRoHK0XYHTiTr1Kxl969mhgnaFNUQoAScRYDLEwvp1m5M9eeTu5ZiEM4BhWxD8cTBaymJi3yL2_-D9kPQVqgS6bbiHcTWjEykmtrFW95ghb4UppiUv4F1sx5siuTTOOgM4zJYPMDI4TqmiCM3DnE2UeangK2cOHlOwuWBaBypTHTlpGdkhDL8NRU5P84BHzk01VDtcA6DCBTCmnVZKymjreU-rBibAlh6BV8PLAss_nAUUB9KELIe8HPRUzGOgW0nc6kmlXjtBm10gJm690VdENZ3Pmy6bf8VBOwOKb0oX15eWyrH_61Ab7jDinvrNDFbDJJXwxoJvV7R0W_3gPnlmAASQYhPlNUVR9_AsIocMAuKLO4JXcW_eBsnWbOaY2cVgVr3b72GBIqaEXUzqnA1Zu4dbmVKhbCcvEFLu991xlDM06r4dSrDus963BCcTJpopVJTkYsfsVUcJA7HjgrU9wvbwtYOHU11Vr9xTEE2z2lfEzPdqFV-NM9a0DUnVhlfG2fwNPsPMTBNl_4fCEMe171YiqsAMongzctDmG5xjlsLwxzLMqHkjWYcNprEoIMBAgSCAAJA"
           }
         }
       ]
